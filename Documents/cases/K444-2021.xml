@@ -12,6 +12,7 @@
             </identification>
              <references>
                 <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
+                <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica" showAs="Visi sud u Podgorici"/>
                 <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica"/>
                 <TLCPerson eId="rcetkovic" href="/ontology/person/rcetkovic" showAs="Rade Ćetković"/>
                 <TLCPerson eId="ekraja" href="/ontology/person/ekraja" showAs="Edina Kraja"/>
@@ -90,7 +91,7 @@
         <p>
         Dana 05. maja 2021. godine, u porodičnoj kući, u D. b ..., Gradska opština T., svjestan svog djela, čije je
         izvršenje htio i znajući da je isto zabranjeno, suprotno
-        <ref href="/oruzje#art_23_para_3">
+        <ref href="/oruzje#art_23_para_3"> 
         čl. 23 st. 3
         </ref>
          u vezi sa
@@ -322,7 +323,10 @@ ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne učini n
     <conclusions>
         <p>PRAVNA POUKA: Protiv ove presude dozvoljena je</p>
         <p>žalba u roku od 8 dana od dana</p>
-        <p>prijema prepisa iste, Višem sudu</p>
-        <p>u Podgorici, a preko ovog suda.</p>
+        <p>prijema prepisa iste,</p>
+        <organization id="vs" refersTo="#vs">
+         Višem sudu u Podgorici
+        </organization>
+        <p>, a preko ovog suda.</p>
     </conclusions>
     </akomaNtoso>

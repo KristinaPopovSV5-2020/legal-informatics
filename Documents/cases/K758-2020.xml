@@ -17,6 +17,7 @@
                 <TLCPerson eId="msekulic" href="/ontology/person/msekulic" showAs="Marina Sekulić"/>
                 <TLCPerson eId="smilic" href="/ontology/person/smilic" showAs="Siniša Milić"/>
                 <TLCPerson eId="vb" href="/ontology/person/vb" showAs="V.B."/>
+                <TLCPerson eId="ga" href="/ontology/person/ga" showAs="G.A."/>
                 <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
@@ -225,7 +226,11 @@
         Kt.br.1084/20 od 09.07.2020. godine,
         </ref>
          i u bitnom naveo da priznaje izvršenje krivičnog djela stavljenog mu na teret i svoju krivicu. Dana 08.07.2020.
-        godine je bio kod svog poznanika A. G. u njegovu kuću, koja se nalazi u selu Donji Kokoti. Pojasnio je da je,
+        godine je bio kod svog poznanika
+        <party id="ga" refersTo="#ga" as ="#defendant">
+               G.A.
+        </party> 
+         u njegovu kuću, koja se nalazi u selu Donji Kokoti. Pojasnio je da je,
         kada je odlazio kod njega, sa sobom ponio pištolj marke „Češka zbrojevka“ u čijem se okviru nalazilo pet
         metaka, a koji pištolj je pronašao u jednoj pećini na Velje brdo. Naime, pištolj se nalazio u vakumiranoj kesi,
         isti je pronašao prije dva, tri mjeseca, uzeo ga je i držao na jednoj livadi blizu kuće. Dalje je ukazao da je dana
@@ -271,16 +276,25 @@
         <p>
         Iz izvještaja o DNK vještačenju br. 1979/20 od 17.08.2020. godine proizilazi da je dokazni materijal preuzet na
         grupu za DNK analize 04.08.2020. godine, i obrađen 07.08.2020. godine. Predmet vještačenja je bilo sljedeće:
-        „trag br.1 – pištolj sa br. 525834, okvirom i tri metka“, „Nesporni uzorak G. A. JMBG xxxxxxxxxxxxx“ , „Nesporni
-        uzorak 
+        „trag br.1 – pištolj sa br. 525834, okvirom i tri metka“, „Nesporni uzorak
+        <party id="ga" refersTo="#ga">
+               G.A.
+        </party> 
+        JMBG xxxxxxxxxxxxx“ , „Nesporni uzorak 
         <party id="vb" refersTo="#vb" as ="#defendant">
                V.B.
         </party>
         JMBG xxxxxxxxxxxxx. Na osnovu izvršenih DNK analiza i bio-statističkog proračuna, može se
         zaključiti sljedeće: na uzorku izuzetom sa pištolja, utvrđeno je prisustvo biološkog materijala NN muške
         osobe; na uzorku izuzetom sa okvira, izuzev donjeg dijela, utvrđeno je prisustvo biološkog materijala od
-        najvjerovatnije dvije osobe, pri čemu rezultat DNK analize ne podržava hipoteze da su G. A. i B. V. jedni od
-        mogućih donora biološkog materijala; na uzorku izuzetom sa tri metka nije utvrđeno prisustvo biološkog
+        najvjerovatnije dvije osobe, pri čemu rezultat DNK analize ne podržava hipoteze da su
+        <party id="ga" refersTo="#ga" as ="#defendant">
+               G.A.
+        </party>  i 
+        <party id="vb" refersTo="#vb" as ="#defendant">
+               V.B.
+        </party>
+        jedni od mogućih donora biološkog materijala; na uzorku izuzetom sa tri metka nije utvrđeno prisustvo biološkog
         materijala.
         </p>
         <p>
@@ -317,7 +331,11 @@
                V.B.
         </party> 
         nije pridržavao naprijed citiranih odredbi zakona o oružju,
-        već je dana 08.07.2020. godine, u porodičnoj kući, G. A., u mjestu Donji Kokoti, u Podgorici, neovlašćeno
+        već je dana 08.07.2020. godine, u porodičnoj kući,
+        <party id="ga" refersTo="#ga" as ="#defendant">
+               G.A.
+        </party>
+        , u mjestu Donji Kokoti, u Podgorici, neovlašćeno
         držao i nosio vatreno oružje i municiju kategorije B, i to pištolj marke „ČZ“, model 27, kalibar 7,65, fabrički
         broj 525834 i 3 komada pištoljske municije kalibra 7,65 mm, bez odgovarajuće isprave o oružju, u čemu je
         istog dana otkriven, kada su mu navedeno oružje i municija oduzeti od strane ovlašćenih službenika Uprave
@@ -328,8 +346,11 @@
         <party id="vb" refersTo="#vb" as ="#defendant">
                V.B.
         </party> 
-         tokom postupka nije sporio da je dana 08.07.2020. godine bio kod svog poznanika, A. G., u
-        njegovu kuću koja se nalazi u selu Donji Kokoti, kojom prilikom je sa sobom imao pištolj marke „Češka
+         tokom postupka nije sporio da je dana 08.07.2020. godine bio kod svog poznanika,
+         <party id="ga" refersTo="#ga" as ="#defendant">
+               G.A.
+        </party>
+        , u njegovu kuću koja se nalazi u selu Donji Kokoti, kojom prilikom je sa sobom imao pištolj marke „Češka
         zbrojevka“ u čijem se okviru nalazilo pet metaka. Predmetnim pištoljem ispalio je dva metka u vis, dok su tri
         ostala u pištolju. Ovakvo kazivanje okrivljenog sud je prihvatio budući da je u saglasju sa izvještajom o
         balističkom vještačenju u kojem je konstatovano da je iz ispravnog predmetnog pištolja pucano, da je sporna
