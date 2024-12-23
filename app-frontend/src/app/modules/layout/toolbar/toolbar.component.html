@@ -1,0 +1,46 @@
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet"/>
+  </head>
+  
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo-container">
+        <mat-icon>balance</mat-icon>
+      </div>
+      <mat-nav-list class="menu">
+        <mat-expansion-panel [class.mat-elevation-z0]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Zakoni
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-nav-list>
+            <mat-list-item>
+                <app-link  text="~ Krivični zakon" source=""></app-link>
+              </mat-list-item>
+              <mat-list-item>
+                <app-link  text="~ Zakon o oružju" source=""></app-link>
+              </mat-list-item>
+          </mat-nav-list>
+        </mat-expansion-panel>
+    <hr>
+        <mat-expansion-panel [class.mat-elevation-z0]="true">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Presude
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+              <app-link text="K 454/2020" source=""></app-link>
+              <app-link text="K 567/2023" source=""></app-link>
+            </mat-nav-list>
+          </mat-expansion-panel>
+    <hr>
+      <mat-list-item>
+        <a source="new-case">Nov slučaj</a>
+      </mat-list-item>
+      <hr>
+      </mat-nav-list>
+    </div>
+  </div>
+  
