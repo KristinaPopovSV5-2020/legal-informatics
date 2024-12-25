@@ -1,0 +1,94 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+    <meta>
+    <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                    <FRBRdate date="2018-03-23">2018-03-23</FRBRdate>
+                    <FRBRtitle>K 130/2018</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+             <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica"/>
+                <TLCOrganization eId="osk" href="/ontology/organization/OsnovniSud.Kotor" showAs="Osnovni sud u Kotoru"/>
+
+                <TLCPerson eId="rcetkovic" href="/ontology/person/rcetkovic" showAs="Rade Ćetković"/>
+                <TLCPerson eId="ekraja" href="/ontology/person/ekraja" showAs="Edina Kraja"/>
+                <TLCPerson eId="dd" href="/ontology/person/dd" showAs="D. D."/>
+                <TLCPerson eId="jp" href="/ontology/person/jp" showAs="J. P."/>
+                <TLCPerson eId="zr" href="/ontology/person/zr" showAs="Z. R."/>
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+            </references>
+    </identification>
+    </meta>
+    </judgment>
+     <judgementBody>
+      <p>U IME CRNE GORE</p>
+      <introduction>
+      <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+            </organization>
+            , sudija pojedinac
+            <party id="rcetkovic" refersTo="#rcetkovic" as="#judge">
+                Rade Ćetković
+            </party>, uz učešće zapisničarke
+            <party id="ekraja" refersTo="#ekraja" as="#clerk">
+                Edine Kraje
+            </party>
+            , u krivičnom postupku protiv okrivljenog
+            <party id="dd" refersTo="#dd" as="#defendant">
+                D. D.
+            </party>
+            , zbog krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz čl.
+            <ref href="/krivicni#art_403_para_1">
+                403 st. 1 Krivičnog zakonika Crne Gore
+            </ref>, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanju
+krivice Kt. br. 223/18 od 16.03.2018. godine, zaključenog između državne tužiteljke
+            <party id="jp" refersTo="#jp" as="#prosecutor">
+                J. P.
+            </party>
+            , okrivljenog
+            <party id="dd" refersTo="#dd" as="#defendant">
+                D. D.
+            </party>
+            i njegovog branioca adv.
+                <party id="zr" refersTo="#zr" as="#defense">
+                    Z. R.
+                </party>
+                , dana 23.03.2018. godine donio je
+            </introduction>
+            <p>
+            P R E S U D U
+        </p>
+        <background>
+        Okrivljeni:
+        <party id="dd" refersTo="#dd" as ="#defendant">
+               D.D.
+        </party>
+        D. D., JMB ............., sa nadimkom D., od oca Ž. i majke M., rođene S., rođen .. .. .... godine u Pg. sa
+prebivalištem u Pg, ul. S. I. br. ., državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik,
+mašinbravar, oženjen, otac dvoje maloljetne djece, pismen, završio srednju školu, lošeg imovnog stanja,
+osuđivan presudom
+    <organization id="osk" refersTo="#osk">
+            Osnovnog suda u Kotoru
+    </organization>
+    <ref href="/cg/verdict/k/2016-01-27/204">
+             K. br. 204/15 od 27.01.2016. godine 
+    </ref>
+     zbog krivičnog djela
+nedozvoljeno držanje oružja i eksplozivnih materija iz
+<ref href="/krivicni#art_403_para_1">
+            čl. 403 st. 1 Krivičnog zakonika Crne Gore
+        </ref>
+        (novčana
+kazna), protiv kojeg se ne vodi postupak za drugo krivično djelo, u pritvoru po rješenju krivičnog vijeća
+</akomaNtoso>
+
