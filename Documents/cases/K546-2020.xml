@@ -1,8 +1,8 @@
-<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" 
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <judgment>
-    <meta>
-    <identification source="#court">
+        <meta>
+            <identification source="#court">
                 <FRBRWork>
                     <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
                     <FRBRdate date="2020-10-16">2020-10-16</FRBRdate>
@@ -10,459 +10,450 @@
                     <FRBRcountry>CG</FRBRcountry>
                 </FRBRWork>
             </identification>
-             <references>
-                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
-                <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica" showAs="Visi sud u Podgorici"/>
-                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica"/>
-                <TLCPerson eId="rcetkovic" href="/ontology/person/rcetkovic" showAs="Rade Ćetković"/>
-                <TLCPerson eId="ekraja" href="/ontology/person/ekraja" showAs="Edina Kraja"/>
-                 <TLCPerson eId="arakocevic" href="/ontology/person/arakocevic" showAs="Aleksandra Rakočević"/>
-                <TLCPerson eId="ik" href="/ontology/person/ik" showAs="I.K."/>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica"
+                    showAs="Osnovni sud u Podgorici" />
+                <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica"
+                    showAs="Visi sud u Podgorici" />
+                <TLCOrganization eId="odt"
+                    href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica"
+                    showAs="Osnovno državno tužilaštvo Podgorica" />
+                <TLCPerson eId="rcetkovic" href="/ontology/person/rcetkovic" showAs="Rade Ćetković" />
+                <TLCPerson eId="ekraja" href="/ontology/person/ekraja" showAs="Edina Kraja" />
+                <TLCPerson eId="arakocevic" href="/ontology/person/arakocevic"
+                    showAs="Aleksandra Rakočević" />
+                <TLCPerson eId="ik" href="/ontology/person/ik" showAs="I.K." />
                 <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
-				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
-				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
-				<TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
-				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
             </references>
-    </identification>
-    </meta>
+            </identification>
+        </meta>
     </judgment>
     <judgmentBody>
         <p>U IME CRNE GORE</p>
         <introduction>
-        <organization id="os" refersTo="#os">
-            Osnovni sud u Podgorici
-        </organization>
-        , po sudiji 
-        <party id="rcetkovic" refersTo="#rcetkovic" as="#judge">
-            Rade Ćetković
-        </party>
-        , uz učešće zapisničarke 
-        <party id="ekraja" refersTo="#ekraja" as="#clerk">
-            Edine Kraje
-        </party>
-        , u krivičnom postupku protiv okrivljenog 
-        <party id="ik" refersTo="#ik" as="#defendant">
-            I. K.
-        </party>
-        , zbog krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz
-        <ref href="/krivicni#art_403_para_2">
-            čl. 403 st. 2
-        </ref>
-        i 
-        <ref href="/krivicni#art_403_para_1">
-            st. 1 Krivičnog zakonika Crne Gore
-        </ref>
-        , nakon javnog glavnog pretresa održanog 
-        <date date="2020-10-14">14.10.2020.</date>
-        , u prisustvu zastupnice optužbe 
-        <party id="arakocevic" refersTo="#arakocevic" as="#prosecutor">
-            Aleksandre Rakočević
-        </party>
-        - savjetnice u 
-        <organization id="odt" refersTo="#odt">
-            Osnovnom državnom tužilaštvu u Podgorici
-        </organization>
-        , i okrivljenog, dana 
-        <date date="2020-10-16">16.10.2020.</date>
-        izrekao je i objavio.
-    </introduction>
-    <p>
-        P R E S U D U
-    </p>
-    <background>
-    Okrivljeni:
-    <party id="ik" refersTo="#ik" as ="#defendant">
-            I.K.
-    </party>
-    ., JMB xxxxxxxxxxxxx, od oca I. i majke M., rođene Z., rođen xx.xx.19xx. godine u Nikšiću, sa
-prebivalištem u Podgorici - Ul. XX c. b. xe, državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov
-jezik, penzioner, oženjen, otac dvoje djece, pismen, završio Fakultet političkih nauka i Fakultet istorije
-umjetnosti, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.
-    </background>
-     <decision>
-        <p>Kriv je</p>
-        <p>Što je: </p>
+            <organization id="os" refersTo="#os">
+                Osnovni sud u Podgorici
+            </organization> , po sudiji <party
+                id="rcetkovic" refersTo="#rcetkovic" as="#judge">
+                Rade Ćetković
+            </party> , uz učešće zapisničarke <party id="ekraja"
+                refersTo="#ekraja" as="#clerk">
+                Edine Kraje
+            </party> , u krivičnom postupku protiv okrivljenog <party
+                id="ik" refersTo="#ik" as="#defendant">
+                I. K.
+            </party> , zbog krivičnog djela nedozvoljeno držanje oružja i
+            eksplozivnih materija iz <ref href="/krivicni#art_403_para_2">
+                čl. 403 st. 2
+            </ref> i <ref href="/krivicni#art_403_para_1">
+                st. 1 Krivičnog zakonika Crne Gore
+            </ref> , nakon javnog glavnog
+            pretresa održanog <date date="2020-10-14">14.10.2020.</date> , u prisustvu zastupnice
+            optužbe <party id="arakocevic" refersTo="#arakocevic" as="#prosecutor">
+                Aleksandre Rakočević
+            </party> - savjetnice u <organization id="odt"
+                refersTo="#odt">
+                Osnovnom državnom tužilaštvu u Podgorici
+            </organization> , i
+            okrivljenog, dana <date date="2020-10-16">16.10.2020.</date> izrekao je i objavio. </introduction>
         <p>
-        Dana 16. juna 2020. godine, u Podgorici, u Ulici XX c. b. xe, u porodičnom stanu, svjestan svog djela čije je
-        izvršenje htio, znajući da je njegovo djelo zabranjeno, suprotno
-        <ref href="/oruzje#art_5_para_1"> 
-        čl. 5 st. 1 Zakona o oružju 
-        </ref>
-        neovlašćeno držao oružje kategorije "A" iz 
-        <ref href="/oruzje#art_4_para_2"> 
-        čl. 4 st. 2 tač. 2 Zakona o oružju
-        </ref>
-        i to automatski pištolj marke "CZ M 84" (tzv. Škorpion) kalibra 7,65 mm, fabričkog broja 10261 sa okvirom i četiri pripadajuća okvira, čije držanje je građanima zabranjeno, te je suprotno čl. 5 st. 2 i čl. 23 Zakona o oružju, neovlašćeno držao i vatreno oružje kategorije "B"
-        iz 
-        <ref href="/oruzje#art_4_para_3"> 
-        čl. 4 st. 3 tač. 8 Zakona o oružju
-        </ref>
-        - pušku - lovački karabin marke "TRZ - Čačak", model 48, kalibar 8 x 57 JS,
-        fabrički broj E5970070, bez odgovarajuće isprave izdate od strane nadležnog organa, u čemu je otkriven istog
-        dana prilikom pretresa izvršenog od strane policijskih službenika Uprave policije - CB Podgorica,
+            P R E S U D U
         </p>
-        <p>
-        - čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz 
-        <ref href="/krivicni#art_403_para_2"> 
-        čl. 403 st. 2 
-        </ref>
-        i
-        <ref href="/krivicni#art_403_para_1"> 
-        1 Krivičnog zakonika Crne Gore.
-        </ref>
-        </p>
-        <p>
-        Pa mu sud za navedeno krivično djelo primjenom 
-        <ref href="/krivicni#art_4_para_2"> 
-        čl. 4 st. 2,
-        </ref>
-        <ref href="/krivicni#art_42_para_1">  
-        čl. 42 st. 1, 
-        </ref>
-        <ref href="/krivicni#art_52_para_2"> 
-        čl. 52 st. 2,
-        </ref>
-        <ref href="/krivicni#art_53"> 
-        čl. 53 
-        </ref>
-        i 
-        <ref href="/krivicni#art_54"> 
-        čl. 54 Krivičnog zakonika Crne Gore
-        </ref>
-         i
-         <ref href="/krivicni#art_226"> 
-         čl. 226,
-         </ref>
-         <ref href="/krivicni#art_229"> 
-         čl. 229
-         </ref>
-         i
-         <ref href="/krivicni#art_374"> 
-         čl. 374 Zakonika o krivičnom postupku
-         </ref>
-         , izriče
-        </p>
-        <p>USLOVNU OSUDU</p>
-        <p>Kojom mu utvrđuje kaznu zatvora u trajanju od 6 (šest) mjeseci i istovremeno određuje da se ona neće
-        izvršiti, ako okrivljeni u roku od 2 (dvije) godine po pravosnažnosti presude ne učini novo krivično djelo.</p>
-        <p>
-        Na osnovu 
-        <ref href="/krivicni#art_75"> 
-        čl. 75 Krivičnog zakonika Crne Gore
-        </ref>
-        prema okrivljenom se izriče:
-        </p>
-        <p>MJERA BEZBJEDNOSTI</p>
-        <p>ODUZIMANJE PREDMETA</p>
-        <p>
-        Oduzima se od okrivljenog automatski pištolj marke "CZ M 84", kalibra 7,65 mm, fabričkog broja 10261 sa
-        okvirom i četiri pripadajuća okvira i puška - lovački karabin marke "TRZ - Čačak", model 48, kalibra 8 x 57 JS,
-        fabričkog broja E5970070, kao predmeti upotrijebljeni u izvršenju krivičnog djela.
-        </p>
-        <p>
-        Obavezuje se okrivljeni da plati na ime troškova krivičnog postupka iznos od 50,00 €, u roku od 15 dana po
-        pravosnažnosti presude, pod prijetnjom izvršenja.
-        </p>
-    </decision>
-    <arguments>
-    <p>O b r a z l o ž e nj e</p>
-        <p>
-        Okrivljenom
-        <party id="ik" refersTo="#ik" as ="#defendant">
-            I.K.
-        </party>
-        je optužnim predlogom 
-        <organization id="odt" refersTo="#odt">
-         Osnovnog državnog tužilaštva u Podgorici
-        </organization>
-        <ref href="/cg/verdict/k/2020-07-07/972">
-        Kt. br. 972/20 od 07.07.2020. godine
-        </ref>
-        stavljeno na teret krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz
-        <ref href="/krivicni#art_403_para_2">  
-            čl.403 st. 2
-        </ref>
-         i
-        <ref href="/krivicni#art_403_para_1"> 
-         1 Krivičnog zakonika Crne Gore
-        </ref>
-        . Zastupnica optužbe je u završnoj riječi ostala pri optužnom predlogu i predložila sudu da okrivljenog oglasi krivim i da ga osudi po zakonu te da mu izrekne mjeru
-        bezbjednosti oduzimanje predmeta.
-        </p>
-        <p>
-        Okrivljeni je u odbrani datoj u izviđaju i na glavnom pretresu saglasno u bitnom naveo da je automatski
-        pištolj marke "Škorpion" donio u Crnu Goru 23.05.1991. godine, kao uspomenu, odnosno ratni trofej, kada su
-        se povlačili iz Hrvatske, jer mu je ovo oružje u ratu koji se vodio na području Hrvatske spasilo život. Dozvolu
-        za taj pištolj je u tom periodu potpisao general S. M., zamjenik načelnika Generalštaba Vojske Jugoslavije.
-        Prilikom pretresanja njegovog stanja, koje je on tražio, osim ovog "Škorpiona", pronađeno je i pet rednika koji
-        su pripadali ovom oružju. Takođe, kod njega je pronađena i puška karabin, koju je zajedno sa ostalim
-        starješinama koji su tada obavljali dužnost u kasarni u Maslinama, odnosno u Vojsci Jugoslavije, legalno
-        kupio, odnosno uz dozvolu koju je takođe izdala Vojska tadašnje Jugoslavije, a imao je dozvolu za nošenje i
-        držanje predmetne puške. Kada se interesovao za dobijanje dozvole za posjednovanje, odnosno držnje
-        predmetnog karabina, saopšteno mu je da postoji određena procedura koja podrazumijeva učlanjivanje u
-        Lovačko društvo i uplatu velikog iznosa novca, a sve u cilju kako bi se dobila dozvola, što je njemu
-        predstavljalo veliki izdatak iz kojih razloga predmetnu dozvolu nije izvadio. Na glavnom pretresu je dodao da
-        predmetni pištolj marke "Škorpion" ima za njega emocionalnu vrijednost i od generala M. je kao vojno lice
-        dobio dozvolu za taj škorpion, ali ne zna gdje se ta dozvola nalazi, dok posjeduje dozvolu za predmetni
-        karabin. Kada je prestao sa aktivnom vojnom službom, predmetni škorpion i karabin nije prijavio nadležnom
-        MUP-u radi dobijanja oružnog lista. Ustari, karabin je prijavljen, ali imajući u vidu novac koji je bilo potrebno
-        platiti za dobijanje oružnog lista, a koji on nije imao, odustao je od toga. U završnoj riječi je naveo da smatra
-        da je kriv zato što nije izvadio odgovarajuću ispravu o oružju kod nadležnog organa, a to nije učinio iz
-        finansijskih razloga i nije imao namjeru da bilo koga ugrozi niti je imao municiju pa je smatrao da mu
-        predmetne dozvole neće biti neophodne.
-        </p>
-        <p>
-        Sud je u dokaznom postupku pročitao zapisnik o pretresanju stana i drugih prostorija Ku. br. 778/20 od
-        17.06.2020. godine, potvrdu UP CB Podgorica o privremeno oduzetim predmetima Ku. br. 778/20 od
-        17.06.2020. godine, izvršio uvid u dokumentaciju UP CB Podgorica broj 17/03-4-1000/1038 od 16.06.2020.
-        godine, na saglasan predlog stranaka pročitao izvještaj o balističkom vještačenju Forenzičkog centra u
-        Danilovgradu br. 1599/20 od 01.07.2020. godine, pročitao dozvolu broj 001813 od 05.11.1997. godine te
-        pročitao izvod iz registra kaznenih evidencija Ministarstva pravde KE 1325/2020 od 08.07.2020. godine.
-        </p>
-        <p>
-        Iz zapisnika UP CB Podgorica o pretresanju stana i drugih prostorija Ku. br. 778/20 od 17.06.2020. godine
-        proizilazi da su ovlašćeni policijski službenici dana 16.06.2020. godine, prilikom pretresnja porodičnog stana
-        <party id="ik" refersTo="#ik" as ="#defendant">
-            I.K.
-        </party>
-        , u Podgorici, u Ul. II crnogorskog bataljona, a koje pretresanje je izvršeno bez naredbe suda zbog toga što
-        je držalac stana to tražio, u prisustvu dva svjedoka, pronašli automatski pištolj "Škorpion", crne boje marke
-        "Zastava", kal. 7,65 mm, sa okvirom bez municije i četiri rezervna okvira bez municije, broj pištolja 10261;
-        pušku karabin, kalibra 7,9 mm, broj E5970070, bez municije i oružnog lista; vazdušnu pušku, kalibra 4,5 mm,
-        marke "Slavija" br. 76425. Zapisnik je potpisan od strane držaoca stana i prisutnih građana bez prigovora.
-        </p>
-        <p>
-        Iz potvrde UP CB Podgorica o privremeno oduzetim predmetima Ku. br. 778/20 od 17.06.2020. godine
-        proizlazi da je policijski službenik, dana 16.06.2020. godine, od
-        <party id="ik" refersTo="#ik" as ="#defendant">
-            I.K.
-        </party>
-         privremeno oduzeo automatski pištolj
-        "Škorpion" Zastava, kal. 7,65 mm, broj 10261; pušku karabin, kal. 7,9 mm, broj E5970070 i vazdušnu pušku,
-        kalibra 4,5 mm, marke "Slavija" br. 76425.
-        </p>
-        <p>
-        Iz dokumentacije UP CB Podgorica broj 17/03-4-1000/1038 od 16.06.2020. godine proizilazi da je ista
-        sačinjena prilikom pretresa stana i drugih prostorija koje koristi okrivljeni
-        <party id="ik" refersTo="#ik" as ="#defendant">
-            I.K.
-        </party>
-        , a na 20 fotografija je predstavljen izgled zgrade i stana, kao i izgled pronađenog oružja. Iz izvještaja o balističkom vještačenju 
-        Forenzičkog centra u Danilovgradu br. 1599/20 od 01.07.2020. godine,
-        proizilazi da su predmetni lovački karabin i automatski pištolj ispravni, te da je iz predmetnog lovačkog
-        karabina pucano, nakon čega njegova cijev nije čišćena ni podmazivana, dok je cijev predmetnog
-        automatskog pištolja nakon poslednjeg pucanja čišćena - podmazivana. Okviri za municiju - četiri komada,
-        odgovarajući su za predmetni automatski pištolj.
-        </p>
-        <p>
-        Iz dozvole broj 001813 od 05.11.1997. godine, proizilazi da je
-        <party id="ik" refersTo="#ik" as ="#defendant">
-            I.K.
-        </party>
-         na osnovu Odluke Saveznog ministra za
-        odbranu izdata dozvola za lovački karabin 8x57 JS, model TRZČ M-48, fabričkog broja E-5970070, a koja
-        dozvola služi kao dokument o pravu posjedovanja i nošenja lovačkog karabina i obavezno se nosi uz karabin i
-        važi uz vojnu legitimaciju, te da je prilikom prestanka aktivne vojne službe profesionalni oficir i podoficir
-        obavezan da lovački karabin prijavi nadležnom MUP-u radi dobijanja oružnog lista.
-        </p>
-        <p>
-        Nakon savjesne ocjene svakog dokaza pojedinačno i svih dokaza zajedno, dovodeći ih u vezu sa odbranom
-        okrivljenog, nesumnjivo je utvrđeno da je okrivljeni dana 16. juna 2020. godine, u Podgorici, u Ulici XX c. b. xe,
-        u porodičnom stanu, suprotno 
-        <ref href="/oruzje#art_5_para_1">  
-        čl. 5 st. 1 Zakona o oružju
-        </ref>
-        neovlašćeno držao oružje kategorije "A" iz 
-        <ref href="/oruzje#art_4_para_2">  
-        čl. 4 st. 2 tač. 2 Zakona o oružju
-        </ref>
-        i to automatski pištolj marke "CZ M 84" (tzv. Škorpion) kalibra 7,65 mm, fabričkog broja
-        10261 sa okvirom i četiri pripadajuća okvira, čije držanje je građanima zabranjeno, te je suprotno
-        <ref href="/oruzje#art_5_para_2">   
-        čl. 5 st. 2 
-        </ref>
-        i 
-        <ref href="/oruzje#art_23">  
-        čl. 23 Zakona o oružju
-        </ref>
-        , neovlašćeno držao vatreno oružje kategorije "B" iz
-        <ref href="/oruzje#art_4_para_3">   
-        čl. 4 st. 3 tač. 8 Zakona o oružju
-        </ref>
-        - pušku - lovački karabin marke "TRZ - Čačak", model 48, kalibar 8 x 57 JS, fabrički broj E5970070, bez
-        odgovarajuće isprave izdate od strane nadležnog organa, u čemu je otkriven istog dana prilikom pretresa
-        izvršenog od strane policijskih službenika Uprave policije - CB Podgorica.
-        </p>
-        <p>
-        Činjenično stanje je utvrđeno prvenstveno iz odbrane okrivljenog koji nije sporio da je dana 16.06.2020.
-        godine, u svom porodičnom stanu, koji se nalazi u Podgorici, u Ulici XX c. b., držao automatski pištolj marke
-        "CZ M84", tzv. Škorpion i pet rednika koji su pripadali ovom oružju, kao i lovačku pušku - karabin, a za koje
-        nije imao odgovarajuće isprave izdate od strane nadležnog organa, odnosno oružne listove. Odbranu
-        okrivljenog, koja po nalaženju suda ima karakter priznanja, sud je prihvatio, ocijenivši da je istinita, jer je
-        potvrđena svim materijalnim dokazima, odnosno zapisnikom o pretresanju stana i drugih prostorija iz kojeg
-        je utvrđeno da su ovlašćeni policijski službenici dana 16.06.2020. godine, prilikom pretresanja porodičnog
-        stana okrivljenog, u Podgorici, u Ul. XX c. b., pronašli automatski pištolj "Škorpion", crne boje marke
-        "Zastava", kal. 7,65 mm, sa okvirom bez municije i četiri rezervna okvira za isti, broj 10261 i pušku - lovački
-        karabin, kalibra 7,9 mm, broj E5970070, bez municije i oružnog lista, koji su privremeno oduzeti od
-        okrivljenog o čemu je izdata potvrda o privremenom oduzimanju predmeta, a prilikom čijeg pronalaska i
-        oduzimanja je sačinjena i fotodokumentacija u koju je sud izvršio uvid. Sud je u potpunosti prihvatio sadržinu
-        navedenih materijalnih dokaza, budući da stranke na istu nisu imale bilo kakvih primjedbi niti je dovedena u
-        sumnju drugim izvedenim dokazima, tako da je po ocjeni suda ista vjerodostojna. Iz izvještaja o balističkom
-        vještačenju Forenzičkog centra u Danilovgradu br. 1599/20 od 01.07.2020. godine je utvrđeno da su
-        predmetni lovački karabin i automatski pištolj ispravni, te da četiri komada okvira za municiju odgovaraju
-        predmetnom automatskom pištolju. Navedeni izvještaj sud je prihvatio, ocijenivši da je potpun, jasan i
-        logičan, pritom posebno uzimajući u obzir da stranke na isti nisu imale primjedbi.
-        </p>
-        <p>
-        <ref href="/oruzje#art_5_para_1">  
-        Članom 5 st. 1 Zakona o oružju
-        </ref>
-        je između ostalog propisano da je zabranjena nabavka, držanje i nošenje
-        oružja i municije kategorije A, dok je
-        <ref href="/oruzje#art_4_para_2_point_2">   
-        članom 4 st. 2 tač. 2 istog zakona
-        </ref>
-        propisano da je oružje kategorije A i automatsko vatreno oružje.
-        </p>
-        <p>
-        <ref href="/oruzje#art_5_para_2">  
-        Članom 5 st. 2 Zakona o oružju
-        </ref>
-        je propisano da je dozvoljena nabavka, držanje, nošenje i prenošenje oružja i
-        municije, oružja kategorije B za koje je izdata odgovarajuća isprava o oružju, u skladu sa ovim zakonom.
-        <ref href="/oruzje#art_23_para_1">  
-        Članom 23 st. 1 istog zakona
-        </ref>
-        , između ostalog je propisano da za oružje koje je nabavljeno na osnovu
-        odobrenja za nabavku oružja fizičko lice podnosi zahtjev za izdavanje oružnog lista za držanje oružja,
-        odnosno oružnog lista za držanje i nošenje oružja, Ministarstvu u mjestu prebivališta ili boravišta, u roku od
-        osam dana od dana nabavke, dok je 
-        <ref href="/oruzje#art_23_para_2">  
-        stavom 2 istog člana
-        </ref>
-        propisano da se oružni list za držanje oružja kategorije B izdaje fizičkom licu za oružje za ličnu bezbjednost, oružni list za držanje i nošenje oružja za
-        lovačko i sportsko oružje, a pravnom licu odobrenje za držanje oružja, na propisanom obrascu.
-        <ref href="/oruzje#art_4_para_3_point_8">   
-        Članom 4 st. 3 tač. 8 Zakona o oružju
-        </ref>
-        je propisano da je oružje kategorije B dugo vatreno oružje za jedinačnu paljbu sa
-        jednom ili više užlijebljenih cijevi.
-        </p>
-        <p>
-        Time što je u svom stanu držao predmetni automatski pištolj, kao i lovački karabin za koji nije imao izdat
-        oružni list, okrivljeni je prekršio citirane zakonske propise.
-        </p>
-        <p>
-        Cijeneći subjektivni odnos okrivljenog prema izvršenom djelu, sud nalazi da je okrivljeni postupajući na
-        prethodno opisani način, bio svjestan da neovlašćeno drži automatski pištolj marke "CZ M 84" (tzv. Škorpion)
-        sa okvirom i četiri pripadajuća okvira, koji je automatsko vatreno oružje, a čije držanje je građanima
-        zabranjeno, kao i da bez odgovarajuće isprave izdate od strane nadležnog organa neovlašćeno drži pušku -
-        lovački karabin marke "TRZ - Čačak", model 48, kalibar 8 x 57 JS, fabrički broj E5970070, pa je samim tim bio
-        svjestan da time čini krivično djelo, što je i htio, postupajući tako sa direktnim umišljajem. Time su u
-        radnjama okrivljenog pored objektivnih ostvareni i subjektivni elementi bića krivičnog djela nedozvoljeno
-        držanje oružja i eksplozivnih materija 
-        <ref href="/krivicni#art_403_para_2">  
-        iz čl. 403 st. 2
-        </ref>
-        i
-        <ref href="/krivicni#art_403_para_1">  
-        1 Krivičnog zakonika Crne Gore.
-        </ref>
-        </p>
-        <p>
-        Sud je cijenio i navode odbrane okrivljenog da posjeduje dozvolu za držanje poredmetne puške - lovačkog
-        karabina, a u koju dozvolu broj 001813 od 05.11.1997. godine je sud na glavnom pretresu i izvršio uvid.
-        Međutim, imajući u vidu da je iz predmetne dozvole utvrđeno da ista služi kao dokument o pravu
-        posjedovanja i nošenja lovačkog karabina i da se obavezno nosi uz karabin i važi uz vojnu legitimaciju, a da je
-        iz odbrane okrivljenog utvrđeno da je isti od 2000. godine u invalidskoj penziji, te da samim tim više ne
-        posjeduje vojnu legtimaciju, to po ocjeni suda, okrivljenom nije moglo ostati nepoznato da predmetna
-        dozvola više nije validna. Takođe, imajući u vidu da je iz predmetne dozvole utvrđeno i da je prilikom
-        prestanka aktivne vojne službe profesionalni oficir i podoficir obavezan da lovački karabin prijavi nadležnom
-        MUP-u radi dobijanja oružnog lista, a da je 
-        <ref href="/oruzje#art_23_para_1">  
-        članom 23 st. 1 Zakona o oružju
-        </ref>
-        , između ostalog propisano da za
-        oružje koje je nabavljeno na osnovu odobrenja za nabavku oružja fizičko lice podnosi zahtjev za izdavanje
-        oružnog lista za držanje oružja, odnosno oružnog lista za držanje i nošenje oružja, Ministarstvu u mjestu
-        prebivališta ili boravišta, to se navedena dozvola ne može smatrati odgovarajućom ispravom izdatom od
-        strane nadležnog organa u smislu 
-        <ref href="/oruzje#art_23_para_2">  
-        čl. 23 st. 2 Zakona o oružju
-        </ref>
-        . Stoga predmetna dozvola nije bila od uticaja na drukčije presuđenje.
-        </p>
-        <p>
-        Prilikom odlučivanja o krivičnoj sankciji, sud je u smislu
-        <ref href="/krivicni#art_42_para_1">   
-        čl. 42 st. 1 Krivičnog zakonika Crne Gore 
-        </ref>
-        cijenio sve okolnosti koje utiču na njen izbor i visinu, pa je od olakšavajućih okolnosti na strani okrivljenog cijenio
-        njegove lične prilike, odnosno da je riječ o licu koje je starije životne dobi (67 godina) i porodičnom čovjeku
-        koji je oženjen i otac dvoje djece, njegov raniji život i s tim u vezi neosuđivanost, koja je utvrđena iz izvoda iz
-        registra kaznenih evidencija Ministarstva pravde KE 1325/2020 od 08.07.2020. godine, dok otežavajućih
-        okolnosti nije bilo. Cijeneći navedene olakšavajuće okolnosti, sud je okrivljenom shodno
-        <ref href="/krivicni#art_53">  
-        čl. 53
-        </ref>
-        i 
-        <ref href="/krivicni#art_54"> 
-        čl. 54 Krivičnog zakonika Crne Gore
-        </ref>
-        izrekao uslovnu osudu, kao u izreci presude, nalazeći da prema okrivljenom
-        nije nužno primijeniti kaznu radi krivičnopravne zaštite, jer se može očekivati da će se i upozorenjem uz
-        prijetnju kaznom zatvora u trajanju od šest mjeseci i vremenom provjeravanja u periodu od dvije godine, na
-        okrivljenog u dovoljnoj mjeri uticati da ubuduće ne vrši krivična djela. Ovo iz razloga što se i iz njegovog
-        ranijeg života može zaključiti da on nije osoba koja je sklona vršenju krivičnih djela. Time će se uspješno
-        ostvariti svrha uslovne osude iz
-        <ref href="/krivicni#art_52_para_2"> 
-        čl. 52 st. 2 Krivičnog zakonika Crne Gore
-        </ref>
-        , a u okviru opšte svrhe propisivanja i izricanja krivičnih sankcija iz
-        <ref href="/krivicni#art_4_para_2"> 
-        čl. 4 st. 2 Krivičnog zakonika Crne Gore.
-        </ref>
-        </p>
-        <p>
-        Na osnovu 
-        <ref href="/krivicni#art_75"> 
-        čl. 75 Krivičnog zakonika Crne Gore
-        </ref>
-        , sud je okrivljenom izrekao mjeru bezbjednosti oduzimanje
-        predmeta, odnosno automatskog pištolja marke "CZ M 84", kalibra 7,65 mm, fabričkog broja 10261 sa
-        okvirom i četiri pripadajuća okvira i puške - lovačkog karabina marke "TRZ - Čačak", model 48, kalibra 8 x 57
-        JS, fabričkog broja E5970070, s obzirom na to da se radi o predmetima upotrijebljenim u izvršenju krivičnog
-        djela.
-        </p>
-        <p>
-        Imajući u vidu da je okrivljeni oglašen krivim, sud ga je shodno
-        <ref href="/krivicni#art_226"> 
-        čl. 226
-        </ref>
-        i
-        <ref href="/krivicni#art_229"> 
-        čl. 229 Zakonika o krivičnom postupku
-        </ref>
-        , obavezao da na ime troškova krivičnog postupka plati iznos od 50,00 eura, koji iznos se odnosi na
-        ime paušalnih troškova i određen je prema trajanju i složenosti postupka i imovnom stanju okrivljenog.
-        </p>
-        <p>
-        Na osnovu navedenog, shodno
-        <ref href="/krivicni#art_374"> 
-        čl. 374 Zakonika o krivičnom postupku
-        </ref>
-        , odlučeno je kao u izreci presude.
-        </p>
-    </arguments>
+        <background> Okrivljeni: <party id="ik" refersTo="#ik" as="#defendant">
+                I.K.
+            </party> ., JMB xxxxxxxxxxxxx, od oca I. i majke M., rođene Z.,
+            rođen xx.xx.19xx. godine u Nikšiću, sa prebivalištem u Podgorici - Ul. XX c. b. xe,
+            državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, penzioner,
+            oženjen, otac dvoje djece, pismen, završio Fakultet političkih nauka i Fakultet istorije
+            umjetnosti, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postupak za
+            drugo krivično djelo. </background>
+        <decision>
+            <p>Kriv je</p>
+            <p>Što je: </p>
+            <p> Dana 16. juna 2020. godine, u Podgorici, u Ulici XX c. b. xe, u porodičnom stanu,
+                svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno,
+                suprotno <ref href="/oruzje#art_5_para_1">
+                    čl. 5 st. 1 Zakona o oružju
+                </ref> neovlašćeno držao oružje
+                kategorije "A" iz <ref href="/oruzje#art_4_para_2">
+                    čl. 4 st. 2 tač. 2 Zakona o oružju
+                </ref> i to automatski pištolj
+                marke "CZ M 84" (tzv. Škorpion) kalibra 7,65 mm, fabričkog broja 10261 sa okvirom i
+                četiri pripadajuća okvira, čije držanje je građanima zabranjeno, te je suprotno čl.
+                5 st. 2 i čl. 23 Zakona o oružju, neovlašćeno držao i vatreno oružje kategorije "B"
+                iz <ref href="/oruzje#art_4_para_3">
+                    čl. 4 st. 3 tač. 8 Zakona o oružju
+                </ref> - pušku - lovački
+                karabin marke "TRZ - Čačak", model 48, kalibar 8 x 57 JS, fabrički broj E5970070,
+                bez odgovarajuće isprave izdate od strane nadležnog organa, u čemu je otkriven istog
+                dana prilikom pretresa izvršenog od strane policijskih službenika Uprave policije -
+                CB Podgorica, </p>
+            <p> - čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija
+                iz <ref href="/krivicni#art_403_para_2">
+                    čl. 403 st. 2
+                </ref> i <ref href="/krivicni#art_403_para_1">
+                    1 Krivičnog zakonika Crne Gore.
+                </ref>
+            </p>
+            <p> Pa mu sud za navedeno krivično djelo primjenom <ref href="/krivicni#art_4_para_2">
+                čl. 4 st. 2,
+                </ref>
+        <ref href="/krivicni#art_42_para_1">
+                    čl. 42 st. 1,
+                </ref>
+        <ref href="/krivicni#art_52_para_2">
+                    čl. 52 st. 2,
+                </ref>
+        <ref href="/krivicni#art_53">
+                    čl. 53
+                </ref> i <ref href="/krivicni#art_54">
+                    čl. 54 Krivičnog zakonika Crne Gore
+                </ref> i <ref
+                    href="/krivicni#art_226">
+                    čl. 226,
+                </ref>
+         <ref href="/krivicni#art_229">
+                    čl. 229
+                </ref> i <ref href="/krivicni#art_374">
+                    čl. 374 Zakonika o krivičnom postupku
+                </ref> , izriče </p>
+            <p>USLOVNU OSUDU</p>
+            <p>Kojom mu utvrđuje kaznu zatvora u trajanju od 6 (šest) mjeseci i istovremeno određuje
+                da se ona neće
+                izvršiti, ako okrivljeni u roku od 2 (dvije) godine po pravosnažnosti presude ne
+                učini novo krivično djelo.</p>
+            <p> Na osnovu <ref href="/krivicni#art_75">
+                    čl. 75 Krivičnog zakonika Crne Gore
+                </ref> prema okrivljenom se
+                izriče: </p>
+            <p>MJERA BEZBJEDNOSTI</p>
+            <p>ODUZIMANJE PREDMETA</p>
+            <p>
+                Oduzima se od okrivljenog automatski pištolj marke "CZ M 84", kalibra 7,65 mm,
+                fabričkog broja 10261 sa
+                okvirom i četiri pripadajuća okvira i puška - lovački karabin marke "TRZ - Čačak",
+                model 48, kalibra 8 x 57 JS,
+                fabričkog broja E5970070, kao predmeti upotrijebljeni u izvršenju krivičnog djela.
+            </p>
+            <p>
+                Obavezuje se okrivljeni da plati na ime troškova krivičnog postupka iznos od 50,00
+                €, u roku od 15 dana po
+                pravosnažnosti presude, pod prijetnjom izvršenja.
+            </p>
+        </decision>
+        <arguments>
+            <p>O b r a z l o ž e nj e</p>
+            <p> Okrivljenom <party id="ik" refersTo="#ik" as="#defendant">
+                    I.K.
+                </party> je optužnim predlogom <organization id="odt"
+                    refersTo="#odt">
+                    Osnovnog državnog tužilaštva u Podgorici
+                </organization>
+        <ref
+                    href="/cg/verdict/k/2020-07-07/972">
+                    Kt. br. 972/20 od 07.07.2020. godine
+                </ref> stavljeno na teret
+                krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                    href="/krivicni#art_403_para_2">
+                    čl.403 st. 2
+                </ref> i <ref href="/krivicni#art_403_para_1">
+                    1 Krivičnog zakonika Crne Gore
+                </ref> . Zastupnica optužbe je u
+                završnoj riječi ostala pri optužnom predlogu i predložila sudu da okrivljenog oglasi
+                krivim i da ga osudi po zakonu te da mu izrekne mjeru bezbjednosti oduzimanje
+                predmeta. </p>
+            <p>
+                Okrivljeni je u odbrani datoj u izviđaju i na glavnom pretresu saglasno u bitnom
+                naveo da je automatski
+                pištolj marke "Škorpion" donio u Crnu Goru 23.05.1991. godine, kao uspomenu, odnosno
+                ratni trofej, kada su
+                se povlačili iz Hrvatske, jer mu je ovo oružje u ratu koji se vodio na području
+                Hrvatske spasilo život. Dozvolu
+                za taj pištolj je u tom periodu potpisao general S. M., zamjenik načelnika
+                Generalštaba Vojske Jugoslavije.
+                Prilikom pretresanja njegovog stanja, koje je on tražio, osim ovog "Škorpiona",
+                pronađeno je i pet rednika koji
+                su pripadali ovom oružju. Takođe, kod njega je pronađena i puška karabin, koju je
+                zajedno sa ostalim
+                starješinama koji su tada obavljali dužnost u kasarni u Maslinama, odnosno u Vojsci
+                Jugoslavije, legalno
+                kupio, odnosno uz dozvolu koju je takođe izdala Vojska tadašnje Jugoslavije, a imao
+                je dozvolu za nošenje i
+                držanje predmetne puške. Kada se interesovao za dobijanje dozvole za posjednovanje,
+                odnosno držnje
+                predmetnog karabina, saopšteno mu je da postoji određena procedura koja
+                podrazumijeva učlanjivanje u
+                Lovačko društvo i uplatu velikog iznosa novca, a sve u cilju kako bi se dobila
+                dozvola, što je njemu
+                predstavljalo veliki izdatak iz kojih razloga predmetnu dozvolu nije izvadio. Na
+                glavnom pretresu je dodao da
+                predmetni pištolj marke "Škorpion" ima za njega emocionalnu vrijednost i od generala
+                M. je kao vojno lice
+                dobio dozvolu za taj škorpion, ali ne zna gdje se ta dozvola nalazi, dok posjeduje
+                dozvolu za predmetni
+                karabin. Kada je prestao sa aktivnom vojnom službom, predmetni škorpion i karabin
+                nije prijavio nadležnom
+                MUP-u radi dobijanja oružnog lista. Ustari, karabin je prijavljen, ali imajući u
+                vidu novac koji je bilo potrebno
+                platiti za dobijanje oružnog lista, a koji on nije imao, odustao je od toga. U
+                završnoj riječi je naveo da smatra
+                da je kriv zato što nije izvadio odgovarajuću ispravu o oružju kod nadležnog organa,
+                a to nije učinio iz
+                finansijskih razloga i nije imao namjeru da bilo koga ugrozi niti je imao municiju
+                pa je smatrao da mu
+                predmetne dozvole neće biti neophodne.
+            </p>
+            <p>
+                Sud je u dokaznom postupku pročitao zapisnik o pretresanju stana i drugih prostorija
+                Ku. br. 778/20 od
+                17.06.2020. godine, potvrdu UP CB Podgorica o privremeno oduzetim predmetima Ku. br.
+                778/20 od
+                17.06.2020. godine, izvršio uvid u dokumentaciju UP CB Podgorica broj
+                17/03-4-1000/1038 od 16.06.2020.
+                godine, na saglasan predlog stranaka pročitao izvještaj o balističkom vještačenju
+                Forenzičkog centra u
+                Danilovgradu br. 1599/20 od 01.07.2020. godine, pročitao dozvolu broj 001813 od
+                05.11.1997. godine te
+                pročitao izvod iz registra kaznenih evidencija Ministarstva pravde KE 1325/2020 od
+                08.07.2020. godine.
+            </p>
+            <p> Iz zapisnika UP CB Podgorica o pretresanju stana i drugih prostorija Ku. br. 778/20
+                od 17.06.2020. godine proizilazi da su ovlašćeni policijski službenici dana
+                16.06.2020. godine, prilikom pretresnja porodičnog stana <party id="ik"
+                    refersTo="#ik" as="#defendant">
+                    I.K.
+                </party> , u Podgorici, u Ul. II crnogorskog bataljona, a
+                koje pretresanje je izvršeno bez naredbe suda zbog toga što je držalac stana to
+                tražio, u prisustvu dva svjedoka, pronašli automatski pištolj "Škorpion", crne boje
+                marke "Zastava", kal. 7,65 mm, sa okvirom bez municije i četiri rezervna okvira bez
+                municije, broj pištolja 10261; pušku karabin, kalibra 7,9 mm, broj E5970070, bez
+                municije i oružnog lista; vazdušnu pušku, kalibra 4,5 mm, marke "Slavija" br. 76425.
+                Zapisnik je potpisan od strane držaoca stana i prisutnih građana bez prigovora. </p>
+            <p> Iz potvrde UP CB Podgorica o privremeno oduzetim predmetima Ku. br. 778/20 od
+                17.06.2020. godine proizlazi da je policijski službenik, dana 16.06.2020. godine, od <party
+                    id="ik" refersTo="#ik" as="#defendant">
+                    I.K.
+                </party> privremeno oduzeo automatski pištolj "Škorpion"
+                Zastava, kal. 7,65 mm, broj 10261; pušku karabin, kal. 7,9 mm, broj E5970070 i
+                vazdušnu pušku, kalibra 4,5 mm, marke "Slavija" br. 76425. </p>
+            <p> Iz dokumentacije UP CB Podgorica broj 17/03-4-1000/1038 od 16.06.2020. godine
+                proizilazi da je ista sačinjena prilikom pretresa stana i drugih prostorija koje
+                koristi okrivljeni <party id="ik" refersTo="#ik" as="#defendant">
+                    I.K.
+                </party> , a na 20 fotografija je predstavljen izgled
+                zgrade i stana, kao i izgled pronađenog oružja. Iz izvještaja o balističkom
+                vještačenju Forenzičkog centra u Danilovgradu br. 1599/20 od 01.07.2020. godine,
+                proizilazi da su predmetni lovački karabin i automatski pištolj ispravni, te da je
+                iz predmetnog lovačkog karabina pucano, nakon čega njegova cijev nije čišćena ni
+                podmazivana, dok je cijev predmetnog automatskog pištolja nakon poslednjeg pucanja
+                čišćena - podmazivana. Okviri za municiju - četiri komada, odgovarajući su za
+                predmetni automatski pištolj. </p>
+            <p> Iz dozvole broj 001813 od 05.11.1997. godine, proizilazi da je <party id="ik"
+                    refersTo="#ik" as="#defendant">
+                    I.K.
+                </party> na osnovu Odluke Saveznog ministra za odbranu
+                izdata dozvola za lovački karabin 8x57 JS, model TRZČ M-48, fabričkog broja
+                E-5970070, a koja dozvola služi kao dokument o pravu posjedovanja i nošenja lovačkog
+                karabina i obavezno se nosi uz karabin i važi uz vojnu legitimaciju, te da je
+                prilikom prestanka aktivne vojne službe profesionalni oficir i podoficir obavezan da
+                lovački karabin prijavi nadležnom MUP-u radi dobijanja oružnog lista. </p>
+            <p> Nakon savjesne ocjene svakog dokaza pojedinačno i svih dokaza zajedno, dovodeći ih u
+                vezu sa odbranom okrivljenog, nesumnjivo je utvrđeno da je okrivljeni dana 16. juna
+                2020. godine, u Podgorici, u Ulici XX c. b. xe, u porodičnom stanu, suprotno <ref
+                    href="/oruzje#art_5_para_1">
+                    čl. 5 st. 1 Zakona o oružju
+                </ref> neovlašćeno držao oružje
+                kategorije "A" iz <ref href="/oruzje#art_4_para_2">
+                    čl. 4 st. 2 tač. 2 Zakona o oružju
+                </ref> i to automatski pištolj
+                marke "CZ M 84" (tzv. Škorpion) kalibra 7,65 mm, fabričkog broja 10261 sa okvirom i
+                četiri pripadajuća okvira, čije držanje je građanima zabranjeno, te je suprotno <ref
+                    href="/oruzje#art_5_para_2">
+                    čl. 5 st. 2
+                </ref> i <ref href="/oruzje#art_23">
+                    čl. 23 Zakona o oružju
+                </ref> , neovlašćeno držao vatreno oružje
+                kategorije "B" iz <ref href="/oruzje#art_4_para_3">
+                    čl. 4 st. 3 tač. 8 Zakona o oružju
+                </ref> - pušku - lovački
+                karabin marke "TRZ - Čačak", model 48, kalibar 8 x 57 JS, fabrički broj E5970070,
+                bez odgovarajuće isprave izdate od strane nadležnog organa, u čemu je otkriven istog
+                dana prilikom pretresa izvršenog od strane policijskih službenika Uprave policije -
+                CB Podgorica. </p>
+            <p>
+                Činjenično stanje je utvrđeno prvenstveno iz odbrane okrivljenog koji nije sporio da
+                je dana 16.06.2020.
+                godine, u svom porodičnom stanu, koji se nalazi u Podgorici, u Ulici XX c. b., držao
+                automatski pištolj marke
+                "CZ M84", tzv. Škorpion i pet rednika koji su pripadali ovom oružju, kao i lovačku
+                pušku - karabin, a za koje
+                nije imao odgovarajuće isprave izdate od strane nadležnog organa, odnosno oružne
+                listove. Odbranu
+                okrivljenog, koja po nalaženju suda ima karakter priznanja, sud je prihvatio,
+                ocijenivši da je istinita, jer je
+                potvrđena svim materijalnim dokazima, odnosno zapisnikom o pretresanju stana i
+                drugih prostorija iz kojeg
+                je utvrđeno da su ovlašćeni policijski službenici dana 16.06.2020. godine, prilikom
+                pretresanja porodičnog
+                stana okrivljenog, u Podgorici, u Ul. XX c. b., pronašli automatski pištolj
+                "Škorpion", crne boje marke
+                "Zastava", kal. 7,65 mm, sa okvirom bez municije i četiri rezervna okvira za isti,
+                broj 10261 i pušku - lovački
+                karabin, kalibra 7,9 mm, broj E5970070, bez municije i oružnog lista, koji su
+                privremeno oduzeti od
+                okrivljenog o čemu je izdata potvrda o privremenom oduzimanju predmeta, a prilikom
+                čijeg pronalaska i
+                oduzimanja je sačinjena i fotodokumentacija u koju je sud izvršio uvid. Sud je u
+                potpunosti prihvatio sadržinu
+                navedenih materijalnih dokaza, budući da stranke na istu nisu imale bilo kakvih
+                primjedbi niti je dovedena u
+                sumnju drugim izvedenim dokazima, tako da je po ocjeni suda ista vjerodostojna. Iz
+                izvještaja o balističkom
+                vještačenju Forenzičkog centra u Danilovgradu br. 1599/20 od 01.07.2020. godine je
+                utvrđeno da su
+                predmetni lovački karabin i automatski pištolj ispravni, te da četiri komada okvira
+                za municiju odgovaraju
+                predmetnom automatskom pištolju. Navedeni izvještaj sud je prihvatio, ocijenivši da
+                je potpun, jasan i
+                logičan, pritom posebno uzimajući u obzir da stranke na isti nisu imale primjedbi.
+            </p>
+            <p>
+                <ref href="/oruzje#art_5_para_1">
+                    Članom 5 st. 1 Zakona o oružju
+                </ref> je između ostalog propisano
+                da je zabranjena nabavka, držanje i nošenje oružja i municije kategorije A, dok je <ref
+                    href="/oruzje#art_4_para_2_point_2">
+                    članom 4 st. 2 tač. 2 istog zakona
+                </ref> propisano da je oružje
+                kategorije A i automatsko vatreno oružje. </p>
+            <p>
+                <ref href="/oruzje#art_5_para_2">
+                    Članom 5 st. 2 Zakona o oružju
+                </ref> je propisano da je
+                dozvoljena nabavka, držanje, nošenje i prenošenje oružja i municije, oružja
+                kategorije B za koje je izdata odgovarajuća isprava o oružju, u skladu sa ovim
+                zakonom. <ref href="/oruzje#art_23_para_1">
+                    Članom 23 st. 1 istog zakona
+                </ref> , između ostalog je propisano
+                da za oružje koje je nabavljeno na osnovu odobrenja za nabavku oružja fizičko lice
+                podnosi zahtjev za izdavanje oružnog lista za držanje oružja, odnosno oružnog lista
+                za držanje i nošenje oružja, Ministarstvu u mjestu prebivališta ili boravišta, u
+                roku od osam dana od dana nabavke, dok je <ref href="/oruzje#art_23_para_2">
+                    stavom 2 istog člana
+                </ref> propisano da se oružni list za
+                držanje oružja kategorije B izdaje fizičkom licu za oružje za ličnu bezbjednost,
+                oružni list za držanje i nošenje oružja za lovačko i sportsko oružje, a pravnom licu
+                odobrenje za držanje oružja, na propisanom obrascu. <ref
+                    href="/oruzje#art_4_para_3_point_8">
+                    Članom 4 st. 3 tač. 8 Zakona o oružju
+                </ref> je propisano da je
+                oružje kategorije B dugo vatreno oružje za jedinačnu paljbu sa jednom ili više
+                užlijebljenih cijevi. </p>
+            <p>
+                Time što je u svom stanu držao predmetni automatski pištolj, kao i lovački karabin
+                za koji nije imao izdat
+                oružni list, okrivljeni je prekršio citirane zakonske propise.
+            </p>
+            <p> Cijeneći subjektivni odnos okrivljenog prema izvršenom djelu, sud nalazi da je
+                okrivljeni postupajući na prethodno opisani način, bio svjestan da neovlašćeno drži
+                automatski pištolj marke "CZ M 84" (tzv. Škorpion) sa okvirom i četiri pripadajuća
+                okvira, koji je automatsko vatreno oružje, a čije držanje je građanima zabranjeno,
+                kao i da bez odgovarajuće isprave izdate od strane nadležnog organa neovlašćeno drži
+                pušku - lovački karabin marke "TRZ - Čačak", model 48, kalibar 8 x 57 JS, fabrički
+                broj E5970070, pa je samim tim bio svjestan da time čini krivično djelo, što je i
+                htio, postupajući tako sa direktnim umišljajem. Time su u radnjama okrivljenog pored
+                objektivnih ostvareni i subjektivni elementi bića krivičnog djela nedozvoljeno
+                držanje oružja i eksplozivnih materija <ref href="/krivicni#art_403_para_2">
+                    iz čl. 403 st. 2
+                </ref> i <ref href="/krivicni#art_403_para_1">
+                    1 Krivičnog zakonika Crne Gore.
+                </ref>
+            </p>
+            <p> Sud je cijenio i navode odbrane okrivljenog da posjeduje dozvolu za držanje
+                poredmetne puške - lovačkog karabina, a u koju dozvolu broj 001813 od 05.11.1997.
+                godine je sud na glavnom pretresu i izvršio uvid. Međutim, imajući u vidu da je iz
+                predmetne dozvole utvrđeno da ista služi kao dokument o pravu posjedovanja i nošenja
+                lovačkog karabina i da se obavezno nosi uz karabin i važi uz vojnu legitimaciju, a
+                da je iz odbrane okrivljenog utvrđeno da je isti od 2000. godine u invalidskoj
+                penziji, te da samim tim više ne posjeduje vojnu legtimaciju, to po ocjeni suda,
+                okrivljenom nije moglo ostati nepoznato da predmetna dozvola više nije validna.
+                Takođe, imajući u vidu da je iz predmetne dozvole utvrđeno i da je prilikom
+                prestanka aktivne vojne službe profesionalni oficir i podoficir obavezan da lovački
+                karabin prijavi nadležnom MUP-u radi dobijanja oružnog lista, a da je <ref
+                    href="/oruzje#art_23_para_1">
+                    članom 23 st. 1 Zakona o oružju
+                </ref> , između ostalog propisano
+                da za oružje koje je nabavljeno na osnovu odobrenja za nabavku oružja fizičko lice
+                podnosi zahtjev za izdavanje oružnog lista za držanje oružja, odnosno oružnog lista
+                za držanje i nošenje oružja, Ministarstvu u mjestu prebivališta ili boravišta, to se
+                navedena dozvola ne može smatrati odgovarajućom ispravom izdatom od strane nadležnog
+                organa u smislu <ref href="/oruzje#art_23_para_2">
+                    čl. 23 st. 2 Zakona o oružju
+                </ref> . Stoga predmetna dozvola
+                nije bila od uticaja na drukčije presuđenje. </p>
+            <p> Prilikom odlučivanja o krivičnoj sankciji, sud je u smislu <ref
+                    href="/krivicni#art_42_para_1">
+                    čl. 42 st. 1 Krivičnog zakonika Crne Gore
+                </ref> cijenio sve
+                okolnosti koje utiču na njen izbor i visinu, pa je od olakšavajućih okolnosti na
+                strani okrivljenog cijenio njegove lične prilike, odnosno da je riječ o licu koje je
+                starije životne dobi (67 godina) i porodičnom čovjeku koji je oženjen i otac dvoje
+                djece, njegov raniji život i s tim u vezi neosuđivanost, koja je utvrđena iz izvoda
+                iz registra kaznenih evidencija Ministarstva pravde KE 1325/2020 od 08.07.2020.
+                godine, dok otežavajućih okolnosti nije bilo. Cijeneći navedene olakšavajuće
+                okolnosti, sud je okrivljenom shodno <ref href="/krivicni#art_53">
+                    čl. 53
+                </ref> i <ref href="/krivicni#art_54">
+                    čl. 54 Krivičnog zakonika Crne Gore
+                </ref> izrekao uslovnu osudu,
+                kao u izreci presude, nalazeći da prema okrivljenom nije nužno primijeniti kaznu
+                radi krivičnopravne zaštite, jer se može očekivati da će se i upozorenjem uz
+                prijetnju kaznom zatvora u trajanju od šest mjeseci i vremenom provjeravanja u
+                periodu od dvije godine, na okrivljenog u dovoljnoj mjeri uticati da ubuduće ne vrši
+                krivična djela. Ovo iz razloga što se i iz njegovog ranijeg života može zaključiti
+                da on nije osoba koja je sklona vršenju krivičnih djela. Time će se uspješno
+                ostvariti svrha uslovne osude iz <ref href="/krivicni#art_52_para_2">
+                    čl. 52 st. 2 Krivičnog zakonika Crne Gore
+                </ref> , a u okviru
+                opšte svrhe propisivanja i izricanja krivičnih sankcija iz <ref
+                    href="/krivicni#art_4_para_2">
+                    čl. 4 st. 2 Krivičnog zakonika Crne Gore.
+                </ref>
+            </p>
+            <p> Na osnovu <ref href="/krivicni#art_75">
+                    čl. 75 Krivičnog zakonika Crne Gore
+                </ref> , sud je okrivljenom
+                izrekao mjeru bezbjednosti oduzimanje predmeta, odnosno automatskog pištolja marke
+                "CZ M 84", kalibra 7,65 mm, fabričkog broja 10261 sa okvirom i četiri pripadajuća
+                okvira i puške - lovačkog karabina marke "TRZ - Čačak", model 48, kalibra 8 x 57 JS,
+                fabričkog broja E5970070, s obzirom na to da se radi o predmetima upotrijebljenim u
+                izvršenju krivičnog djela. </p>
+            <p> Imajući u vidu da je okrivljeni oglašen krivim, sud ga je shodno <ref
+                    href="/krivicni#art_226">
+                    čl. 226
+                </ref> i <ref href="/krivicni#art_229">
+                    čl. 229 Zakonika o krivičnom postupku
+                </ref> , obavezao da na ime
+                troškova krivičnog postupka plati iznos od 50,00 eura, koji iznos se odnosi na ime
+                paušalnih troškova i određen je prema trajanju i složenosti postupka i imovnom
+                stanju okrivljenog. </p>
+            <p> Na osnovu navedenog, shodno <ref href="/krivicni#art_374">
+                    čl. 374 Zakonika o krivičnom postupku
+                </ref> , odlučeno je kao u
+                izreci presude. </p>
+        </arguments>
     </judgmentBody>
     <conclusions>
         <p>PRAVNA POUKA: Protiv ove presude dozvoljena je</p>
         <p>žalba u roku od 8 dana od dana</p>
         <p>prijema prepisa iste,</p>
         <organization id="vs" refersTo="#vs">
-         Višem sudu u Podgorici
+            Višem sudu u Podgorici
         </organization>
         <p>, a preko ovog suda.</p>
     </conclusions>
