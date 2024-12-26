@@ -45,15 +45,20 @@
             </party>, uz učešće zapisničarke <party
                 id="ekraja" refersTo="#ekraja" as="#clerk">
                 Edine Kraje
-            </party> , u krivičnom postupku protiv okrivljenog <party
+            </party> , u krivičnom postupku protiv
+            okrivljenog <party
                 id="dd" refersTo="#dd" as="#defendant">
                 D. D.
-            </party> , zbog krivičnog djela nedozvoljeno držanje oružja i
-            eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+            </party> , zbog krivičnog djela nedozvoljeno držanje
+            oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
                 čl. 403 st. 1 Krivičnog zakonika Crne Gore
             </ref>, nakon
-            pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice Kt. br. 223/18 od
-            16.03.2018. godine, zaključenog između državne tužiteljke <party id="jp" refersTo="#jp"
+            pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice <ref
+                href="/cg/verdict/k/2018-03-16/223">
+                Kt. br. 223/18 od
+                16.03.2018. godine,
+            </ref>
+            zaključenog između državne tužiteljke <party id="jp" refersTo="#jp"
                 as="#prosecutor">
                 J. P.
             </party> , okrivljenog <party id="dd" refersTo="#dd"
@@ -68,22 +73,22 @@
         </p>
         <background> Okrivljeni: <party id="dd" refersTo="#dd" as="#defendant">
                 D.D.
-            </party>, JMB ............., sa nadimkom D., od oca Ž. i majke
-            M., rođene S., rođen .. .. .... godine u Pg. sa prebivalištem u Pg, ul. S. I. br. .,
-            državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, mašinbravar,
-            oženjen, otac dvoje maloljetne djece, pismen, završio srednju školu, lošeg imovnog
-            stanja, osuđivan presudom <organization id="osk" refersTo="#osk">
+            </party>, JMB ............., sa nadimkom D., od oca Ž.
+            i majke M., rođene S., rođen .. .. .... godine u Pg. sa prebivalištem u Pg, ul. S. I.
+            br. ., državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik,
+            mašinbravar, oženjen, otac dvoje maloljetne djece, pismen, završio srednju školu, lošeg
+            imovnog stanja, osuđivan presudom <organization id="osk" refersTo="#osk">
                 Osnovnog suda u Kotoru
             </organization>
     <ref
                 href="/cg/verdict/k/2016-01-27/204">
                 K. br. 204/15 od 27.01.2016. godine
-            </ref> zbog krivičnog djela
-            nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+            </ref> zbog krivičnog
+            djela nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
                 href="/krivicni#art_403_para_1">
                 čl. 403 st. 1 Krivičnog zakonika Crne Gore
-            </ref> (novčana kazna),
-            protiv kojeg se ne vodi postupak za drugo krivično djelo, u pritvoru po rješenju
+            </ref> (novčana
+            kazna), protiv kojeg se ne vodi postupak za drugo krivično djelo, u pritvoru po rješenju
             krivičnog vijeća <organization
                 id="os" refersTo="#os">
                 Osnovnog suda u Podgorici
@@ -99,7 +104,7 @@
                 čl. 4 st. 3 tač. 1,
             </ref>
     <ref href="/oruzje#art_5_para_2">
-                čl. 5 st. 2,
+            čl. 5 st. 2,
             </ref>
     <ref href="/oruzje#art_5_para_2">
                 čl. 5 st. 2,
@@ -108,14 +113,14 @@
                 čl. 23
             </ref> i <ref href="/oruzje#art_33_para_1">
                 čl. 33 st. 1 Zakona o oružju
-            </ref> na javnom mjestu neovlašćeno
-            nosio vatreno oružje, na način što je dok se nalazio ispred označenog ugostiteljskog
-            objekta, za pojasom, nosio pištolj marke "Crvena zastava", model 57, kal. 7,62 mm,
-            fabričkog broja 1886-A i 6 metaka kalibra 7,62 mm u okviru, za koje oružje i municiju
-            nije imao odgovarajuću ispravu izdatu od strane nadležnog državnog organa, u čemu je
-            otkriven istog dana prilikom kontrole od strane ovlašćenih policijskih službenika Uprave
-            policije - Centra bezbjednosti Podgorica - čime je izvršio krivično djelo nedozvoljeno
-            držanje oružja i eksplozivnih materija iz <ref
+            </ref> na javnom mjestu
+            neovlašćeno nosio vatreno oružje, na način što je dok se nalazio ispred označenog
+            ugostiteljskog objekta, za pojasom, nosio pištolj marke "Crvena zastava", model 57, kal.
+            7,62 mm, fabričkog broja 1886-A i 6 metaka kalibra 7,62 mm u okviru, za koje oružje i
+            municiju nije imao odgovarajuću ispravu izdatu od strane nadležnog državnog organa, u
+            čemu je otkriven istog dana prilikom kontrole od strane ovlašćenih policijskih
+            službenika Uprave policije - Centra bezbjednosti Podgorica - čime je izvršio krivično
+            djelo nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
                 href="/krivicni#art_403_para_1">
                 čl. 403 st. 1 Krivičnog zakonika Crne Gore.
             </ref> Pa sud
@@ -145,7 +150,7 @@
                 čl. 374 Zakonika o krivičnom postupku,
             </ref>
     <p>O S U Đ U J
-                E</p>
+            E</p>
     <p>
                 Na
                 kaznu
@@ -157,8 +162,8 @@
                 09.02.2018. godine od 21:00 čas pa nadalje </p> Na osnovu <ref
                 href="/krivicni#art_75">
                 čl. 75 Krivičnog zakonika Crne Gore
-            </ref> prema okrivljenom
-            Daliboru Drobnjaku se izriče: <p>MJERA BEZBJEDNOSTI</p>
+            </ref> prema
+            okrivljenom Daliboru Drobnjaku se izriče: <p>MJERA BEZBJEDNOSTI</p>
     <p>ODUZIMANjE
                 PREDMETA</p> Oduzima se od okrivljenog pištolj marke "Crvena zastava", model 57,
             kal. 7,62 mm, fabričkog broja 1886-A i 6metaka kalibra 7,62 mm u okviru, kao predmeti
@@ -171,9 +176,16 @@
             </ref>
         </decision>
         <arguments>
-            <p> Optužnim predlogom Osnovnog državnog tužilaštva Podgorica Kt. br. 223/18 od
-                09.03.2018. godineokrivljenom D. D. stavljeno je na teret da je izvršio krivično
-                djelo nedozvoljeno držanje oružja i eksplozivnihmaterija iz <ref
+            <p> Optužnim predlogom <organization
+                    id="odt" refersTo="#odt">
+                    Osnovnog državnog tužilaštva Podgorica
+                </organization> <ref
+                    href="/cg/verdict/k/2018-03-16/223">
+                    Kt. br. 223/18 od
+                    09.03.2018. godine
+                </ref>
+                okrivljenom D. D. stavljeno je na teret da je izvršio krivično djelo nedozvoljeno
+                držanje oružja i eksplozivnihmaterija iz <ref
                     href="/krivicni#art_403_para_1">
                     čl. 403 st. 1
                     Krivičnog zakonika Crne Gore
@@ -228,8 +240,8 @@
                 </ref> u vezi <ref
                     href="/krivicni#art_374">
                     čl. 374 Zakonika o krivičnom postupku
-                </ref>, odlučeno
-                je kao u izrecipresude. </p>
+                </ref>,
+                odlučeno je kao u izrecipresude. </p>
         </arguments>
     </judgmentBody>
     <conclusions>

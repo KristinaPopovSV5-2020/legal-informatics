@@ -41,11 +41,11 @@
             </party> uz učešće samostalnog referenta, <party
                 id="drajkovic" refersTo="#drajkovic" as="#clerk">
                 Danijele Rajković
-            </party> kao zapisničarke, u krivičnom predmetu
-            protiv okrivljenog <party id="tb" refersTo="#tb" as="#defendant">
+            </party> kao zapisničarke, u krivičnom
+            predmetu protiv okrivljenog <party id="tb" refersTo="#tb" as="#defendant">
                 T. B.
-            </party>, zbog krivičnog djela nedozvoljeno držanje oružja
-            i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+            </party>, zbog krivičnog djela nedozvoljeno držanje
+            oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
                 čl. 403 st. 1 Krivičnog zakonika Crne Gore
             </ref> , nakon
             pravosnažnosti rješenja ousvajanju sporazuma o priznanju krivice, dana 31. 10. 2016.
@@ -55,9 +55,9 @@
         </p>
         <background> Okrivljeni: <party id="tb" refersTo="#tb" as="#defendant">
                 T.B.
-            </party>, JMB xxxxxxxxxxxxxx , zv. T . , od oca Đ . i majke
-            R . , rođene G . , rođen xx . xx . 19 xx . godine u Podgorici, saprebivalištem u mjestu
-            rođenja Ul. Vasa Raičkovića br. xx , državljanin Crne Gore, pismen, završio
+            </party>, JMB xxxxxxxxxxxxxx , zv. T . , od oca Đ .
+            i majke R . , rođene G . , rođen xx . xx . 19 xx . godine u Podgorici, saprebivalištem u
+            mjestu rođenja Ul. Vasa Raičkovića br. xx , državljanin Crne Gore, pismen, završio
             srednjuškolu, zaposlen, oženjen, otac dvoje djece, srednjeg imovnog stanja, neosuđivan. </background>
         <decision>
             <p>Kriv je</p>
@@ -66,14 +66,14 @@
                 zabranjeno, neovlašćeno nosio vatreno oružje i municiju, na način štoje, suprotno <ref
                     href="/oruzje#art_33_para_1">
                     čl. 33 st. 1 Zakona o oružju
-                </ref> oružju, na javnom
-                mjestu, u putničkom vozilu marke "Passat", registarskihoznaka PG AR xxx , iako je to
-                zabranjeno, nosio poluautomatsko kratko vatreno oružje - pištolj marke "ČZ",crne
-                boje, model 75 SP-01 Shadow, kalibra 9x19 (9mm-D), fabričkog broja B014554, sa
-                okvirom sa 17 metaka,kalibra 9 mm, držaći ga za pojasom, dok je u ladici ispred
-                suvozačevog sjedišta nosio okvir od navedenogpištolja, sa 18 metaka, kalibra 9 mm, u
-                čemu je otkriven prilikom kontrole od strane policijskih službenikaInterventne
-                jedinice Centra bezbjednosti Podgorica, </p>
+                </ref> oružju,
+                na javnom mjestu, u putničkom vozilu marke "Passat", registarskihoznaka PG AR xxx ,
+                iako je to zabranjeno, nosio poluautomatsko kratko vatreno oružje - pištolj marke
+                "ČZ",crne boje, model 75 SP-01 Shadow, kalibra 9x19 (9mm-D), fabričkog broja
+                B014554, sa okvirom sa 17 metaka,kalibra 9 mm, držaći ga za pojasom, dok je u ladici
+                ispred suvozačevog sjedišta nosio okvir od navedenogpištolja, sa 18 metaka, kalibra
+                9 mm, u čemu je otkriven prilikom kontrole od strane policijskih
+                službenikaInterventne jedinice Centra bezbjednosti Podgorica, </p>
             <p>- čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija
                 iz <ref
                     href="/krivicni#art_403_para_1">
@@ -81,8 +81,8 @@
                 </ref></p>
             <p> Pa sud okrivljenog <party id="tb" refersTo="#tb" as="#defendant">
                     T.B.
-                </party> primjenom citiranih zakonskih propisa,
-                te članova <ref href="/krivicni#art_4_para_2">
+                </party> primjenom citiranih zakonskih
+                propisa, te članova <ref href="/krivicni#art_4_para_2">
                     čl. 4 st. 2,
                 </ref> <ref
                     href="/krivicni#art_32">
@@ -100,7 +100,7 @@
                     href="/krivicni#art_226">
                     čl. 226,
                 </ref> <ref href="/krivicni#art_229">
-                    229,
+                229,
                 </ref> i <ref href="/krivicni#art_374">
                     374 Zakonika o krivičnom postupku,
                 </ref></p>
@@ -129,12 +129,24 @@
                 18metaka, kalibra 9 mm
                 , kao predmeti upotrijebljeni u izvršenju krivičnog djela.</p>
         </decision>
-        <arguments> Osnovno državno tužilaštvo u Podgorici je optužnim predlogom Kt. br. 542/16 od
-            19. 05. 2016. godine stavilo na teret okrivljenom <party id="tb" refersTo="#tb"
+        <arguments>
+            <organization id="odt" refersTo="#odt">
+                Osnovno
+                državno
+                tužilaštvo
+                u
+                Podgorici
+            </organization>
+            je optužnim predlogom <ref
+                href="/cg/verdict/k/2016-05-19/542">
+                Kt. br. 542/16 od 19. 05. 2016. godine
+            </ref> stavilo na
+            teret okrivljenom <party id="tb"
+                refersTo="#tb"
                 as="#defendant">
                 T.B.
-            </party>, izvršenje krivičnog djela nedozvoljeno držanje
-            oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+            </party>, izvršenje krivičnog djela nedozvoljeno
+            držanje oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
                 čl. 403 st. 1
                 Krivičnog zakonika Crne Gore
             </ref>
@@ -142,10 +154,10 @@
             podnošenja optužnog predloga sudu, državni tužilac u <organization id="odt"
                     refersTo="#odt">
                     ODT-u
-                </organization>, okrivljeni i njegov branilac
-            su zaključili sporazum o priznanju krivice dana 27. 10. 2016. godine</p>
+                </organization>, okrivljeni i njegov
+            branilac su zaključili sporazum o priznanju krivice dana 27. 10. 2016. godine</p>
             <p>Utvrđujući
-                da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivično djelo, na
+            da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivično djelo, na
             ročištu zarazmatranje sporazuma, sud je ocijenio sadržinu dokaza koje je prikupio
             tužilac, a koji se nalaze u spisima predmeta.</p>
             <p>Iz sadržine prikupljenih dokaza, sud
@@ -153,8 +165,8 @@
                     id="tb" refersTo="#tb"
                     as="#defendant">
                     T.B.
-                </party> i da je okrivljeni u vrijeme i na način
-            opisan u izreci ove presude učinio krivično djelo nedozvoljeno držanje oružja i
+                </party> i da je okrivljeni u vrijeme i
+            na način opisan u izreci ove presude učinio krivično djelo nedozvoljeno držanje oružja i
             eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
                     čl. 403 st. 1
                     Krivičnog zakonika Crne Gore
