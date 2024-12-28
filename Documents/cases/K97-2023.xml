@@ -1,0 +1,304 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                    <FRBRdate date="2023-05-30">2023-05-30</FRBRdate>
+                    <FRBRtitle>K 97/2023</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica"
+                    showAs="Osnovni sud u Podgorici" />
+                <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica"
+                    showAs="Visi sud u Podgorici" />
+                <TLCOrganization eId="odt"
+                    href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica"
+                    showAs="Osnovno državno tužilaštvo Podgorica" />
+
+                <TLCPerson eId="gdjukovic" href="/ontology/person/gdjukovic"
+                    showAs="Goran Đuković" />
+                <TLCPerson eId="jlakovic" href="/ontology/person/jlakovic" showAs="Jovana Laković" />
+                <TLCPerson eId="nr" href="/ontology/person/nr" showAs="N. R." />
+                <TLCPerson eId="mt" href="/ontology/person/mt" showAs="M. T." />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+            </references>
+
+        </meta>
+
+    </judgment>
+    <judgmentBody>
+        <p>U IME CRNE GORE</p>
+        <introduction>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+            </organization> , sudija <party
+                id="gdjukovic" refersTo="#gdjukovic" as="#judge">
+                Goran Đuković
+            </party> , uz učešće namještenika suda <party
+                id="jlakovic" refersTo="#jlakovic" as="#clerk">
+                Jovane Laković
+            </party> kao zapisničara ,u krivičnom
+            postupku protiv okrivljenog <party id="nr" refersTo="#nr" as="#defendant">
+                N. R.
+            </party> iz Podgorice, koga u postupku brani
+            advokatica <party
+                id="mt" refersTo="#mt" as="#defense">
+                M. T.
+            </party> zbog krivičnog djela nedozvoljeno držanje
+            oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+                čl. 403 st. 1 Krivičnog zakonika Crne Gore
+            </ref>, nakon
+            pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice, dana 30.05.2023.
+            godine, donio je </introduction>
+        <p>
+            P R E S U D U
+        </p>
+        <background> Okrivljeni: <party id="nr" refersTo="#nr" as="#defendant">
+                N. R.
+            </party>, sa JMBG xxxxxxxxxxxxx , sa nadimokm R.,
+            od oca M. i majke V., rođene M., rođen xxxxxxx godine u Podgorici, sa prebivalištem u
+            Opštini Z., G. g. ulica xxxxxxxxx - A., državljanin Crne Gore, čiji je jezik srpski,
+            menadžer, neoženjen, nema djece, pismen, sa završenom VSS, pismen, lošeg imovnog stanja,
+            lišen slobode 21.12.2022. godine u 11,00 časova do 22.12.2022. godine u 08,47 časova,
+            ranije neosuđivan. </background>
+        <decision>
+            <p>Kriv je</p>
+            <p>Zato Što
+                je:</p>
+            <p>Dana 21.12.2022. godine, u prijepodnevnim časovima, u blizini Nikolj Crkve, u
+                Golubovcima, Opština Zeta, svjestan svog djela čije je izvršenje htio, znajući da je
+                njegovo djelo zabranjeno, na javnom mjestu, suprotno <ref
+                    href="/oruzje#art_4_para_3_point_11">
+                    čl. 4 st. 3 tač. 11
+                </ref>, <ref
+                    href="/oruzje#art_5_para_2">
+                    čl. 5 st. 2
+                </ref>, <ref
+                    href="/oruzje#art_23_para_3">
+                    čl. 23 st. 3
+                </ref> i <ref
+                    href="/oruzje#art_33_para_1">
+                    čl. 33 st. 1 Zakona o oruđju
+                </ref>,
+                neovlašćeno nosio vatreno oružje i municiju kategorije B, i to lovačku pušku marke
+                "Baikal", tip "Bokerica", model IŽ - 12 kalibra 12 mm, fabričkog broja B 5587, sa
+                pripadajućom municijom - 8 metaka, kalibra 12 mm, za koje oružje i municiju nije
+                imao odobrenje izdato od strane nadležnog državnog organa, u čemu je otkriven
+                dolaskom policijskih službenika na lice mjesta, </p>
+
+            <p> -čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija
+                iz <ref href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1
+                    Krivičnog zakonika Crne Gore
+                </ref>
+            </p>
+
+
+            <p>Pa sud okrivljenom primjenom citiranih zakonskih propisa te<ref
+                    href="/krivicni#art_4_para_2">
+                    čl. 4 st. 2,
+                </ref> 
+                <ref
+                    href="/krivicni#art_4_para_5">
+                    5,
+                </ref> 
+                <ref
+                    href="/krivicni#art_4_para_13">
+                    13,
+                </ref> 
+                <ref
+                    href="/krivicni#art_4_para_15">
+                    15,
+                </ref> 
+                <ref
+                    href="/krivicni#art_4_para_32">
+                    32,
+                </ref> 
+                <ref
+                    href="/krivicni#art_4_para_33">
+                    33,
+                </ref> 
+                <ref
+                    href="/krivicni#art_4_para_36a">
+                    36a,
+                </ref> 
+                
+                <ref
+                    href="/krivicni#art_42_para_1">
+                    čl. 42 st. 1
+                </ref> i <ref
+                    href="/krivicni#art_51">
+                    čl. 51 Krivičnog zakonika Crne Gore
+                </ref>,
+                te <ref
+                    href="/krivicni#art_226">
+                    čl. 226
+                </ref>, <ref
+                    href="/krivicni#art_227">
+                    čl. 227
+                </ref>, <ref
+                    href="/krivicni#art_229">
+                    čl. 229
+                </ref> i <ref
+                    href="/krivicni#art_374">
+                    čl. 374 Zakonika o krivičnom postupku
+                </ref>
+            </p>
+
+            <p>Osuđuje</p>
+            <p>Na kaznu zatvora u trajanju od 3 (tri) mjeseca, koju kaznu će nakon pravosnažnosti
+                presude izdržavati u
+                prostorijama u kojima stanuje, osim u slučajevima propisanim zakonom kojim se
+                uređuje izvršenje krivičnih
+                sankcija, a ukoliko okrivljeni jednom u trajanju preko šest časova ili dva puta u
+                trajanju do šest časova
+                samovoljno napusti prostorije u kojima stanuje, sud će mu odrediti da ostatak kazne
+                zatvora izdrži u Upravi
+                za izvršenje krivičnih sankcija - Zatvoru Podgorica, u koju kaznu mu se uračunava
+                vrijeme provedeno tokom
+                lišenja slobode u periodu od dana 21.12.2022. godine u 11,00 časova do 22.12.2022.
+                godine u 08,47 časova.
+
+            </p>
+
+            <p>
+                Obavezuje se okrivljeni da ovom sudu na ime troškova krivičnog postupka uplati
+                novčani iznos od 30,00 eura
+                na ime sudskog paušala, u roku od 15 dana od dana pravosnažnosti presude donijete na
+                osnovu Sporazuma
+                o priznanju krivice kojim se okrivljeni odriče prava na žalbu.
+            </p>
+        </decision>
+        <arguments>
+            <p>Optužnim predlogom <organization id="odt" refersTo="#odt">
+                    m Osnovnog državnog tužilaštva u Podgorici
+                </organization> <ref
+                    href="/cg/verdict/k/2023-02-14/365">
+                    Kt. br. 1727/22 od 14.02.2023. godine
+                </ref>
+                , okrivljenom <party id="nr" refersTo="#rc" as="#defendant">
+                    N. R.
+                </party> stavljeno je na teret
+                izvršenje krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore
+                </ref></p>
+            <p>
+                Utvrđujući da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivično
+                djelo, na ročištu za
+                razmatranje sporazuma o priznanju krivice, državna tužiteljka podnijela je sudu
+                dokaze koje je prikupila u
+                prethodnom postupku.
+            </p>
+
+            <p> Iz sadržine prikupljenih dokaza na koje okrivljeni i njegova braniteljka nijesu
+                imali primjedbi, sud je zaključio da je državna tužiteljka pružila dovoljno dokaza o
+                krivici okrivljenog <party id="nr" refersTo="#rc" as="#defendant">
+                    N. R.
+                </party>, i da je okrivljeni u vrijeme
+                i na način opisan u izreci ove presude, izvršio krivično djelo nedozvoljeno držanje
+                oružja i eksplozivnih materija iz <ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore
+                </ref>,
+                a nakon što je okrivljeni u svemu prihvatio sporazum o priznanju krivice. </p>
+
+            <p> Odlučujući o vrsti i visini krivične sankcije iz sporazuma o priznanju krivice
+                zaključenog između stranaka, sud je cijenio sve okolnosti iz <ref
+                    href="/krivicni#art_42">
+                    člana 42 Krivičnog zakonika Crne Gore
+                </ref>
+                , pa je u odsustvu otežavajućih okolnosti kao olakšavajuće okolnosti cijenio raniju
+                neosuđivanost okrivljenog koju je utvrdio iz izvoda iz KE za okrivljenog broj
+                297/23, pa je Sud postupajući shodno <ref
+                    href="/krivicni#art_36">
+                    čl. 36
+                </ref> i <ref
+                    href="/krivicni#art_36a">
+                    čl. 36a Krivičnog zakonika Crne
+                    Gore
+                </ref>,
+                okrivljenog osudio na kaznu zatvora u trajanju od 3 (tri) mjeseca, koju kaznu će
+                nakon pravosnažnosti presude izdržavati u prostorijama u kojima stanuje, osim u
+                slučajevima propisanim zakonom kojim se uređuje izvršenje krivičnih sankcija, a
+                ukoliko okrivljeni jednom u trajanju preko šest časova ili dva puta u trajanju do
+                šest časova samovoljno napusti prostorije u kojima stanuje, sud će mu odrediti da
+                ostatak kazne zatvora izdrži u Upravi za izvršenje krivičnih sankcija - Zatvoru
+                Podgorica, u koju kaznu mu se, shodno <ref
+                    href="/krivicni#art_51">
+                    čl. 51 Krivičnog zakonika Crne Gore
+                    Gore
+                </ref>
+                , uračunava vrijeme provedeno tokom lišenja slobode u periodu od dana 21.12.2022.
+                godine u 11,00 časova do 22.12.2022. godine u 08,47 časova, nalazeći da se ima
+                ostvariti svrha kažnjavanja iz <ref
+                    href="/krivicni#art_32">
+                    čl. 32 Krivičnog zakonika Crne Gore
+                    Gore
+                </ref>
+                , u okviru opšte svrhe propisivanja i izricanja krivičnih sankcija iz <ref
+                    href="/krivicni#art_4_para_2">
+                    čl. 4 st. 2 Krivičnog zakonika Crne Gore
+                    Gore
+                </ref>
+                čl. 4 st. 2 Krivičnog zakonika Crne Gore </p>
+            <p> Odluka o troškova postupka zasnovana je na odredbi <ref
+                    href="/krivicni#art_226">
+                    čl. 226
+                    Gore
+                </ref> i <ref
+                    href="/krivicni#art_229_para_1">
+                    229 st. 1 Zakonika o
+                    krivičnom postupku.
+                </ref>
+            </p>
+            <p> Sa izloženog, na osnovu <ref
+                    href="/krivicni#art_374">
+                    čl. 374 Zakonika o krivičnom postupku
+                </ref>
+                , odlučeno je kao u izreci presude. </p>
+        </arguments>
+    </judgmentBody>
+    <conclusions>
+        <organization id="os" refersTo="#os">
+            OSNOVNI SUD U PODGORICI
+        </organization>
+        <p>Dana, 30.05.2023. godine</p>
+        <p>
+        S U D I J A</p>
+        <party
+            id="gdjukovic" refersTo="#gdjukovic" as="#judge">
+            Goran Đuković, s.r
+        </party>
+        <p>PRAVNA POUKA:</p>
+        <p>Protiv ove presude
+        žalba nije dozvoljena</p>
+
+        <p>
+            <party
+                id="jlakovic" refersTo="#jlakovic" as="#clerk">
+                ZTO: Jovana Laković
+            </party>
+        </p>
+        <p>Dn-a: Po
+        primjerak presude dostaviti:</p>
+        <organization id="odt" refersTo="#odt">
+            ODT-u Podgorica
+        </organization> -okrivljenom <party id="nr"
+            refersTo="#nr" as="#defendant">
+            N. R.
+        </party> - braniteljki okrivljenog, advokatici <party
+            id="mt" refersTo="#mt" as="#defense">
+            M. T.
+        </party> - sudskoj praksi; -- a/a Postupljeno dana:
+        _____ 2020. godine Namještenik suda ________________ </conclusions>
+</akomaNtoso>
