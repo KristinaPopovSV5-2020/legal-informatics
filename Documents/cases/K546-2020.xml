@@ -458,6 +458,16 @@ umjetnosti, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postup
     </arguments>
     </judgmentBody>
     <conclusions>
+    <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+        </organization>
+        <p>Dana, <date value="2020-10-16">16.10.2020.godine</date></p>
+        <p>ZAPISNIČARKA S U D I J A</p>
+        <party id="ekraja" refersTo="#ekraja" as="#clerk">
+            Edina Kraja
+        </party><party id="rcetkovic" refersTo="#rcetkovic" as="#judge">
+            ,s.r. Rade Ćetković,s.r.
+        </party>
         <p>PRAVNA POUKA: Protiv ove presude dozvoljena je</p>
         <p>žalba u roku od 8 dana od dana</p>
         <p>prijema prepisa iste,</p>
@@ -465,5 +475,8 @@ umjetnosti, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postup
          Višem sudu u Podgorici
         </organization>
         <p>, a preko ovog suda.</p>
+         <p>ZTO: <party id="ekraja" refersTo="#ekraja" as="#clerk">
+            Edina Kraja
+        </party></p>
     </conclusions>
 </akomaNtoso>

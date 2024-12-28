@@ -267,9 +267,21 @@ opisan u izreci ove presude, učinio krivično djelo tjelesna povreda iz
         </arguments>
     </judgmentBody>
     <conclusions>
+        <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+        </organization>
+        <p>Dana, <date value="2021-07-09">11.09.2020.godine</date></p>
+        <p>SUDIJA</p>
+        </party><party id="gdjukovic" refersTo="#gdjukovic" as="#judge">
+            Goran Đuković, s.r.
+        </party>
         <p>PRAVNA POUKA</p>
         <p>
             Protiv ove presude žalba nije dozvoljena.
         </p>
+         <p>Z.T.O.</p>
+         <party id="sradevic" refersTo="#sradevic" as="#clerk">
+            Sanja Radević
+        </party>
     </conclusions>
 </akomaNtoso>

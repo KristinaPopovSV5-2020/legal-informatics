@@ -440,9 +440,44 @@
         </arguments>
       </judgementBody>
       <conclusions>
+      <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+        </organization>
+        <p>Dana, <date value="2021-02-05">5.02.2021.godine</date></p>
+        <p>ZAPISNIČAR S U D I J A</p>
+        <party id="msekulic" refersTo="#msekulic" as="#clerk">
+            Marina Sekulić
+        </party><party id="lmstamatovic" refersTo="#lmstamatovic" as="#judge">
+            Larisa Mijušković-Stamatović
+        </party>
+        DN-a primjerak presude dostaviti:
+        <list>
+            <item>
+                <organization id="odt" refersTo="#odt">
+                    ODT Podgorica
+                </organization>
+            </item>
+            <item>
+                <party id="vb" refersTo="#vb" as="#defendant">
+                    Okrivljenom
+                </party>
+            </item>
+            <item>
+                <p> a/a</p>
+            </item>
+        </list>
+        <p>
+        S u d i j a
+        _____________________
+        Postupljeno dana ___________________
+        Namještenik suda __________________
+        </p>
         <p>PRAVNA POUKA</p>
         <p>
             Protiv ove presude žalba nije dozvoljena.
         </p>
+        <p>ZTO: <party id="msekulic" refersTo="#msekulic" as="#clerk">
+            Marina Sekulić
+        </party></p>
     </conclusions>
 </akomaNtoso>
