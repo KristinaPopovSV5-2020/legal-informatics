@@ -1772,24 +1772,28 @@
                                 pravosnažnosti rješenja o nasljeđivanju, da:</p>
                             </intro>
                             <point eId="art_42_para_3_point_1">
+                                <num>1)</num>
                                 <content eId="art_42_para_3_point_1_content">
-                                    <p>1) oružje proda;</p>
+                                    <p>oružje proda;</p>
                                 </content>
                             </point>
                             <point eId="art_42_para_3_point_2">
+                                <num>2)</num>
                                 <content eId="art_42_para_3_point_2_content">
-                                    <p>2) podnese zahtjev za izdavanje oružnog lista za držanje oružja ili oružnog lista za držanje i nošenje
+                                    <p>podnese zahtjev za izdavanje oružnog lista za držanje oružja ili oružnog lista za držanje i nošenje
                                     oružja;</p>
                                 </content>
                             </point>
                             <point eId="art_42_para_3_point_3">
+                                <num>3)</num>
                                 <content eId="art_42_para_3_point_3_content">
-                                    <p>3) onesposobi oružje i zadrži ga, ili</p>
+                                    <p>onesposobi oružje i zadrži ga, ili</p>
                                 </content>
                             </point>
                             <point eId="art_42_para_3_point_4">
+                                <num>4)</num>
                                 <content eId="art_42_para_3_point_4_content">
-                                    <p>4) preda oružje u korist države, bez naknade.</p>
+                                    <p>preda oružje u korist države, bez naknade.</p>
                                 </content>
                             </point>
                         </paragraph>
@@ -2367,7 +2371,11 @@
                         <num>Član 67</num>
                         <paragraph eId="art_67_para_1">
                             <intro eId="art_67_para_1_intro">
-                                <p>Privrednom društvu, odnosno preduzetniku izdaće se odobrenje iz člana 66 stav 1 ovog zakona, ako:</p>
+                                <p>Privrednom društvu, odnosno preduzetniku izdaće se odobrenje iz 
+                                <ref href="/oruzje#art_66_para_1"> 
+                                člana 66 stav 1 ovog zakona
+                                </ref>
+                                , ako:</p>
                             </intro>
                         </paragraph>
                         <paragraph eId="art_67_para_2">
@@ -2598,7 +2606,7 @@
                         </paragraph>
                         <paragraph eId="art_75_para_2">
                             <content eId="art_75_para_2_content">
-                                <p>Vatreno oružje iz stava 1 tač. <ref href="/oruzje#art_75_para_1_point_1">1</ref> i <ref href="/oruzje#art_75_para_1_point_5">5</ref> ovog člana, ako nije obilježeno žigom, podliježe obaveznom ispitivanju i označavanju žigom, koji će omogućiti identifikaciju godine i zemlje uvoza, odnosno godine i zemlje koja ga prenosi u vlasništvo lica.</p>
+                                <p>Vatreno oružje iz <ref href="/oruzje#art_75_para_1_point_1">stava 1 tač. 1</ref> i <ref href="/oruzje#art_75_para_1_point_5">5</ref> ovog člana, ako nije obilježeno žigom, podliježe obaveznom ispitivanju i označavanju žigom, koji će omogućiti identifikaciju godine i zemlje uvoza, odnosno godine i zemlje koja ga prenosi u vlasništvo lica.</p>
                             </content>
                         </paragraph>
                     </article>
@@ -2639,22 +2647,22 @@
                         </paragraph>
                         <paragraph eId="art_78_para_3">
                             <content eId="art_78_para_3_content">
-                                <p>Fizičko lice iz stava <ref href="#art_78_para_1">1 ovog člana</ref> , mora biti stručno obučeno za individualno punjenje municije, o čemu mu se izdaje potvrda.</p>
+                                <p>Fizičko lice iz <ref href="#art_78_para_1">stava 1 ovog člana</ref> , mora biti stručno obučeno za individualno punjenje municije, o čemu mu se izdaje potvrda.</p>
                             </content>
                         </paragraph>
                         <paragraph eId="art_78_para_4">
                             <content eId="art_78_para_4_content">
-                                <p>Obuku iz stava <ref href="#art_78_para_3">3 ovog člana</ref> , sprovodi streljačka ili lovačka organizacija, koja ima odgovarajući stručni kadar ili angažuje stručni kadar iz Crne Gore ili druge države.</p>
+                                <p>Obuku iz <ref href="#art_78_para_3">stava 3 ovog člana</ref> , sprovodi streljačka ili lovačka organizacija, koja ima odgovarajući stručni kadar ili angažuje stručni kadar iz Crne Gore ili druge države.</p>
                             </content>
                         </paragraph>
                         <paragraph eId="art_78_para_5">
                             <content eId="art_78_para_5_content">
-                                <p>Lovačka, odnosno streljačka organizacija iz stava <ref href="#art_78_para_4">4 ovog člana</ref> , izdaje potvrdu da je fizičko lice iz stava <ref href="#art_78_para_1">1 ovog člana</ref> , osposobljeno za individualno punjenje municije.</p>
+                                <p>Lovačka, odnosno streljačka organizacija iz <ref href="#art_78_para_4">stava 4 ovog člana</ref> , izdaje potvrdu da je fizičko lice iz <ref href="#art_78_para_1">stava 1 ovog člana</ref> , osposobljeno za individualno punjenje municije.</p>
                             </content>
                         </paragraph>
                         <paragraph eId="art_78_para_6">
                             <content eId="art_78_para_6_content">
-                                <p>O izdatim potvrdama iz stava <ref href="#art_78_para_5">5 ovog člana</ref> , lovačka ili streljačka organizacija dužna je da obavijesti Ministarstvo, u roku od osam dana od dana izdavanja potvrde.</p>
+                                <p>O izdatim potvrdama iz <ref href="#art_78_para_5">stava 5 ovog člana</ref> , lovačka ili streljačka organizacija dužna je da obavijesti Ministarstvo, u roku od osam dana od dana izdavanja potvrde.</p>
                             </content>
                         </paragraph>
                         <paragraph eId="art_78_para_7">
@@ -2754,9 +2762,9 @@
                     <article eId="art_81">
                         <num>Član 81</num>
                         <paragraph eId="art_81_para_1">
-                            <content eId="art_81_para_1_content">
+                            <intro eId="art_81_para_1_intro">
                                 <p>Uz zahtjev za izdavanje odobrenja za promet oružja i municije prilaže se:</p>
-                            </content>
+                            </intro>
                             <point eId="art_81_para_1_point_1">
                                 <num>1)</num>
                                 <content eId="art_81_para_1_point_1_content">
@@ -2800,9 +2808,9 @@
                             </content>
                         </paragraph>
                         <paragraph eId="art_83_para_3">
-                            <content eId="art_83_para_3_content">
+                            <intro eId="art_83_para_3_intro">
                                 <p>Uz zahtjev za izdavanje odobrenja iz stava <ref href="/oruzje#art_83_para_1">1</ref> ovog člana, prilaže se:</p>
-                            </content>
+                            </intro>
                             <point eId="art_83_para_3_point_1">
                                 <num>1)</num>
                                 <content eId="art_83_para_3_point_1_content">
@@ -2840,9 +2848,9 @@
                             </content>
                         </paragraph>
                         <paragraph eId="art_84_para_4">
-                            <content eId="art_84_para_4_content">
+                            <intro eId="art_84_para_4_intro">
                                 <p>Privrednom društvu, odnosno preduzetniku izdaće se odobrenje iz<ref href="/oruzje#art_84_para_1"> stava 1 ovog člana</ref> , ako:</p>
-                            </content>
+                            </intro>
                             <point eId="art_84_para_4_point_1">
                                 <num>1)</num>
                                 <content eId="art_84_para_4_point_1_content">
@@ -2886,9 +2894,9 @@
                     <article eId="art_86">
                         <num>Član 86</num>
                         <paragraph eId="art_86_para_1">
-                            <content eId="art_86_para_1_content">
+                            <intro eId="art_86_para_1_intro">
                                 <p>Uz zahtjev za izdavanje odobrenja za obavljanje djelatnosti popravljanja i prepravljanja oružja, prilaže se:</p>
-                            </content>
+                            </intro>
                             <point eId="art_86_para_1_point_1">
                                 <num>1)</num>
                                 <content eId="art_86_para_1_point_1_content">
@@ -2909,7 +2917,6 @@
                             </point>
                         </paragraph>
                     </article>
-                    <!-- Član 87 -->
                 </section>
             </chapter>
         </body>
