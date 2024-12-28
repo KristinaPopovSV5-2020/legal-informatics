@@ -1,0 +1,294 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                    <FRBRdate date="2020-03-10">2020-03-10</FRBRdate>
+                    <FRBRtitle>K 16/2020</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica"
+                    showAs="Osnovni sud u Podgorici" />
+                <TLCOrganization eId="odt"
+                    href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica"
+                    showAs="Osnovno državno tužilaštvo Podgorica" />
+                <TLCPerson eId="nvujanovic" href="/ontology/person/nvujanovic"
+                    showAs="Nenad Vujanović" />
+                <TLCPerson eId="npaunovic" href="/ontology/person/npaunovic"
+                    showAs="Nataša Paunović" />
+                <TLCPerson eId="mr" href="/ontology/person/mr" showAs="M. R." />
+                <TLCPerson eId="zs" href="/ontology/person/zs" showAs="Ž. S." />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+            </references>
+            </identification>
+        </meta>
+    </judgment>
+    <judgementBody>
+        <p>U IME CRNE GORE</p>
+        <introduction>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+            </organization> , sudija <party
+                id="nvujanovic" refersTo="#nvujanovic" as="#judge">
+                Nenad Vujanović
+            </party>, uz učešće <party id="npaunovic"
+                refersTo="#npaunovic" as="#clerk">
+                Nataše Paunović
+            </party> , kao zapisniačara, u krivičnom
+            postupku protiv okrivljenog <party id="mr" refersTo="#mr" as="#defendant">
+                M. R.
+            </party>, koga u postupku brani advokat <party
+                id="zs" refersTo="#zs" as="#defense">
+                Ž. S.
+            </party> , zbog krivičnog djela nedozvoljeno
+            držanje oružja i eksplozivnih materijala iz člana <ref href="/krivicni#art_403_para_2">
+            403 stav 2 Krivičnog zakonika Crne Gore
+            </ref> , postupajući
+            po optužnom predlogu <organization id="odt" refersTo="#odt">
+                ODT-a Podgorica
+            </organization> Kt.br.1462/19 od
+            13.01.2020. godine, nakon pravnosnažnosti rješenja o usvajanju sporazuma o priznanju
+            krivice, Kt.br.1462/19 od 09.03.2020. godine, dana 10.03.2020. godine, donio je </introduction>
+        <p>
+            P R E S U D U
+        </p>
+        <background> Okrivljeni: <party id="mr" refersTo="#mr" as="#defendant">
+                M.R.
+            </party> JMB ...... od oca N. i m. N. rođene K.,
+            rođen ..... godine u P., sa prebivalištem u P.P.K. br. .i Ulica.. ulaz broj 4 (zgrada
+            Z.V.), državljanin Crne Gore, po zanimanju stražar, oženjen, otac dvoje djece, završio
+            srednju školu, lošeg imovnog stanja, neosuđivan, lišen slobode od 08.11.2019. godine do
+            09.11.2019. godine. </background>
+
+        <decision>
+            <p>Kriv je</p>
+        <p>Što je: </p> Dana 08.11.2019. godine u Podgorici, u Ulici P.K. br. 9, u
+            porodičnom stanu, suprotno <ref href="/oruzje#art_4_para_2_point_2">
+                članu 4 stav 2 tačka 2
+            </ref> i <ref
+                href="/oruzje#art_5_para_1">
+                članu 5 stav 1 Zakona o oružju
+            </ref> , neovlašćeno držao
+            automatsko vatreno oružje-automatsku pušku marke "C. z." ... kalibra 7,62 x 39 mm,
+            fabričkog broja 142924, čije je držanje građanima zabranjeno, u čemu je istog dana
+            otkriven od strane ovlašćenih službenika Uprave policije CB Podgorica, nakon što je iz
+            puške ispalio više manevarskih projektila koz prozor stana, pri čemu je bio svjestan
+            svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno. - čime je
+            učinio nedozvoljeno držanje oružja i eksplozivnih materijala iz <ref
+                href="/krivicni#art_403_para_2">
+                člana 403 stav 2 Krivičnog zakonika Crne Gore
+            </ref> .Pa
+            sud okrivljenog, primjenom citirane odredbe, te <ref href="/krivicni#art_4_para_2">
+                čl. 4 st. 2,
+            </ref>
+        <ref href="/krivicni#art_32">
+                čl 32,
+            </ref>
+         <ref href="/krivicni#art_41">
+                čl 41,
+            </ref>
+        <ref href="/krivicni#art_42_para_1">
+                čl 42 st. 1,
+            </ref> i <ref href="/krivicni#art_51">
+                čl. 51 Krivičnog zakonika Crne Gore
+            </ref> i <ref
+                href="/krivicni#art_226">
+                čl. 226,
+            </ref>
+        <ref href="/krivicni#art_229">
+                229,
+            </ref> i <ref href="/krivicni#art_374">
+                374 Zakonika o krivičnom postupku,
+            </ref>
+        <p>O S U Đ U J E</p>
+        <p>Na
+            kaznu rada u javnom interesu u trajanju od 180 (stotinuosamdeset) časova, koja će se
+            izvršiti za vrijeme
+                od 4 (četiri) mjeseca, s tim što ne može biti duža od 60 (šezdeset) časova u toku
+            jednog mjeseca. u koju kaznu
+                mu se ima uračunati vrijeme lišenja slobode od 08.11.2019. godine do 09.11.2019.
+            godine na način što se
+                navedeno vrijeme računa kao osam časova rada u javnom interesu. Ukoliko</p>
+        <party
+                id="mr" refersTo="#mr" as="#defendant">
+                okrivljeni
+            </party>
+        <p>
+                ne bude vršio rad u javnom interesu, ova kazna će se zamijeniti kaznom zatvora tako
+            što će
+                se svakih započetih 60 (šezdeset) časova rada u javnom interesu zamijeniti kaznom
+            zatvora u trajanju od
+                jednog mjeseca.
+                Na osnovu
+            </p>
+        <ref
+                href="/krivicni#art_75">
+                čl. 75 Krivičnog zakonika Crne Gore
+            </ref> prema
+            okrivljenom se izriče <p>MJERa BEZBJEDNOSTI</p>
+        <p>Oduzimanje predmeta I to: automatske
+            puške proizvodnje "C. z." ... kalibra 7,62 x 39 mm, fabričkog broja ..., kao predmeta
+            izvršenja krivičnog djela. Obavezuje se <party id="mr" refersTo="#mr" as="#defendant">
+            okrivljeni
+                </party> da na ime troškova krivičnog
+            postupka plati ovom <organization id="osn" refersTo="#osn">
+                    sudu
+                </organization> iznos od 30,00 eura, a
+            sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja. </p>
+        </decision>
+
+        <arguments>
+            <p> Optužnim predlogom ODT-a Podgorica Kt.br. 1462/19 od 13.01.2020. godine, okrivljenom
+                M.R. je stavljeno na teret da je učinio krivično djelo nedozvoljeno držanje oružja i
+                eksplozivnih materija iz <ref href="/krivicni#art_403_para_2">
+                    čl. 403 st. 2
+                    Krivičnog zakonika Crne Gore
+                </ref>
+                . </p>
+            <p> Dana 09.03.2020. godine, zastupnik optužbe je u smislu <ref
+                    href="/krivicni#art_300_para_3">
+                    člana 300 st.3 Zakonika o krivičnom postupku
+                </ref>
+                dostavio <organization
+                    id="osn" refersTo="#osn">
+                    sudu
+                </organization> sporazum o priznanju
+                krivice Kt.br. 1462/19 od 09.03.2020. godine, zapisnik o pregovaranju i zapisnik o
+                priznanju <party
+                    id="mr" refersTo="#mr" as="#defendant">
+                    okrivljenog M.R.
+                </party> , iste poslovne
+                oznake i datuma, radi donošenja odluke o zaključenom sporazumu, sa predlogom da se
+                isti usvoji. </p>
+            <p> Na ročištu za razmatranje sporazuma, održanom dana 10.03.2020. godine, <organization
+                    id="osn" refersTo="#osn">
+                    sud
+                </organization> je izvršio uvid u dokaze
+                predložene optužnim predlogom i to: u službenu zabilješku Uprave policije CB
+                Podgorica SP za JRM od 08.11.2019. godine, u potvrdu o ulaženju o stan i druge
+                prostorije Uprave CB Podgorica SP za JRM od 08.11.2019. godine, u potvrdu o
+                privremeno oduzetim predmetima Uprave policije CB Podgorica SP za JRM od 08.11.2019.
+                godine, u dokumentaciju broj 17/03-4-2268/2336 od 08.11.2019. godine, u izvještaj o
+                kriminalističko tehničkom pregledu lica mjesta broj knjige uviđaja 2336/2019 od
+                08.11.2019. godine, u izvještaj o balističkom vještačenju Forenzičkog centra
+                Danilovgrad br. 4415/19 od 24.12.2019. godine, u predmetnu pušku marke "C. z." M70 B
+                1 kalibra 7,62 x 39 mm, fabričkog broja ..., te u uvjerenje iz kaznene evidencije na
+                ime okrivljenog izdato od strane ovog suda pod brojem KE 78/20 od 22.01.2020.
+                godine. </p>
+
+            <p> Utvrđujući da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivično
+                djelo, na ročištu za razmatranje sporazuma <organization
+                    id="osn" refersTo="#osn">
+                    sud
+                </organization> je cijenio sadržinu
+                navedenih dokaza, iz kojih nesumnjivo proizilazi da je <party
+                    id="mr" refersTo="#mr" as="#defendant">
+                    okrivljeni M.R.
+                </party> u vrijeme, mjesto i
+                na način opisan u izreci presude učinio krivično djelo nedozvoljeno držanje oružja i
+                eksplozivnih materija iz <ref
+                    href="/krivicni#art_300_para_3">
+                    čl 403 st.2 Krivičnog zakonika Crne Gore
+                </ref>
+                , za koje ga je ovaj <organization
+                    id="osn" refersTo="#osn">
+                    sud
+                </organization> oglasio krivim, nakon što
+                je u svemu prihvatio sporazum o priznanju krivice </p>
+
+            <p> Odlučujući o kazni iz sporazuma o priznanju krivice, zaključenog između stranaka <organization
+                    id="osn" refersTo="#osn">
+                    sud
+                </organization> je našao da je predlog
+                stranaka u vezi sa istom prihvatljiv. Naime, <party
+                    id="mr" refersTo="#mr" as="#defendant">
+                    okrivljeni M.R.
+                </party> nije ranije
+                osuđivan, što je nesumnjivo utvrđeno iz Uvjerenja iz kaznene evidencije na ime
+                okrivljenog, izdatog od strane ovog <organization
+                    id="osn" refersTo="#osn">
+                    suda
+                </organization> a pod brojem KE 78/20 od
+                22.01.2020. godine, shodno čemu je po ocjeni <organization
+                    id="osn" refersTo="#osn">
+                    suda
+                </organization> , a imajući u vidu
+                prednje, kazna rada u javnom interesu na koju je osuđen u trajanju od 180
+                (stotinuosamdeset) časova koja će se izvršiti za vrijeme od 4 (četiri) mjeseca,
+                srazmjerna stepenu krivice okrivljenog i težini učinjenog krivičnog djela i sa istom
+                će se u potpunosti ostvariti svrha kažnjavanja iz <ref
+                    href="/krivicni#art_32">
+                    čl 32 Krivičnog zakonika Crne Gore
+                </ref>, tj
+                da <party
+                    id="mr" refersTo="#mr" as="#defendant">
+                    okrivljeni
+                </party> ubuduće ne vrši krivična
+                djela, a u okviru opšte svrhe izricanja krivičnih sankcija iz <ref
+                    href="/krivicni#art_4">
+                    čl 4 Krivičnog zakonika Crne Gore
+                </ref>
+                <party
+                    id="mr" refersTo="#mr" as="#defendant">
+                    Okrivljenom
+                </party> se, shodno <ref
+                    href="/krivicni#art_51">
+                    čl 51 Krivičnog zakonika Crne Gore
+                </ref> u
+                kaznu rada u javnom interesu na koju je osuđen ima uračunati vrijeme lišenja slobode
+                od dana 08.11.2019. godine do 09.11.2019. godine, na način što se navedeno vrijeme
+                računa kao osam časova rada u javnom interesu. </p>
+
+            <p>
+
+                <organization
+                    id="osn" refersTo="#osn">
+                    Sud
+                </organization> je <party
+                    id="mr" refersTo="#mr" as="#defendant">
+                    okrivljenom
+                </party> shodno <ref
+                    href="/krivicni#art_75">
+                    čl 75 Krivičnog zakonika Crne Gore
+                </ref> je
+                izrekao mjeru bezbjednosti oduzimanja predmeta i to: automatske puške proizvodnje
+                "C. z." ... kalibra 7,62 x 39 mm, fabričkog broja ..., kao predmeta izvršenja
+                krivičnog djela. </p>
+
+            <p>
+                <party
+                    id="mr" refersTo="#mr" as="#defendant">
+                    Okrivljeni
+                </party> je shodno čl. 226 i 229
+                ZKP-a, obavezan da ovom <organization id="osn" refersTo="#osn"> sudu </organization>
+                plati troškove krivičnog postupka, u iznosu od 30,00 eura, na ime sudskog paušala,
+                koji je odmjeren shodno dužini trajanja postupka, njegovoj složenosti i imovinskim
+                prilikama okrivljenog, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom
+                izvršenja </p>
+            <p> Na osnovu izloženog, a shodno <ref
+                    href="/krivicni#art_303_para_1">
+                    čl 303 st. 1 Zakonika o krivičnom postupku
+                </ref>
+                odlučeno je kao u izreci presude. </p>
+        </arguments>
+    </judgementBody>
+    <conclusions>
+        <p>PRAVNA POUKA</p>
+        <p>
+            Protiv ove presude dozvoljena je žalba,
+        </p>
+        <p>
+            ako presuda nije u skladu sa zaključenim Sporazumom.
+        </p>
+    </conclusions>
+
+</akomaNtoso>
