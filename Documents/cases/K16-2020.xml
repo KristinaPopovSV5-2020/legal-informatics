@@ -101,12 +101,12 @@
             </ref> i <ref href="/krivicni#art_51">
                 čl. 51 Krivičnog zakonika Crne Gore
             </ref> i <ref
-                href="/krivicni#art_226">
+                href="/postupak#art_226">
                 čl. 226,
             </ref>
-        <ref href="/krivicni#art_229">
+        <ref href="/postupak#art_229">
                 229,
-            </ref> i <ref href="/krivicni#art_374">
+            </ref> i <ref href="/postupak#art_374">
                 374 Zakonika o krivičnom postupku,
             </ref>
         <p>O S U Đ U J E</p>
@@ -268,14 +268,19 @@
                 <party
                     id="mr" refersTo="#mr" as="#defendant">
                     Okrivljeni
-                </party> je shodno čl. 226 i 229
-                ZKP-a, obavezan da ovom <organization id="osn" refersTo="#osn"> sudu </organization>
-                plati troškove krivičnog postupka, u iznosu od 30,00 eura, na ime sudskog paušala,
-                koji je odmjeren shodno dužini trajanja postupka, njegovoj složenosti i imovinskim
-                prilikama okrivljenog, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom
-                izvršenja </p>
+                </party> je shodno<ref
+                    href="/postupak#art_226">
+                    čl. 226,
+                </ref> i <ref
+                    href="/postupak#art_229">
+                    čl. 220,
+                </ref> ZKP-a, obavezan da ovom <organization
+                    id="osn" refersTo="#osn"> sudu </organization> plati troškove krivičnog
+                postupka, u iznosu od 30,00 eura, na ime sudskog paušala, koji je odmjeren shodno
+                dužini trajanja postupka, njegovoj složenosti i imovinskim prilikama okrivljenog, u
+                roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja </p>
             <p> Na osnovu izloženog, a shodno <ref
-                    href="/krivicni#art_303_para_1">
+                    href="/postupak#art_303_para_1">
                     čl 303 st. 1 Zakonika o krivičnom postupku
                 </ref>
                 odlučeno je kao u izreci presude. </p>

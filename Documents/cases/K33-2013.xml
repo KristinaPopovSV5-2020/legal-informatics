@@ -126,14 +126,14 @@
                     href="/krivicni#art_54">
                     čl. 54 Krivičnog zakonika
                 </ref> i <ref
-                    href="/krivicni#art_226">
+                    href="/postupak#art_226">
                     čl. 226,
                 </ref>
                 <ref
-                    href="/krivicni#art_229">
+                    href="/postupak#art_229">
                     čl. 229
                 </ref> i <ref
-                    href="/krivicni#art_374">
+                    href="/postupak#art_374">
                     čl. 374 Zakonika o krivičnom postupku
                 </ref>,
             izriče </p>
@@ -310,14 +310,14 @@
                 postupka plati iznos od 30,00 €, koji iznos se odnosi na ime sudskog paušala kao
                 dijela troškova krivičnog postupka, a koji je odmjeren srazmjerno trajanju postupka
                 i složenosti predmeta, shodno <ref
-                    href="/krivicni#art_226">
+                    href="/postupak#art_226">
                     čl. 226
                 </ref> u vezi sa <ref
-                    href="/krivicni#art_229">
+                    href="/postupak#art_229">
                     čl. 229 Zakonika o krivičnom postupku
                 </ref>. </p>
             <p> Na osnovu navedenog, a u smislu <ref
-                    href="/krivicni#art_374">
+                    href="/postupak#art_374">
                     čl. 374 Zakonika o krivičnom postupku
                 </ref>,
                 odlučeno je kao u izreci presude. </p>
@@ -330,14 +330,13 @@
         </organization>
         <p>Dana, 29.04.2013. godine</p>
         <p>
-        S U D I J A</p>
+            S U D I J A</p>
         <party
             id="amartinovic" refersTo="#amartinovic" as="#judge">
             Aleksandra Martinović
         </party>
         <p>PRAVNA POUKA:</p>
-        <p> Protiv ove
-        presude može se izjaviti žalba u roku od 8 dana od dana prijema <organization
+        <p> Protiv ove presude može se izjaviti žalba u roku od 8 dana od dana prijema <organization
                 id="vs" refersTo="#vs">
                 Višem sudu u Podgorici
             </organization> a preko ovog Suda. </p>
@@ -347,5 +346,5 @@
                 Marija Čupićf
             </party>
         </p>
-      </conclusions>
+    </conclusions>
 </akomaNtoso>
