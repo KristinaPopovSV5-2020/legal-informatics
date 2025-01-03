@@ -7,6 +7,22 @@
       <div class="logo-container">
         <mat-icon>balance</mat-icon>
       </div>
+
+      <ng-container *ngIf="role === null">
+        <mat-nav-list class="menu">
+        <mat-list-item>
+          <app-link  text="Uloguj se" source="login"></app-link>
+        </mat-list-item>
+        <hr>
+        <mat-list-item>
+          <app-link  text="Registracija" source="signup"></app-link>
+        </mat-list-item>
+        <hr>
+        </mat-nav-list>
+
+      </ng-container>
+
+      <ng-container *ngIf="role === 'User'">
       <mat-nav-list class="menu">
         <mat-expansion-panel [class.mat-elevation-z0]="true">
           <mat-expansion-panel-header>
@@ -16,10 +32,10 @@
           </mat-expansion-panel-header>
           <mat-nav-list>
             <mat-list-item>
-                <app-link  text="~ Krivični zakon" source=""></app-link>
+                <a routerLink="law">~ Krivični zakon</a>
               </mat-list-item>
               <mat-list-item>
-                <app-link  text="~ Zakon o oružju" source=""></app-link>
+                <a routerLink="law">~ Zakon o oružju</a>
               </mat-list-item>
           </mat-nav-list>
         </mat-expansion-panel>
@@ -31,16 +47,21 @@
               </mat-panel-title>
             </mat-expansion-panel-header>
             <mat-nav-list>
-              <app-link text="K 454/2020" source=""></app-link>
-              <app-link text="K 567/2023" source=""></app-link>
+              <a routerLink="case">K 454/2020 </a>
+              <a routerLink="case">K 454/2020 </a>
             </mat-nav-list>
           </mat-expansion-panel>
     <hr>
       <mat-list-item>
-        <a source="new-case">Nov slučaj</a>
+        <app-link source="new-case" text="Nov slučaj"></app-link>
       </mat-list-item>
       <hr>
       </mat-nav-list>
+      <div class="logout-container" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Odjavi se</span>
+      </div>
+    </ng-container>
     </div>
   </div>
   

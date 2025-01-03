@@ -10,6 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from './modules/layout/layout.module';
 import { SharedModule } from './modules/shared/shared.module';
+import { Interceptor } from './modules/auth/interceptor/interceptor.interceptor';
+import { AuthModule } from './modules/auth/auth.module';
+import { PagesModule } from './modules/pages/pages.module';
 
 
 
@@ -25,9 +28,18 @@ import { SharedModule } from './modules/shared/shared.module';
     HttpClientModule,
     AppRoutingModule,
     LayoutModule,
-    SharedModule
+    SharedModule,
+    AuthModule,
+    PagesModule
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS,
+    useClass: Interceptor,
+    multi: true,
+    },
+    DatePipe,
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

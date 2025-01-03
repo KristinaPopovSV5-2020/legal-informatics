@@ -1,14 +1,7 @@
-/* Reset styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-
 .container {
     display: flex;
     height: 100vh;
+    position: fixed;
 }
 
 .sidebar {
@@ -38,7 +31,7 @@ hr {
     border: 1px solid rgba(193, 149, 105, 0.781); 
   }
   
-mat-icon {
+  .logo-container mat-icon {
    width: 100px;
    height: 100px;
    font-size: 90px;
@@ -52,23 +45,16 @@ mat-panel-title{
 }
 
 mat-list-item {
-    padding: 0px 15px; /* Smanjite vertikalni razmak između stavki */
+    padding: 0px 15px; 
     margin: 0px;
     color: #259d79;
   }
   
-
-mat-list-item:hover {
-    background-color: #125a44;
-    box-shadow: none;
-    outline: none;   
-  }
-
 a{
-    font-size: 20px;
-    color: #259d79;
-    font-weight: bold;
+    font-size: 18px;
+    color: white;
     padding-left: 7px;
+    text-decoration: none;
   }
 
 a:hover{
@@ -77,10 +63,28 @@ a:hover{
     outline: none; 
 }
 
-/* Main content styles */
 .content {
     flex-grow: 1;
     padding: 20px;
-    background-color: #e7e4e4; /* Light gray */
+    background-color: #e7e4e4;
     overflow-y: auto;
 }
+
+.logout-container {
+    margin-top: auto; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #259d79;
+    font-weight: bold;
+  }
+  
+  .logout-container mat-icon {
+    margin-right: 8px;
+    color: #259d79;
+  }
+  
+  .logout-container span {
+    font-size: 19px;
+  }
