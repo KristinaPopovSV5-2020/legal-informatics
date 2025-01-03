@@ -82,7 +82,7 @@ export class AuthService {
 
   getUrlPath(): string {
     if (this.getRole() =="User") {
-        return "home";
+        return "law";
     }
     return "";
   }

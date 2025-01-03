@@ -5,6 +5,7 @@ import { AuthService } from '../auth.service';
 import { User } from '../model/user';
 import { HttpErrorResponse } from '@angular/common/http';
 import { validateRePassword } from './custom-validator/custom-validator';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-signup',
@@ -24,7 +25,8 @@ export class SignupComponent implements OnInit{
 
   constructor(private formBuilder: FormBuilder,
     public dialog: MatDialog,
-    private authService: AuthService,){
+    private authService: AuthService,
+    private snackBar: MatSnackBar){
     }
 
   ngOnInit(){
@@ -33,7 +35,7 @@ export class SignupComponent implements OnInit{
         '',
         [
         Validators.required,
-        Validators.minLength(3),
+        Validators.minLength(2),
         Validators.maxLength(20),
         Validators.pattern('[a-zA-Z]+'),
 
@@ -43,7 +45,7 @@ export class SignupComponent implements OnInit{
         '',
         [
         Validators.required,
-        Validators.minLength(3),
+        Validators.minLength(2),
         Validators.maxLength(20),
         Validators.pattern('[a-zA-Z]+'),
 
@@ -71,12 +73,6 @@ export class SignupComponent implements OnInit{
             validateRePassword,
           ],
       ],
-      skinType:['',
-        [
-          Validators.required,
-        ],
-      ],
-
     });
     
   }
@@ -90,10 +86,9 @@ export class SignupComponent implements OnInit{
         password:(this.signupForm.value as User).password,
   
       }
-      console.log(user)
       this.authService.register(user).subscribe({
         next: (user) =>{
-          alert("Successfully registered");
+          this.showToast();
         },
         error: (error) => {
           if (error instanceof HttpErrorResponse){
@@ -110,6 +105,14 @@ export class SignupComponent implements OnInit{
     }
 
 
+}
+
+showToast() {
+  this.snackBar.open('Uspešno ste se registrovali!', 'Zatvori', {
+    duration: 3000, 
+    verticalPosition: 'bottom',
+    horizontalPosition: 'center',
+  });
 }
 
 }

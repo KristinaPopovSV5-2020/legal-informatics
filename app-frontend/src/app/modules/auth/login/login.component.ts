@@ -33,7 +33,7 @@ export class LoginComponent {
         next: (result) => {
           localStorage.setItem('user', JSON.stringify(result));
           this.authService.setUser();
-          this.router.navigate(['/' + this.authService.getUrlPath()]);
+          this.router.navigate(['/law']);
         },
         error: (error) => {
           if (error instanceof HttpErrorResponse) {

@@ -12,6 +12,7 @@ import { LayoutModule } from './modules/layout/layout.module';
 import { SharedModule } from './modules/shared/shared.module';
 import { Interceptor } from './modules/auth/interceptor/interceptor.interceptor';
 import { AuthModule } from './modules/auth/auth.module';
+import { PagesModule } from './modules/pages/pages.module';
 
 
 
@@ -28,7 +29,8 @@ import { AuthModule } from './modules/auth/auth.module';
     AppRoutingModule,
     LayoutModule,
     SharedModule,
-    AuthModule
+    AuthModule,
+    PagesModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS,
