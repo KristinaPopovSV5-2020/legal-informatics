@@ -7,6 +7,22 @@
       <div class="logo-container">
         <mat-icon>balance</mat-icon>
       </div>
+
+      <ng-container *ngIf="role === null">
+        <mat-nav-list class="menu">
+        <mat-list-item>
+          <app-link  text="Uloguj se" source="login"></app-link>
+        </mat-list-item>
+        <hr>
+        <mat-list-item>
+          <app-link  text="Registracija" source="signup"></app-link>
+        </mat-list-item>
+        <hr>
+        </mat-nav-list>
+
+      </ng-container>
+
+      <ng-container *ngIf="role === 'User'">
       <mat-nav-list class="menu">
         <mat-expansion-panel [class.mat-elevation-z0]="true">
           <mat-expansion-panel-header>
@@ -41,6 +57,7 @@
       </mat-list-item>
       <hr>
       </mat-nav-list>
+    </ng-container>
     </div>
   </div>
   

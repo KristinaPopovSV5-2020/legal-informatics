@@ -1,0 +1,40 @@
+
+.title {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px auto;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+.form-container form {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form-container button {
+    width: 100%;
+    color: white;
+    background-color: #104b39;
+}
+
+mat-error{
+    color: purple;
+    margin: 5px auto;
+    text-align: center;
+}
