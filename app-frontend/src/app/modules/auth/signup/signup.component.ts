@@ -81,7 +81,7 @@ export class SignupComponent implements OnInit{
     
   }
 
-  signup() : void{ 
+  signup(e: MouseEvent): void{ 
     if (this.signupForm.valid){
       const user :User = {
         name : (this.signupForm.value as User).name,

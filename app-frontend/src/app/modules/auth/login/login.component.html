@@ -1,6 +1,6 @@
 <div class="form-container">
     <p class="title">Uloguj se na svoj nalog</p>
-    <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <form [formGroup]="loginForm">
         <div class="logo-container">
             <mat-icon>account_circle</mat-icon>
           </div>
@@ -16,6 +16,6 @@
                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
-        <button mat-raised-button type="submit">Uloguj se</button>
+        <app-button [buttonStyle]="'margin-top: 10px;'" [buttonText]="'Uloguj se'" (click)="login($event)"></app-button>
     </form>
 </div>

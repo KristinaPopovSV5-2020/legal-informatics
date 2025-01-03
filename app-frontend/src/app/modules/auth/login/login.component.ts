@@ -22,7 +22,7 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router,
     private dialog: MatDialog) {}
 
-  login(): void {
+  login(e:MouseEvent): void {
     const loginVal: LoginDTO = {
       username: (this.loginForm.value as LoginDTO).username,
       password: (this.loginForm.value as LoginDTO).password,
