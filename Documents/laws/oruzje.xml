@@ -3655,8 +3655,348 @@
                             </content>
                         </paragraph>
                     </article>
+                    <article eId="art_91">
+                        <num>Član 91</num>
+                        <paragraph eId="art_91_para_1">
+                            <content eId="art_91_para_1_content">
+                                <intro eId="art_91_para_1_intro">
+                                    <p> Zahtjev za izdavanje odobrenja iz člana <ref
+                                            href="/oruzje#art_90_para_1"> 90 stav 1</ref> ovog
+                                        zakona, sadrži podatke o: </p>
+                                </intro>
+                                <point eId="art_91_para_1_point_1">
+                                    <num>1)</num>
+                                    <content eId="art_91_para_1_point_1_content">
+                                        <p>nazivu i adresi pošiljaoca;</p>
+                                    </content>
+                                </point>
+                                <point eId="art_91_para_1_point_2">
+                                    <num>2)</num>
+                                    <content eId="art_91_para_1_point_2_content">
+                                        <p>nazivu i adresi primaoca;</p>
+                                    </content>
+                                </point>
+                                <point eId="art_91_para_1_point_3">
+                                    <num>3)</num>
+                                    <content eId="art_91_para_1_point_3_content">
+                                        <p>nazivu i adresi proizvođača;</p>
+                                    </content>
+                                </point>
+                                <point eId="art_91_para_1_point_4">
+                                    <num>4)</num>
+                                    <content eId="art_91_para_1_point_4_content">
+                                        <p>vrsti, količini i načinu pakovanja oružja, odnosno
+                                            municije kad se radi o uvozu, odnosno vrsti,
+                                            marki, modelu, fabričkom broju, kalibru, količini i
+                                            načinu pakovanja kad se radi o izvozu;
+                                        </p>
+                                    </content>
+                                </point>
+                                <point eId="art_91_para_1_point_5">
+                                    <num>5)</num>
+                                    <content eId="art_91_para_1_point_5_content">
+                                        <p>vrsti i oznaci prevoznog sredstva, imenu i prezimenu
+                                            vozača i pratnje, kao i broju putne isprave
+                                            vozača, odnosno pratnje;</p>
+                                    </content>
+                                </point>
+                                <point eId="art_91_para_1_point_6">
+                                    <num>6)</num>
+                                    <content eId="art_91_para_1_point_6_content">
+                                        <p>približnom datumu početka prevoza, smjeru kretanja i
+                                            odredištu;</p>
+                                    </content>
+                                </point>
+                                <point eId="art_91_para_1_point_7">
+                                    <num>7)</num>
+                                    <content eId="art_91_para_1_point_7_content">
+                                        <p>nazivu ulaznog i izlaznog graničnog prelaza i datumu
+                                            prevoženja preko graničnog prelaza;</p>
+                                    </content>
+                                </point>
+                                <point eId="art_91_para_1_point_8">
+                                    <num>8)</num>
+                                    <content eId="art_91_para_1_point_8_content">
+                                        <p>mjerama bezbjednosti za vrijeme prevoza;</p>
+                                    </content>
+                                </point>
+                                <point eId="art_91_para_1_point_9">
+                                    <num>9)</num>
+                                    <content eId="art_91_para_1_point_9_content">
+                                        <p>uvoznoj ili izvoznoj dozvoli organa državne uprave
+                                            nadležnog za poslove ekonomije, kad se radi o
+                                            međunarodnom prevozu.</p>
+                                    </content>
+                                </point>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_91_para_2">
+                            <content eId="art_91_para_2_content">
+                                <p>
+                                    Ministarstvo može da naredi preduzimanje posebnih mjera
+                                    bezbjednosti za vrijeme prevoza (smjer
+                                    kretanja, pratnja pošiljaoca ili prevoznika, pratnja policije i
+                                    dr.), u slučajevima kad je to neophodno zbog
+                                    zaštite života i zdravlja ljudi, imovine i zaštite životne
+                                    sredine.
+                                </p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_91_para_3">
+                            <content eId="art_91_para_3_content">
+                                <p>
+                                    Odobrenje za prevoz oružja i municije izdaje se sa rokom važenja
+                                    od 60 dana.
+                                </p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    <article eId="art_92">
+                        <num>Član 92</num>
+                        <paragraph eId="art_92_para_1">
+                            <content eId="art_92_para_1_content">
+                                <p>
+                                    Na prevoz municije, u pogledu mjera bezbjednosti, shodno se
+                                    primjenjuju propisi o prevozu
+                                    eksplozivnih materija.</p>
+                            </content>
+                        </paragraph>
+                    </article>
                 </section>
             </chapter>
+            <chapter eId="chp_7">
+                <num>VII.</num>
+                <heading>CIVILNO STRELIŠTE</heading>
+                <section eId="chp_7_sec_1">
+                    <num>1.</num>
+                    <heading>Sportsko-rekreativno gađanje</heading>
+                    <!-- Član 93 -->
+                    <article
+                        eId="art_93">
+                        <num>Član 93</num>
+                        <paragraph eId="art_93_para_1">
+                            <content eId="art_93_para_1_content">
+                                <p> Pružanjem usluga sportsko-rekreativnog gađanja na civilnom
+                                    strelištu može se baviti pravno lice ili
+                                    preduzetnik koji je registrovan za obavljanje te djelatnosti i
+                                    ima odobrenje Ministarstva za pružanje
+                                    usluga sportsko-rekreativnog gađanja na civilnom strelištu.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_93_para_2">
+                            <content eId="art_93_para_2_content">
+                                <p> Civilno strelište je prostor namijenjen sportsko-rekreativnom
+                                    gađanju, koji ispunjava tehničke i
+                                    sigurnosne uslove za bezbjednu upotrebu oružja.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_93_para_3">
+                            <content eId="art_93_para_3_content">
+                                <p>Odredbe <ref
+                                        href="/oruzje#art_93_para_1">stava 1</ref> ovog člana, ne
+                                    primjenjuju se na mjesto određeno za vježbe gađanja koje lovačka
+                                    ili streljačka organizacija određuje za vježbe gađanja i
+                                    isprobavanja lovačkog ili sportskog oružja ili organizaciju
+                                    streljačkih takmičenja.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    <!-- Član 94 -->
+                    <article
+                        eId="art_94">
+                        <num>Član 94</num>
+                        <paragraph eId="art_94_para_1">
+                            <intro eId="art_94_para_1_intro">
+                                <p>Pravnom licu, odnosno preduzetniku izdaće se odobrenje iz člana <ref
+                                        href="/oruzje#art_93_para_1">93 stava 1</ref> ovog zakona,
+                                    ako:</p>
+                            </intro>
+                            <point eId="art_94_para_1_point_1">
+                                <num>1)</num>
+                                <content eId="art_94_para_1_point_1_content">
+                                    <p>odgovorno lice u pravnom licu, odnosno preduzetnik ispunjava
+                                        opšte i posebne uslove iz člana <ref
+                                            href="/oruzje#art_13">13</ref> ovog zakona;</p>
+                                </content>
+                            </point>
+                            <point eId="art_94_para_1_point_2">
+                                <num>2)</num>
+                                <content eId="art_94_para_1_point_2_content">
+                                    <p>ima civilno strelište i prostor za bezbjedan smještaj oružja
+                                        i municije i zaštitu od požara, krađe i
+                                        drugih nezgoda ili zloupotreba;</p>
+                                </content>
+                            </point>
+                            <point eId="art_94_para_1_point_3">
+                                <num>3)</num>
+                                <content eId="art_94_para_1_point_3_content">
+                                    <p> ima stručno lice koje ispunjava opšte i posebne uslove iz
+                                        člana <ref
+                                            href="/oruzje#art_13">13</ref> ovog zakona i stručno je
+                                        osposobljeno za obučavanje lica za bezbjednu upotrebu oružja</p>
+                                </content>
+                            </point>
+                        </paragraph>
+                        <paragraph eId="art_94_para_2">
+                            <content eId="art_94_para_2_content">
+                                <p> Postojanje uslova iz <ref
+                                        href="/oruzje#art_94_para_1_point_2">stava 1 tačka 2</ref>
+                                    ovog člana, utvrđuje komisija iz <ref
+                                        href="/oruzje#art_67_para_2">člana 67 stav 2</ref> ovog
+                                    zakona. </p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_94_para_3">
+                            <content eId="art_94_para_3_content">
+                                <p> Uslove iz <ref
+                                        href="/oruzje#art_94_para_1_point_2">stava 1 tačka 2</ref>
+                                    ovog člana, propisuje Ministarstvo </p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    <!-- Član 95 -->
+                    <article eId="art_95">
+                        <num>Član 95</num>
+                        <paragraph eId="art_95_para_1">
+                            <content eId="art_95_para_1_">
+                                <p> Prostor iz <ref
+                                        href="/oruzje#art_94_para_1_point_2">člana 94 stav 1 tačka 2 </ref>ovog
+                                    zakona, mora biti obezbijeđen od pristupa neovlašćenih lica
+                                    stalnom tehničkom zaštitom.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    <!-- Član 96 -->
+                    <article
+                        eId="art_96">
+                        <num>Član 96</num>
+                        <paragraph eId="art_96_para_1">
+                            <intro eId="art_96_para_1_intro">
+                                <p>Uz zahtjev za izdavanje odobrenja iz člana <ref
+                                        href="/oruzje#art_93_para_1">93 stava 1</ref> ovog zakona
+                                    prilaže se:</p>
+                            </intro>
+                            <point eId="art_96_para_1_point_1">
+                                <num>1)</num>
+                                <content eId="art_96_para_1_point_1_content">
+                                    <p>akt o upisu u Centralni registar privrednih subjekata;</p>
+                                </content>
+                            </point>
+                            <point eId="art_96_para_1_point_2">
+                                <num>2)</num>
+                                <content eId="art_96_para_1_point_2_content">
+                                    <p>podaci o odgovornom licu u pravnom licu, odnosno
+                                        preduzetniku;</p>
+                                </content>
+                            </point>
+                            <point eId="art_96_para_1_point_3">
+                                <num>3)</num>
+                                <content eId="art_96_para_1_point_3_content">
+                                    <p>podaci o stručnom licu iz <ref
+                                            href="/oruzje#art_94_para_1_point_3">člana 94 stav 1
+                                        tačka 3</ref> ovog zakona;</p>
+                                </content>
+                            </point>
+                            <point eId="art_96_para_1_point_4">
+                                <num>4)</num>
+                                <content eId="art_96_para_1_point_4_content">
+                                    <p> upotrebna dozvola za civilno strelište;</p>
+                                </content>
+                            </point>
+                            <point eId="art_96_para_1_point_5">
+                                <num>5)</num>
+                                <content eId="art_96_para_1_point_5_content">
+                                    <p> elaborat civilnog strelišta.</p>
+                                </content>
+                            </point>
+                        </paragraph>
+                    </article>
+                    <!-- Član 97 -->
+                    <article
+                        eId="art_97">
+                        <num>Član 97</num>
+                        <paragraph eId="art_97_para_1">
+                            <content eId="art_97_para_1_content">
+                                <p> Oružje na civilnom strelištu može koristiti samo fizičko lice
+                                    koje u skladu sa ovim zakonom ima oružni
+                                    list za držanje oružja, odnosno oružni list za držanje i nošenje
+                                    oružja ili odobrenje za držanje oružja.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_97_para_2">
+                            <content eId="art_97_para_2_content">
+                                <p> Izuzetno od <ref
+                                        href="/oruzje#art_97_para_1">stava 1</ref> ovog člana, pod
+                                    nadzorom stručnog lica oružje na civilnom strelištu može
+                                    koristiti fizičko lice koje se aktivno bavi sportskim
+                                    streljaštvom, kao i fizičko lice koje se bavi rekreativnim
+                                    gađanjem</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_97_para_3">
+                            <content eId="art_97_para_3_content">
+                                <p> Stručno lice iz <ref
+                                        href="/oruzje#art_97_para_2">stava 2</ref> ovog člana, mora
+                                    da ispunjava opšte i posebne uslove iz <ref
+                                        href="/oruzje#art_13">člana 13</ref> ovog zakona.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_97_para_4">
+                            <content eId="art_97_para_4_content">
+                                <p> Odredbe st. <ref
+                                        href="/oruzje#art_97_para_1">1</ref>, <ref
+                                        href="/oruzje#art_97_para_2">2</ref> i <ref
+                                        href="/oruzje#art_97_para_3">3</ref> ovog člana, primjenjuju
+                                    se i na mjesto određeno za vježbe gađanja.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    <!-- Član 98 -->
+                    <article
+                        eId="art_98">
+                        <num>Član 98</num>
+                        <paragraph eId="art_98_para_1">
+                            <content eId="art_98_para_1_content">
+                                <p> Pravno lice ili preduzetnik iz <ref
+                                        href="/oruzje#art_93_para_1"> člana 93 stav 1</ref> ovog
+                                    zakona, može nabavljati potrebne količine oružja i municije radi
+                                    korišćenja na strelištu.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+                <section eId="chp_7_sec_2">
+                    <num>2.</num>
+                    <heading>Osposobljavanje građana za pravilnu upotrebu vatrenog oružja</heading>
+                    <!-- Član 99 -->
+                    <article
+                        eId="art_99">
+                        <num>Član 99</num>
+                        <paragraph eId="art_99_para_1">
+                            <content eId="art_99_para_1_content">
+                                <p> Osposobljavanjem građana za pravilnu upotrebu vatrenog oružja
+                                    može se baviti pravno lice ili preduzetnik iz <ref
+                                        href="/oruzje#art_93_para_1"> člana 93 stav 1</ref> ovog
+                                    zakona.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_99_para_2">
+                            <content eId="art_99_para_2_content">
+                                <p> Pravno lice ili preduzetnik iz stava 1 ovog člana, fizičkom licu
+                                    izdaje potvrdu o osposobljenosti za
+                                    pravilnu upotrebu vatrenog oružja.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_99_para_3">
+                            <content eId="art_99_para_3_content">
+                                <p> Bliži način osposobljavanja građana za pravilnu upotrebu
+                                    vatrenog oružja, propisuje Ministarstvo.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+            </chapter>
+            </section>
         </body>
     </act>
 </akomaNtoso>
