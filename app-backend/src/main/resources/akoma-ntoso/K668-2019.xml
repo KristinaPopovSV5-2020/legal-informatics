@@ -1,0 +1,286 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+    <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                    <FRBRdate date="2020-09-11">2020-09-11</FRBRdate>
+                    <FRBRtitle>K 668/2019</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+             <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica"/>
+                <TLCPerson eId="djgoran" href="/ontology/person/djgoran" showAs="Đuković Goran"/>
+                <TLCPerson eId="sradevic" href="/ontology/person/sradevic" showAs="Radević Sanja"/>
+                <TLCPerson eId="bz" href="/ontology/person/bz" showAs="B.Z."/>
+                <TLCPerson eId="djz" href="/ontology/person/djz" showAs="Đ. Ž."/>
+                <TLCPerson eId="djb" href="/ontology/person/djb" showAs="Đ. B."/>
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="injured" href="/ontology/role/injured" showAs="Injured" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+            </references>
+    </meta>
+    </judgment>
+    <judgmentBody>
+    <p>U IME CRNE GORE</p>
+      <introduction>
+      <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+            </organization>
+            , po sudiji 
+            <party id="djgoran" refersTo="#djgoran" as="#judge">
+                Đuković Goran  
+            </party>, uz učešće namještenika suda
+            <party id="sradevic" refersTo="#sradevic" as="#clerk">
+                Radević Sanje
+            </party>
+            , kao zapisničara u krivičnom predmetu protiv okrivljenog
+            <party id="djz" refersTo="#djz" as="#defendant">
+                Đ. Ž.
+            </party>
+            , koga brani advokat
+            <party id="djz" refersTo="#djz" as="#defense">
+                B.Z.
+            </party>
+            , zbog krivičnog djela teška teška tjelesna povreda iz
+            <ref href="/krivicni#art_151_para_1">
+                čl. 151 st. 1 Krivičnog zakonika Crne Gore 
+            </ref>
+            , u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija iz
+            <ref href="/krivicni#art_403_para_1">
+                čl. 403 st. 1 Krivičnog zakonika Crne Gore
+            </ref>
+            ,nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice, dana 11.09.2020. godine, donio je
+      </introduction>
+           <p>
+            P R E S U D U
+        </p>
+        <background>
+         Okrivljeni:
+        <party id="djz" refersTo="#djz" as ="#defendant">
+               Đ.Ž.
+        </party>
+        , sa JMBG: xxxxxxxxxxxxx, od oca M. i majke R., rođene V., rođen xx.xx.19xx. godine u Podgorici, sa
+        prebivalištem u mjestu rodjenja, ul. G. S. O. br. xx, državljanin Crne Gore, završio srednju školu, nezaposlen,
+        oženjen, otac dvoje djece, srednjeg imovnog stanja, osudjivan,
+        </background>
+        <decision>
+        <p>Kriv je</p>
+        <p>Zato što je: </p>
+        Dana 21.04.2015. godine, oko 19,00 časova, u Bulevaru Ivana Crnojevića, u Podgorici, svjestan svojih djela,
+        čija je izvršenja htio i znajući da su ista zabranjena, teško tjelesno povrijedio oštećenog
+         <party id="djb" refersTo="#djb" as ="#injured">
+               Đ.B.
+        </party>
+        , na način što je
+        dok se oštećeni nalazio kao vozač u vozilu zaustavljen na semaforu, otvorio vrata vozača, a zatim iz pištolja
+        nepoznate marke kalibra 7,65 mm, koji je suprotno
+        <ref href="/oruzje#art_4_para_3_point_1">
+                    čl. 4 st. 3 tač. 1,
+        </ref>
+        <ref href="/oruzje#art_5_para_2">
+              čl. 5 st. 2
+        </ref>
+        <ref href="/oruzje#art_33">
+         čl. 33
+         </ref>
+         i
+        <ref href="/oruzje#art_36_para_2">
+              čl. 36 st. 2 Zakona o oružju
+        </ref>
+        , bez izdatog oružnog lista nosio i upotrijebio na javnom mjestu i u pravcu nogu oštećenog ispalio dva
+        projektila, nanoseći mu tešku tjelesnu povredu u vidu strijelne rane prostreline lijeve butine, strijelno
+        okrznuće u predjelu zadnje strane srednje trećine desne potkoljenice u strijelnu ranu prostrelinu lijeve
+        butine,
+
+        - čime je izvršio krivično djelo teška tjelesna povreda iz
+        <ref href="/krivicni#art_151_para_1">
+                    čl. 151 st. 1 Krivičnog zakonika Crne Gore
+        </ref>
+         u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija iz
+         <ref href="/krivicni#art_403_para_1">
+         čl. 403 st. 1 Krivičnog zakonika Crne Gore.
+         </ref>
+         <p>
+         Pa sud okrivljenom primjenom
+         <ref href="/krivicni#art_48_para_1">
+          čl. 48 st. 1 Krivičnog zakonika Crne Gore
+         </ref>
+         za svako krivično djelo prethodno utvrdjuje kaznu zatvora i to:
+         </p>
+         <p>
+         - za krivično djelo teška tjelesna povreda iz
+         <ref href="/krivicni#art_151_para_1">
+          čl. 151 st. 1 Krivičnog zakonika Crne Gore
+          </ref>
+         kaznu zatvora u trajanju od 7 (sedam) mjeseci,
+         </p>
+         <p>
+         - za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz 
+         <ref href="/krivicni#art_403_para_1">
+         čl. 403 st. 1 Krivičnog zakonika Crne Gore
+         </ref>
+        kaznu zatvora u trajanju od 3 (tri) mjeseca,
+         </p>
+         pa sud okrivljenog primjenom citiranih zakonskih propisa te
+         <ref href="/krivicni#art_3">
+          čl. 3,
+          </ref>
+          <ref href="/krivicni#art_4">
+          4,
+          </ref>
+          <ref href="/krivicni#art_5">
+          5,
+          </ref>
+          <ref href="/krivicni#art_13">
+          13,
+          </ref>
+          <ref href="/krivicni#art_15">
+          15,
+          </ref>
+          <ref href="/krivicni#art_32">
+          32,
+          </ref>
+          <ref href="/krivicni#art_42">
+          42,
+          </ref>
+          <ref href="/krivicni#art_48_para_2">
+          48 st. 2 tač. 2 Krivičnog zakonika Crne Gore
+          </ref>
+          , te 
+          <ref href="/postupak#art_226">
+          čl. 226,
+          </ref>
+          <ref href="/postupak#art_229">
+        229,
+        </ref>
+        <ref href="/postupak#art_239">
+        239
+        </ref>
+        i
+        <ref href="/postupak#art_374">
+        374 Zakonika o krivičnom postupku,
+        </ref>
+        <p>O S U Đ U J E</p>
+        <p>Na jedinstvenu kaznu zatvora u trajanju od 9 (devet) mjeseci.</p>
+        <p>Oštećeni
+        <party id="djb" refersTo="#djb" as ="#injured">
+               Đ.B.
+        </party>
+        radi ostvarenja imovinskopravnog zahtjeva upućuje se na parnični postupak.</p>
+        <p>Obavezuje se okrivljeni da ovom sudu na ime troškova krivičnog postupka uplati novčani iznos od 82,50 eura
+kao i 30,00 eura na ime paušala, sve u roku od 15 dana po pravosnažnosti presude.</p>
+        </decision>
+        <arguments>
+        <p>O b r a z l o ž e nj e</p>
+        <p>
+        Optužnim predlogom
+        <organization id="odt" refersTo="#odt">
+         Osnovnog državnog tužilaštva Podgorica
+        </organization>
+        <ref href="/cg/verdict/k/2019-10-31/1330">
+             Kt. br. 1330/19 od 31. oktobra 2019. godine
+        </ref>
+        okrivljenom
+        <party id="djz" refersTo="#djz" as ="#defendant">
+               Đ.Ž.
+        </party>
+        stavljeno je na teret krivično djelo tjelesna povreda iz
+        <ref href="/krivicni#art_151_para_1">
+        čl. 151 st. 1 Krivičnog zakonika Crne Gore
+        </ref>
+         u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija iz
+         <ref href="/krivicni#art_403_para_1">
+        403 st. 1 Krivičnog zakonika Crne Gore.
+        </ref>
+        </p>
+        <p>Utvrđujući da li postoji dovoljno dokaza o krivici okrivljenog za predmetna krivična djela, na ročištu za
+razmatranje sporazuma o priznanju krivice, državni tužilac Snežana Šišević podnijela je sudu dokaze koje je
+prikupila u prethodnom postupku.</p>
+        <p>
+        Iz sadržine prikupljenih dokaza na koje okrivljeni i njegov branilac nijesu imali primjedbi, sud je zaključio da
+        je državni tužilac pružio dovoljno dokaza o krivici okrivljenog  
+        <party id="djz" refersTo="#djz" as ="#defendant">
+                    Đ.Ž.
+        </party>
+         i da je okrivljeni u vrijeme i na način
+opisan u izreci ove presude, učinio krivično djelo tjelesna povreda iz 
+        <ref href="/krivicni#art_151_para_1">
+        čl. 151 st. 1 Krivičnog zakonika Crne Gore
+        </ref>
+        u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija iz 
+        <ref href="/krivicni#art_403_para_1">
+        čl. 403 st. 1 Krivičnog zakonika Crne Gore
+        </ref>
+        , a nakon što je okrivljeni u svemu prihvatio sporazum o priznanju krivice.
+        </p>
+
+        <p>
+        Odlučujući o vrsti i visini krivične sankcije iz sporazuma o priznanju krivice zaključenog između stranaka, sud
+        je cijenio sve okolnosti iz 
+        <ref href="/krivicni#art_42">
+        čl. 42 Krivičnog zakonika Crne Gore
+        </ref>
+        , pa je kao otežavajuću okolnost cijenio raniju osudjivanost okrivljenog, koju je utvrdio iz citiranog izvoda iz Kaznene evidencije, dok je kao olakšavajuću
+        okolnost cijenio porodične prilike okrivljenog, da je oženjen i otac dvoje djece, pa je okrivljenog za krivično
+        djelo teška tjelesna povreda iz 
+        <ref href="/krivicni#art_151_para_1">
+        čl. 151 st. 1 Krivičnog zakonika Crne Gore
+        </ref>
+        osudio na kaznu zatvora u trajanju od 7 (sedam) mjeseci, a za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz 
+        <ref href="/krivicni#art_403_para_1">
+        čl. 403 st. 1 Krivičnog zakonika Crne Gore 
+        </ref>
+        na kaznu zatvora u trajanju od 3 (tri) mjeseca, nalazeći da se ovakvom jedinstvenom kaznom zatvora ima ostvariti svrha kažnjavanja iz
+        <ref href="/krivicni#art_32_para_2">
+        čl. 32 st. 2 Krivičnog zakonika Crne Gore
+        </ref>
+        u okviru opšte svrhe potpisivanja i izricanja krivičnih sankcija iz
+        <ref href="/krivicni#art_4_para_2">
+        čl. 4 st. 2 Krivičnog zakonika Crne Gore.
+        </ref>
+        </p>
+        <p>
+        Odluka o imovinskopravnom zahtjevu zasnovana je na odredbi 
+        <ref href="/krivicni#art_239_para_2">
+        čl. 239 st. 2 ZKP-a.
+        </ref>
+        </p>
+        <p>
+        Odluka o troškovima postupka i paušalu, kao u izreci presude, donijeta je na osnovu 
+        <ref href="/postupak#art_226_para_3">
+        čl. 226 st. 3
+        </ref>
+        i
+        <ref href="/postupak#art_229_para_1">
+         229 st. 1 Zakonika o krivičnom postupku.
+        </ref>
+        </p>
+        </arguments>
+    </judgmentBody>
+    <conclusions>
+        <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+        </organization>
+        <p>Dana, <date value="2021-07-09">11.09.2020.godine</date></p>
+        <p>SUDIJA</p>
+        <party id="gdjukovic" refersTo="#gdjukovic" as="#judge">
+            Goran Đuković, s.r.
+        </party>
+        <p>PRAVNA POUKA</p>
+        <p>
+            Protiv ove presude žalba nije dozvoljena.
+        </p>
+         <p>Z.T.O.</p>
+         <party id="sradevic" refersTo="#sradevic" as="#clerk">
+            Sanja Radević
+        </party>
+    </conclusions>
+</akomaNtoso>

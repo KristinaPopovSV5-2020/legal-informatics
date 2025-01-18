@@ -1,0 +1,493 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Cetinju</FRBRauthor>
+                    <FRBRdate date="2022-01-10">2022-01-10</FRBRdate>
+                    <FRBRtitle>K 91/2021</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Cetinje"
+                    showAs="Osnovni sud u Cetinju" />
+                <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica"
+                    showAs="Visi sud u Podgorici" />
+                <TLCOrganization eId="odt"
+                    href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Cetinje"
+                    showAs="Osnovno državno tužilaštvo Cetinje" />
+                <TLCPerson eId="blekovic" href="/ontology/person/blekovic"
+                    showAs="Branislav Leković" />
+                <TLCPerson eId="mpopivoda" href="/ontology/person/mpopivoda"
+                    showAs="Marija Popivoda" />
+                <TLCPerson eId="vi" href="/ontology/person/at" showAs="V. I." />
+                <TLCPerson eId="sr" href="/ontology/person/sr" showAs="Sanja Radunović" />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCPlace eId="cetinje" href="/ontology/place/cetinje" />
+            </references>
+        </meta>
+    </judgment>
+    <judgmentBody>
+        <p>U IME CRNE GORE</p>
+        <introduction>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U CETINJU
+            </organization>, sudija <party
+                id="blekovic" refersTo="#blekovic" as="#judge">
+                Branislav Leković
+            </party> , uz učešće zapisničarke<party
+                id="mpopivoda" refersTo="#mpopivoda" as="#clerk">
+                Popivoda Marije
+            </party> , u krivičnom postupku protiv
+            okrivljenog <party id="vi" refersTo="#vi" as="#defendant">
+                V. I.
+            </party> zbog krivičnog djela nedozvoljeno držanje
+            oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+                čl. 403 st. 1 Krivičnog zakonika Crne Gore
+            </ref>, nakon
+            javnog glavnog pretresa održanog 10.01.2022. godine, u prisustvu zastupnice optužbe <party
+                id="sr" refersTo="#sr" as="#prosecutor">
+                Radunović Sanje
+            </party>, ,državne tužiteljke u <organization
+                id="odt" refersTo="#odt">
+                Osnovnom
+                državnom
+                tužilaštvu
+                u
+                Cetinju
+            </organization>
+            i okrivljenog, istog dana izrekao je i objavio </introduction>
+        <p>
+            P R E S U D U
+        </p>
+        <background> Okrivljeni: <party id="vi" refersTo="#vi" as="#defendant">
+                V. I.
+            </party> JMB .............. od oca M. i majke Đ.
+            rođene Dž. rođen ....... godine na C. sa prebivalištem u P. – Ul. F. R. br....
+            državljanin C. G. razumije crnogorski jezik, koji je i njegov jezik, razveden, otac
+            jednog maloljetnog djeteta, pismen, završio srednju školu, lošeg imovnog stanja,
+            neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.
+        </background>
+        <decision>
+            <p>Kriv je</p>
+            <p>Što
+                je:</p><p>Dana 13.avgusta 2021. godine u svojoj porodičnoj kući, u mjestu zv.“Š....“,
+            opština C. svjestan svoga djela i zabranjenosti istog,čije je izvršenje htio, protivno <ref
+                href="/oruzje#art_5_para_2">
+                članu 5 stav 2 Zakona o oružju
+            </ref> ,kojim je propisano
+            da je dozvoljena nabavka ,držanje,nošenje i prenošenje oružja i municije kategorije „B“,
+            za koje je izdata odgovarajuća isprava o oružju, neovlašćeno držao municiju i to : 19
+            komada puščane lovačke municije kalibra Osnovni Sud u Cetinju K 91/2021 10. Januar 2022
+            12mm; 8 komada puščane municije kalibra 7,9mm ; 1 komad pučane municije kalibra 8x57 JS;
+            6 komada puščane municije kalibra 7,62x39mm i 2 komada pučane municije kalibra 308 W...
+            za koju municiju nije posjedovao odgovarajuće isprave, </p>
+             <p> - čime je izvršio
+            krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore.
+                </ref>
+            </p>
+            <p>
+            Pa mu sud za navedeno krivično djelo primjenom <ref
+                    href="/krivicni#art_4_para_2">
+                    čl. 4 st. 2,
+                </ref>
+                <ref
+                    href="/krivicni#art_36">
+                    čl. 36,
+                </ref>
+                <ref
+                    href="/krivicni#art_42_para_1">
+                    čl. 42 st. 1,
+                </ref>
+                <ref
+                    href="/krivicni#art_52_para_2">
+                    čl. 52 st. 2,
+                </ref>
+                <ref
+                    href="/krivicni#art_53">
+                    čl. 53
+                </ref> i <ref
+                    href="/krivicni#art_54">
+                    čl. 54 Krivičnog zakonika Crne Gore
+                </ref> i <ref
+                    href="/postupak#art_226">
+                    čl. 226,
+                </ref>
+                <ref
+                    href="/postupak#art_229">
+                    čl. 229
+                </ref> i <ref
+                    href="/postupak#art_374">
+                    čl. 374 Zakonika o krivičnom postupku
+                </ref>,
+            izriče </p>
+
+                <p>USLOVNU
+                OSUDU</p>
+        <p>Kojom mu utvrđuje kaznu zatvora u trajanju od 6 (šest) mjeseci i
+            istovremeno određuje da se ona neće
+                izvršiti, ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne
+            učini novo krivično djelo.
+
+            </p>
+        <p>Na
+            osnovu <ref href="/krivicni#art_75">
+                    čl. 75 Krivičnog
+                    zakonika
+                </ref>,
+            prema okrivljenom se izriče:</p>
+            <p>MJERA BEZBJEDNOSTI</p>
+            <p>ODUZIMANJE PREDMETA</p>
+            <p>
+            Oduzima se od okrivljenog 19 komada puščane lovačke municije kalibra 12mm; 8 komada
+            puščane municije
+                kalibra 7,9mm ; 1 komad pučane municije kalibra 8x57 JS; 6 komada puščane municije
+            kalibra 7,62x39mm i 2
+                komada pučane municije kalibra 308 W.... kao predmeti upotrijebljeni u izvršenju
+            krivičnog djela.
+
+            </p>
+            <p>
+            Obavezuje se okrivljeni da plati na ime troškova krivičnog postupka iznos od 30,00 €, u
+            roku od 15 dana po
+                pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+
+            </p>
+
+        </decision>
+        <arguments>
+            <p>Optužnim predlogom <organization id="odt" refersTo="#odt">
+                    Osnovnog državnog tužilaštva Cetinje
+                </organization> <ref
+                    href="/cg/verdict/k/2021-11-22/36">
+                    Kt. br. 148/21 od 22.11.2021. godine
+                </ref>
+                je okrivljenom <party id="vi" refersTo="#vi" as="#defendant">
+                    V. I.
+                </party> stavljeno na teret izvršenje
+                krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika
+                </ref> e.
+                Zastupnica optužbe je u zvaršnoj riječi predložila sudu da okrivljenog oglasi krivim
+                i da ga osudi po zakonu, kao u da mu izrekne mjeru bezbjednosti oduzimanje predmeta.
+                Zastupnik optužbe </p>
+
+            <p>
+                Okrivljeni je u odbrani datoj u prethodnom postupku i na glavnom pretresu saglasno u
+                bitnom naveo da živi
+                u P. ali da u mjestu Š.opština C. ima porodičnu kuću,koja se vodi na ime njegovog
+                oca,u koju kuću on i njegovi
+                roditelji dolaze svakodnevno i borave u istoj.Dana 13.08.2021.godine službenici
+                policije su izvršili pretres
+                navedene porodične kuće i u istoj pronašli 19 komada lovačke municije nepoznatog
+                kalibra i 17 komada
+                puščane municije nepoznatog kalibra.Pojasnio je da je od 2008 godine član lovačkog
+                društva „C.“ i da je u
+                ranijem periodu posjedovao lovačku pušku „W,,,,“ kal.308,koja je bila registrovana
+                na njegovo ime,a koju je
+                prije tri godine prodao čovjeku čijeg se imena ne sjeća.Kako se ova njegova kuća
+                nalazi u blizini loviša, on
+                često u istoj boravi sa svojim drugovima lovcima,pa smatra da je ova municija ostala
+                nekom od tih njegovih
+                prijatelja,jer ta municija spada u municiju za lov na krupnu i sitnu divlljač.
+                Negirao je da je predmetna
+                municija njegovo vlasništvo,a zna da su prije dva mjeseca kada su krečili kuću,ta
+                municija bila u njegovoj
+                sobi,u kojoj bboravi sa drugovima,pa je tokom krečenja,njegov otac tu municiju
+                sakupio u jednu kutiju i
+                stavio je na mjesto gdje je kasnije policija pronašla.Naglasio je da je on odmah
+                policiji rekao za tu
+                municiju,čim su počeli da vrše pretres.Ukazao je da od pronađenih metaka,dva metka
+                kal.308W.... su
+                pripadali njegovoj pušci marke „W.......“ ,koju je prodao ,a ostali meci se nijesu
+                mogli koristiti za tu pušku.Ne
+                zna ko je vlasnik karabinske municije koja je pronađena u kući,a on u posjedu nema
+                nikakvo oružje.Nije znao
+                da je zabranjeno i kažnjiivo da se u kući drži municija ako se ne posjeduje oružni
+                list za oružje odgovarajućeg
+                kalibra.
+
+            </p>
+
+            <p>
+
+            </p>
+            <p> Okrivljeni <party id="vi" refersTo="#vi" as="#defendant">
+                    V. I.
+                </party> je u svojoj odbrani datoj na
+                glavnom pretresu naveo da su tačni navodi optužbe da je počinio krivično djelo
+                stavljeno mu na teret. Dalje je naveo kako je municiju kupio u prodavnici u " D.
+                S.", te da mu je prodavac rekao da za kupovinu iste nije potreban oružni list već da
+                istu može transportovati uz fiskalni račun. </p>
+            <p>
+                U završnoj riječi je naveo da ostaje pri svojoj odbrani datoj na glavnom pretresu,
+                te da nema šta drugo
+                da izjavi.
+
+            </p>
+            <p> Sud je u dokaznom postupku saslušao svjedoka <party id="vm" refersTo="#vm">
+                    V. M.
+                </party> p. te pročitao zapisnik UP CB
+                Podgorica br.OBD 929/4 od 13.08.2021.godine o pretresanju stana i drugih prostorija
+                koje koristi <party id="vi" refersTo="#vi" as="#defendant">
+                    V. I.
+                </party> pročitao izvještaj Uprave
+                policije ispostava P. iz kaznene evidencije broj 18/13-504/1 od 20.03.2013. godine,
+                pročitao fiskalni račun - bon PD " I. " D.O.O. Podgorica broj 000094 od 27.02.2013.
+                godine. </p>
+
+            <p> Iz potvrde o privremeno oduzetim predmetima od 27.02.2013. godine, sud je utvrdio da
+                su od <party id="vi" refersTo="#vi" as="#defendant">
+                    V. I.
+                </party> . Izvještaj UP OB Cetinje o
+                kriminalističko-tehničkom pregledu lica mjesta br.131/21 od
+                13.08.2021.godine,izvršio uvid u Potvrdu UP-CB Podgorica br.OBD 929/4 od
+                13.08.2021.godine o privremeno oduzetim predmetima od <party id="vi" refersTo="#vi"
+                    as="#defendant">
+                    V. I.
+                </party> u izvještaj Forenzičkog centra
+                Danilovgrad od 08.10.2021.godine o balističkom vještačenju, u fotodokumentaciju UP
+                OB Cetinje br.131/21 od 13.08.2021. godine, te pročitao izvod iz registra kaznenih
+                evidencija Ministarstva pravde od 18.11.2021. godine.</p>
+            <p> Svjedok <party id="vm" refersTo="#vm">
+                    V. M.
+                </party> je u bitnom izjavio da mu je
+                poznato da je u porodičnoj kući u selu Š. opština C. pronađena predmetna municija
+                ,jer je bio pristutan prilikom pretresa kuće,ali mu nije poznato čija je ta
+                municija.Naglasio je da nije njegova, jer se nikada nije bavio lovom. Dodao je da je
+                okrivljeni lovac i zna da su u tu kuću dolazili kod okrivljenog njegovi drugovi
+                lovci i to često, a takođe u periodu dok je u toj kući živjela njegova majka, koja
+                je sada pokojna. Smatra da ova municija nije vlasništvo okrivljenog, već njegovih
+                drugova lovaca. </p>
+            <p> Iz zapisnika o pretresanju stana i drugih prostorija UP CB Podgorica OBD 929/4 od
+                13.08.2021. godine proizilazi da su dana 13.08.2021. godine službenici Uprave
+                policije CB Podgorica, po naredbi <organization
+                    id="os" refersTo="#os">
+                    Osnovnog suda u Podgorici
+                </organization> i
+                broj Kri. br. 397/21-1 od 13.08.2021. godine izvršili pretres stana i drugih
+                prostorija <party id="vi" refersTo="#vi"
+                    as="#defendant">
+                    V. I.
+                </party> u mjestu Š. opština C. kojom
+                prilikom je u dnevnom boravku na prvom spratu porodične kuće pronađeni 19 komada
+                lovačke municije i 17 komada puščane municije nepoznatog kalibra. </p>
+
+            <p> Iz izvještaja UP OB Cetinje o kriminalističko-tehničkom pregledu lica mjesta
+                br.131/21 od 13.08.2021.godine,proizilazi da je povodom pretresa kuće <party id="vi"
+                    refersTo="#vi"
+                    as="#defendant">
+                    V. I.
+                </party> I. u mjestu Š. C. izvršen i
+                kriminalističko tehnički pregled lica mjesta,te da su na licu mjesta pronađeni 19
+                komada netaka za lovačku pušku i 17 komada puščanih metaka . </p>
+
+            <p> Iz potvrde o privremeno oduzetim predmetima UP CB Podgorica OBD 929/4 od 13.08.2021.
+                godine proizilazi da je dana 13.08.2021. godine od <party id="vi" refersTo="#vi"
+                    as="#defendant"> V. I. </party> oduzeto 19 komada lovačke municije ,nepoznatog
+                kalibra i 17 komada puščane municije nepoznatog kalibra. </p>
+
+            <p> Iz fotodokumentacije UP CB Podgorica br. 131/21 od 13.08.2021. godine proizilazi da
+                je ista sačinjena dana 13.08.2021. godine povodom pretresa kuće vlasništvo <party
+                    id="vi" refersTo="#vi"
+                    as="#defendant"> V. I. </party> u mjestu Š. opština C. te da je na pet
+                fotografija predstavljen izgled kuće vlasništvo <party id="vi" refersTo="#vi"
+                    as="#defendant"> V. I. </party> kao i bliži izgled predmetne lovačke i puščane
+                municije. </p>
+
+            <p>
+                Iz izvještaja o balističkom vještačenju Forenzičkog centra Danilovgrad br. 2568/21
+                od 08.10.2021. godine
+                proizilazi da je na vještačenje dostavljeno 19 komada municije ,koji odgovaraju
+                puščanoj lovačkoj municiji
+                kalibra 12mm i 17 komada municije ,od kojih je utvrđeno da 8 komada pripada puščanoj
+                municiji
+                kal.7,9mm,1 komad puščane municije kal.7,62mm x 39mm i 2 komada puščane municije
+                kal.308W....
+                Istaknuto je da predmetna municija predstavlja fabrički proizvod,da se na mecima ne
+                uočavaju oštećenja,niti
+                bilo kakvi razlozi za eventualnu neispravnost,te se dostavljena municija smatra
+                ispravnom.
+            </p>
+
+            <p>
+                Nakon savjesne ocjene svakog dokaza pojedinačno i svih dokaza zajedno, a dovodeći ih
+                u vezu sa odbranom
+                okrivljenog, sud je na nesumnjiv način utvrdio da je okrivljeni izvršio krivično
+                djelo u vrijeme, u mjestu i na
+                način kako je to predstavljeno u izreci presude.
+            </p>
+            <p> Činjenično stanje je utvrđeno prvenstveno iz zapisnika o pretresanju stana i drugih
+                prostorija UP CB Podgorica OBD 929/4 od 13.08.2021. godine ,u kojem je konstatovano
+                da su dana 13.08.2021. godine službenici Uprave policije CB Podgorica, po naredbi <organization
+                    id="os" refersTo="#os">
+                    Osnovnog suda u Podgorici
+                </organization>
+                izvršili pretres stana i drugih prostorija okrivljenog <party
+                    id="vi" refersTo="#vi"
+                    as="#defendant"> V. I. </party> koje se nalaze u mjestu Š. C. kojom prilikom su
+                u dnevnom boravku kuće, pronašli 19 komada lovačke municije i 17 komada puščane
+                municije nepoznatog kalibra , a što je sve predstavljeno na pet fotografija koje su
+                sadržane u fotodokumentaciji UP CB Podgorica u koje je sud izvršio uvid, dok je iz
+                potvrde o privremeno oduzetim predmetima UP CB Podgorica utvrđeno da je dana
+                13.08.2021. godine od okrivljenog oduzeto 19 komada lovačke municije ,nepoznatog
+                kalibra i 17 komada puščane municije nepoznatog kalibra. Iz izvještaja o balističkom
+                vještačenju Forenzičkog centra Danilovgrad br. 2568/21 od 08.10.2021. godine, koji
+                je sud prihvatio kao objektivan, jasan i logičan, pritom imajući u vidu da stranke
+                na isti nisu imale primjedbi, je utvrđeno da 19 komada municije odgovaraju puščanoj
+                lovačkoj municiji kalibra 12 mm,a 17 komada municije ,od kojih je utvrđeno da 8
+                komada pripada puščanoj municiji kal.7,9mm,1 komad puščane municije kal.7,62mm x
+                39mm i 2 komada puščane municije kal.308W.. te da je navedena municija ispravna.
+                Osim navedenog,činjenično stanje se djelimično utvrđuje i iz odbrane okrivljenog <party
+                    id="vi" refersTo="#vi"
+                    as="#defendant"> V. I. </party> koji je potvrdio da je predmetna municija
+                pronađena u njegovoj porodičnoj kući u mjesti Š. opština C. da inače ne posjeduje
+                oružje ,te da su od pronađene municije,dva metka kal.308 W.... od njegove puške
+                W.......,koju je ranije prodao. Takođe i iz iskaza svjedoka <party
+                    id="vm" refersTo="#vm"
+                > V. M. </party> je utvrđeno da je predmetna municija
+                pronađena u porodičnoj kući ,koju koriste on i njegov sin,okrivljeni ,koji je inače
+                lovac,dok se svjedok nikada nije bavio lovom.U navedenom dijelu,sud je prihvatio
+                odbranu okrivljenog, jer nije u suprotnosti sa provedenim pismenim dokazima i u tom
+                dijelu je potvrđena iskazom svjedoka <party
+                    id="vm" refersTo="#vm"
+                > V. M. </party> čiji iskaz sud takođe eprihvata,osim u
+                dijelu gdje svjedok ističe da smatra da municija nije okrivljenog nego od njegovih
+                drugova,obzirom da se radi o pretpostavci ovog svjedoka u koju nije siguran i za
+                koju ne pruža valjanu argumentaciju. </p>
+
+            <p>
+                <ref
+                    href="/oruzje#art_5_para_2">
+                    Članom 5 st. 2 Zakona o oružju
+                </ref>
+                propisano je da je dozvoljena nabavka, držanje, nošenje i prenošenje oružja i
+                municije, oružja kategorije B za koje je izdata odgovarajuća isprava o oružju u
+                skladu sa zakonom. Imajući u vidu da predmetna municija (kalibra
+                12mm,kal.7,62x39mm,kal.308W......) pripada puščanoj lovačkoj i puščanoj municiji, a
+                da puške spadaju u repertirajuće dugocijevno vatreno oružje , shodno <ref
+                    href="/oruzje#art_4_para_3_point_6">
+                    čl. 4 st. 3 tač. 6
+                </ref> i <ref
+                    href="/oruzje#art_4_para_3_point_7">
+                    čl. 4 st. 3 tač. 7
+                </ref> Zakona o oružju
+                spadaju u oružje kategorije B, evidentno je da je okrivljeni time što je držao
+                municiju za oružje kategorije B za koje nije imao izdat oružni list, prekršio
+                citirane zakonske odredbe. </p>
+
+            <p> Cijeneći subjektivni odnos okrivljenog prema izvršenom djelu, sud nalazi da je
+                okrivljeni postupajući na prethodno opisani način, bio svjestan da neovlašćeno drži
+                predemtnu municiju, pa je samim tim bio svjestan da time čini krivično djelo, što je
+                i htio, postupajući tako sa direktnim umišljajem. Time je u njegovim radnjama pored
+                objektivnih ostvaren i subjektivni element bića krivičnog djela nedozvoljeno držanje
+                oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore
+                </ref>
+                . </p>
+
+            <p>
+                Sud je cijenio odbranu okrivljenog u dijelu gdje je naveo da predmetna municija koja
+                je pronađena u njegovoj
+                kući nije njegova,već da pripada njegovim drugovima lovcima,te da nije znao da je
+                kažnivo držati u kući
+                municiju ako se ne posjeduje oružni list za oružje odgovarajućeg kalibra,pa je nije
+                prihvatio u tom
+                dijelu,nalazeći da je kontradiktorna i neuvjerljiva,te kao takva sračunata u cilju
+                izbjegavanja krivice. Naime,
+                okrivljeni je istakao da je član lovačkog društva od 2008 godine,pa nije logično da
+                mu nijesu poznati zakonski
+                propisi u vezi sa nabavljanjem i držanjem municije.Ovo tim prije,što okrivljeni
+                navodi da je ranije posjedovao
+                lovačku pušku W......,te da od pronađenih metaka dva metka kal.308 W.....pripadaju
+                toj pušci. Pri tom,
+                neuvjerljiva je i bez značaja tvrdnja okrivljenog da municija vjerovatno pripada
+                njegovim drugovima lovcima
+                ,koji dolaze kod njega i borave u toj kući,a to kod činjenice da je municija
+                pronađena u njegovoj kući,a on u
+                pravcu dokazivanja naznačene tvrdnje ne navodi imena svojih drugova za koje tvrdi da
+                su vlasnici municije.
+            </p>
+            <p> Prilikom odlučivanja o krivičnoj sankciji, sud je u smislu <ref
+                    href="/krivicni#art_42_para_1">
+                    čl. 42 st. 1 Krivičnog zakonika Crne Gore
+                </ref>
+                cijenio sve okolnosti koje utiču na njen izbor i visinu, pa je od olakšavajućih
+                okolnosti na strani okrivljenog cijenio njegove lične prilike, odnosno da je lošeg
+                imovnog stanja, razveden i otac jednog mld.djeteta,koje je u obavezi da izdržava,
+                njegov raniji život i s tim u vezi raniju neosuđivanost, koja je utvrđena iz izvoda
+                iz registra kaznenih evidencija Ministarstva pravde od 18.11.2021. godine, dok
+                otežavajućih okolnosti nije bilo. Imajući u vidu navedene olakšavajuće okolnosti,
+                sud je okrivljenom shodno <ref
+                    href="/krivicni#art_53">
+                    čl. 53
+                </ref> i <ref
+                    href="/krivicni#art_54">
+                    čl. 54 Krivičnog zakonika Crne Gore
+                </ref>
+                izrekao uslovnu osudu, utvrđujući mu kaznu zatvora u trajanju od šest mjeseci,
+                nalazeći da prema istom nije nužno primijeniti kaznu radi krivičnopravne zaštite,
+                jer se može očekivati da će se i upozorenjem uz prijetnju kaznom zatvora u trajanju
+                od 6 mjeseci i vremenom provjeravanja u periodu od jedne godine, na okrivljenog u
+                dovoljnoj mjeri uticati da ubuduće ne vrši krivična djela, jer se i iz njegovog
+                ranijeg života može zaključiti da on nije osoba koja je sklona vršenju krivičnih
+                djela i da na njega nije neophodno strože djelovati. Time će se sa uspjehom
+                ostvariti svrha uslovne osude iz <ref
+                    href="/krivicni#art_53_para_2">
+                    čl. 52 st. 2 Krivičnog zakonika Crne Gore
+                </ref>
+                , a u okviru opšte svrhe propisivanja i izricanja krivičnih sankcija iz <ref
+                    href="/krivicni#art_54_para_2">
+                    čl. 4 st. 2 Krivičnog zakonika Crne Gore.
+                </ref>
+
+            </p>
+            <p> Na osnovu <ref
+                    href="/krivicni#art_75">
+                    čl. 75 Krivičnog zakonika Crne Gore
+                </ref> ,
+                sud je okrivljenom izrekao mjeru bezbjednosti oduzimanje predmeta, 19 komada puščane
+                lovačke municije kalibra 12mm; 8 komada puščane municije kalibra 7,9mm ; 1 komad
+                pučane municije kalibra 8x57 JS; 6 komada puščane municije kalibra 7,62x39mm i 2
+                komada pučane municije kalibra 308 W..., s obzirom na to da se radi o predmetima
+                upotrijebljenim u izvršenju krivičnog djela. </p>
+            <p> Imajući u vidu da je okrivljeni oglašen krivim, sud ga je shodno <ref
+                    href="/postupak#art_226">
+                    čl. 226
+                </ref> i <ref
+                    href="/postupak#art_229">
+                    čl. 229,
+                </ref> Zakonika o krivičnom
+                postupku, obavezao da na ime troškova krivičnog postupka plati iznos od 30,00 eura,
+                koji iznos se odnosi na ime sudskog paušala kao dijela troškova krivičnog postupka,
+                a koji je odmjeren srazmjerno trajanju i složenosti postupka i imovnom stanju
+                okrivljenog. </p>
+            <p> Na osnovu izloženog, na osnovu <ref
+                    href="/postupak#art_374">
+                    čl. 374 Zakonika o krivičnom postupku
+                </ref>,
+                odlučeno je kao u izreci presude. </p>
+        </arguments>
+    </judgmentBody>
+    <conclusions>
+        <organization id="os" refersTo="#os">
+            OSNOVNI SUD U Cetinju
+        </organization>
+        <p>Dana, 10.01.2022. godine</p>
+        <p>
+            S U D I J A</p>
+        <party
+            id="blekovic" refersTo="#blekovic" as="#judge">
+            Branislav Leković,s.r.
+        </party>
+    </conclusions>
+</akomaNtoso>

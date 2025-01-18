@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../../../infrastructure/material.module';
 import { LawPageComponent } from './law-page/law-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { CasePageComponent } from './case-page/case-page.component';
 
 
 
 @NgModule({
-  declarations: [LawPageComponent],
+  declarations: [LawPageComponent, CasePageComponent],
   imports: [
     CommonModule,
     MaterialModule,

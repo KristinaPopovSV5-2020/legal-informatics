@@ -1,0 +1,356 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+    <meta>
+    <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                    <FRBRdate date="2022-07-21">2022-07-21</FRBRdate>
+                    <FRBRtitle>K 434/2022</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+             <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica"/>
+                <TLCPerson eId="lmstamatovic" href="/ontology/person/lmstamatovic" showAs="Larisi Mijušković-Stamatović"/>
+                <TLCPerson eId="msekulic" href="/ontology/person/msekulic" showAs="Marina Sekulić"/>
+                <TLCPerson eId="pm" href="/ontology/person/pm" showAs="P. M."/>
+                <TLCPerson eId="pk" href="/ontology/person/pk" showAs="P. K."/>
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+            </references>
+    </meta>
+    </judgment>
+     <judgementBody>
+      <p>U IME CRNE GORE</p>
+      <introduction>
+      <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+            </organization>
+            , prvostepeni, krivični, po sudiji 
+            <party id="lmstamatovic" refersTo="#lmstamatovic" as="#judge">
+                Larisi Mijušković-Stamatović 
+            </party>, uz učešće zapisničara
+            <party id="msekulic" refersTo="#msekulic" as="#clerk">
+                Marine Sekulić
+            </party>
+            ,u krivičnom predmetu protiv okrivljenog
+            <party id="pm" refersTo="#pm" as="#defendant">
+                P. M.
+            </party>
+            , iz P. zbog krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz člana
+            <ref href="/krivicni#art_403_para_1">
+                403 stav 1 Krivičnog zakonika Crne Gore
+            </ref>
+            , odlučujući po opuženom predlogu
+            <organization id="odt" refersTo="#odt">
+					ODT-a Podgorica
+			</organization>
+            Kt.br.870/22 od 30.06.2022. godine, nakon
+            pravnosnažnosti Rješenja o usvajanju Sporazuma o priznanju krivice, dana 21.07.2022. godine, donio je,
+      </introduction>
+      <p>
+            P R E S U D U
+        </p>
+        <background>
+        Okrivljeni:
+        <party id="pm" refersTo="#pm" as ="#defendant">
+               M.P.
+        </party>
+        JMB ...... od oca G. i majke J. rođene L., rođen ..... godine u P., sa prebivalištem u mjestu rođenja na adresi
+        Ul. V. B. bb, državljanin Crne Gore, razumije crnogorski jezik, njegov jezik je srpski, oženjen, otac jednog
+        djeteta, pismen, sa završenom srednjom školom, po zanimanju automehaničar, srednjeg imovnog stanja,
+        ranije osuđivan i to: presudama
+         <organization id="osn" refersTo="#osn">
+            Osnovnog suda u Podgorici
+        </organization>
+         <ref href="/cg/verdict/k/2011-01-19/10">
+            K.br. 10/833 od 19.01.2011. godine
+        </ref>
+        e, zbog krivičnog djela nezdozvoljeno držanje oružja i eksplozivnih materija iz
+        <ref href="/krivicni#art_403_para_1">
+            čl. 403 st. 1 KZ CG 
+        </ref>
+        na kaznu zatvora u trajanju od 3 mjeseca uslovno na 1 godinu;
+        <ref href="/cg/verdict/k/2012-11-26/11">
+             K.br. 11/12 od 26.11.2012.godine
+        </ref>
+        , zbog krivičnog djela nedozvoljen lov iz
+        <ref href="/krivicni#art_325_para_1">
+            čl. 325 st. 1 KZ CG
+        </ref>
+         na kaznu zatvora u trajanju od 7 mjeseci uslovno na 2 godine,
+        <ref href="/cg/verdict/k/2014-12-09/850">
+            K.br. 850/13 od 09.12.2014. godine
+        </ref>
+        zbog krivičnog djela protivpravno lišenje slobode iz
+        <ref href="/krivicni#art_162_para_1">
+            čl. 162 st. 1 KZ CG
+        </ref>
+        u sticaju sa krivičnim djelo samovlašće iz
+        <ref href="/krivicni#art_384_para_2">
+             čl. 384 st. 2 KZ CG
+        </ref>
+         na kaznu zatvora u trajanju od 45 dana uslovno na 2 godine;
+         <ref href="/cg/verdict/k/2022-03-08/733">
+            K.br. 733/21 od 08.03.2022. godine
+        </ref>
+        zbog krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz
+        <ref href="/krivicni#art_403_para_1">
+            čl. 403 st. 1 KZ CG 
+        </ref>
+        na kaznu rada u javnom interesu od 240 sati, koje se ima izvršiti u roku od 6 mjeseci, u pritvoru po rješenju sudije za istragu
+        <organization id="osn" refersTo="#osn">
+            Ovog suda
+        </organization>
+        <ref href="/cg/verdict/k/2022-06-13/347">
+             Kri.br.347/22 od 13.06.2022. godine
+        </ref>
+        , koji se ima računati od 12.06.2022. godine od 13,50 časova kao dana i časa lišenja slobode pa nadalje,
+        </background>
+
+        <decision>
+        <p>Kriv je</p>
+        <p>Zato što je: </p>
+        Dana 12.juna 2022. godine, oko 07,00 časova, u mjestu Š., Glavni grad Podgorica, svjestan svog djela čije
+        izvršenje je htio, znajući da je isto zabranjeno, na javnom mjestu, neovlašćeno držao i nosio vatreno oružje i
+        municiju, na način što je, suprotno
+        <ref href="/oruzje#art_5_para_2">
+                    članu 5 stav 2,
+        </ref>
+        <ref href="/oruzje#art_23_para_3">
+             članu 23 stav 3
+        </ref>
+        <ref href="/oruzje#art_33_para_1">
+             i članu 33 stav 1 Zakona o oružju
+        </ref>
+        <ref href="cg/act/sl_list_cg/2015/10">
+            (Službeni list Crne Gore" broj 10/2015)
+        </ref>
+        , dok je upravljao svojim putničkim vozilom marke "VW Golf 3" registarskih oznaka DG .... dijelom puta prema V p, na zadnjem sjedištu vozila neovlašćeno držao i nosio vatreno oružje i
+        municiju "B" kategorije iz
+        <ref href="/oruzje#art_4_para_2_point_7">
+                    člana 4 stav 2 tačka 7 Zakona o oružju
+        </ref>
+        - lovačku pušku marke "Mossberg" model
+        500 A kalibra 12, fabričkog broja ....... u kojoj se nalazilo 5 komada municije, kao i 12 komada pripadajuće
+        municije kalibra 12, za koje nije imao oružni list izdat od strane nadležnog organa, a koje oružje i municiju su
+        službenici Sektora granične policije pronašli prilikom kontrole i pregleda vozila okrivljenog,
+        - čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz
+        <ref href="/krivicni#art_403_para_1">
+            člana 403 stav 1 Krivičnog zakonika Crne Gore
+        </ref>
+        .Pa ga sud primjenom citirane zakonske odredbe, te 
+        <ref href="/krivicni#art_4_para_2">
+        čl. 4 st. 2,
+        </ref>
+        <ref href="/krivicni#art_5">
+         5,
+         </ref>
+         <ref href="/krivicni#art_13">
+        13,
+        </ref>
+        <ref href="/krivicni#art_15">
+        15,
+        </ref>
+        <ref href="/krivicni#art_32">
+        čl. 32,
+        </ref>
+        <ref href="/krivicni#art_36"> 
+        čl. 36,
+        </ref>
+        <ref href="/krivicni#art_42"> 
+        čl. 42
+        </ref>
+        i
+        <ref href="/krivicni#art_51">
+        čl. 51 Krivičnog zakonika Crne Gore
+        </ref>
+        , te 
+        <ref href="/postupak#art_226">
+        čl. 226,
+        </ref>
+        <ref href="/postupak#art_229">
+        229,
+        </ref>
+        i 
+        <ref href="/postupak#art_374">
+        374 Zakonika o krivičnom postupku,
+        </ref>
+        <p>O S U Đ U J E</p>
+        <p>Na kaznu zatvora u trajanju od 3 (tri) mjeseca, u koju kaznu mu se ima uračunati vrijeme provedeno u
+        pritvoru od 12.06.2022. godine, od 13,50 časova, pa nadalje.</p>
+        <p>Obavezuje se okrivljeni da na ime troškova krivičnog postupka - sudskog paušala uplati iznos od 30,00 eura,
+        kao i troškove branioca po službenoj dužnosti, o kojima će sud odlučiti posebnim rješenjem, sve u roku od 15
+        dana od pravnosnažnosti presude, pod prijetnjom prinudne naplate.</p>
+        <organization id="osn" refersTo="#osn">
+            Sud
+        </organization>
+        <party id="pm" refersTo="#pm" as ="#defendant">
+               okrivljenom
+        </party>
+        u smislu
+        <ref href="/krivicni#art_75">
+        čl. 75 Krivičnog zakonika Crne Gore
+        </ref>
+         izriče i
+        <p>MJERU BEZBJEDNOSTI</p>
+        <p>Oduzimanje predmeta i to: lovačke puške marke "Mossberg", model 500 A, kalibra 12 fabričkog broja....... sa 5
+        komada municije, kao i 12 komada pripadajuće municije kalibra 12, kao predmeta izvršenja krivičnog djela.</p>
+        Na osnovu
+        <ref href="/postupak#art_376_para_8"> 
+        čl. 376 st. 8 Zakonika o krivičnom postupku
+        </ref>
+        <organization id="osn" refersTo="#osn">
+            sud
+        </organization>
+        <party id="pm" refersTo="#pm" as ="#defendant">
+               okrivljenog M.P.
+        </party>
+        upućuje na izdržavanje kazne
+zatvora, budući da je vrijeme koje je proveo u pritvoru kraće od dužine kazne zatvora na koju je osuđen.
+        </decision>
+
+         <arguments>
+         <p>
+                Osnovno državno tužilaštvo Podgorica podnijelo je optužni predlog Kt.br. 870/22 od 30.06.2022. godine,
+protiv  <party id="pm" refersTo="#pm" as ="#defendant">
+               okrivljenog M.P.
+        </party>zbog krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz
+                <ref href="/krivicni#art_403_para_1">
+                     čl. 403 st. 1
+Krivičnog zakonika Crne Gore
+                </ref>
+            , činjenično bliže opisanog izrekom ove presude.
+            </p>
+            <p>Prije početka glavnog pretresa, branilac  <party id="pm" refersTo="#pm" as ="#defendant">
+               okrivljenog M.P.
+        </party>, po službenoj dužnosti <party id="pk" refersTo="#pk" as ="#defense">
+               advokat P.K.
+        </party> iz P. i okrivljeni,
+predložili su zaključenje sporazuma o priznanju krivice ovlašćenom tužiocu Osnovnog državnog tužilaštva u
+Podgorici. </p>
+            <p>
+            Dana 20.07.2022 godine, Osnovno državno tužilaštvo u Podgorici je uz dopis, dostavilo Ovom sudu zaključeni
+            sporazum o priznanju krivice Kt.br.870/22 od 19.07.2022. godine, zaključen između državne tužiteljke u
+            Osnovnom državnom tužilaštvu u Podgorici Maje Janković, <party id="pm" refersTo="#pm" as ="#defendant">
+               okrivljenog M.P.
+        </party>i branioca okrivljenog <party id="pk" refersTo="#pk" as ="#defense">
+            P.K.
+        </party>,
+            advokata iz P. sa zapisnikom o pregovaranju sa okrivljenim i saslušanju okrivljenog Kt.br.870/22 od
+            19.07.2022. godine, radi donošenja odluke povodom zaključenog Sporazuma o priznanju krivice.
+            </p>
+            <p>Razmatrajući da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivično djelo, na ročištu za
+            razmatranje Sporazuma o priznanju krivice dana 21.07.2022 godine, Sud je proveo dokaze koji su predloženi
+            optužnim predlogom Osnovnog državnog tužilaštva u Podgorici Kt.br.870/22 od 30.06.2022 godine, i to:
+            pročitao službenu zabilješku UP Sektora granične policije od 12.06.2022. godine, potvrdu o privremeno
+            oduzetim predmetima Uprave policije CB Podgorica od 12.06.2022. godine, izvještaj o balističkom vještačenju
+            Forenzičkog centra br. 1504/22 od 23.06.2022. godine, izvod iz regstra kaznenih evidencija na ime okrivljenog,
+            izdat od strane Ministarstva pravde ljudskih i manjinskih prava pod brojem KE 1021/2022 od 04.07.2022.
+            godine, fotodokumentaciju UP CB Podgorica br. 14/03-4-1192/1143 od 12.06.2022. godine, kao i predmetno
+            oružje i municiju, te pročitao zapisnik o saslušanju okrivljenog Kt.br. 870/22 od 19.07.2022.godine, zapisnik o
+            pregovaranju o priznanju krivice Kt.br.870/22 od 19.07.2022 godine i sporazum o priznanju krivice
+            Kt.br.870/22 od 19.07.2022 godine.</p>
+
+            <p>Iz sadržine prikupljenih dokaza na koje okrivljeni i njegov branilac nijesu imali primjedbi, Sud je zaključio da
+    je Osnovno državno tužilaštvo u Podgorici pružilo dovoljno dokaza o krivici <party id="pm" refersTo="#pm" as ="#defendant">
+               okrivljenog M.P.
+        </party> da je isti, u vrijeme, mjestu i na način bliže opisan izrekom ove presude, izvršio krivično djelo nedozvoljeno držanje
+    oružja i eksplozivnih materija iz čl. 403 st. 1 Krivičnog zakonika Crne Gore, pa je Ovaj sud okrivljenog oglasio
+    krivim, nakon što je u svemu prihvatio Sporazum Osnovnog državnog tužilaštva u Podgorici Kt.br.870/22 od
+    19.07.2022 godine o priznanju krivice okrivljenog.</p>
+
+        <p>Odlučujući o visini krivične sankcije iz Sporazuma o priznanju krivice zaključenog između stranaka i branioca
+okrivljenog, Ovaj sud je našao da je predlog stranaka i branioca u vezi sa osudom <party id="pm" refersTo="#pm" as ="#defendant">
+               okrivljenog M.P.
+        </party> prihvatljiv,
+u skladu sa interesima pravičnosti, pa po nalaženju Ovog suda, kazna zatvora na način i u trajanju kao u izreci
+presude odgovara svrsi kažnjavanja iz <ref href="/krivicni#art_32">  čl. 32 Krivičnog zakonika Crne Gore</ref>, a u okviru opšte svrhe propisivanja
+i izricanja krivičnih sankcija iz<ref href="/krivicni#art_3_para_2">  čl. 4 st. 2 Krivičnog zakonika Crne Gore.</ref>
+</p>
+
+        <p><party id="pm" refersTo="#pm" as ="#defendant">
+               Okrivljeni M.P.
+        </party>je, shodno <ref href="/postupak#art_226">  čl. 226</ref>, <ref href="/postupak#art_229">  229 Zakonika o krivičnom postupku</ref>   obavezan da na ime troškova krivičnog
+        postupka, sudskog paušala uplati iznos od 30,00 eura, kao i troškove branioca po službenoj dužnosti, o
+        kojima će sud odlučiti posebnim rješenjem, sve u roku od 15 dana od pravnosnažnosti presude, pod
+        prijetnjom prinudne naplate.</p>
+
+        <p>Sud je okrivljenom shodno usvojenom sporazumu, a u smislu <ref href="/krivicni#art_75">  čl. 75 Krivičnog zakonika Crne Gore</ref> izrekao
+        mjeru bezbjednosti oduzimanje predmeta i to: lovačke puške marke "Mossberg", model 500 A, kalibra 12
+        fabričkog broja ........sa 5 komada municije, kao i 12 komada pripadajuće municije kalibra 12, kao predmerta
+        izvršenja krivičnog djela.
+        </p>
+        <p>Sud je okrivljenog primjenom 
+        <ref href="/postupak#art_376_para_8"> 
+        člana 376 stav 8 Zakonika o krivičnom postupku
+        </ref>
+        uputio na izdržavanje kazne,
+        budući da je vrijeme provedeno u pritvoru, kraće od dužine kazne zatvora na koju je okrivljeni osudjen.
+        </p>
+        <p>Sljedstveno izloženom, a na osnovu
+        <ref href="/postupak#art_301_para_1"> 
+        člana 301 st.1 Zakonika o krivičnom postupku
+        </ref> 
+        ,odlučeno je kao udispozitivu presude.
+        </p>
+         </arguments>
+     </judgementBody>
+      <conclusions>
+       <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+        </organization>
+        <p>Dana, <date value="2022-07-21">21.07.2022.godine</date></p>
+        <p>ZAPISNIČAR S U D I J A</p>
+        <party id="msekulic" refersTo="#msekulic" as="#clerk">
+            Marina Sekulić
+        </party><party id="lmstamatovic" refersTo="#lmstamatovic" as="#judge">
+            Larisa Mijušković-Stamatović
+        </party>
+        DN-a primjerak presude dostaviti:
+        <list>
+            <item>
+                <organization id="odt" refersTo="#odt">
+                    ODT Podgorica
+                </organization>
+            </item>
+            <item>
+                <party id="pm" refersTo="#pm" as="#defendant">
+                    Okrivljenom
+                </party>
+            </item>
+            <item>
+                <party id="pk" refersTo="#pk" as ="#defense">
+                    Braniocu okrivljenog,
+                </party>
+            </item>
+            <item>
+                <p> UIKS-u</p>
+            </item>
+        </list>
+        <p>
+        Postupljeno dana ___________________
+        Namještenik suda __________________
+        </p>
+        <p>PRAVNA POUKA</p>
+        <p>
+            Protiv ove presude dozvoljena je žalba
+        </p>
+        <p>
+        samo ukoliko presuda nije u skladu sa
+        </p>
+        <p>
+        zaključenim Sporazumom.
+        </p>
+        <p>ZTO: <party id="msekulic" refersTo="#msekulic" as="#clerk">
+            Marina Sekulić
+        </party></p>
+    </conclusions>
+
+    </akomaNtoso>

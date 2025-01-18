@@ -1,0 +1,346 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+    <meta>
+    <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                    <FRBRdate date="2021-07-09">2021-07-09</FRBRdate>
+                    <FRBRtitle>K 444/2021</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+             <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
+                <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica" showAs="Visi sud u Podgorici"/>
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica"/>
+                <TLCPerson eId="rcetkovic" href="/ontology/person/rcetkovic" showAs="Rade Ćetković"/>
+                <TLCPerson eId="ekraja" href="/ontology/person/ekraja" showAs="Edina Kraja"/>
+                <TLCPerson eId="ilj" href="/ontology/person/ilj" showAs="I.Lj."/>
+                <TLCPerson eId="di" href="/ontology/person/di" showAs="D.I."/>
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+            </references>
+    </meta>
+    </judgment>
+    <judgmentBody>
+        <p>U IME CRNE GORE</p>
+        <introduction>
+        <organization id="os" refersTo="#os">
+            Osnovni sud u Podgorici
+        </organization>
+        , sudija 
+        <party id="rcetkovic" refersTo="#rcetkovic" as="#judge">
+            Rade Ćetković
+        </party>
+        , uz učešće zapisničarke 
+        <party id="ekraja" refersTo="#ekraja" as="#clerk">
+            Edine Kraja
+        </party>
+        , u krivičnom postupku protiv okrivljenog 
+        <party id="ilj" refersTo="#ilj" as="#defendant">
+            I. Lj.
+        </party>
+        , zbog krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz
+        <ref href="/krivicni#art_403_para_1">
+            čl. 403 st. 1 Krivičnog zakonika Crne Gore
+        </ref>
+        , nakon javnog glavnog pretresa održanog 
+        <date date="2021-07-09">09.07.2021.</date>
+        , u prisustvu zastupnice optužbe 
+        <party id="di" refersTo="#di" as="#prosecutor">
+            D. I.
+        </party>
+        - savjetnice u 
+        <organization id="odt" refersTo="#odt">
+            Osnovnom državnom tužilaštvu u Podgorici
+        </organization>
+        , i okrivljenog, istog dana izrekao je i objavio.
+    </introduction>
+    <p>
+        P R E S U D U
+    </p>
+    <background>
+    Okrivljeni:
+    <party id="ilj" refersTo="#ilj" as ="#defendant">
+            I.LJ.
+    </party>
+    , JMB ..., od oca O. i majke H., rođene B., rođen .. .. ... godine u P., sa prebivalištem u T. - D. b ..., državljanin
+    Crne Gore, razumije crnogorski jezik, njegov jezik je albanski, penzioner, oženjen, otac osmoro djece, pismen,
+    završio četiri razreda osnovne škole, dobrog imovnog stanja, osuđivan presudom 
+    <organization id="os" refersTo="#os">
+    Osnovnog suda u Podgorici
+    </organization>
+    <ref href="/cg/verdict/k/2013-06-12/915">
+        K. br. 915/12 od 12.06.2013. godine
+    </ref>
+    zbog krivičnog djela građenje objekta bez građevinske dozvole iz
+    <ref href="/krivicni#art_326a">
+    čl. 326a Krivičnog zakonika (uslovna osuda)
+    </ref> 
+    , protiv kojeg se ne vodi postupak za drugo krivično djelo.
+    </background>
+    <decision>
+        <p>Kriv je</p>
+        <p>Što je: </p>
+        <p>
+        Dana 05. maja 2021. godine, u porodičnoj kući, u D. b ..., Gradska opština T., svjestan svog djela, čije je
+        izvršenje htio i znajući da je isto zabranjeno, suprotno
+        <ref href="/oruzje#art_23_para_3"> 
+        čl. 23 st. 3
+        </ref>
+         u vezi sa
+        <ref href="/oruzje#art_5_para_2">
+        čl. 5 st. 2 Zakona o oružju
+        </ref>
+        neovlašćeno držao oružje i municiju kategorije "B" iz
+        <ref href="/oruzje#art_4_para_3"> 
+        čl. 4 st. 3 Zakona o oružju
+        </ref>
+         i to pištolj marke CZ, model 57, kal. 7,62 mm, bez fabričkog broja, sa okvirom i municijom - pet metaka kalibra 7,62 mm, a za koje oružje i
+        municiju nije posjedovao oružni list izdat od strane nadležnog organa,
+        </p>
+        <p>
+        - čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz 
+        <ref href="/krivicni#art_403_para_1"> 
+        čl. 403 st. 1 Krivičnog zakonika Crne Gore.
+        </ref>
+        </p>
+        <p>
+        Pa mu sud za navedeno krivično djelo primjenom
+        <ref href="/krivicni#art_4_para_2"> 
+        čl. 4 st. 2,
+        </ref>
+        <ref href="/krivicni#art_42_para_1"> 
+        čl. 42 st. 1,
+        </ref>
+        <ref href="/krivicni#art_52_para_2"> 
+        čl. 52 st. 2,
+        </ref>
+        <ref href="/krivicni#art_53"> 
+        čl. 53
+        </ref>
+        i
+        <ref href="/krivicni#art_54"> 
+        čl. 54 Krivičnog zakonika Crne Gore
+        </ref>
+        i
+        <ref href="/postupak#art_226"> 
+        čl. 226,
+        </ref>
+        <ref href="/postupak#art_229"> 
+        čl. 229
+        </ref>
+        i
+        <ref href="/postupak#art_374"> 
+        čl. 374 Zakonika o krivičnom postupku
+        </ref>
+        , izriče
+        </p>
+        <p>USLOVNU OSUDU</p>
+        <p>
+        Kojom mu utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se ona neće izvršiti,
+ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne učini novo krivično djelo.
+        </p>
+        <p>
+        Na osnovu
+        <ref href="/krivicni#art_75">
+        čl. 75 Krivičnog zakonika Crne Gore
+        </ref> 
+         prema okrivljenom se izriče:
+        </p>
+        <p>MJERA BEZBJEDNOSTI</p>
+        <p>ODUZIMANJE PREDMETA</p>
+        <p>
+        Oduzimaju se od okrivljenog pištolj marke CZ, model 57, kal. 7,62 mm, bez fabričkog broja, sa okvirom i
+        municijom - pet metaka kalibra 7,62 mm, kao predmeti upotrijebljeni u izvršenju krivičnog djela.
+        </p>
+        <p>
+        Obavezuje se okrivljeni da plati na ime troškova krivičnog postupka iznos od 50,00 €, u roku od 15 dana po
+        pravosnažnosti presude, pod prijetnjom izvršenja.
+        </p>
+    </decision>
+    <arguments>
+        <p>O b r a z l o ž e nj e</p>
+        <p>
+        Okrivljenom
+        <party id="ilj" refersTo="#ilj" as ="#defendant">
+            I.LJ.
+        </party>
+        je optužnim predlogom 
+        <organization id="odt" refersTo="#odt">
+         Osnovnog državnog tužilaštva u Podgorici
+        </organization>
+        <ref href="/cg/verdict/k/2021-06-09/781">
+        Kt. br. 782/21 od 09.06.2021. godine
+        </ref>
+        stavljeno na teret izvršenje krivičnog djela nedozvoljeno držanje oružja i eksplozivnih
+        materija iz
+        <ref href="/krivicni#art_403_para_1"> 
+        čl. 403 st. 1 Krivičnog zakonika Crne Gore
+        </ref> 
+        . Zastupnica optužbe je u završnoj riječi ostala pri
+        podnijetom optužnom predlogu, predloživši sudu da okrivljenog oglasi krivim i da ga osudi po zakonu.
+        </p>
+        <p>
+        Okrivljeni 
+        <party id="ilj" refersTo="#ilj" as ="#defendant">
+            I.LJ.
+        </party> 
+        je u odbrani datoj u izviđaju i na glavnom pretresu priznao izvršenje krivičnog djela koje mu se
+        stavlja na teret i krivicu, saglasno u bitnom navodeći da je prije par godina od nepoznatog lica kupio pištolj,
+        nepoznate marke, sa okvirom u kojem se nalazilo nekoliko metaka. Pištolj je kupio radi lične bezbjednosti, jer
+        živi sam, pa se boji za svoju bezbjednost. Od kako je kupio pištolj nikada ga nije nosio van kuće i drži ga ispod
+        jastuka na kojem spava. Pištolj je nabavio ilegalno i nikada nije za njega imao oružni list, a nije obraćao
+        pažnju da li je na istom postojao fabrički broj. Zna da je držanje oružja krivično djelo, ali nije imao namjeru da
+        nešto loše uradi sa pištoljem. Sam je rekao policijskim službenicima da u kući drži predmetni pištolj i
+        pokazao im gdje se isti nalazi, a o čemu su policijski službenici sačinili službene zabilješke. Žao mu je što je
+        neovlašćeno držao oružje i spreman je da snosi posledice zbog izvršenog krivičnog djela. U završnoj riječi nije
+        imao šta da izjavi.
+        </p>
+        <p>
+        Uzimajući u obzir potpuno i jasno priznanje okrivljenog, koje u toku postupka nije dovedeno u sumnju i
+        cijeneći ga kao dokaz, sud primjenom 
+        <ref href="/postupak#art_458_para_2">
+        čl. 458 st. 2 Zakonika o krivičnom postupku
+        </ref>
+        nije izvodio druge dokaze, osim izvoda iz registra kaznenih evidencija Ministarstva pravde, ljudskih i manjinskih prava Crne Gore KE
+        1009/2021 od 11.06.2021. godine na ime okrivljenog, a od kojeg zavisi vrsta i mjera krivične sankcije. Na taj
+        način je tokom postupka nesumnjivo utvrđeno da je okrivljeni dana 05. maja 2021. godine, u porodičnoj kući,
+        u D. b ..., Gradska opština T., suprotno 
+        <ref href="/oruzje#art_23_para_3"> 
+        čl. 23 st. 3
+        </ref>
+         u vezi sa
+        <ref href="/oruzje#art_5_para_2">  
+        čl. 5 st. 2 Zakona o oružju
+        </ref>
+        , neovlašćeno držao oružje i municiju kategorije "B" iz 
+        <ref href="/oruzje#art_4_para_3"> 
+        čl. 4 st. 3 Zakona o oružju
+        </ref>
+         i to pištolj marke CZ, model 57, kal. 7,62 mm, bez fabričkog broja, sa okvirom i municijom - pet metaka kalibra 7,62 mm, a za koje oružje i municiju nije
+        posjedovao oružni list izdat od strane nadležnog organa.
+        </p>
+        <p>
+        <ref href="/oruzje#art_4_para_3">  
+        Članom 4 st. 3 tač. 1 Zakona o oružju
+        </ref> 
+        propisano je da je oružje B kategorije poluautomatsko ili repetirajuće
+        kratko vatreno oružje. Takođe, 
+        <ref href="/oruzje#art_5_para_2">  
+        članom 5 st. 2 istog zakona 
+        </ref>
+        propisano je da je dozvoljena nabavka, držanje, nošenje i prenošenje oružja i municije, oružja kategorije B za koje je izdata odgovarajuća isprava o oružju, dok
+        je 
+        <ref href="/oruzje#art_23_para_3">  
+        čl. 23 st. 3 istog zakona
+        </ref>
+        , propisano da se oružni list za držanje oružja kategorije B izdaje fizičkom licu za
+        oružje za ličnu bezbjednost, kao i za držanje i nošenje oružja za lovačko i sportsko oružje, na propisanom
+        obrascu. Imajući u vidu da je okrivljeni u svojoj porodičnoj kući držao predmetno oružje i municiju za isto,
+        koje nesumnjivo spada u kategoriju B, te da je to činio bez odgovarajuće isprave o oružju, odnosno bez
+        izdatog oružnog lista, to je evidentno da je okrivljeni prekršio citirane zakonske odredbe.
+        </p>
+        <p>
+        Cijeneći subjektivni odnos okrivljenog prema izvršenom djelu, sud nalazi da je okrivljeni postupajući na
+        prethodno opisani način, bio svjestan da neovlašćeno drži oružje i municiju, budući da je prema sopstvenim
+        navodima znao da nije dozvoljeno držanje oružja i municije bez odobrenja nadležnog državnog organa i
+        oružnog lista, pa je samim tim bio svjestan da time čini krivično djelo, što je nesumnjivo i htio, postupajući
+        tako sa umišljajem. Time su u njegovim radnjama pored objektivnih ostvareni i subjektivni elementi bića
+        krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz
+        <ref href="/krivicni#art_403_para_1">
+        čl. 403 st. 1 Krivičnog zakonika Crne Gore.
+        </ref>
+        </p>
+        <p>
+        Prilikom odlučivanja o krivičnoj sankciji, sud je u smislu 
+        <ref href="/krivicni#art_42_para_1">
+        čl. 42 st. 1 Krivičnog zakonika Crne Gore
+        </ref>
+        cijenio sve okolnosti koje utiču na njen izbor i visinu, pa je od olakšavajućih okolnosti na strani okrivljenog cijenio
+        njegove lične prilike, odnosno da je oženjen i otac osmoro djece, te da se radi o licu starije životne dobi, kao i
+        njegovo držanje nakon izvršenog krivičnog djela izraženo kroz priznanje izvršenja krivičnog djela, čime je
+        doprinio efikasnijem okončanju krivičnog postupka i iskreno kajanje, dok je od otežavajućih okolnosti na
+        strani okrivljenog sud cijenio njegov raniji život i s tim u vezi osuđivanost koja je utvrđena iz izvoda iz registra
+        kaznenih evidencija Ministarstva pravde, ljudskih i manjinskih prava Crne Gore KE 1009/2021 od 11.06.2021.
+        godine, za krivično djelo navedeno u izreci presude, ali je pritom sud imao u vidu da okrivljeni nije osuđivan
+        zbog istorodnog krivičnog djela, a od osude je proteklo više od osam godina. Cijeneći sve naprijed utvrđene
+        okolnosti, sud je okrivljenom shodno 
+        <ref href="/krivicni#art_53">
+        čl. 53
+        </ref>
+         i
+         <ref href="/krivicni#art_54">
+        čl. 54 Krivičnog zakonika Crne Gore
+        </ref>
+        izrekao uslovnu osudu, kao u izreci presude, nalazeći da prema okrivljenom nije nužno primijeniti kaznu radi krivičnopravne zaštite, jer se
+        može očekivati da će se i upozorenjem uz prijetnju kaznom zatvora u trajanju od tri mjeseca i vremenom
+        provjeravanja u periodu od jedne godine, na okrivljenog u dovoljnoj mjeri uticati da ubuduće ne vrši krivična
+        djela, jer se i iz njegovog ranijeg života može zaključiti da on nije osoba koja je sklona vršenju krivičnih djela.
+        Time će se uspješno ostvariti svrha uslovne osude iz
+        <ref href="/krivicni#art_52_para_2">
+        čl. 52 st. 2 Krivičnog zakonika Crne Gore
+        </ref>
+        , a u okviru opšte svrhe propisivanja i izricanja krivičnih sankcija iz 
+        <ref href="/krivicni#art_4_para_2">
+        čl. 4 st. 2 Krivičnog zakonika Crne Gore.
+        </ref>
+        </p>
+        <p>
+        Na osnovu 
+        <ref href="/krivicni#art_75">
+        čl. 75 Krivičnog zakonika Crne Gore
+        </ref>
+        , sud je okrivljenom izrekao mjeru bezbjednosti oduzimanje predmeta, odnosno pištolja marke CZ, model 57, kal. 7,62 mm, bez fabričkog broja, sa okvirom i municijom -
+        pet metaka kalibra 7,62 mm, s obzirom na to da se radi o predmetima upotrijebljenim za izvršenje krivičnog
+        djela.
+        </p>
+        <p>
+        Kako je okrivljeni oglašen krivim, sud ga je, shodno 
+        <ref href="/postupak#art_226">
+        čl. 226
+        </ref>
+        i
+        <ref href="/postupak#art_229">
+        čl. 229 Zakonika o krivičnom postupku
+        </ref>
+        , obavezao da na ime paušalnih troškova postupka plati iznos od 50,00 eura, koji je određen prema trajanju i složenosti
+        postupka i imovnom stanju okrivljenog.
+        </p>
+        <p>
+        Na osnovu iznijetih razloga, primjenom 
+        <ref href="/postupak#art_374">
+        čl. 374 Zakonika o krivičnom postupku
+        </ref>
+        , odlučeno je kao u izreci presude.
+        </p>
+    </arguments>
+    </judgmentBody>
+    <conclusions>
+        <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+        </organization>
+        <p>Dana, <date value="2021-07-09">09.07.2021.godine</date></p>
+        <p>ZAPISNIČARKA S U D I J A</p>
+        <party id="ekraja" refersTo="#ekraja" as="#clerk">
+            Edina Kraja
+        </party><party id="rcetkovic" refersTo="#rcetkovic" as="#judge">
+            ,s.r. Rade Ćetković,s.r.
+        </party>
+        <p>PRAVNA POUKA: Protiv ove presude dozvoljena je</p>
+        <p>žalba u roku od 8 dana od dana</p>
+        <p>prijema prepisa iste,</p>
+        <organization id="vs" refersTo="#vs">
+         Višem sudu u Podgorici
+        </organization>
+        <p>, a preko ovog suda.</p>
+         <p>ZTO: <party id="ekraja" refersTo="#ekraja" as="#clerk">
+            Edina Kraja
+        </party></p>
+    </conclusions>
+    </akomaNtoso>

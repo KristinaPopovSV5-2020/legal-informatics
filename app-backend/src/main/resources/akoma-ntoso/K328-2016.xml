@@ -1,0 +1,240 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                    <FRBRdate date="2016-10-31">2016-10-31</FRBRdate>
+                    <FRBRtitle>K 328/2016</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica"
+                    showAs="Osnovni sud u Podgorici" />
+                <TLCOrganization eId="odt"
+                    href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica"
+                    showAs="Osnovno državno tužilaštvo Podgorica" />
+                <TLCPerson eId="zjovovic" href="/ontology/person/zjovovic"
+                    showAs="Željka Jovović," />
+                <TLCPerson eId="drajkovic" href="/ontology/person/drajkovic"
+                    showAs="Danijela Rajković" />
+                <TLCPerson eId="tb" href="/ontology/person/tb" showAs="T. B." />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+            </references>
+        </meta>
+    </judgment>
+    <judgmentBody>
+        <p>U IME CRNE GORE</p>
+        <introduction>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+            </organization> , po sutkinji <party
+                id="zjovovic" refersTo="#zjovovic" as="#judge">
+                Željki Jovović
+            </party> uz učešće samostalnog referenta, <party
+                id="drajkovic" refersTo="#drajkovic" as="#clerk">
+                Danijele Rajković
+            </party> kao zapisničarke, u krivičnom
+            predmetu protiv okrivljenog <party id="tb" refersTo="#tb" as="#defendant">
+                T. B.
+            </party>, zbog krivičnog djela nedozvoljeno držanje
+            oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+                čl. 403 st. 1 Krivičnog zakonika Crne Gore
+            </ref> , nakon
+            pravosnažnosti rješenja ousvajanju sporazuma o priznanju krivice, dana 31. 10. 2016.
+            godine donio je</introduction>
+        <p>
+            P R E S U D U
+        </p>
+        <background> Okrivljeni: <party id="tb" refersTo="#tb" as="#defendant">
+                T.B.
+            </party>, JMB xxxxxxxxxxxxxx , zv. T . , od oca Đ .
+            i majke R . , rođene G . , rođen xx . xx . 19 xx . godine u Podgorici, saprebivalištem u
+            mjestu rođenja Ul. Vasa Raičkovića br. xx , državljanin Crne Gore, pismen, završio
+            srednjuškolu, zaposlen, oženjen, otac dvoje djece, srednjeg imovnog stanja, neosuđivan. </background>
+        <decision>
+            <p>Kriv je</p>
+            <p> Dana 20. aprila 2016. godine, oko 16:30 časova, u Podgorici, u Ulici Stanka
+                Dragojevića, svjestan svog djelačije je izvršenje htio i znajući da je isto
+                zabranjeno, neovlašćeno nosio vatreno oružje i municiju, na način štoje, suprotno <ref
+                    href="/oruzje#art_33_para_1">
+                    čl. 33 st. 1 Zakona o oružju
+                </ref> oružju,
+                na javnom mjestu, u putničkom vozilu marke "Passat", registarskihoznaka PG AR xxx ,
+                iako je to zabranjeno, nosio poluautomatsko kratko vatreno oružje - pištolj marke
+                "ČZ",crne boje, model 75 SP-01 Shadow, kalibra 9x19 (9mm-D), fabričkog broja
+                B014554, sa okvirom sa 17 metaka,kalibra 9 mm, držaći ga za pojasom, dok je u ladici
+                ispred suvozačevog sjedišta nosio okvir od navedenogpištolja, sa 18 metaka, kalibra
+                9 mm, u čemu je otkriven prilikom kontrole od strane policijskih
+                službenikaInterventne jedinice Centra bezbjednosti Podgorica, </p>
+            <p>- čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija
+                iz <ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore.
+                </ref></p>
+            <p> Pa sud okrivljenog <party id="tb" refersTo="#tb" as="#defendant">
+                    T.B.
+                </party> primjenom citiranih zakonskih
+                propisa, te članova <ref href="/krivicni#art_4_para_2">
+                    čl. 4 st. 2,
+                </ref> <ref
+                    href="/krivicni#art_32">
+                    32,
+                </ref> <ref href="/krivicni#art_41">
+                    41
+                </ref><ref href="/krivicni#art_42">
+                    42
+                </ref>
+                <ref href="/krivicni#art_45">
+                    45
+                </ref> i <ref href="/krivicni#art_46">
+                    46 Krivičnogzakonika Crne Gore
+                </ref> i <ref
+                    href="/postupak#art_226">
+                    čl. 226,
+                </ref> <ref href="/postupak#art_229">
+                229,
+                </ref> i <ref href="/postupak#art_374">
+                    374 Zakonika o krivičnom postupku,
+                </ref></p>
+            <p>O S U Đ U J E</p>
+            <p>Na kaznu rad u javnom inetresu, u trajanju od 120 (stodvadeset) časova, a koja kazna
+                će se izvršiti za vrijemeod 3 (tri) mjeseca, s tim, što ne može biti duža od 60
+                (šezdeset) časova u toku 1 (jednog) mjeseca</p>
+
+            <p>Ukoliko okrivljeni ne bude vršio rad u javnom interesu, ova kazna će se zamijeniti
+                kaznom zatvora, tako što ćese za svakih započetih 60 (šezdeset) časova rada u javnom
+                interesu, zamijeniti kaznom zatvora u trajanju od 1(jednog) mjeseca.</p>
+
+            <p>
+                Obavezuje se okrivljeni da na ime troškova krivičnog postupka plati iznos od
+                30,00 eura
+                u roku od 15 dana popravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+            </p>
+            <p> Na osnovu <ref href="/krivicni#art_75">
+                    čl. 75 Krivičnog zakonika Crne Gore
+                </ref>
+                okrivljenom se izriče: </p>
+            <p>MJERA BEZBJEDNOSTI</p>
+            <p>Oduzima se od okrivljenog vatreno oružje
+                pištolj marke "ČZ", crne boje, model 75 SP-01 Shadow, kalibra 9x19(9mm-D), fabričkog
+                broja B014554, sa okvirom u kojem je bilo 17 metaka, kalibra 9 mm, kao i okvir sa
+                18metaka, kalibra 9 mm
+                , kao predmeti upotrijebljeni u izvršenju krivičnog djela.</p>
+        </decision>
+        <arguments>
+            <organization id="odt" refersTo="#odt">
+                Osnovno
+                državno
+                tužilaštvo
+                u
+                Podgorici
+            </organization>
+            je optužnim predlogom <ref
+                href="/cg/verdict/k/2016-05-19/542">
+                Kt. br. 542/16 od 19. 05. 2016. godine
+            </ref> stavilo na
+            teret okrivljenom <party id="tb"
+                refersTo="#tb"
+                as="#defendant">
+                T.B.
+            </party>, izvršenje krivičnog djela nedozvoljeno
+            držanje oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+                čl. 403 st. 1
+                Krivičnog zakonika Crne Gore
+            </ref>
+            <p>Nakon
+            podnošenja optužnog predloga sudu, državni tužilac u <organization id="odt"
+                    refersTo="#odt">
+                    ODT-u
+                </organization>, okrivljeni i njegov
+            branilac su zaključili sporazum o priznanju krivice dana 27. 10. 2016. godine</p>
+            <p>Utvrđujući
+            da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivično djelo, na
+            ročištu zarazmatranje sporazuma, sud je ocijenio sadržinu dokaza koje je prikupio
+            tužilac, a koji se nalaze u spisima predmeta.</p>
+            <p>Iz sadržine prikupljenih dokaza, sud
+            je zaključio da je državni tužilac pružio dovoljno dokaza o krivici okrivljenog <party
+                    id="tb" refersTo="#tb"
+                    as="#defendant">
+                    T.B.
+                </party> i da je okrivljeni u vrijeme i
+            na način opisan u izreci ove presude učinio krivično djelo nedozvoljeno držanje oružja i
+            eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1
+                    Krivičnog zakonika Crne Gore
+                </ref>
+            Gore, za koje ga je ovaj sud oglasio krivim , a nakon što je u svemu prihvatio sporazum
+            o priznanju krivice .</p>
+            <p>Odlučujući o krivičnoj sankciji i mjeri bezbjednosti iz
+            sporazuma o priznanju krivice zaključenog između stranaka, ovaj sud je našao da je
+            predlog stranaka u vezi sa krivičnom sankcijom i mjerom bezbjednosti prihvatljiv, jer je
+            isti u skladu sa interesima pravičnosti, a sankcija odgovara svrsi izricanja krivičnih
+            sankcija.</p>
+
+            <p>Okrivljeni je obavezan da plati troškove krivičnog postupka - paušal,
+            saglasno odredbi <ref href="/postupak#art_229">
+                    člana 229 Zakonika o krivičnom postupku.
+                </ref>
+
+            </p>
+            <p>Sa
+            iznijetih razloga, na osnovu <ref href="/postupak#art_301_para_1">
+                    člana 301 st.1 Zakonika o krivičnom postupku
+                </ref>,
+            odlučeno je kao u izreci ove presude .</p>
+        </arguments>
+
+    </judgmentBody>
+    <conclusions>
+        <organization id="os" refersTo="#os">
+            OSNOVNI SUD U PODGORICI
+        </organization>
+        <p>dana 31. 10. 2016. godine.</p>
+        <p>ZAPISNIČARKA
+        SUTKINJA</p>
+        <party
+            id="drajkovic" refersTo="#drajkovic" as="#clerk">
+            Danijela Rajković, s.r
+        </party>
+        <party
+            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović, s.r</party>
+        <p>PRAVNA
+        POUKA</p>
+        <p>
+            Protiv ove presude dozvoljena je žalba
+        </p>
+        <p>
+            samo ako presuda nije u skladu sa
+        </p>
+        <p>
+            zaključenim porazumom.
+        </p>
+        <p>
+            <party
+                id="drajkovic" refersTo="#drajkovic" as="#clerk">
+                ZTO: Danijela Rajković
+            </party>
+        </p>
+        <p>ZAPISNIČARKA
+        SUTKINJA</p>
+        <party
+            id="drajkovic" refersTo="#drajkovic" as="#clerk">
+            Danijela Rajković
+        </party>
+        <party
+            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović</party>
+        <p>DN-a:
+            Primjerak rješenja dostaviti:</p>
+        <organization id="odt" refersTo="#odt">
+            ODT-u Podgorica
+        </organization> - Okrivljenom i braniocu adv. S . R .
+        , - a/a Postupljeno dana __________________ Namještenik suda __________________ </conclusions>
+</akomaNtoso>
