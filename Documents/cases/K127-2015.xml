@@ -81,8 +81,8 @@
             državljanin Crne Gore, razumije crnogorski jezik koji je i njegov jezik, nezaposlen,
             oženjen, otac jednog djeteta, završio srednju školu, srednjeg imovnog stanja,
             neosuđivan. </background>
+        <p>Krivi su</p>
         <decision>
-            <p>Krivi su</p>
             <p>Što su:</p>
 
             <p> Tokom 2014. godine, u Podgorici, u selu Lj., svjesni svog djela čije su izvršenje
@@ -128,33 +128,6 @@
             <p>
             </p>
 
-            <p>Dana 21.12.2022. godine, u prijepodnevnim časovima, u blizini Nikolj Crkve, u
-                Golubovcima, Opština Zeta, svjestan svog djela čije je izvršenje htio, znajući da je
-                njegovo djelo zabranjeno, na javnom mjestu, suprotno <ref
-                    href="/oruzje#art_4_para_3_point_11">
-                    čl. 4 st. 3 tač. 11
-                </ref>, <ref
-                    href="/oruzje#art_5_para_2">
-                    čl. 5 st. 2
-                </ref>, <ref
-                    href="/oruzje#art_23_para_3">
-                    čl. 23 st. 3
-                </ref> i <ref
-                    href="/oruzje#art_33_para_1">
-                    čl. 33 st. 1 Zakona o oruđju
-                </ref>,
-                neovlašćeno nosio vatreno oružje i municiju kategorije B, i to lovačku pušku marke
-                "Baikal", tip "Bokerica", model IŽ - 12 kalibra 12 mm, fabričkog broja B 5587, sa
-                pripadajućom municijom - 8 metaka, kalibra 12 mm, za koje oružje i municiju nije
-                imao odobrenje izdato od strane nadležnog državnog organa, u čemu je otkriven
-                dolaskom policijskih službenika na lice mjesta, </p>
-
-            <p> -čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija
-                iz <ref href="/krivicni#art_403_para_1">
-                    čl. 403 st. 1
-                    Krivičnog zakonika Crne Gore
-                </ref>
-            </p>
             <p> Pa sud okrivljene <party
                     id="sp" refersTo="#sp" as="#defendant">
                     S. P.
@@ -202,7 +175,8 @@
                 </ref>
             </p>
 
-            <p>Osuđuje</p>
+            <p>O S U Đ U J E</p>
+            <p>Na kaznu rad u javnom interesu i to:</p>
             <p> Okrivljenog <party
                     id="sp" refersTo="#sp" as="#defendant">
                     S. P.
@@ -230,16 +204,15 @@
                 pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
             </p>
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <p>
                 <organization
                     id="odt" refersTo="#odt">
                     Osnovno državno tužilaštvo u Podgorici
                 </organization>
-                je optužnim predlogom <ref
-                    href="/cg/verdict/k/2015-02-13/365">
+                je optužnim predlogom
                     Kt. br. 47/15 od 13. 02. 2015. godine
-                </ref>
                 stavilo na teret okrivljenom <party
                     id="sp" refersTo="#sp" as="#defendant">
                     S. P.
@@ -315,13 +288,12 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U PODGORICI
         </organization>
-        <p>dana 16. 04. 2015. godine</p>
-        <p>
-        S U D I J A</p>
-        <party
+        <date value="2015-04-16">Dana 16. 04. 2015. godine</date>
+        <p>S U D I J A</p>
+        <p><party
             id="zjovovic" refersTo="#zjovovic" as="#judge">
             Željka Jovović, s.r
-        </party>
+        </party></p>
         <p>
             <party
                 id="drajkovic" refersTo="#drajkovic" as="#clerk">
@@ -335,6 +307,8 @@
         </organization> -okrivljenim i braniocu adv. <party
             id="ii" refersTo="#ii" as="#defense">
             I. I.
-        </party> - a/a Postupljeno dana: _____ Namještenik suda
-        ________________ </conclusions>
+        </party> - a/a
+        <p>Postupljeno dana: _____</p>
+        <p>Namještenik suda ________________</p>
+    </conclusions>
 </akomaNtoso>

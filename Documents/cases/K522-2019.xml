@@ -64,10 +64,8 @@
             neoženjen, bez djece, pismen, završio srednju školu, srednjeg imovnog stanja, osuđivan
             presudom <organization id="osr" refersTo="#osr">
                 Osnovnog suda u Rožajama
-            </organization> <ref
-                href="/cg/verdict/k/2015-11-17/119">
-                K. br. 119/15 od 17.11.2015. godine
-            </ref> zbog krivičnog
+            </organization>
+                K. br. 119/15 od 17.11.2015. godine zbog krivičnog
             djela nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
                 href="/krivicni#art_403_para_3">
                 čl. 403 st. 3
@@ -77,9 +75,8 @@
             </ref> (7 mjeseci
             zatvora), protiv kojeg se ne vodi postupak za drugo krivično djelo, lišen slobode
             09.07.2019. godine u 14:50 časova do 10.07.2019. godine u 10:35 časova. </background>
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv
-                je</p>
     <p>Što je: </p> Dana 09.07.2019. godine, oko 14,50 časova, u ul. Studentskoj,
             u Podgorici, suprotno <ref href="/oruzje#art_4_para_3_point_1">
                 čl. 4 st. 3 tač. 1,
@@ -127,8 +124,7 @@
             </ref> i <ref href="/postupak#art_374">
                 čl. 374 Zakonika o krivičnom postupku,
             </ref>
-    <p>O S U Đ U J
-            E</p>
+    <p>O S U Đ U J E</p>
     <p> Na kaznu zatvora u trajanju od 4 (četiri) mjeseca, koja će se izvršiti tako
                 što
                 će okrivljeni istu izdržavati u prostorijama u kojima stanuje,
@@ -148,8 +144,7 @@
                 čl. 75 Krivičnog zakonika Crne Gore
             </ref> prema
             okrivljenom Daliboru Drobnjaku se izriče: <p>MJERA BEZBJEDNOSTI</p>
-    <p>ODUZIMANjE
-                PREDMETA</p>
+    <p>ODUZIMANJE PREDMETA</p>
     <p>Oduzima se od okrivljenog 25 komada pištoljske municije kalibra 7,65
             mm,
                 kao predmeti upotrijebljeni u izvršenju krivičnog djela.</p>
@@ -159,6 +154,7 @@
                 dana po
                 pravosnažnosti presude, pod prijetnjom izvršenja.</p>
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <p>Okrivljenom <party
                     id="dl" refersTo="#dl" as="#defendant">
@@ -166,10 +162,8 @@
                 </party> je optužnim predlogom <organization
                     id="odt" refersTo="#odt">
                     Osnovnog državnog tužilaštva Podgorica
-                </organization> <ref
-                    href="/cg/verdict/k/2019-09-16/881">
-                    Kt.br.881/19 od 16.09.2019. godine
-                </ref>,
+                </organization>
+                    Kt.br.881/19 od 16.09.2019. godine,
                 stavljeno na teret krivično djelo nedozvoljeno držanje oružja i eksplozivnih
                 materija iz <ref
                     href="/krivicni#art_403_para_1">
@@ -236,19 +230,21 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U PODGORICI
         </organization>
-        <p>Dana, 17.06.2020. godine</p>
-        <p>ZAPISNIČARKA
-        S U D I J A</p>
-        <party
+        <date value="2020-06-17">Dana, 17.06.2020. godine</date>
+        <p>ZAPISNIČARKA S U D I J A</p>
+        <p><party
             id="ekraja" refersTo="#ekraja" as="#clerk">
             Edina Kraja
         </party>,s.r. <party
             id="rcetkovic" refersTo="#rcetkovic" as="#judge">
             Rade Ćetković
-        </party>,s.r. <p>Dn-a: Po
+        </party>,s.r.</p> <p>Dn-a: Po
             primjerak presude dostaviti:</p>
         <organization id="odt" refersTo="#odt">
             ODT Podgorica
         </organization>- Okrivljenom, - Braniocu okrivljenog, -
-        a/a. Postupljeno dana ________________ Namještenik suda________________ </conclusions>
+        a/a.
+        <p>Postupljeno dana ________________</p>
+        <p>Namještenik suda________________</p>
+    </conclusions>
 </akomaNtoso>

@@ -30,6 +30,7 @@ export class CasePageComponent implements OnInit {
   fetchCase(caseId: string) {
     console.log(`Fetching details for case: ${caseId}`);
     this.cbrService.getCaseAkomaNtoso(caseId).subscribe(data => { 
+      console.log(data);
       this.xmlDocument = new DOMParser().parseFromString(
         data,
         'text/xml'

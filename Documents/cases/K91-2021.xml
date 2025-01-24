@@ -31,9 +31,7 @@
                 <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCPlace eId="cetinje" href="/ontology/place/cetinje" />
             </references>
-
         </meta>
-
     </judgment>
     <judgmentBody>
         <p>U IME CRNE GORE</p>
@@ -74,11 +72,12 @@
             rođene Dž. rođen ....... godine na C. sa prebivalištem u P. – Ul. F. R. br....
             državljanin C. G. razumije crnogorski jezik, koji je i njegov jezik, razveden, otac
             jednog maloljetnog djeteta, pismen, završio srednju školu, lošeg imovnog stanja,
-            neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.</background>
+            neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.
+        </background>
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv je</p>
             <p>Što
-                je:</p>Dana 13.avgusta 2021. godine u svojoj porodičnoj kući, u mjestu zv.“Š....“,
+                je:</p><p>Dana 13.avgusta 2021. godine u svojoj porodičnoj kući, u mjestu zv.“Š....“,
             opština C. svjestan svoga djela i zabranjenosti istog,čije je izvršenje htio, protivno <ref
                 href="/oruzje#art_5_para_2">
                 članu 5 stav 2 Zakona o oružju
@@ -131,8 +130,7 @@
                 </ref>,
             izriče </p>
 
-                <p>USLOVNU
-                OSUDU</p>
+                <p>USLOVNU OSUDU</p>
         <p>Kojom mu utvrđuje kaznu zatvora u trajanju od 6 (šest) mjeseci i
             istovremeno određuje da se ona neće
                 izvršiti, ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne
@@ -164,13 +162,12 @@
             </p>
 
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <p>Optužnim predlogom <organization id="odt" refersTo="#odt">
                     Osnovnog državnog tužilaštva Cetinje
-                </organization> <ref
-                    href="/cg/verdict/k/2021-11-22/36">
+                </organization>
                     Kt. br. 148/21 od 22.11.2021. godine
-                </ref>
                 je okrivljenom <party id="vi" refersTo="#vi" as="#defendant">
                     V. I.
                 </party> stavljeno na teret izvršenje
@@ -483,12 +480,16 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U Cetinju
         </organization>
-        <p>Dana, 10.01.2022. godine</p>
+        <date value="2022-01-10">Dana, 10.01.2022. godine</date>
+        <p>ZAPISNIČARKA S U D I J A</p>
         <p>
-            S U D I J A</p>
-        <party
+            <party
+            id="mpopivoda" refersTo="#mpopivoda" as="#clerk">
+            Popivoda Marija,s.r.
+        </party>
+            <party
             id="blekovic" refersTo="#blekovic" as="#judge">
             Branislav Leković,s.r.
-        </party>
+        </party></p>
     </conclusions>
 </akomaNtoso>

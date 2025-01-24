@@ -1,32 +1,31 @@
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <judgment>
-    <meta>
-    <identification source="#court">
-                <FRBRWork>
-                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
-                    <FRBRdate date="2021-02-22">2021-02-22</FRBRdate>
-                    <FRBRtitle>K 758/2020</FRBRtitle>
-                    <FRBRcountry>CG</FRBRcountry>
-                </FRBRWork>
-            </identification>
-             <references>
-                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
-                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica"/>
-                <TLCPerson eId="lmstamatovic" href="/ontology/person/lmstamatovic" showAs="Larisi Mijušković-Stamatović"/>
-                <TLCPerson eId="msekulic" href="/ontology/person/msekulic" showAs="Marina Sekulić"/>
-                <TLCPerson eId="smilic" href="/ontology/person/smilic" showAs="Siniša Milić"/>
-                <TLCPerson eId="vb" href="/ontology/person/vb" showAs="V.B."/>
-                <TLCPerson eId="ga" href="/ontology/person/ga" showAs="G.A."/>
-                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
-				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
-				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
-				<TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
-				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
-                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
-            </references>
-    </identification>
-    </meta>
+        <meta>
+        <identification source="#court">
+                    <FRBRWork>
+                        <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                        <FRBRdate date="2021-02-22">2021-02-22</FRBRdate>
+                        <FRBRtitle>K 758/2020</FRBRtitle>
+                        <FRBRcountry>CG</FRBRcountry>
+                    </FRBRWork>
+                </identification>
+                 <references>
+                    <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
+                    <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo Podgorica"/>
+                    <TLCPerson eId="lmstamatovic" href="/ontology/person/lmstamatovic" showAs="Larisi Mijušković-Stamatović"/>
+                    <TLCPerson eId="msekulic" href="/ontology/person/msekulic" showAs="Marina Sekulić"/>
+                    <TLCPerson eId="smilic" href="/ontology/person/smilic" showAs="Siniša Milić"/>
+                    <TLCPerson eId="vb" href="/ontology/person/vb" showAs="V.B."/>
+                    <TLCPerson eId="ga" href="/ontology/person/ga" showAs="G.A."/>
+                    <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                    <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                    <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                    <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+                    <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                    <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+                </references>
+        </meta>
     </judgment>
     <judgementBody>
       <p>U IME CRNE GORE</p>
@@ -54,9 +53,7 @@
             <organization id="odt" refersTo="#odt">
                 Osnovnog državnog tužilaštva u Podgorici,
             </organization>
-            <ref href="/cg/verdict/k/2020-09-29/1084">
                 Kt.br.1084/20 od 29.09.2020. godine
-            </ref>
             , kojeg je na glavnom pretresu zastupao
             <party id="smilic" refersTo="#smilic" as="#prosecutor">
                 Siniša Milić, državni tužilac,
@@ -74,119 +71,116 @@
             , i okrivljenog, donio je, a dana 
             <date date="2021-02-25">25.02.2021.</date>
             , i javno objavio.
-        </introduction>
+      </introduction>
+    <p>
+        P R E S U D U
+    </p>
+    <background>
+    Okrivljeni:
+    <party id="vb" refersTo="#vb" as ="#defendant">
+           V.B.
+    </party>
+    , JMBG: xxxxxxxxxxxxx, od oca S. i majke Ž., rođene Ž., rođen dana xx.xx.20xx. godine u Podgorici, sa
+    prebivalištem u mjestu rođenja, ul. A. L. br.x, nezaposlen, sa završenom SSS, neoženjen, bez djece,
+    državljanin Crne Gore, lošeg imovnog stanja, neosuđivan
+    </background><p>Kriv je</p>
+    <decision>
+    <p>Zato što je: </p>
+    Dana <date date="2020-07-08">08.07.2020.</date> godine, u porodičnoj kući, G. A., u mjestu Donji Kokoti, u Podgorici, postupajući suprotno
+    <ref href="/oruzje#art_4_para_3_point_1">
+     čl.4 st. 3 tačka 1
+     </ref>
+     i
+     <ref href="/oruzje#art_5_para_2">
+      čl.5 st. 2 Zakona o oružju
+    </ref>
+      , neovlašćeno držao i nosio vatreno oružje i municiju kategorije B, i to:
+        pištolj marke „ČZ“, model 27, kalibar 7,65 mm, fabrički broj 525834 i 3 komada pištoljske municije kalibra
+        7,65 mm bez odgovarajuće isprave o oružju, u čemu je istog dana otkriven, kada su mu navedeno oružje i
+        municija oduzeti od strane ovlašćenih službenika Uprave policije CB Podgorica, pri čemu je bio svjestan svog
+        djela, čije je izvršenje htio, znajući da je isto zabranjeno,.
         <p>
-            P R E S U D U
+        -čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz
+        <ref href="/krivicni#art_403_para_1">
+        čl.403 st.1 KZ CG,
+        </ref>
         </p>
-        <background>
-        Okrivljeni:
-        <party id="vb" refersTo="#vb" as ="#defendant">
-               V.B.
-        </party>
-        , JMBG: xxxxxxxxxxxxx, od oca S. i majke Ž., rođene Ž., rođen dana xx.xx.20xx. godine u Podgorici, sa
-        prebivalištem u mjestu rođenja, ul. A. L. br.x, nezaposlen, sa završenom SSS, neoženjen, bez djece,
-        državljanin Crne Gore, lošeg imovnog stanja, neosuđivan
-        </background>
-        <decision>
-        <p>Kriv je</p>
-        <p>Zato što je: </p>
-        Dana <date date="2020-07-08">08.07.2020.</date> godine, u porodičnoj kući, G. A., u mjestu Donji Kokoti, u Podgorici, postupajući suprotno
-        <ref href="/oruzje#art_4_para_3_point_1">
-         čl.4 st. 3 tačka 1 
-         </ref>
-         i
-         <ref href="/oruzje#art_5_para_2"></ref>
-          čl.5 st. 2 Zakona o oružju 
-          </ref>
-          , neovlašćeno držao i nosio vatreno oružje i municiju kategorije B, i to:
-            pištolj marke „ČZ“, model 27, kalibar 7,65 mm, fabrički broj 525834 i 3 komada pištoljske municije kalibra
-            7,65 mm bez odgovarajuće isprave o oružju, u čemu je istog dana otkriven, kada su mu navedeno oružje i
-            municija oduzeti od strane ovlašćenih službenika Uprave policije CB Podgorica, pri čemu je bio svjestan svog
-            djela, čije je izvršenje htio, znajući da je isto zabranjeno,.
-            <p>
-            -čime je izvršio krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz 
-            <ref href="/krivicni#art_403_para_1">
-            čl.403 st.1 KZ CG,
-            </ref>
-            </p>
-            <p>
-            -pa ga Sud primjenom citiranog zakonskog propisa, te odredbi 
-            <ref href="/krivicni#art_3">
-            čl. 3,
-            </ref>
-            <ref href="/krivicni#art_4">
-            4,
-            </ref>
-            <ref href="/krivicni#art_5">
-            5,
-            </ref>
-            <ref href="/krivicni#art_13">
-            13,
-            </ref>
-            <ref href="/krivicni#art_15">
-            15,
-            </ref>
-            <ref href="/krivicni#art_32">
-            32,
-            </ref>
-            <ref href="/krivicni#art_36">
-            36,
-            </ref>
-            <ref href="/krivicni#art_36a">
-            36a
-            </ref>
-            i
-            <ref href="/krivicni#art_42">
-            42 KZ CG
-            </ref>
-            , te 
-            <ref href="/postupak#art_226">
-            čl.226,
-            </ref>
-            <ref href="/postupak#art_227">
-            227,
-            </ref>
-            <ref href="/postupak#art_229">
-            229
-            </ref>
-            i
-            <ref href="/postupak#art_374">
-            374 Zakonika o krivičnom postupku,
-            </ref>
-            </p>
-            <p>O S U Đ U J E</p>
-            <p>
-            Na kaznu zatvora u trajanju od 3 (tri) mjeseca, koju kaznu će nakon pravnosnažnosti presude izdržavati u
-            prostorijama za stanovanje, s tim da okrivljeni ne smije napuštati prostorije u kojima stanuje, osim u
-            slučajevima propisanim zakonom kojim se uređuje izvršenje krivičnih sankcija, a ukoliko okrivjeni jednom u
-            trajanju preko šest časova ili dva puta u trajanju do šest časova samovoljno napusti prostorije u kojima
-            stanuje, sud će mu odrediti da ostatak kazne zatvora izdrži u Upravi za izvršenje krivičnih sankcija - Zatvoru
-            Podgorica.
-            </p>
-            <p>
-            Obavezuje se okrivljeni da na račun budžetskih sredstava suda uplati iznos od 50,00 € na ime sudskog
-            paušala, u roku od 15 (petnaest) dana po pravnosnažnosti presude pod prijetnjom prinudne naplate.</p>
-            <p>
-            Primjenom 
-            <ref href="/krivicni#art_75">
-            čl. 75 Krivičnog Zakonika Crne Gore 
-            </ref>
-            sud okrivljenom i z r i č e i
-            </p>
-            <p>MJERU BEZBJEDNOSTI</p>
-            <p>Oduzimanje predmeta – pištolja marke „ČZ“, model 27, kalibra 7,65 mm, fabričkog broja 525834 i 3 komada
-            pištoljske municije kalibra 7,65 mm.</p>
-        </decision>
-        <arguments>
+        <p>
+        -pa ga Sud primjenom citiranog zakonskog propisa, te odredbi
+        <ref href="/krivicni#art_3">
+        čl. 3,
+        </ref>
+        <ref href="/krivicni#art_4">
+        4,
+        </ref>
+        <ref href="/krivicni#art_5">
+        5,
+        </ref>
+        <ref href="/krivicni#art_13">
+        13,
+        </ref>
+        <ref href="/krivicni#art_15">
+        15,
+        </ref>
+        <ref href="/krivicni#art_32">
+        32,
+        </ref>
+        <ref href="/krivicni#art_36">
+        36,
+        </ref>
+        <ref href="/krivicni#art_36a">
+        36a
+        </ref>
+        i
+        <ref href="/krivicni#art_42">
+        42 KZ CG
+        </ref>
+        , te
+        <ref href="/postupak#art_226">
+        čl.226,
+        </ref>
+        <ref href="/postupak#art_227">
+        227,
+        </ref>
+        <ref href="/postupak#art_229">
+        229
+        </ref>
+        i
+        <ref href="/postupak#art_374">
+        374 Zakonika o krivičnom postupku,
+        </ref>
+        </p>
+        <p>O S U Đ U J E</p>
+        <p>
+        Na kaznu zatvora u trajanju od 3 (tri) mjeseca, koju kaznu će nakon pravnosnažnosti presude izdržavati u
+        prostorijama za stanovanje, s tim da okrivljeni ne smije napuštati prostorije u kojima stanuje, osim u
+        slučajevima propisanim zakonom kojim se uređuje izvršenje krivičnih sankcija, a ukoliko okrivjeni jednom u
+        trajanju preko šest časova ili dva puta u trajanju do šest časova samovoljno napusti prostorije u kojima
+        stanuje, sud će mu odrediti da ostatak kazne zatvora izdrži u Upravi za izvršenje krivičnih sankcija - Zatvoru
+        Podgorica.
+        </p>
+        <p>
+        Obavezuje se okrivljeni da na račun budžetskih sredstava suda uplati iznos od 50,00 € na ime sudskog
+        paušala, u roku od 15 (petnaest) dana po pravnosnažnosti presude pod prijetnjom prinudne naplate.</p>
+        <p>
+        Primjenom
+        <ref href="/krivicni#art_75">
+        čl. 75 Krivičnog Zakonika Crne Gore
+        </ref>
+        sud okrivljenom i z r i č e i
+        </p>
+        <p>MJERA BEZBJEDNOSTI</p>
+        <p>Oduzimanje predmeta – pištolja marke „ČZ“, model 27, kalibra 7,65 mm, fabričkog broja 525834 i 3 komada
+        pištoljske municije kalibra 7,65 mm.</p>
+      </decision>
         <p>O b r a z l o ž e nj e</p>
+        <arguments>
         <p>
         Optužnim predlogom 
         <organization id="odt" refersTo="#odt">
         ODT-a Podgorica 
         </organization>
-        <ref href="/cg/verdict/k/2020-09-29/1084">
         Kt.br.1084/20 od 29.09.2020. godine
-        </ref>
         , kojeg je na glavnom pretresu zastupao 
         <party id="smilic" refersTo="#smilic" as="#prosecutor">
             Siniša Milić, državni tužilac,
@@ -222,9 +216,7 @@
         </party> 
         je u odbrani datoj na glavnom pretresu, u svemu ponovio odbranu datu pred Osnovnim
         državnim tužilaštvom, na zapisnik o saslušanju osumnjičenog
-        <ref href="/cg/verdict/k/2020-07-09/1084">
         Kt.br.1084/20 od 09.07.2020. godine,
-        </ref>
          i u bitnom naveo da priznaje izvršenje krivičnog djela stavljenog mu na teret i svoju krivicu. Dana 08.07.2020.
         godine je bio kod svog poznanika
         <party id="ga" refersTo="#ga" as ="#defendant">
@@ -443,14 +435,15 @@
       <organization id="os" refersTo="#os">
                 OSNOVNI SUD U PODGORICI
         </organization>
-        <p>Dana, <date value="2021-02-05">5.02.2021.godine</date></p>
-        <p>ZAPISNIČAR S U D I J A</p>
+        <date value="2021-02-05">Dana, 5.02.2021.godine</date>
+        <p>ZAPISNIČAR, SUDIJA</p>
+          <p>
         <party id="msekulic" refersTo="#msekulic" as="#clerk">
             Marina Sekulić
         </party><party id="lmstamatovic" refersTo="#lmstamatovic" as="#judge">
             Larisa Mijušković-Stamatović
-        </party>
-        DN-a primjerak presude dostaviti:
+        </party></p>
+          <p>DN-a primjerak presude dostaviti:</p>
         <list>
             <item>
                 <organization id="odt" refersTo="#odt">
@@ -466,18 +459,9 @@
                 <p> a/a</p>
             </item>
         </list>
-        <p>
-        S u d i j a
-        _____________________
-        Postupljeno dana ___________________
-        Namještenik suda __________________
-        </p>
-        <p>PRAVNA POUKA</p>
-        <p>
-            Protiv ove presude žalba nije dozvoljena.
-        </p>
-        <p>ZTO: <party id="msekulic" refersTo="#msekulic" as="#clerk">
-            Marina Sekulić
-        </party></p>
+        <p>S u d i j a</p>
+        <p>_____________________</p>
+        <p>Postupljeno dana ___________________</p>
+          <p>Namještenik suda __________________</p>
     </conclusions>
 </akomaNtoso>

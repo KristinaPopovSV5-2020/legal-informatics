@@ -25,7 +25,6 @@
 				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
             </references>
-    </identification>
     </meta>
     </judgment>
     <judgmentBody>
@@ -76,17 +75,15 @@
     <organization id="os" refersTo="#os">
     Osnovnog suda u Podgorici
     </organization>
-    <ref href="/cg/verdict/k/2013-06-12/915">
         K. br. 915/12 od 12.06.2013. godine
-    </ref>
     zbog krivičnog djela građenje objekta bez građevinske dozvole iz
     <ref href="/krivicni#art_326a">
     čl. 326a Krivičnog zakonika (uslovna osuda)
     </ref> 
     , protiv kojeg se ne vodi postupak za drugo krivično djelo.
     </background>
+    <p>Kriv je</p>
     <decision>
-        <p>Kriv je</p>
         <p>Što je: </p>
         <p>
         Dana 05. maja 2021. godine, u porodičnoj kući, u D. b ..., Gradska opština T., svjestan svog djela, čije je
@@ -165,8 +162,8 @@ ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne učini n
         pravosnažnosti presude, pod prijetnjom izvršenja.
         </p>
     </decision>
+    <p>O b r a z l o ž e nj e</p>
     <arguments>
-        <p>O b r a z l o ž e nj e</p>
         <p>
         Okrivljenom
         <party id="ilj" refersTo="#ilj" as ="#defendant">
@@ -176,9 +173,7 @@ ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne učini n
         <organization id="odt" refersTo="#odt">
          Osnovnog državnog tužilaštva u Podgorici
         </organization>
-        <ref href="/cg/verdict/k/2021-06-09/781">
         Kt. br. 782/21 od 09.06.2021. godine
-        </ref>
         stavljeno na teret izvršenje krivičnog djela nedozvoljeno držanje oružja i eksplozivnih
         materija iz
         <ref href="/krivicni#art_403_para_1"> 
@@ -326,13 +321,13 @@ ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti presude ne učini n
         <organization id="os" refersTo="#os">
                 OSNOVNI SUD U PODGORICI
         </organization>
-        <p>Dana, <date value="2021-07-09">09.07.2021.godine</date></p>
+        <date value="2021-07-09">Dana, 09.07.2021.godine</date>
         <p>ZAPISNIČARKA S U D I J A</p>
-        <party id="ekraja" refersTo="#ekraja" as="#clerk">
+        <p><party id="ekraja" refersTo="#ekraja" as="#clerk">
             Edina Kraja
         </party><party id="rcetkovic" refersTo="#rcetkovic" as="#judge">
             ,s.r. Rade Ćetković,s.r.
-        </party>
+        </party></p>
         <p>PRAVNA POUKA: Protiv ove presude dozvoljena je</p>
         <p>žalba u roku od 8 dana od dana</p>
         <p>prijema prepisa iste,</p>

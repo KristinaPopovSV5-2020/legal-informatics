@@ -63,8 +63,8 @@
             preduzeću "Balkan Kargo", oženjen, otac jednog djeteta, završio srednju hemijsku školu,
             lošeg imovnog stanja, neosuđivan, u pritvoru od 18. 07. 2017. godine, od 14:00 časova do
             17. 09. 2017. godine. </background>
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv je</p>
             <p>Što je:</p>
             <p>Dana 12. 07. 2017. godine, u Podgorici, svjestan svog djela, čije je izvršenje htio i
                 znajući da je isto zabranjeno, neovlašćeno nosio vatreno oružje na način što je
@@ -113,13 +113,14 @@
                 eura,
                 u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja. </p>
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <organization id="odt" refersTo="#odt">
                 Osnovno državno tužilaštvo u Podgorici
             </organization> je
-            optužnim predlogom <ref href="/cg/verdict/k/2017-10-12/1171">
+            optužnim predlogom
                 Kt. br. 1171/17 od 12. 10. 2017. godine
-            </ref> stavilo na
+           stavilo na
             teret okrivljenom <party id="dm" refersTo="#dm"
                 as="#defendant">
                 D.M.
@@ -187,37 +188,37 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U PODGORICI
         </organization>
-        <p>, dana 24. 01. 2018. godine.</p>
-        <p>ZAPISNIČARKA
-        SUTKINJA</p>
-        <party
+        <date value="2018-01-24">Dana, 24. 01. 2018. godine.</date>
+        <p>ZAPISNIČARKA SUTKINJA</p>
+        <p><party
             id="drajkovic" refersTo="#drajkovic" as="#clerk">
             Danijela Rajković, s.r
         </party>
         <party
-            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović, s.r</party>
+            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović, s.r</party></p>
              <p>DN-a:
         Primjerak presude dostaviti:</p>
         <organization id="odt" refersTo="#odt">
             ODT Podgorica
         </organization> - Okrivljenom i braniocu adv. D. M., -
-        a/a. Postupljeno dana __________________ Namještenik suda __________________ <p>ZAPISNIČARKA
-        SUTKINJA</p>
-        <party
+        a/a.
+        <p>Postupljeno dana __________________ </p>
+        <p>Namještenik suda __________________ </p><p>
+        ZAPISNIČARKA SUTKINJA</p>
+        <p><party
             id="drajkovic" refersTo="#drajkovic" as="#clerk">
             Danijela Rajković, s.r
         </party>
         <party
-            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović, s.r</party>
-        <p>PRAVNA
-        POUKA: Protiv ove presude je dozvoljena žalba
+            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović, s.r</party></p>
+        <p>PRAVNA POUKA: Protiv ove presude je dozvoljena žalba</p>
 
-            samo ako presuda nije u skladu sa
+        <p>samo ako presuda nije u skladu sa</p>
 
-            zaključenim sporazumom.</p>
-            <party
-            id="drajkovic" refersTo="#drajkovic" as="#clerk">
-            ZTO: Danijela Rajković
-        </party>
+        <p>zaključenim sporazumom.</p>
+        <p><party
+        id="drajkovic" refersTo="#drajkovic" as="#clerk">
+        ZTO: Danijela Rajković
+        </party></p>
     </conclusions>
 </akomaNtoso>

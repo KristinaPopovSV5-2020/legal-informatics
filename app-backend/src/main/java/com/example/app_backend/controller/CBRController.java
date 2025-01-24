@@ -7,10 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.nio.file.Path;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 
 @Controller
@@ -20,15 +19,15 @@ public class CBRController {
 
     @GetMapping("cases/xml/{id}")
     @PreAuthorize("isAuthenticated()")
-    public ResponseEntity<?> getCaseInAcomaNtoso(@PathVariable String id) throws IOException, URISyntaxException {
-        ClassLoader classLoader = CBRController.class.getClassLoader();
-        var resourceUrl = classLoader.getResource("akoma-ntoso/" + id + ".xml");
-        if (resourceUrl == null) {
+    public ResponseEntity<?> getCaseInAcomaNtoso(@PathVariable String id) throws IOException {
+        Resource resource = new ClassPathResource("akoma-ntoso/" + id + ".html");
+        if (!resource.exists()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body("Resource not found: " + id + ".xml");
         }
+        byte[] fileContent = Files.readAllBytes(resource.getFile().toPath());
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_XML)
-                .body(Files.readAllBytes(Path.of(resourceUrl.toURI())));
+                .body(fileContent);
     }
 }

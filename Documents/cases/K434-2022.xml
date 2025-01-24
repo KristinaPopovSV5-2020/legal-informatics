@@ -24,7 +24,6 @@
 				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
             </references>
-    </identification>
     </meta>
     </judgment>
      <judgementBody>
@@ -70,25 +69,19 @@
          <organization id="osn" refersTo="#osn">
             Osnovnog suda u Podgorici
         </organization>
-         <ref href="/cg/verdict/k/2011-01-19/10">
             K.br. 10/833 od 19.01.2011. godine
-        </ref>
         e, zbog krivičnog djela nezdozvoljeno držanje oružja i eksplozivnih materija iz
         <ref href="/krivicni#art_403_para_1">
             čl. 403 st. 1 KZ CG 
         </ref>
         na kaznu zatvora u trajanju od 3 mjeseca uslovno na 1 godinu;
-        <ref href="/cg/verdict/k/2012-11-26/11">
              K.br. 11/12 od 26.11.2012.godine
-        </ref>
         , zbog krivičnog djela nedozvoljen lov iz
         <ref href="/krivicni#art_325_para_1">
             čl. 325 st. 1 KZ CG
         </ref>
          na kaznu zatvora u trajanju od 7 mjeseci uslovno na 2 godine,
-        <ref href="/cg/verdict/k/2014-12-09/850">
             K.br. 850/13 od 09.12.2014. godine
-        </ref>
         zbog krivičnog djela protivpravno lišenje slobode iz
         <ref href="/krivicni#art_162_para_1">
             čl. 162 st. 1 KZ CG
@@ -98,9 +91,7 @@
              čl. 384 st. 2 KZ CG
         </ref>
          na kaznu zatvora u trajanju od 45 dana uslovno na 2 godine;
-         <ref href="/cg/verdict/k/2022-03-08/733">
             K.br. 733/21 od 08.03.2022. godine
-        </ref>
         zbog krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz
         <ref href="/krivicni#art_403_para_1">
             čl. 403 st. 1 KZ CG 
@@ -109,14 +100,11 @@
         <organization id="osn" refersTo="#osn">
             Ovog suda
         </organization>
-        <ref href="/cg/verdict/k/2022-06-13/347">
              Kri.br.347/22 od 13.06.2022. godine
-        </ref>
         , koji se ima računati od 12.06.2022. godine od 13,50 časova kao dana i časa lišenja slobode pa nadalje,
         </background>
-
-        <decision>
         <p>Kriv je</p>
+        <decision>
         <p>Zato što je: </p>
         Dana 12.juna 2022. godine, oko 07,00 časova, u mjestu Š., Glavni grad Podgorica, svjestan svog djela čije
         izvršenje je htio, znajući da je isto zabranjeno, na javnom mjestu, neovlašćeno držao i nosio vatreno oružje i
@@ -200,7 +188,7 @@
         čl. 75 Krivičnog zakonika Crne Gore
         </ref>
          izriče i
-        <p>MJERU BEZBJEDNOSTI</p>
+        <p>MJERA BEZBJEDNOSTI</p>
         <p>Oduzimanje predmeta i to: lovačke puške marke "Mossberg", model 500 A, kalibra 12 fabričkog broja....... sa 5
         komada municije, kao i 12 komada pripadajuće municije kalibra 12, kao predmeta izvršenja krivičnog djela.</p>
         Na osnovu
@@ -216,7 +204,7 @@
         upućuje na izdržavanje kazne
 zatvora, budući da je vrijeme koje je proveo u pritvoru kraće od dužine kazne zatvora na koju je osuđen.
         </decision>
-
+        <p>O b r a z l o ž e nj e</p>
          <arguments>
          <p>
                 Osnovno državno tužilaštvo Podgorica podnijelo je optužni predlog Kt.br. 870/22 od 30.06.2022. godine,
@@ -307,14 +295,14 @@ i izricanja krivičnih sankcija iz<ref href="/krivicni#art_3_para_2">  čl. 4 st
        <organization id="os" refersTo="#os">
                 OSNOVNI SUD U PODGORICI
         </organization>
-        <p>Dana, <date value="2022-07-21">21.07.2022.godine</date></p>
+        <date value="2022-07-21">Dana, 21.07.2022.godine</date>
         <p>ZAPISNIČAR S U D I J A</p>
-        <party id="msekulic" refersTo="#msekulic" as="#clerk">
+        <p><party id="msekulic" refersTo="#msekulic" as="#clerk">
             Marina Sekulić
         </party><party id="lmstamatovic" refersTo="#lmstamatovic" as="#judge">
             Larisa Mijušković-Stamatović
-        </party>
-        DN-a primjerak presude dostaviti:
+        </party></p>
+          <p>DN-a primjerak presude dostaviti:</p>
         <list>
             <item>
                 <organization id="odt" refersTo="#odt">
@@ -335,10 +323,8 @@ i izricanja krivičnih sankcija iz<ref href="/krivicni#art_3_para_2">  čl. 4 st
                 <p> UIKS-u</p>
             </item>
         </list>
-        <p>
-        Postupljeno dana ___________________
-        Namještenik suda __________________
-        </p>
+        <p>Postupljeno dana ___________________</p>
+          <p>Namještenik suda __________________</p>
         <p>PRAVNA POUKA</p>
         <p>
             Protiv ove presude dozvoljena je žalba
@@ -353,5 +339,4 @@ i izricanja krivičnih sankcija iz<ref href="/krivicni#art_3_para_2">  čl. 4 st
             Marina Sekulić
         </party></p>
     </conclusions>
-
     </akomaNtoso>

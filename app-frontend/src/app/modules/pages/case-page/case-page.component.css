@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .case-section {
+    flex: 7;
+    overflow-y: auto; 
+    padding: 10px;
+    border-right: 1px solid #ccc; 
+  }
+  
+  .attributes-section {
+    flex: 3; /* 30% širine */
+    background-color: #e9ecef;
+    padding: 10px;
+    overflow: hidden; /* Uklanjanje skrolovanja */
+    display: flex; /* Fleksibilni kontejner za unutrašnje elemente */
+    flex-direction: column; /* Unutrašnji elementi idu vertikalno */
+    justify-content: space-between; /* Razmak između unutrašnjih elemenata */
+  }
+
+  .attributes-section > * {
+    max-height: 100%;
+    overflow: hidden; 
+  }
+
+  

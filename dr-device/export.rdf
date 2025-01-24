@@ -88,4 +88,28 @@
      <rdfs:domain rdf:resource='&export;to_pay'/>
 </rdf:Property>
 
+<export:is_speeding_on_town_road_lv3_with_accident rdf:about='&export;is_speeding_on_town_road_lv3_with_accident1'>
+     <export:defendant>John</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
+</export:is_speeding_on_town_road_lv3_with_accident>
+
+<export:to_pay_min rdf:about='&export;to_pay_min1'>
+     <export:value>40000</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
+</export:to_pay_min>
+
+<export:to_pay_max rdf:about='&export;to_pay_max1'>
+     <export:value>60000</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
+</export:to_pay_max>
+
+<export:max_imprisonment rdf:about='&export;max_imprisonment1'>
+     <export:value>60</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
+</export:max_imprisonment>
+
 </rdf:RDF>

@@ -59,8 +59,8 @@
             i majke R . , rođene G . , rođen xx . xx . 19 xx . godine u Podgorici, saprebivalištem u
             mjestu rođenja Ul. Vasa Raičkovića br. xx , državljanin Crne Gore, pismen, završio
             srednjuškolu, zaposlen, oženjen, otac dvoje djece, srednjeg imovnog stanja, neosuđivan. </background>
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv je</p>
             <p> Dana 20. aprila 2016. godine, oko 16:30 časova, u Podgorici, u Ulici Stanka
                 Dragojevića, svjestan svog djelačije je izvršenje htio i znajući da je isto
                 zabranjeno, neovlašćeno nosio vatreno oružje i municiju, na način štoje, suprotno <ref
@@ -129,6 +129,7 @@
                 18metaka, kalibra 9 mm
                 , kao predmeti upotrijebljeni u izvršenju krivičnog djela.</p>
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <organization id="odt" refersTo="#odt">
                 Osnovno
@@ -137,10 +138,8 @@
                 u
                 Podgorici
             </organization>
-            je optužnim predlogom <ref
-                href="/cg/verdict/k/2016-05-19/542">
-                Kt. br. 542/16 od 19. 05. 2016. godine
-            </ref> stavilo na
+            je optužnim predlogom
+                Kt. br. 542/16 od 19. 05. 2016. godine stavilo na
             teret okrivljenom <party id="tb"
                 refersTo="#tb"
                 as="#defendant">
@@ -197,17 +196,15 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U PODGORICI
         </organization>
-        <p>dana 31. 10. 2016. godine.</p>
-        <p>ZAPISNIČARKA
-        SUTKINJA</p>
-        <party
+        <date value="2016-10-31">Dana, 31. 10. 2016. godine.</date>
+        <p>ZAPISNIČARKA SUTKINJA</p>
+        <p><party
             id="drajkovic" refersTo="#drajkovic" as="#clerk">
             Danijela Rajković, s.r
         </party>
         <party
-            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović, s.r</party>
-        <p>PRAVNA
-        POUKA</p>
+            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović, s.r</party></p>
+        <p>PRAVNA POUKA</p>
         <p>
             Protiv ove presude dozvoljena je žalba
         </p>
@@ -223,18 +220,20 @@
                 ZTO: Danijela Rajković
             </party>
         </p>
-        <p>ZAPISNIČARKA
-        SUTKINJA</p>
-        <party
+        <p>ZAPISNIČARKA SUTKINJA</p>
+        <p><party
             id="drajkovic" refersTo="#drajkovic" as="#clerk">
             Danijela Rajković
         </party>
         <party
-            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović</party>
+            id="zjovovic" refersTo="#zjovovic" as="#judge"> Željka Jovović</party></p>
         <p>DN-a:
             Primjerak rješenja dostaviti:</p>
         <organization id="odt" refersTo="#odt">
             ODT-u Podgorica
         </organization> - Okrivljenom i braniocu adv. S . R .
-        , - a/a Postupljeno dana __________________ Namještenik suda __________________ </conclusions>
+        , - a/a
+        <p>Postupljeno dana __________________</p>
+        <p>Namještenik suda __________________</p>
+    </conclusions>
 </akomaNtoso>
