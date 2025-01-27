@@ -13,6 +13,8 @@
             <references>
                 <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Cetinje"
                     showAs="Osnovni sud u Cetinju" />
+                <TLCOrganization eId="osc" href="/ontology/organization/OsnovniSud.Podgorica"
+                    showAs="Osnovni sud u Podgorici" />
                 <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica"
                     showAs="Visi sud u Podgorici" />
                 <TLCOrganization eId="odt"
@@ -269,7 +271,7 @@
             <p> Iz zapisnika o pretresanju stana i drugih prostorija UP CB Podgorica OBD 929/4 od
                 13.08.2021. godine proizilazi da su dana 13.08.2021. godine službenici Uprave
                 policije CB Podgorica, po naredbi <organization
-                    id="os" refersTo="#os">
+                    id="osc" refersTo="#osc">
                     Osnovnog suda u Podgorici
                 </organization> i
                 broj Kri. br. 397/21-1 od 13.08.2021. godine izvršili pretres stana i drugih
@@ -327,7 +329,7 @@
             <p> Činjenično stanje je utvrđeno prvenstveno iz zapisnika o pretresanju stana i drugih
                 prostorija UP CB Podgorica OBD 929/4 od 13.08.2021. godine ,u kojem je konstatovano
                 da su dana 13.08.2021. godine službenici Uprave policije CB Podgorica, po naredbi <organization
-                    id="os" refersTo="#os">
+                    id="osc" refersTo="#osc">
                     Osnovnog suda u Podgorici
                 </organization>
                 izvršili pretres stana i drugih prostorija okrivljenog <party
