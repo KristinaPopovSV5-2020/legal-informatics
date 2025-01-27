@@ -19,8 +19,15 @@ export class CbrService {
 
 
   getCaseAkomaNtoso(id: String) {
-    console.log(id);
     const url = this.apiUrl + 'cases/xml/' + id;
+    return this.http.get<any>(url, {
+      responseType: 'text' as 'json',
+    });
+  }
+
+  getLawAkomaNtoso(name: String) {
+    console.log(name);
+    const url = this.apiUrl + 'laws/xml/' + name;
     return this.http.get<any>(url, {
       responseType: 'text' as 'json',
     });

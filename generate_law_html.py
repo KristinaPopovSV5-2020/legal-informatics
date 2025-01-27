@@ -5,8 +5,7 @@ tree = ET.parse(xml_file)
 root = tree.getroot()
 
 html_content = """<?xml version="1.0" encoding="UTF-8"?>
-<head>
-    <title>Zakon o oružju</title>
+<html>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; }
          h1 {text-align: center; color: blue; font-weight: normal;}
@@ -19,8 +18,7 @@ html_content = """<?xml version="1.0" encoding="UTF-8"?>
         a:hover { text-decoration: underline; }
         .point  { margin-left: 20px;text-align: justify; }
     </style>
-</head>
-<body>
+<div>
     <h1>Zakon o oružju</h1>
     <h3 style="font-style: italic; text-align: center;">Zakon je objavljen u "Službenom listu CG", br. 10/2015 od
 10.3.2015. godine, a stupio je na snagu 18.3.2015.</h3>
@@ -83,11 +81,13 @@ def process_body_to_html():
                         html_content += f"<strong>{num.text.strip()} </strong>"
                     if content is not None and content.text:
                         html_content += process_paragraph_content(content)
+                        html_content += "</p>"
                 else:
                     if intro is not None:
                         intro_content = intro.find("./akn:p", namespaces)
                         if intro_content is not None and intro_content.text:
                             html_content += process_paragraph_content(intro_content)
+                            html_content += "</p>"
                     # Obradi point-ove
                     for point in sub_elem.findall("./akn:point", namespaces):
                         point_id = point.attrib.get("eId", "")
@@ -100,7 +100,7 @@ def process_body_to_html():
                             html_content += process_paragraph_content(content)
                         html_content += "</div>"
 
-                html_content += "</p>"
+
 
             # Rekurzivno obradi decu
             for child in sub_elem:
@@ -144,8 +144,8 @@ def process_paragraph_content(content):
 if __name__ == '__main__':
     process_body_to_html()
     html_content += """
-    </body>
-    </html>
+    </div>
+</html>
     """
     with open("oruzje_zakon.html", "w", encoding="utf-8") as file:
         file.write(html_content)

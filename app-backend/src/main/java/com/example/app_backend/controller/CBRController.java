@@ -30,4 +30,19 @@ public class CBRController {
                 .contentType(MediaType.APPLICATION_XML)
                 .body(fileContent);
     }
+
+
+    @GetMapping("laws/xml/{name}")
+    @PreAuthorize("isAuthenticated()")
+    public ResponseEntity<?> getLawInAcomaNtoso(@PathVariable String name) throws IOException {
+        Resource resource = new ClassPathResource("akoma-ntoso/" + name +"_zakon.html");
+        if (!resource.exists()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Resource not found: " + name + ".xml");
+        }
+        byte[] fileContent = Files.readAllBytes(resource.getFile().toPath());
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_XHTML_XML)
+                .body(fileContent);
+    }
 }
