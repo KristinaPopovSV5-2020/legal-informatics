@@ -32,10 +32,10 @@
           </mat-expansion-panel-header>
           <mat-nav-list>
             <mat-list-item>
-                <a routerLink="law">~ Krivični zakon</a>
+                <a routerLink="krivicni">~ Krivični zakon</a>
               </mat-list-item>
               <mat-list-item>
-                <a routerLink="law">~ Zakon o oružju</a>
+                <a routerLink="oruzje">~ Zakon o oružju</a>
               </mat-list-item>
           </mat-nav-list>
         </mat-expansion-panel>
@@ -47,8 +47,8 @@
               </mat-panel-title>
             </mat-expansion-panel-header>
             <mat-nav-list>
-              <a routerLink="case">K 454/2020 </a>
-              <a routerLink="case">K 454/2020 </a>
+              <a [routerLink]="['/case', 'K758-2020']">K 758/2020 </a>
+              <a routerLink="case">K 16/2020 </a>
             </mat-nav-list>
           </mat-expansion-panel>
     <hr>

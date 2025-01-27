@@ -29,7 +29,6 @@
                 <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
             </references>
-            </identification>
         </meta>
     </judgment>
     <judgementBody>
@@ -68,9 +67,8 @@
             Z.V.), državljanin Crne Gore, po zanimanju stražar, oženjen, otac dvoje djece, završio
             srednju školu, lošeg imovnog stanja, neosuđivan, lišen slobode od 08.11.2019. godine do
             09.11.2019. godine. </background>
-
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv je</p>
         <p>Što je: </p> Dana 08.11.2019. godine u Podgorici, u Ulici P.K. br. 9, u
             porodičnom stanu, suprotno <ref href="/oruzje#art_4_para_2_point_2">
                 članu 4 stav 2 tačka 2
@@ -117,12 +115,11 @@
             jednog mjeseca. u koju kaznu
                 mu se ima uračunati vrijeme lišenja slobode od 08.11.2019. godine do 09.11.2019.
             godine na način što se
-                navedeno vrijeme računa kao osam časova rada u javnom interesu. Ukoliko</p>
+                navedeno vrijeme računa kao osam časova rada u javnom interesu.</p> <p> Ukoliko
         <party
                 id="mr" refersTo="#mr" as="#defendant">
                 okrivljeni
             </party>
-        <p>
                 ne bude vršio rad u javnom interesu, ova kazna će se zamijeniti kaznom zatvora tako
             što će
                 se svakih započetih 60 (šezdeset) časova rada u javnom interesu zamijeniti kaznom
@@ -134,7 +131,7 @@
                 href="/krivicni#art_75">
                 čl. 75 Krivičnog zakonika Crne Gore
             </ref> prema
-            okrivljenom se izriče <p>MJERa BEZBJEDNOSTI</p>
+            okrivljenom se izriče <p>MJERA BEZBJEDNOSTI</p>
         <p>Oduzimanje predmeta I to: automatske
             puške proizvodnje "C. z." ... kalibra 7,62 x 39 mm, fabričkog broja ..., kao predmeta
             izvršenja krivičnog djela. Obavezuje se <party id="mr" refersTo="#mr" as="#defendant">
@@ -144,8 +141,16 @@
                     sudu
                 </organization> iznos od 30,00 eura, a
             sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja. </p>
+             <p>ODUZIMANJE PREDMETA</p>
+            <p>I to: automatske puške proizvodnje "C. z." ... kalibra 7,62 x 39 mm, fabričkog broja ..., kao predmeta izvršenja
+krivičnog djela.
+            </p>
+            <p>
+                Obavezuje se okrivljeni da na ime troškova krivičnog postupka plati ovom sudu iznos od 30,00 eura, a sve u
+roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
+            </p>
         </decision>
-
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <p> Optužnim predlogom ODT-a Podgorica Kt.br. 1462/19 od 13.01.2020. godine, okrivljenom
                 M.R. je stavljeno na teret da je učinio krivično djelo nedozvoljeno držanje oružja i
@@ -287,6 +292,15 @@
         </arguments>
     </judgementBody>
     <conclusions>
+         <organization id="os" refersTo="#os">
+            OSNOVNI SUD U PODGORICI
+        </organization>
+        <date value="2020-03-10">Dana 10.03.2020. godine</date>
+        <p>S U D I J A</p>
+        <p><party
+                id="nvujanovic" refersTo="#nvujanovic" as="#judge">
+                Nenad Vujanović
+            </party></p>
         <p>PRAVNA POUKA</p>
         <p>
             Protiv ove presude dozvoljena je žalba,
@@ -294,6 +308,19 @@
         <p>
             ako presuda nije u skladu sa zaključenim Sporazumom.
         </p>
+        <p>
+            <party
+                id="npaunovic" refersTo="#npaunovic" as="#clerk">
+                ZTO: Paunović Nataša
+            </party>
+        </p>
+        <p>Dn-a: Po
+        primjerak presude dostaviti:</p>
+        <p><organization id="odt" refersTo="#odt">
+            ODT-u Podgorica
+        </organization> -okrivljenim i braniocu okrivljenog</p>
+        <p>Postupljeno dana: _______________</p>
+        <p>Namještenik suda ________________</p>
     </conclusions>
 
 </akomaNtoso>

@@ -70,8 +70,8 @@
             menadžer, neoženjen, nema djece, pismen, sa završenom VSS, pismen, lošeg imovnog stanja,
             lišen slobode 21.12.2022. godine u 11,00 časova do 22.12.2022. godine u 08,47 časova,
             ranije neosuđivan. </background>
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv je</p>
             <p>Zato Što
                 je:</p>
             <p>Dana 21.12.2022. godine, u prijepodnevnim časovima, u blizini Nikolj Crkve, u
@@ -154,7 +154,7 @@
                 </ref>
             </p>
 
-            <p>Osuđuje</p>
+            <p>O S U Đ U J E</p>
             <p>Na kaznu zatvora u trajanju od 3 (tri) mjeseca, koju kaznu će nakon pravosnažnosti
                 presude izdržavati u
                 prostorijama u kojima stanuje, osim u slučajevima propisanim zakonom kojim se
@@ -178,13 +178,12 @@
                 o priznanju krivice kojim se okrivljeni odriče prava na žalbu.
             </p>
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <p>Optužnim predlogom <organization id="odt" refersTo="#odt">
                     m Osnovnog državnog tužilaštva u Podgorici
-                </organization> <ref
-                    href="/cg/verdict/k/2023-02-14/365">
+                </organization>
                     Kt. br. 1727/22 od 14.02.2023. godine
-                </ref>
                 , okrivljenom <party id="nr" refersTo="#rc" as="#defendant">
                     N. R.
                 </party> stavljeno je na teret
@@ -272,13 +271,12 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U PODGORICI
         </organization>
-        <p>Dana, 30.05.2023. godine</p>
-        <p>
-        S U D I J A</p>
-        <party
+        <date value="2023-05-30">Dana, 30.05.2023. godine</date>
+        <p>S U D I J A</p>
+        <p><party
             id="gdjukovic" refersTo="#gdjukovic" as="#judge">
             Goran Đuković, s.r
-        </party>
+        </party></p>
         <p>PRAVNA POUKA:</p>
         <p>Protiv ove presude
         žalba nije dozvoljena</p>
@@ -299,6 +297,8 @@
         </party> - braniteljki okrivljenog, advokatici <party
             id="mt" refersTo="#mt" as="#defense">
             M. T.
-        </party> - sudskoj praksi; -- a/a Postupljeno dana: _____ 2020.
-        godine Namještenik suda ________________ </conclusions>
+        </party> - sudskoj praksi; -- a/a
+        <p>Postupljeno dana: _____ 2020. godine</p>
+        <p>Namještenik suda ________________</p>
+    </conclusions>
 </akomaNtoso>

@@ -54,11 +54,9 @@
             držanje oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
                 čl. 403 st. 1 Krivičnog zakonika Crne Gore
             </ref>, nakon
-            pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice <ref
-                href="/cg/verdict/k/2018-03-16/223">
+            pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice
                 Kt. br. 223/18 od
                 16.03.2018. godine,
-            </ref>
             zaključenog između državne tužiteljke <party id="jp" refersTo="#jp"
                 as="#prosecutor">
                 J. P.
@@ -82,10 +80,7 @@
             imovnog stanja, osuđivan presudom <organization id="osk" refersTo="#osk">
                 Osnovnog suda u Kotoru
             </organization>
-    <ref
-                href="/cg/verdict/k/2016-01-27/204">
-                K. br. 204/15 od 27.01.2016. godine
-            </ref> zbog krivičnog
+                K. br. 204/15 od 27.01.2016. godine zbog krivičnog
             djela nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
                 href="/krivicni#art_403_para_1">
                 čl. 403 st. 1 Krivičnog zakonika Crne Gore
@@ -97,8 +92,8 @@
             </organization> Kv. br. 134/18
             od 09.02.2018. godine, koji se računa od 08.02.2018. godine sa početkom u 23:50 časova
             do 09.02.2018. godine u 13:55 časova i od 09.02.2018. godine od 21:00 čas pa nadalje. </background>
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv je</p>
     <p>Što je: </p> Dana 08. februara 2018. godine oko 23,30 časova, ispred
             ugostiteljskog objekta "C." u Nj. ulici, u Podgorici, svjestan svog djela čije izvršenje
             je htio i znajući da je njegovo djelo zabranjeno, suprotno <ref
@@ -152,9 +147,7 @@
             </ref> i <ref href="/postupak#art_374">
                 čl. 374 Zakonika o krivičnom postupku,
             </ref>
-    <p>O S U Đ U
-            J
-                E</p>
+    <p>O S U Đ U J E</p>
     <p>
                 Na
                 kaznu
@@ -168,8 +161,8 @@
                 čl. 75 Krivičnog zakonika Crne Gore
             </ref> prema
             okrivljenom Daliboru Drobnjaku se izriče: <p>MJERA BEZBJEDNOSTI</p>
-    <p>ODUZIMANjE
-                PREDMETA</p> Oduzima se od okrivljenog pištolj marke "Crvena zastava", model 57,
+    <p>ODUZIMANJE PREDMETA</p>
+            <p>Oduzima se od okrivljenog pištolj marke "Crvena zastava", model 57,
             kal. 7,62 mm, fabričkog broja 1886-A i 6metaka kalibra 7,62 mm u okviru, kao predmeti
             upotrijebljeni u izvršenju krivičnog djela. Obavezuje se okrivljeni da plati po osnovu
             troškova krivičnog postupka iznos od 30,00 eura, u roku od 15dana po pravosnažnosti
@@ -177,17 +170,16 @@
             službenoj dužnosti o čijoj visini će sud odlučiti posebnim rješenjem, shodno <ref
                 href="/postupak#art_227_para_2">
                 čl. 227 st. 2 Zakonika o krivičnom postupku.
-            </ref>
+                </ref></p>
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <p> Optužnim predlogom <organization
                     id="odt" refersTo="#odt">
                     Osnovnog državnog tužilaštva Podgorica
-                </organization> <ref
-                    href="/cg/verdict/k/2018-03-16/223">
+                </organization>
                     Kt. br. 223/18 od
                     09.03.2018. godine
-                </ref>
                 okrivljenom D. D. stavljeno je na teret da je izvršio krivično djelo nedozvoljeno
                 držanje oružja i eksplozivnihmaterija iz <ref
                     href="/krivicni#art_403_para_1">
@@ -252,17 +244,15 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U PODGORICI
         </organization>
-        <p>Dana, 23.03.2018. godine</p>
-        <p>ZAPISNIČARKA
-        S U D I J A</p>
-        <party
+        <date value="2018-03-23">Dana, 23.03.2018. godine</date>
+        <p>ZAPISNIČARKA S U D I J A</p>
+        <p><party
             id="ekraja" refersTo="#ekraja" as="#clerk">
             Edina Kraja
         </party>,s.r. <party
             id="rcetkovic" refersTo="#rcetkovic" as="#judge">
             Rade Ćetković
-        </party>,s.r. <p>PRAVNA
-            POUKA</p>
+        </party>,s.r.</p> <p>PRAVNA POUKA</p>
         <p>
             Protiv ove presude dozvoljena je žalba
         </p>

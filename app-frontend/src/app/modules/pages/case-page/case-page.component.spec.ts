@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LawPageComponent } from './law-page.component';
+import { CasePageComponent } from './case-page.component';
 
-describe('LawPageComponent', () => {
-  let component: LawPageComponent;
-  let fixture: ComponentFixture<LawPageComponent>;
+describe('CasePageComponent', () => {
+  let component: CasePageComponent;
+  let fixture: ComponentFixture<CasePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LawPageComponent]
+      imports: [CasePageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LawPageComponent);
+    fixture = TestBed.createComponent(CasePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

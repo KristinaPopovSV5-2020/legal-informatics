@@ -451,273 +451,275 @@
                     <!-- Član 9 -->
                     <article eId="art_9">
                         <num>Član 9</num>
-                        <intro eId="art_9_intro">
-                            <p>Izrazi upotrijebljeni u ovom zakonu imaju sljedeća značenja:</p>
-                        </intro>
-                        <point eId="art_9_point_1">
-                            <num>1)</num>
-                            <content eId="art_9_point_1_content">
-                                <p>Vatreno oružje je svaka vrsta naprave iz koje se pomoću potisnog
-                                    djelovanja barutnih gasova
-                                    izbacuje kroz cijev zrno, kugla, sačma, strijelica ili drugi
-                                    projektil;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_2">
-                            <num>2)</num>
-                            <content eId="art_9_point_2_content">
-                                <p>Vojno oružje i municija za to oružje je oružje i municija koje se
-                                    nabavlja prema posebnim propisima
-                                    i čiji promet fizičkim licima nije dozvoljen ili je ograničen;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_3">
-                            <num>3)</num>
-                            <content eId="art_9_point_3_content">
-                                <p>Eksplozivno oružje su sve vrste minsko-eksplozivnih sredstava, u
-                                    vidu bombi, mina, granata i drugih
-                                    naprava opremljenih eksplozivnom materijom ili detonatorom, kod
-                                    kojih pod određenim spoljašnjim ili
-                                    unutrašnjim djelovanjem (težina, udar, potez, trenje, hemijska
-                                    reakcija, električna energija i sl.) dolazi do
-                                    oslobađanja energije i njihovog rasprskavanja;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_4">
-                            <num>4)</num>
-                            <content eId="art_9_point_4_content">
-                                <p>Dugo vatreno oružje je svako vatreno oružje osim kratkog vatrenog
-                                    oružja;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_5">
-                            <num>5)</num>
-                            <content eId="art_9_point_5_content">
-                                <p>Kratko vatreno oružje je oružje čija cijev nije duža od 30 cm ili
-                                    čija ukupna dužina oružja ne prelazi
-                                    60 cm;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_6">
-                            <num>6)</num>
-                            <content eId="art_9_point_6_content">
-                                <p>Automatsko oružje je svako vatreno oružje koje se nakon
-                                    ispaljenog metka automatski napuni i
-                                    koje može ispaliti više od jednog metka jednokratnim pritiskom
-                                    na obarač;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_7">
-                            <num>7)</num>
-                            <content eId="art_9_point_7_content">
-                                <p>Poluautomatsko oružje je vatreno oružje koje se nakon ispaljenog
-                                    metka automatski napuni i koje
-                                    može ispaliti samo jedan metak jednokratnim pritiskom na obarač;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_8">
-                            <num>8)</num>
-                            <content eId="art_9_point_8_content">
-                                <p>Oružje sa repetirajućim mehanizmom je vatreno oružje kod kojeg je
-                                    nakon ispaljivanja metka
-                                    potrebno ručno, preko mehanizma, puniti oružje ubacivanjem metka
-                                    iz magacina ili cilindra u cijev;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_9">
-                            <num>9)</num>
-                            <content eId="art_9_point_9_content">
-                                <p>Vatreno oružje za jedinačnu paljbu je oružje bez magacina koje se
-                                    prije svakog opaljenja puni
-                                    ručnim ubacivanjem metka u ležište cijevi;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_10">
-                            <num>10)</num>
-                            <content eId="art_9_point_10_content">
-                                <p>Oružje za ličnu bezbjednost je kratko i dugo vatreno oružje
-                                    različitih kalibara;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_11">
-                            <num>11)</num>
-                            <content eId="art_9_point_11_content">
-                                <p>Sportsko oružje je vatreno oružje kategorije B koje se koristi u
-                                    sportskim streljačkim
-                                    disciplinama, u skladu sa međunarodnim standardima kojima se
-                                    definišu vrste i kalibri sportskog oružja;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_12">
-                            <num>12)</num>
-                            <content eId="art_9_point_12_content">
-                                <p>Lovačko oružje je vatreno oružje kategorije B kojim se smije
-                                    loviti divljač u skladu sa propisima o
-                                    lovstvu;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_13">
-                            <num>13)</num>
-                            <content eId="art_9_point_13_content">
-                                <p>Gasno oružje je pištolj, revolver, puška i druga naprava koja pod
-                                    pritiskom energije barutnog
-                                    punjenja ili sabijenog gasa usmjereno raspršuje nadražljive
-                                    supstance za onesposobljavanje lica koje na
-                                    ljudsko zdravlje imaju kratkotrajno dejstvo;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_14">
-                            <num>14)</num>
-                            <content eId="art_9_point_14_content">
-                                <p>Reprodukcija oružja je kopija dugog i kratkog vatrenog oružja,
-                                    koje ne koristi jedinstveno
-                                    punjenje, već se puni sa usta cijevi crnim barutom i pali
-                                    fitiljom, kremenom ili kapislom;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_15">
-                            <num>15)</num>
-                            <content eId="art_9_point_15_content">
-                                <p>Mužar je ručna ili samostojeća naprava namijenjena izazivanju
-                                    glasnog pucnja, koja je napravljena
-                                    tako da ne može primiti jedinstveno punjenje, već se puni sa
-                                    usta cijevi određenom količinom crnog
-                                    baruta i pali štapinom, kremenom i kapislom, a zatvara sredstvom
-                                    male specifične težine;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_16">
-                            <num>16)</num>
-                            <content eId="art_9_point_16_content">
-                                <p>Vazdušno oružje je vrsta puške, pištolja, revolvera i druge
-                                    naprave koja snagom pritiska vazduha
-                                    ili drugog gasa izbacuje kroz cijev zrno, kuglicu, sačmu ili
-                                    drugi projektil;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_17">
-                            <num>17)</num>
-                            <content eId="art_9_point_17_content">
-                                <p>Oružje sa tetivom je luk, samostrijel i druga naprava koja pomoću
-                                    opruge, tetive ili drugog
-                                    potisnog sredstva izbacuje strijelu ili druge naprave;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_18">
-                            <num>18)</num>
-                            <content eId="art_9_point_18_content">
-                                <p>Električni paralizator je ručna naprava koja pomoću visokog
-                                    električnog napona privremeno
-                                    onesposobljava lice;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_19">
-                            <num>19)</num>
-                            <content eId="art_9_point_19_content">
-                                <p>Hladno oružje su bodeži, kame, mačevi, sablje, bajoneti i naprave
-                                    čije se sječivo nalazi pod
-                                    pritiskom sabijene opruge, a iz drške iskaču pritiskom na dugme
-                                    ili polugu boka i metalnih raketa za
-                                    bacanje, bez obzira na dužinu oštrice ili skrivene oštrice, boks
-                                    i drugo prikriveno oružje sa skrivenim
-                                    oštricama (oružni štapovi, oružni kišobrani i sl.), kao i
-                                    naprave i predmeti pogodni za nanošenje povreda;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_20">
-                            <num>20)</num>
-                            <content eId="art_9_point_20_content">
-                                <p>Oružje za signalizaciju su pištolj, revolver, puška i druga
-                                    naprava koja pod pritiskom energije barutnog
-                                    punjenja ili sabijenog gasa usmjereno raspršuje ili ispaljuje
-                                    punjenje namijenjeno isključivo izazivanju
-                                    glasnog pucnja i ispaljivanju svjetleće signalne rakete;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_21">
-                            <num>21)</num>
-                            <content eId="art_9_point_21_content">
-                                <p>Staro oružje je oružje koje ima istorijsku vrijednost, koje čini
-                                    sastavni dio narodne nošnje i vojno i
-                                    policijsko oružje koje je dotrajalo i neupotrebljivo, koje je
-                                    sastavni dio vojnih i policijskih paradnih
-                                    uniformi, kao i oružje koje se puni sa usta cijevi crnim
-                                    barutom, a pali se kremenom, fitiljom ili kapislom;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_22">
-                            <num>22)</num>
-                            <content eId="art_9_point_22_content">
-                                <p>Dekorativno oružje je oružje koje je izrađeno u dekorativne svrhe
-                                    i koje nije moguće upotrijebiti ili
-                                    prepraviti u vatreno oružje;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_23">
-                            <num>23)</num>
-                            <content eId="art_9_point_23_content">
-                                <p>Imitacija oružja je predmet koji je spoljašnjim izgledom sličan
-                                    ili jednak oružju, ali ga nije moguće
-                                    upotrijebiti ili prepraviti u vatreno oružje;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_24">
-                            <num>24)</num>
-                            <content eId="art_9_point_24_content">
-                                <p>Municija je metak jedinstvenog punjenja kojim se puni vatreno
-                                    oružje i koji objedinjuje čauru,
-                                    kapislu, barutno punjenje i projektil. Pod municijom se ne
-                                    smatra municija bez projektila, municija za
-                                    industrijske naprave, municija za naprave za ubijanje stoke,
-                                    municija za startne i signalne naprave, kao i
-                                    pojedinačne komponente metka (čaura, kapisla, barutno punjenje i
-                                    projektil);</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_25">
-                            <num>25)</num>
-                            <content eId="art_9_point_25_content">
-                                <p>Lažna municija je municija bez oštrog i ubojitog punjenja kojim
-                                    se postiže efekat pucnja;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_26">
-                            <num>26)</num>
-                            <content eId="art_9_point_26_content">
-                                <p>Dozvoljenim neškodljivim materijama smatraju se hemijski sastavi
-                                    CN (hlorocetofenon), CS
-                                    (ortohlorbenzenmalon-dinitril) i OC (oleoresin capsicum) u
-                                    dozvoljenim koncentracijama;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_27">
-                            <num>27)</num>
-                            <content eId="art_9_point_27_content">
-                                <p>Zaštitar je lice koje obavlja poslove fizičke zaštite lica i
-                                    imovine, u skladu sa posebnim zakonom;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_28">
-                            <num>28)</num>
-                            <content eId="art_9_point_28_content">
-                                <p>Trgovac oružjem je pravno lice ili preduzetnik koji nije
-                                    posrednik oružjem, čija se trgovina ili poslovanje
-                                    sastoji u cjelini ili djelimično od proizvodnje, prometa,
-                                    razmjene, posredovanja između vlasnika oružja
-                                    i kupca, davanja na korišćenje, popravke ili prepravke oružja,
-                                    djelova za oružje i municije;</p>
-                            </content>
-                        </point>
-                        <point eId="art_9_point_29">
-                            <num>29)</num>
-                            <content eId="art_9_point_29_content">
-                                <p>Posrednik u prometu oružjem je pravno lice ili preduzetnik koji
-                                    nije trgovac oružjem, čija se trgovina
-                                    ili poslovanje sastoji, u cjelini ili djelimično od nabavke,
-                                    prodaje ili dogovaranja prenosa oružja,
-                                    između proizvođača i trgovca oružjem;</p>
-                            </content>
-                        </point>
+                        <paragraph eId="art_9_para_1">
+                            <intro eId="art_9_intro">
+                                <p>Izrazi upotrijebljeni u ovom zakonu imaju sljedeća značenja:</p>
+                            </intro>
+                            <point eId="art_9_point_1">
+                                <num>1)</num>
+                                <content eId="art_9_point_1_content">
+                                    <p>Vatreno oružje je svaka vrsta naprave iz koje se pomoću potisnog
+                                        djelovanja barutnih gasova
+                                        izbacuje kroz cijev zrno, kugla, sačma, strijelica ili drugi
+                                        projektil;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_2">
+                                <num>2)</num>
+                                <content eId="art_9_point_2_content">
+                                    <p>Vojno oružje i municija za to oružje je oružje i municija koje se
+                                        nabavlja prema posebnim propisima
+                                        i čiji promet fizičkim licima nije dozvoljen ili je ograničen;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_3">
+                                <num>3)</num>
+                                <content eId="art_9_point_3_content">
+                                    <p>Eksplozivno oružje su sve vrste minsko-eksplozivnih sredstava, u
+                                        vidu bombi, mina, granata i drugih
+                                        naprava opremljenih eksplozivnom materijom ili detonatorom, kod
+                                        kojih pod određenim spoljašnjim ili
+                                        unutrašnjim djelovanjem (težina, udar, potez, trenje, hemijska
+                                        reakcija, električna energija i sl.) dolazi do
+                                        oslobađanja energije i njihovog rasprskavanja;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_4">
+                                <num>4)</num>
+                                <content eId="art_9_point_4_content">
+                                    <p>Dugo vatreno oružje je svako vatreno oružje osim kratkog vatrenog
+                                        oružja;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_5">
+                                <num>5)</num>
+                                <content eId="art_9_point_5_content">
+                                    <p>Kratko vatreno oružje je oružje čija cijev nije duža od 30 cm ili
+                                        čija ukupna dužina oružja ne prelazi
+                                        60 cm;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_6">
+                                <num>6)</num>
+                                <content eId="art_9_point_6_content">
+                                    <p>Automatsko oružje je svako vatreno oružje koje se nakon
+                                        ispaljenog metka automatski napuni i
+                                        koje može ispaliti više od jednog metka jednokratnim pritiskom
+                                        na obarač;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_7">
+                                <num>7)</num>
+                                <content eId="art_9_point_7_content">
+                                    <p>Poluautomatsko oružje je vatreno oružje koje se nakon ispaljenog
+                                        metka automatski napuni i koje
+                                        može ispaliti samo jedan metak jednokratnim pritiskom na obarač;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_8">
+                                <num>8)</num>
+                                <content eId="art_9_point_8_content">
+                                    <p>Oružje sa repetirajućim mehanizmom je vatreno oružje kod kojeg je
+                                        nakon ispaljivanja metka
+                                        potrebno ručno, preko mehanizma, puniti oružje ubacivanjem metka
+                                        iz magacina ili cilindra u cijev;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_9">
+                                <num>9)</num>
+                                <content eId="art_9_point_9_content">
+                                    <p>Vatreno oružje za jedinačnu paljbu je oružje bez magacina koje se
+                                        prije svakog opaljenja puni
+                                        ručnim ubacivanjem metka u ležište cijevi;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_10">
+                                <num>10)</num>
+                                <content eId="art_9_point_10_content">
+                                    <p>Oružje za ličnu bezbjednost je kratko i dugo vatreno oružje
+                                        različitih kalibara;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_11">
+                                <num>11)</num>
+                                <content eId="art_9_point_11_content">
+                                    <p>Sportsko oružje je vatreno oružje kategorije B koje se koristi u
+                                        sportskim streljačkim
+                                        disciplinama, u skladu sa međunarodnim standardima kojima se
+                                        definišu vrste i kalibri sportskog oružja;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_12">
+                                <num>12)</num>
+                                <content eId="art_9_point_12_content">
+                                    <p>Lovačko oružje je vatreno oružje kategorije B kojim se smije
+                                        loviti divljač u skladu sa propisima o
+                                        lovstvu;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_13">
+                                <num>13)</num>
+                                <content eId="art_9_point_13_content">
+                                    <p>Gasno oružje je pištolj, revolver, puška i druga naprava koja pod
+                                        pritiskom energije barutnog
+                                        punjenja ili sabijenog gasa usmjereno raspršuje nadražljive
+                                        supstance za onesposobljavanje lica koje na
+                                        ljudsko zdravlje imaju kratkotrajno dejstvo;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_14">
+                                <num>14)</num>
+                                <content eId="art_9_point_14_content">
+                                    <p>Reprodukcija oružja je kopija dugog i kratkog vatrenog oružja,
+                                        koje ne koristi jedinstveno
+                                        punjenje, već se puni sa usta cijevi crnim barutom i pali
+                                        fitiljom, kremenom ili kapislom;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_15">
+                                <num>15)</num>
+                                <content eId="art_9_point_15_content">
+                                    <p>Mužar je ručna ili samostojeća naprava namijenjena izazivanju
+                                        glasnog pucnja, koja je napravljena
+                                        tako da ne može primiti jedinstveno punjenje, već se puni sa
+                                        usta cijevi određenom količinom crnog
+                                        baruta i pali štapinom, kremenom i kapislom, a zatvara sredstvom
+                                        male specifične težine;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_16">
+                                <num>16)</num>
+                                <content eId="art_9_point_16_content">
+                                    <p>Vazdušno oružje je vrsta puške, pištolja, revolvera i druge
+                                        naprave koja snagom pritiska vazduha
+                                        ili drugog gasa izbacuje kroz cijev zrno, kuglicu, sačmu ili
+                                        drugi projektil;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_17">
+                                <num>17)</num>
+                                <content eId="art_9_point_17_content">
+                                    <p>Oružje sa tetivom je luk, samostrijel i druga naprava koja pomoću
+                                        opruge, tetive ili drugog
+                                        potisnog sredstva izbacuje strijelu ili druge naprave;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_18">
+                                <num>18)</num>
+                                <content eId="art_9_point_18_content">
+                                    <p>Električni paralizator je ručna naprava koja pomoću visokog
+                                        električnog napona privremeno
+                                        onesposobljava lice;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_19">
+                                <num>19)</num>
+                                <content eId="art_9_point_19_content">
+                                    <p>Hladno oružje su bodeži, kame, mačevi, sablje, bajoneti i naprave
+                                        čije se sječivo nalazi pod
+                                        pritiskom sabijene opruge, a iz drške iskaču pritiskom na dugme
+                                        ili polugu boka i metalnih raketa za
+                                        bacanje, bez obzira na dužinu oštrice ili skrivene oštrice, boks
+                                        i drugo prikriveno oružje sa skrivenim
+                                        oštricama (oružni štapovi, oružni kišobrani i sl.), kao i
+                                        naprave i predmeti pogodni za nanošenje povreda;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_20">
+                                <num>20)</num>
+                                <content eId="art_9_point_20_content">
+                                    <p>Oružje za signalizaciju su pištolj, revolver, puška i druga
+                                        naprava koja pod pritiskom energije barutnog
+                                        punjenja ili sabijenog gasa usmjereno raspršuje ili ispaljuje
+                                        punjenje namijenjeno isključivo izazivanju
+                                        glasnog pucnja i ispaljivanju svjetleće signalne rakete;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_21">
+                                <num>21)</num>
+                                <content eId="art_9_point_21_content">
+                                    <p>Staro oružje je oružje koje ima istorijsku vrijednost, koje čini
+                                        sastavni dio narodne nošnje i vojno i
+                                        policijsko oružje koje je dotrajalo i neupotrebljivo, koje je
+                                        sastavni dio vojnih i policijskih paradnih
+                                        uniformi, kao i oružje koje se puni sa usta cijevi crnim
+                                        barutom, a pali se kremenom, fitiljom ili kapislom;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_22">
+                                <num>22)</num>
+                                <content eId="art_9_point_22_content">
+                                    <p>Dekorativno oružje je oružje koje je izrađeno u dekorativne svrhe
+                                        i koje nije moguće upotrijebiti ili
+                                        prepraviti u vatreno oružje;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_23">
+                                <num>23)</num>
+                                <content eId="art_9_point_23_content">
+                                    <p>Imitacija oružja je predmet koji je spoljašnjim izgledom sličan
+                                        ili jednak oružju, ali ga nije moguće
+                                        upotrijebiti ili prepraviti u vatreno oružje;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_24">
+                                <num>24)</num>
+                                <content eId="art_9_point_24_content">
+                                    <p>Municija je metak jedinstvenog punjenja kojim se puni vatreno
+                                        oružje i koji objedinjuje čauru,
+                                        kapislu, barutno punjenje i projektil. Pod municijom se ne
+                                        smatra municija bez projektila, municija za
+                                        industrijske naprave, municija za naprave za ubijanje stoke,
+                                        municija za startne i signalne naprave, kao i
+                                        pojedinačne komponente metka (čaura, kapisla, barutno punjenje i
+                                        projektil);</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_25">
+                                <num>25)</num>
+                                <content eId="art_9_point_25_content">
+                                    <p>Lažna municija je municija bez oštrog i ubojitog punjenja kojim
+                                        se postiže efekat pucnja;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_26">
+                                <num>26)</num>
+                                <content eId="art_9_point_26_content">
+                                    <p>Dozvoljenim neškodljivim materijama smatraju se hemijski sastavi
+                                        CN (hlorocetofenon), CS
+                                        (ortohlorbenzenmalon-dinitril) i OC (oleoresin capsicum) u
+                                        dozvoljenim koncentracijama;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_27">
+                                <num>27)</num>
+                                <content eId="art_9_point_27_content">
+                                    <p>Zaštitar je lice koje obavlja poslove fizičke zaštite lica i
+                                        imovine, u skladu sa posebnim zakonom;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_28">
+                                <num>28)</num>
+                                <content eId="art_9_point_28_content">
+                                    <p>Trgovac oružjem je pravno lice ili preduzetnik koji nije
+                                        posrednik oružjem, čija se trgovina ili poslovanje
+                                        sastoji u cjelini ili djelimično od proizvodnje, prometa,
+                                        razmjene, posredovanja između vlasnika oružja
+                                        i kupca, davanja na korišćenje, popravke ili prepravke oružja,
+                                        djelova za oružje i municije;</p>
+                                </content>
+                            </point>
+                            <point eId="art_9_point_29">
+                                <num>29)</num>
+                                <content eId="art_9_point_29_content">
+                                    <p>Posrednik u prometu oružjem je pravno lice ili preduzetnik koji
+                                        nije trgovac oružjem, čija se trgovina
+                                        ili poslovanje sastoji, u cjelini ili djelimično od nabavke,
+                                        prodaje ili dogovaranja prenosa oružja,
+                                        između proizvođača i trgovca oružjem;</p>
+                                </content>
+                            </point>
+                        </paragraph>
                     </article>
                 </section>
             </chapter>
@@ -976,32 +978,32 @@
                                     </ref>
                                     podnosilac zahtjeva dokazuje za:</p>
                             </intro>
+                            <point eId="art_17_para_1_point_1">
+                                <num>1)</num>
+                                <content eId="art_17_para_1_point_1_content">
+                                    <p>Oružje za ličnu bezbjednost kategorije B - potvrdom o
+                                        osposobljenosti za pravilnu upotrebu oružja koju izdaje pravno
+                                        lice ili preduzetnik iz <ref href="/oruzje#art_99">
+                                            člana 99 ovog zakona;
+                                        </ref>
+                                    </p>
+                                </content>
+                            </point>
+                            <point eId="art_17_para_1_point_2">
+                                <num>2)</num>
+                                <content eId="art_17_para_1_point_2_content">
+                                    <p>Lovačko oružje kategorije B - uvjerenjem o položenom lovačkom
+                                        ispitu i uvjerenjem lovačke organizacije o aktivnom članstvu;</p>
+                                </content>
+                            </point>
+                            <point eId="art_17_para_1_point_3">
+                                <num>3)</num>
+                                <content eId="art_17_para_1_point_3_content">
+                                    <p>Sportsko oružje kategorije B - uvjerenjem sportske streljačke
+                                        organizacije o aktivnom članstvu.</p>
+                                </content>
+                            </point>
                         </paragraph>
-                        <point eId="art_17_para_1_point_1">
-                            <num>1)</num>
-                            <content eId="art_17_para_1_point_1_content">
-                                <p>Oružje za ličnu bezbjednost kategorije B - potvrdom o
-                                    osposobljenosti za pravilnu upotrebu oružja koju izdaje pravno
-                                    lice ili preduzetnik iz <ref href="/oruzje#art_99">
-                                        člana 99 ovog zakona;
-                                    </ref>
-                                </p>
-                            </content>
-                        </point>
-                        <point eId="art_17_para_1_point_2">
-                            <num>2)</num>
-                            <content eId="art_17_para_1_point_2_content">
-                                <p>Lovačko oružje kategorije B - uvjerenjem o položenom lovačkom
-                                    ispitu i uvjerenjem lovačke organizacije o aktivnom članstvu;</p>
-                            </content>
-                        </point>
-                        <point eId="art_17_para_1_point_3">
-                            <num>3)</num>
-                            <content eId="art_17_para_1_point_3_content">
-                                <p>Sportsko oružje kategorije B - uvjerenjem sportske streljačke
-                                    organizacije o aktivnom članstvu.</p>
-                            </content>
-                        </point>
                         <paragraph eId="art_17_para_2">
                             <content eId="art_17_para_2_content">
                                 <p>Za oružje iz <ref href="/oruzje#art_17_para_1_point_1">
@@ -1053,29 +1055,29 @@
                                 <p>Odobrenje za nabavku oružja kategorije B, na propisanom obrascu,
                                     izdaće se pravnom licu ako:</p>
                             </intro>
+                            <point eId="art_18_para_1_point_1">
+                                <num>1)</num>
+                                <content eId="art_18_para_1_point_1_content">
+                                    <p>ima opravdan razlog za nabavku oružja;</p>
+                                </content>
+                            </point>
+                            <point eId="art_18_para_1_point_2">
+                                <num>2)</num>
+                                <content eId="art_18_para_1_point_2_content">
+                                    <p>odgovorno lice u pravnom licu ispunjava opšte i posebne uslove iz <ref
+                                            href="/oruzje#art_13">
+                                            člana 13 ovog zakona;
+                                        </ref>
+                                    </p>
+                                </content>
+                            </point>
+                            <point eId="art_18_para_1_point_3">
+                                <num>3)</num>
+                                <content eId="art_18_para_1_point_3_content">
+                                    <p>ima prostor za bezbjedan smještaj i čuvanje oružja.</p>
+                                </content>
+                            </point>
                         </paragraph>
-                        <point eId="art_18_para_1_point_1">
-                            <num>1)</num>
-                            <content eId="art_18_para_1_point_1_content">
-                                <p>ima opravdan razlog za nabavku oružja;</p>
-                            </content>
-                        </point>
-                        <point eId="art_18_para_1_point_2">
-                            <num>2)</num>
-                            <content eId="art_18_para_1_point_2_content">
-                                <p>odgovorno lice u pravnom licu ispunjava opšte i posebne uslove iz <ref
-                                        href="/oruzje#art_13">
-                                        člana 13 ovog zakona;
-                                    </ref>
-                                </p>
-                            </content>
-                        </point>
-                        <point eId="art_18_para_1_point_3">
-                            <num>3)</num>
-                            <content eId="art_18_para_1_point_3_content">
-                                <p>ima prostor za bezbjedan smještaj i čuvanje oružja.</p>
-                            </content>
-                        </point>
                         <paragraph eId="art_18_para_2">
                             <content eId="art_18_para_2_content">
                                 <p>Opravdan razlog za nabavku oružja iz <ref
@@ -2914,8 +2916,6 @@
                                 <p>Uz zahtjev za izdavanje odobrenja za proizvodnju oružja, odnosno
                                     municije prilaže se:</p>
                             </intro>
-                        </paragraph>
-                        <paragraph eId="art_70_para_1">
                             <point eId="art_70_para_1_point_1">
                                 <num>1)</num>
                                 <content eId="art_70_para_1_point_1_content">
@@ -3658,77 +3658,75 @@
                     <article eId="art_91">
                         <num>Član 91</num>
                         <paragraph eId="art_91_para_1">
-                            <content eId="art_91_para_1_content">
-                                <intro eId="art_91_para_1_intro">
-                                    <p> Zahtjev za izdavanje odobrenja iz člana <ref
-                                            href="/oruzje#art_90_para_1"> 90 stav 1</ref> ovog
-                                        zakona, sadrži podatke o: </p>
-                                </intro>
-                                <point eId="art_91_para_1_point_1">
-                                    <num>1)</num>
-                                    <content eId="art_91_para_1_point_1_content">
-                                        <p>nazivu i adresi pošiljaoca;</p>
-                                    </content>
-                                </point>
-                                <point eId="art_91_para_1_point_2">
-                                    <num>2)</num>
-                                    <content eId="art_91_para_1_point_2_content">
-                                        <p>nazivu i adresi primaoca;</p>
-                                    </content>
-                                </point>
-                                <point eId="art_91_para_1_point_3">
-                                    <num>3)</num>
-                                    <content eId="art_91_para_1_point_3_content">
-                                        <p>nazivu i adresi proizvođača;</p>
-                                    </content>
-                                </point>
-                                <point eId="art_91_para_1_point_4">
-                                    <num>4)</num>
-                                    <content eId="art_91_para_1_point_4_content">
-                                        <p>vrsti, količini i načinu pakovanja oružja, odnosno
-                                            municije kad se radi o uvozu, odnosno vrsti,
-                                            marki, modelu, fabričkom broju, kalibru, količini i
-                                            načinu pakovanja kad se radi o izvozu;
-                                        </p>
-                                    </content>
-                                </point>
-                                <point eId="art_91_para_1_point_5">
-                                    <num>5)</num>
-                                    <content eId="art_91_para_1_point_5_content">
-                                        <p>vrsti i oznaci prevoznog sredstva, imenu i prezimenu
-                                            vozača i pratnje, kao i broju putne isprave
-                                            vozača, odnosno pratnje;</p>
-                                    </content>
-                                </point>
-                                <point eId="art_91_para_1_point_6">
-                                    <num>6)</num>
-                                    <content eId="art_91_para_1_point_6_content">
-                                        <p>približnom datumu početka prevoza, smjeru kretanja i
-                                            odredištu;</p>
-                                    </content>
-                                </point>
-                                <point eId="art_91_para_1_point_7">
-                                    <num>7)</num>
-                                    <content eId="art_91_para_1_point_7_content">
-                                        <p>nazivu ulaznog i izlaznog graničnog prelaza i datumu
-                                            prevoženja preko graničnog prelaza;</p>
-                                    </content>
-                                </point>
-                                <point eId="art_91_para_1_point_8">
-                                    <num>8)</num>
-                                    <content eId="art_91_para_1_point_8_content">
-                                        <p>mjerama bezbjednosti za vrijeme prevoza;</p>
-                                    </content>
-                                </point>
-                                <point eId="art_91_para_1_point_9">
-                                    <num>9)</num>
-                                    <content eId="art_91_para_1_point_9_content">
-                                        <p>uvoznoj ili izvoznoj dozvoli organa državne uprave
-                                            nadležnog za poslove ekonomije, kad se radi o
-                                            međunarodnom prevozu.</p>
-                                    </content>
-                                </point>
-                            </content>
+                            <intro eId="art_91_para_1_intro">
+                                <p> Zahtjev za izdavanje odobrenja iz člana <ref
+                                        href="/oruzje#art_90_para_1"> 90 stav 1</ref> ovog
+                                    zakona, sadrži podatke o: </p>
+                            </intro>
+                            <point eId="art_91_para_1_point_1">
+                                <num>1)</num>
+                                <content eId="art_91_para_1_point_1_content">
+                                    <p>nazivu i adresi pošiljaoca;</p>
+                                </content>
+                            </point>
+                            <point eId="art_91_para_1_point_2">
+                                <num>2)</num>
+                                <content eId="art_91_para_1_point_2_content">
+                                    <p>nazivu i adresi primaoca;</p>
+                                </content>
+                            </point>
+                            <point eId="art_91_para_1_point_3">
+                                <num>3)</num>
+                                <content eId="art_91_para_1_point_3_content">
+                                    <p>nazivu i adresi proizvođača;</p>
+                                </content>
+                            </point>
+                            <point eId="art_91_para_1_point_4">
+                                <num>4)</num>
+                                <content eId="art_91_para_1_point_4_content">
+                                    <p>vrsti, količini i načinu pakovanja oružja, odnosno
+                                        municije kad se radi o uvozu, odnosno vrsti,
+                                        marki, modelu, fabričkom broju, kalibru, količini i
+                                        načinu pakovanja kad se radi o izvozu;
+                                    </p>
+                                </content>
+                            </point>
+                            <point eId="art_91_para_1_point_5">
+                                <num>5)</num>
+                                <content eId="art_91_para_1_point_5_content">
+                                    <p>vrsti i oznaci prevoznog sredstva, imenu i prezimenu
+                                        vozača i pratnje, kao i broju putne isprave
+                                        vozača, odnosno pratnje;</p>
+                                </content>
+                            </point>
+                            <point eId="art_91_para_1_point_6">
+                                <num>6)</num>
+                                <content eId="art_91_para_1_point_6_content">
+                                    <p>približnom datumu početka prevoza, smjeru kretanja i
+                                        odredištu;</p>
+                                </content>
+                            </point>
+                            <point eId="art_91_para_1_point_7">
+                                <num>7)</num>
+                                <content eId="art_91_para_1_point_7_content">
+                                    <p>nazivu ulaznog i izlaznog graničnog prelaza i datumu
+                                        prevoženja preko graničnog prelaza;</p>
+                                </content>
+                            </point>
+                            <point eId="art_91_para_1_point_8">
+                                <num>8)</num>
+                                <content eId="art_91_para_1_point_8_content">
+                                    <p>mjerama bezbjednosti za vrijeme prevoza;</p>
+                                </content>
+                            </point>
+                            <point eId="art_91_para_1_point_9">
+                                <num>9)</num>
+                                <content eId="art_91_para_1_point_9_content">
+                                    <p>uvoznoj ili izvoznoj dozvoli organa državne uprave
+                                        nadležnog za poslove ekonomije, kad se radi o
+                                        međunarodnom prevozu.</p>
+                                </content>
+                            </point>
                         </paragraph>
                         <paragraph eId="art_91_para_2">
                             <content eId="art_91_para_2_content">
@@ -3995,6 +3993,1637 @@
                         </paragraph>
                     </article>
                 </section>
+            </chapter>
+            <chapter eId="chp_8">
+                <num>VIII.</num>
+                <heading>NADZOR</heading>
+                <!-- Član 100 -->
+                <article
+                    eId="art_100">
+                    <num>Član 100</num>
+                    <paragraph eId="art_100_para_1">
+                        <content eId="art_100_para_1_content">
+                            <p> Nadzor nad sprovođenjem ovog zakona vrši Ministarstvo.</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </chapter>
+            <chapter eId="chp_9">
+                <num>IX.</num>
+                <heading>EVIDENCIJE</heading>
+                <!-- Član 101 -->
+                <article
+                    eId="art_101">
+                    <num>Član 101</num>
+                    <paragraph eId="art_101_para_1">
+                        <content eId="art_101_para_1_content">
+                            <p> Ministarstvo vodi evidencije o: izdatim odobrenjima za nabavku
+                                oružja, oružnim listovima za držanje
+                                oružja, oružnim listovima za držanje i nošenje oružja, odobrenjima
+                                za držanje oružja, odobrenjima za
+                                sakupljanje starog oružja, odobrenjima za rukovanje oružjem,
+                                Evropskim propusnicama za oružje i
+                                drugim ispravama o oružju izdatim na osnovu potvrđenih međunarodnih
+                                ugovora; prijavljenom oružju
+                                kategorije C; predatom oružju i municiji; oduzetom oružju i
+                                municiji; izdatim odobrenjima za: proizvodnju
+                                oružja i municije, promet oružja i municije, posredovanje u prometu
+                                oružja; popravljanje i prepravljanje
+                                oružja, prevoz oružja i municije, kao i odobrenjima za pružanje
+                                usluga sportsko-rekreativnog gađanja na
+                                civilnom strelištu i o osposobljavanju građana za pravilnu upotrebu
+                                vatrenog oružja; potvrdama za
+                                individualno punjenje municije, koje izdaje lovačka, odnosno
+                                streljačka organizacija.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_101_para_2">
+                        <content eId="art_101_para_2_content">
+                            <p> Policija vodi evidencije o: prijavama o gubitku, krađi i
+                                pronalaženju oružja i municije; nađenom oružju
+                                i municiji; privremeno oduzetom oružju i municiji, kao i ispravama o
+                                oružju; prenešenom oružju preko
+                                državne granice i izdatim odobrenjima za unos oružja i municije.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_101_para_3">
+                        <content eId="art_101_para_3_content">
+                            <p> Diplomatsko-konzularno predstavništvo Crne Gore vodi evidenciju o
+                                upisu oružja i municije u putnu
+                                ispravu.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_101_para_4">
+                        <content eId="art_101_para_4_content">
+                            <p> Organ državne uprave nadležan za poslove zdravlja vodi evidenciju o
+                                izdatim uvjerenjima o
+                                zdravstvenoj sposobnosti za držanje i nošenje oružja.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_101_para_5">
+                        <content eId="art_101_para_5_content">
+                            <p> Organ državne uprave nadležan za poslove ekonomije vodi evidenciju o
+                                proizvedenom i isporučenom
+                                oružju i municiji.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_101_para_6">
+                        <content eId="art_101_para_6_content">
+                            <p> Lični podaci sadržani u evidencijama iz <ref
+                                    href="/oruzje#art_101_para_1">
+                                    st. 1
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_2">
+                                    st. 2
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_3">
+                                    st. 3
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_4">
+                                    st. 4
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_5">
+                                    st. 5
+                                </ref>
+                                ovog člana, obrađuju se u skladu sa zakonom kojim se uređuje zaštita
+                                podataka o ličnosti.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_101_para_7">
+                        <content eId="art_101_para_7_content">
+                            <p>Evidencije iz <ref
+                                    href="/oruzje#art_101_para_1">
+                                    st. 1
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_2">
+                                    st. 2
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_3">
+                                    st. 3
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_4">
+                                    st. 4
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_5">
+                                    st. 5
+                                </ref>
+                                ovog člana, vode se u elektronskoj formi.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_101_para_8">
+                        <content eId="art_101_para_8_content">
+                            <p>Podaci iz evidencije iz <ref href="/oruzje#art_101_para_2">
+                                    st. 2
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_3">
+                                    st. 3
+                                </ref>
+                                i <ref href="/oruzje#art_101_para_4">
+                                    st. 4
+                                </ref>
+                                uvaju se pet godina, a podaci iz <ref
+                                    href="/oruzje#art_101_para_1">
+                                    st. 1
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_2">
+                                    st. 2
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_3">
+                                    st. 3
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_4">
+                                    st. 4
+                                </ref>
+                                , <ref href="/oruzje#art_101_para_5">
+                                    st. 5
+                                </ref>
+                                ovog člana, čuvaju se trajno.</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 102 -->
+                <article eId="art_102">
+                    <num>Član 102</num>
+                    <paragraph eId="art_102_para_1">
+                        <intro eId="art_102_para_1_intro">
+                            <p>Evidenciju je dužno da vodi:</p>
+                        </intro>
+                        <point eId="art_102_para_1_point_1">
+                            <num>1)</num>
+                            <content eId="art_102_para_1_point_1_content">
+                                <p>fizičko ili pravno lice koje ima odobrenje za sakupljanje starog
+                                    oružja, o sakupljenom starom
+                                    oružju;</p>
+                            </content>
+                        </point>
+                        <point eId="art_102_para_1_point_2">
+                            <num>2)</num>
+                            <content eId="art_102_para_1_point_2_content">
+                                <p>privredno društvo ili preduzetnik koji ima odobrenje za
+                                    proizvodnju oružja i municije, o
+                                    proizvedenom i isporučenom oružju i municiji, kao i o
+                                    ispitivanju i obilježavanju žigom vatrenog oružja i
+                                    njegovih glavnih djelova;</p>
+                            </content>
+                        </point>
+                        <point eId="art_102_para_1_point_3">
+                            <num>3)</num>
+                            <content eId="art_102_para_1_point_3_content">
+                                <p> privredno društvo ili preduzetnik koji ima odobrenje za promet
+                                    oružja i municije, o nabavljenom i
+                                    prodatom oružju i municiji;</p>
+                            </content>
+                        </point>
+                        <point eId="art_102_para_1_point_4">
+                            <num>4)</num>
+                            <content eId="art_102_para_1_point_4_content">
+                                <p> privredno društvo ili preduzetnik koji ima odobrenje za
+                                    posredovanje u prometu oružja, o nabavci,
+                                    prodaji ili dogovaranju prenosa oružja između proizvođača i
+                                    trgovca oružjem;</p>
+                            </content>
+                        </point>
+                        <point eId="art_102_para_1_point_5">
+                            <num>5)</num>
+                            <content eId="art_102_para_1_point_5_content">
+                                <p> privredno društvo ili preduzetnik koji ima odobrenje za
+                                    popravljanje i prepravljanje oružja o:
+                                    popravljenom i prepravljenom oružju, ispitivanju oružja, kao i
+                                    trajno onesposobljenom oružju;</p>
+                            </content>
+                        </point>
+                        <point eId="art_102_para_1_point_6">
+                            <num>6)</num>
+                            <content eId="art_102_para_1_point_6_content">
+                                <p>privredno društvo i preduzetnik koji ima odobrenje za prevoz
+                                    oružja i municije, o izvršenom
+                                    prevozu oružja i municije, kao i o pošiljaocu, primaocu,
+                                    proizvođaču, vrsti i količini oružja i municije,
+                                    koju prevozi;</p>
+                            </content>
+                        </point>
+                        <point eId="art_102_para_1_point_7">
+                            <num>7)</num>
+                            <content eId="art_102_para_1_point_7_content">
+                                <p>pravno lice ili preduzetnik koji ima odobrenje za pružanje usluga
+                                    sportsko-rekreativnog gađanja na
+                                    civilnom strelištu, kao i za osposobljavanje građana za pravilnu
+                                    upotrebu vatrenog oružja o nabavljenom
+                                    oružju, korišćenju oružja, nabavljenoj i utrošenoj municiji i
+                                    izdatim potvrdama o osposobljenosti za
+                                    pravilnu upotrebu vatrenog oružja;</p>
+                            </content>
+                        </point>
+                        <point eId="art_102_para_1_point_8">
+                            <num>8)</num>
+                            <content eId="art_102_para_1_point_8_content">
+                                <p> lovačka ili sportska organizacija o izdatim potvrdama za
+                                    individualno punjenje municije.</p>
+                            </content>
+                        </point>
+                    </paragraph>
+                    <paragraph eId="art_102_para_2">
+                        <content eId="art_102_para_2_content">
+                            <p>Evidencije iz stava <ref
+                                    href="/oruzje#art_102_para_1_point_1">
+                                    1 tač 1
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_2">
+                                    1 tač 2
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_3">
+                                    1 tač 3
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_4">
+                                    1 tač 4
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_5">
+                                    1 tač 5
+                                </ref>
+                                ovog člana čuvaju se trajno, a evidencije iz <ref
+                                    href="/oruzje#art_102_para_1_point_6">
+                                    1 tač 6
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_7">
+                                    1 tač 7
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_8">
+                                    1 tač 8
+                                </ref>
+                                ovog člana, čuvaju se pet godina. </p>
+                        </content>
+                    </paragraph>
+
+                    <paragraph eId="art_102_para_3">
+                        <content eId="art_102_para_3_content">
+                            <p> U slučaju prestanka postojanja privrednog društva, drugog pravnog
+                                lica ili preduzetnika, evidencije koje su vodili u skladu sa stavom <ref
+                                    href="/oruzje#art_102_para_1_point_1">
+                                    1 tač 1
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_5">
+                                    1 tač 5
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_6">
+                                    1 tač 6
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_7">
+                                    1 tač 7
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_8">
+                                    1 tač 8
+                                </ref>
+                                ovog člana a, predaju se Ministarstvu, a evidencije iz stava <ref
+                                    href="/oruzje#art_102_para_1_point_2">
+                                    1 tač 2
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_3">
+                                    1 tač 3
+                                </ref>
+                                , <ref
+                                    href="/oruzje#art_102_para_1_point_4">
+                                    1 tač 4
+                                </ref>
+                                ovog člana organu državne uprave nadležnom za poslove ekonomije.</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </chapter>
+            <chapter eId="chp_10">
+                <num>X.</num>
+                <heading>KAZNENE ODREDBE</heading>
+                <!-- Član 103 -->
+                <article
+                    eId="art_103">
+                    <num>Član 103</num>
+                    <paragraph eId="art_103_para_1">
+                        <intro eId="art_103_para_1_intro">
+                            <p>Novčanom kaznom od 500 do 20.000 eura kazniće se za prekršaj pravno
+                                lice ako:
+                            </p>
+                        </intro>
+                        <point eId="art_103_para_1_point_1">
+                            <num>1)</num>
+                            <content eId="art_103_para_1_point_1_content">
+                                <p>u roku od osam dana od dana prodaje oružja fizičkom, odnosno
+                                    pravnom licu na osnovu odobrenja za nabavku oružja ne obavijesti
+                                    Ministarstvo o prodaji tog oružja (<ref
+                                        href="/oruzje#art_29_para_3">
+                                        član 29 stav 3
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_2">
+                            <num>2)</num>
+                            <content eId="art_103_para_1_point_2_content">
+                                <p> u roku od osam dana od dana prodaje oružja za koje je izdata
+                                    isprava o oružju o prodaji oružja fizičkom, odnosno pravnom licu
+                                    na osnovu odobrenja za nabavku oružja ne obavijesti Ministarstvo
+                                    o prodaji tog oružja (<ref
+                                        href="/oruzje#art_29_para_4">
+                                        član 29 stav 4
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_3">
+                            <num>3)</num>
+                            <content eId="art_103_para_1_point_3_content">
+                                <p> oružje i municiju ne čuva na bezbjedan način, zaključano i
+                                    odvojeno u metalnom ormaru, sefu ili sličnom spremištu, tako da
+                                    nijesu dostupni licu koje nije ovlašćeno da ih posjeduje,
+                                    naročito maloljetnom licu (<ref
+                                        href="/oruzje#art_34_para_1">
+                                        član 34 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_4">
+                            <num>4)</num>
+                            <content eId="art_103_para_1_point_4_content">
+                                <p> ne održava oružje u ispravnom stanju ili sa njim nepravilno
+                                    rukuje (<ref
+                                        href="/oruzje#art_36_para_1">
+                                        član 36 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_5">
+                            <num>5)</num>
+                            <content eId="art_103_para_1_point_5_content">
+                                <p> da oružje na upotrebu maloljetnom licu, osim u slučaju iz <ref
+                                        href="/oruzje#art_36_para_1">
+                                        člana 36 stav 1
+                                    </ref>
+                                    ovog zakona (<ref
+                                        href="/oruzje#art_36_para_5">
+                                        član 36 stav 5
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_6">
+                            <num>6)</num>
+                            <content eId="art_103_para_1_point_6_content">
+                                <p>kratko i dugo lovačko i sportsko oružje za koje posjeduje ispravu
+                                    o oružju i municiju za to oružje, prenosi sa jednog mjesta na
+                                    drugo, koje nije prazno i koje je spremno za upotrebu,
+                                    neobezbijeđeno u odgovarajućim kutijama, kovčezima ili navlakama
+                                    odvojeno od municije (<ref
+                                        href="/oruzje#art_36_para_6">
+                                        član 36 stav 6
+                                    </ref>,
+                                    a u vezi sa <ref
+                                        href="/oruzje#art_28_para_3">
+                                        članon 28 stav 3
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_7">
+                            <num>7)</num>
+                            <content eId="art_103_para_1_point_7_content">
+                                <p> lice iz <ref
+                                        href="/oruzje#art_37_para_2">
+                                        člana 37 stav 2
+                                    </ref>
+                                    ovog zakona, koristi oružje iz <ref
+                                        href="/oruzje#art_37_para_1">
+                                        člana 37 stav 1
+                                    </ref>
+                                    ovog zakona, a ne posjeduje izdatu potvrdu za držanje, nošenje i
+                                    prenošenje tog oružja i municije (<ref
+                                        href="/oruzje#art_37_para_2">
+                                        član 37 stav 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_8">
+                            <num>8)</num>
+                            <content eId="art_103_para_1_point_8_content">
+                                <p>odmah ne prijavi gubitak ili krađu oružja i municije (<ref
+                                        href="/oruzje#art_39_para_1">
+                                        član 39 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_9">
+                            <num>9)</num>
+                            <content eId="art_103_para_1_point_9_content">
+                                <p> oružje i municiju koje proda strancu, ne dostavi do državne
+                                    granice i ne preda ga strancu u prisustvu službenika granične
+                                    policije (<ref
+                                        href="/oruzje#art_61_para_2">
+                                        član 61 stav 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_10">
+                            <num>10)</num>
+                            <content eId="art_103_para_1_point_10_content">
+                                <p>prostor iz <ref
+                                        href="/oruzje#art_67_para_1_point_2">
+                                        član 67 stava 1 tačka 2
+                                    </ref>
+                                    ovog zakona, ne obezbijedi od pristupa neovlašćenih lica,
+                                    stalnom fizičkom i tehničkom zaštitom (<ref
+                                        href="/oruzje#art_69">
+                                        član 69
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_11">
+                            <num>11)</num>
+                            <content eId="art_103_para_1_point_11_content">
+                                <p> za popravljeno i prepravljeno oružje ne sprovede ispitivanje,
+                                    radi provjere funkcionalne i tehničke ispravnosti tog oružja (<ref
+                                        href="/oruzje#art_87_para_1">
+                                        član 87 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_12">
+                            <num>12)</num>
+                            <content eId="art_103_para_1_point_12_content">
+                                <p> u roku od osam dana od dana prepravke oružja ne obavijesti
+                                    Ministarstvo o prepravci tog oružja (<ref
+                                        href="/oruzje#art_88_para_2">
+                                        član 88 stav 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_13">
+                            <num>13)</num>
+                            <content eId="art_103_para_1_point_13_content">
+                                <p>oružje koje je primljeno radi popravke ili prepravke iznosi iz
+                                    prostora iz <ref
+                                        href="/oruzje#art_84_para_4_point_2">
+                                        član 84 stav 4 tačka 2
+                                    </ref>
+                                    ovog zakona, do predaje vlasniku, osim u slučaju iz <ref
+                                        href="/oruzje#art_84_para_2">
+                                        član 89 stav 2
+                                    </ref>
+                                    ovog zakona (<ref
+                                        href="/oruzje#art_89">
+                                        član 89
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_14">
+                            <num>14)</num>
+                            <content eId="art_103_para_1_point_14_content">
+                                <p> prevozi oružje i municiju na osnovu odobrenja za prevoz oružja i
+                                    municije, suprotno pravilima i mjerama bezbjednosti definisanim
+                                    u tom odobrenju (<ref
+                                        href="/oruzje#art_90">
+                                        član 90
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_15">
+                            <num>15)</num>
+                            <content eId="art_103_para_1_point_15_content">
+                                <p> dopušti korišćenje oružja na civilnom strelištu fizičkom licu,
+                                    koje nema oružni list za držanje oružja ili oružni list za
+                                    držanje i nošenje oružja ili odobrenje za držanje oružja, bez
+                                    nadzora stručnog lica (<ref
+                                        href="/oruzje#art_97_para_1">
+                                        član 97 stav 1
+                                    </ref>
+                                    i <ref
+                                        href="/oruzje#art_92_para_2">
+                                        2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_16">
+                            <num>16)</num>
+                            <content eId="art_103_para_1_point_16_content">
+                                <p> ne vodi evidenciju o sakupljenom starom oružju, na osnovu
+                                    odobrenja za sakupljanje starog oružja ( <ref
+                                        href="/oruzje#art_102_para_1_point_1">
+                                        član 102 stav 1 tačka 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_103_para_1_point_17">
+                            <num>17)</num>
+                            <content eId="art_103_para_1_point_17_content">
+                                <p> ne vodi evidenciju o: proizvedenom i isporučenom oružju i
+                                    municiji, o ispitivanju i obilježavanju žigom vatrenog oružja i
+                                    njegovih glavnih djelova, o nabavljenom i prodatom oružju i
+                                    municiji, o nabavci, prodaji ili dogovaranju prenosa oružja
+                                    između proizvođača i trgovca oružjem, o popravljenom i
+                                    prepravljenom oružju, ispitivanju oružja, o trajnom
+                                    onesposobljavanju oružja, o prevozu oružja i municije, o
+                                    nabavljenom oružju i njegovom korišćenju, o nabavljenoj i
+                                    utrošenoj municiji, kao i o izdatim potvrdama za individualno
+                                    punjenje municije i potvrdama o osposobljenosti za pravilnu
+                                    upotrebu vatrenog oružja ( <ref
+                                        href="/oruzje#art_102_para_1_point_1">
+                                        član 102 stav 1 tač. 1
+                                    </ref>
+                                    , <ref
+                                        href="/oruzje#art_102_para_1_point_2">
+                                        član 102 stav 1 tač. 2
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_3">
+                                        član 102 stav 1 tač. 3
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_4">
+                                        član 102 stav 1 tač. 4
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_5">
+                                        član 102 stav 1 tač. 5
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_6">
+                                        član 102 stav 1 tač. 6
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_7">
+                                        član 102 stav 1 tač. 7
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_8">
+                                        član 102 stav 1 tač. 8
+                                    </ref>
+                                    ). </p>
+                            </content>
+                        </point>
+                    </paragraph>
+                    <paragraph eId="art_103_para_2">
+                        <content eId="art_103_para_2_content">
+                            <p> Za prekršaje iz <ref
+                                    href="/oruzje#art_103_para_1">
+                                    stava 1
+                                </ref>
+                                ovog člana, kazniće se novčanom kaznom od 200 do 2.000 eura i
+                                odgovorno lice u pravnom licu.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_103_para_3">
+                        <content eId="art_103_para_3_content">
+                            <p> Za prekršaj iz <ref
+                                    href="/oruzje#art_103_para_1_point_5">
+                                    stava 1 tačka 5
+                                </ref>
+                                ovog člana izriče se i zaštitna mjera oduzimanja oružja i municije.</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 104 -->
+                <article
+                    eId="art_104">
+                    <num>Član 104</num>
+                    <paragraph eId="art_104_para_1">
+                        <intro eId="art_104_para_1_intro">
+                            <p>Novčanom kaznom u iznosu od 150 eura kazniće se za prekršaj pravno
+                                lice ako:
+                            </p>
+                        </intro>
+                        <point eId="art_104_para_1_point_1">
+                            <num>1)</num>
+                            <content eId="art_104_para_1_point_1_content">
+                                <p>ne vrati odobrenje za nabavku oružja koje nije iskorišćeno, u
+                                    roku od osam dana od isteka roka važenja odobrenja (<ref
+                                        href="/oruzje#art_22_para_3">
+                                        član 22 stav 3
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_104_para_1_point_2">
+                            <num>2)</num>
+                            <content eId="art_104_para_1_point_2_content">
+                                <p>u roku od 30 dana od dana isteka roka važenja isprave o oružju,
+                                    ne podnese zahtjev za izdavanje nove isprave o oružju (<ref
+                                        href="/oruzje#art_24_para_1">
+                                        član 24 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_104_para_1_point_3">
+                            <num>3)</num>
+                            <content eId="art_104_para_1_point_3_content">
+                                <p> nabavljeno oružje kategorije C, ne prijavi Ministarstvu u roku
+                                    od osam dana od dana nabavke tog oružja (<ref
+                                        href="/oruzje#art_27_para_2">
+                                        član 27 stav 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_104_para_1_point_4">
+                            <num>4)</num>
+                            <content eId="art_104_para_1_point_4_content">
+                                <p> ne obavijesti Ministarstvo u roku od osam dana od dana prodaje
+                                    oružja kategorije C (<ref
+                                        href="/oruzje#art_27_para_4">
+                                        član 27 stav 4
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_104_para_1_point_5">
+                            <num>5)</num>
+                            <content eId="art_104_para_1_point_5_content">
+                                <p> posjeduje oružje na osnovu isprave o oružju, a promijeni lični
+                                    podatak i ne podnese zahtjev za izdavanje isprave o oružju sa
+                                    tim podatkom, u roku od 15 dana od dana promjene (<ref
+                                        href="/oruzje#art_41">
+                                        član 41
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                    </paragraph>
+                    <paragraph eId="art_104_para_2">
+                        <content eId="art_104_para_2_content">
+                            <p> Za prekršaje iz <ref
+                                    href="/oruzje#art_104_para_1">
+                                    stava 1
+                                </ref>
+                                ovog člana, kazniće se novčanom kaznom u iznosu od 50 eura i
+                                odgovorno lice u pravnom licu. </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 105 -->
+                <article
+                    eId="art_105">
+                    <num>Član 105</num>
+                    <paragraph eId="art_105_para_1">
+                        <intro eId="art_105_para_1_intro">
+                            <p> Novčanom kaznom od 150 do 6.000 eura kazniće se za prekršaj
+                                preduzetnik ako::
+                            </p>
+                        </intro>
+                        <point eId="art_105_para_1_point_1">
+                            <num>1)</num>
+                            <content eId="art_105_para_1_point_1_content">
+                                <p>u roku od osam dana od dana prodaje oružja, ne obavijesti
+                                    Ministarstvo o prodaji tog oružja na osnovu odobrenja za nabavku
+                                    oružja (<ref
+                                        href="/oruzje#art_29_para_3">
+                                        član 29 stav 3
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_2">
+                            <num>2)</num>
+                            <content eId="art_105_para_1_point_2_content">
+                                <p>u roku od osam dana od dana prodaje oružja, ne odjavi to oružje(<ref
+                                        href="/oruzje#art_29_para_4">
+                                        član 29 stav 4
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_3">
+                            <num>3)</num>
+                            <content eId="art_105_para_1_point_3_content">
+                                <p> oružje i municiju ne čuva na bezbjedan način, zaključano i
+                                    odvojeno u metalnom ormaru, sefu ili sličnom spremištu, tako da
+                                    nijesu dostupni licu koje nije ovlašćeno da ih posjeduje,
+                                    posebno maloljetnom licu(<ref
+                                        href="/oruzje#art_34_para_1">
+                                        član 34 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_4">
+                            <num>4)</num>
+                            <content eId="art_105_para_1_point_4_content">
+                                <p>ne održava oružje u ispravnom stanju ili sa njim nepravilno
+                                    rukuje (<ref
+                                        href="/oruzje#art_36_para_1">
+                                        član 36 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_5">
+                            <num>5)</num>
+                            <content eId="art_105_para_1_point_5_content">
+                                <p>da oružje na upotrebu maloljetnom licu, osim u slučaju iz člana <ref
+                                        href="/oruzje#art_36_para_4">
+                                        član 36 stav 4
+                                    </ref>ovog
+                                    zakona(<ref
+                                        href="/oruzje#art_36_para_5">
+                                        član 36 stav 5
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_6">
+                            <num>6)</num>
+                            <content eId="art_105_para_1_point_6_content">
+                                <p> kratko i dugo lovačko i sportsko oružje za koje posjeduje
+                                    ispravu o oružju i municiju za to oružje, prenosi sa jednog
+                                    mjesta na drugo, koje nije prazno i koje je spremno za upotrebu,
+                                    neobezbijeđeno u odgovarajućim kutijama, kovčezima ili navlakama
+                                    odvojeno od municije(<ref
+                                        href="/oruzje#art_36_para_6">
+                                        član 36 stav 6
+                                    </ref>
+                                    a u vezi sa <ref
+                                        href="/oruzje#art_28_para_3">
+                                        član 28 stav 3
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_7">
+                            <num>7)</num>
+                            <content eId="art_105_para_1_point_7_content">
+                                <p> lice iz <ref
+                                        href="/oruzje#art_37_para_2">
+                                        član 37 stav 2
+                                    </ref>
+                                    ovog zakona, koristi oružje iz <ref
+                                        href="/oruzje#art_37_para_1">
+                                        član 37 stav 1
+                                    </ref>
+                                    ovog zakona, a ne posjeduje izdatu potvrdu za držanje, nošenje i
+                                    prenošenje tog oružja i municije(<ref
+                                        href="/oruzje#art_37_para_2">
+                                        član 37 stav 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_8">
+                            <num>8)</num>
+                            <content eId="art_105_para_1_point_8_content">
+                                <p> odmah ne prijavi gubitak ili krađu oružja i municije(<ref
+                                        href="/oruzje#art_39_para_1">
+                                        član 39 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_9">
+                            <num>9)</num>
+                            <content eId="art_105_para_1_point_9_content">
+                                <p> ne prijavi graničnoj policiji oružje i municiju koje namjerava
+                                    da prenese preko državne granice(<ref
+                                        href="/oruzje#art_55">
+                                        član 55
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_10">
+                            <num>10)</num>
+                            <content eId="art_105_para_1_point_10_content">
+                                <p> oružje i municiju koje proda strancu, ne dostavi do državne
+                                    granice i ne preda ga strancu u prisustvu službenika granične
+                                    policije(<ref
+                                        href="/oruzje#art_61_para_2">
+                                        član 61 stav 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_11">
+                            <num>11)</num>
+                            <content eId="art_105_para_1_point_11_content">
+                                <p> prostor iz <ref
+                                        href="/oruzje#art_67_para_2_point_2">
+                                        član 67 stav 2 tačka 2
+                                    </ref>
+                                    ovog zakona, ne obezbijedi od pristupa neovlašćenih lica,
+                                    stalnom fizičkom i tehničkom zaštitom (<ref
+                                        href="/oruzje#art_69">
+                                        član 69
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_12">
+                            <num>12)</num>
+                            <content eId="art_105_para_1_point_12_content">
+                                <p> za popravljeno i prepravljeno oružje ne sprovede ispitivanje,
+                                    radi provjere funkcionalne i tehničke ispravnosti tog oružja(<ref
+                                        href="/oruzje#art_87_para_1">
+                                        član 87 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_13">
+                            <num>13)</num>
+                            <content eId="art_105_para_1_point_13_content">
+                                <p> u roku od osam dana od dana prepravke oružja iz <ref
+                                        href="/oruzje#art_84_para_1">
+                                        član 84 stav 1
+                                    </ref>
+                                    ovog zakona, ne obavijesti Ministarstvo o prepravci tog oružja(<ref
+                                        href="/oruzje#art_88_para_2">
+                                        član 88 stav 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_14">
+                            <num>14)</num>
+                            <content eId="art_105_para_1_point_14_content">
+                                <p> oružje koje je primljeno radi popravke ili prepravke iznosi iz
+                                    prostora iz <ref
+                                        href="/oruzje#art_84_para_2">
+                                        član 84 stav 2
+                                    </ref>
+                                    ovog zakona, do predaje vlasniku, osim u slučaju iz <ref
+                                        href="/oruzje#art_89_para_2">
+                                        član 89 stav 2
+                                    </ref>
+                                    ovog zakona (<ref
+                                        href="/oruzje#art_89">
+                                        član 89
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_15">
+                            <num>15)</num>
+                            <content eId="art_105_para_1_point_15_content">
+                                <p> prevozi oružje i municiju na osnovu odobrenja za prevoz oružja i
+                                    municije, suprotno pravilima i mjerama bezbjednosti definisanim
+                                    u tom odobrenju(<ref
+                                        href="/oruzje#art_90">
+                                        član 90
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_16">
+                            <num>16)</num>
+                            <content eId="art_105_para_1_point_16_content">
+                                <p>dopušti korišćenje oružja na civilnom strelištu fizičkom licu,
+                                    koje nema oružni list za držanje ili oružni list za držanje i
+                                    nošenje oružja ili odobrenje za držanje oružja, bez nadzora
+                                    stručnog lica (<ref
+                                        href="/oruzje#art_97_para_1">
+                                        član 97 st. 1
+                                    </ref>
+                                    i <ref
+                                        href="/oruzje#art_97_para_2">
+                                        član 97 st. 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_17">
+                            <num>17)</num>
+                            <content eId="art_105_para_1_point_17_content">
+                                <p> ne vodi evidenciju o sakupljenom starom oružju na osnovu
+                                    odobrenja za sakupljanje starog oružja (<ref
+                                        href="/oruzje#art_102_para_1_point_1">
+                                        član 102 stav 1 tačka 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_105_para_1_point_18">
+                            <num>18)</num>
+                            <content eId="art_105_para_1_point_18_content">
+                                <p> ne vodi evidenciju o: proizvedenom i isporučenom oružju i
+                                    municiji, o ispitivanju i obilježavanju žigom vatrenog oružja i
+                                    njegovih glavnih djelova, o nabavljenom i prodatom oružju i
+                                    municiji, o nabavci, prodaji ili dogovaranju prenosa oružja
+                                    između proizvođača i trgovca oružjem, o popravljenom i
+                                    prepravljenom oružju, ispitivanju oružja, o trajnom
+                                    onesposobljavanju oružja, o prevozu oružja i municije, o
+                                    nabavljenom oružju i njegovom korišćenju, o nabavljenoj i
+                                    utrošenoj municiji, kao i o izdatim potvrdama za individualno
+                                    punjenje municije i potvrdama o osposobljenosti za pravilnu
+                                    upotrebu vatrenog oružja (<ref
+                                        href="/oruzje#art_102_para_1_point_2">
+                                        član 102 stav 1 tačka 2
+                                    </ref>
+                                    , <ref
+                                        href="/oruzje#art_102_para_1_point_3">
+                                        član 102 stav 1 tačka 3
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_4">
+                                        član 102 stav 1 tačka 4
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_5">
+                                        član 102 stav 1 tačka 5
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_6">
+                                        član 102 stav 1 tačka 6
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_7">
+                                        član 102 stav 1 tačka 7
+                                    </ref>
+                                    ,<ref
+                                        href="/oruzje#art_102_para_1_point_8">
+                                        član 102 stav 1 tačka 8
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                    </paragraph>
+                    <paragraph eId="art_105_para_2">
+                        <content eId="art_105_para_2_content">
+                            <p> Za prekršaj iz <ref
+                                    href="/oruzje#art_105_para_1_point_5">
+                                    stava 1 tačka 5
+                                </ref>
+                                ovog člana izriče se i zaštitna mjera oduzimanja oružja i municije. </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!--Član
+                106-->
+                <article eId="art_106">
+                    <num>Član 106</num>
+                    <paragraph eId="art_106_para_1">
+                        <intro eId="art_106_para_1_intro">
+                            <p>Novčanom kaznom u iznosu od 100 eura kazniće se za prekršaj
+                                preduzetnik ako:</p>
+                        </intro>
+                        <point eId="art_106_para_1_point_1">
+                            <num>1)</num>
+                            <content eId="art_106_para_1_point_1_content">
+                                <p>ne vrati odobrenje za nabavku oružja koje nije iskorišćeno u roku
+                                    od osam dana od isteka roka važenja odobrenja (<ref
+                                        href="/oruzje#art_22_para_3">
+                                        član 22 stav 3
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_106_para_1_point_2">
+                            <num>2)</num>
+                            <content eId="art_106_para_1_point_2_content">
+                                <p>u roku od 30 dana od dana isteka roka važenja isprave o oružju,
+                                    ne podnese zahtjev za izdavanje nove isprave o oružju (<ref
+                                        href="/oruzje#art_24_para_1">
+                                        član 24 stav 1
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_106_para_1_point_3">
+                            <num>3)</num>
+                            <content eId="art_106_para_1_point_3_content">
+                                <p>nabavljeno oružje kategorije C, ne prijavi Ministarstvu u roku od
+                                    osam dana od dana nabavke tog oružja (<ref
+                                        href="/oruzje#art_27_para_2">
+                                        član 27 stav 2
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_106_para_1_point_4">
+                            <num>4)</num>
+                            <content eId="art_106_para_1_point_4_content">
+                                <p>ne obavijesti Ministarstvo, u roku od osam dana od dana prodaje
+                                    oružja kategorije C (<ref
+                                        href="/oruzje#art_27_para_4">
+                                        član 27 stav 4
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_106_para_1_point_5">
+                            <num>5)</num>
+                            <content eId="art_106_para_1_point_5_content">
+                                <p>oružje kategorije B koje posjeduje na osnovu važeće isprave o
+                                    oružju nosi ili prenosi bez te isprave o oružju (<ref
+                                        href="/oruzje#art_28">
+                                        član 28
+                                    </ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_106_para_1_point_6">
+                            <num>6)</num>
+                            <content eId="art_106_para_1_point_6_content">
+                                <p>posjeduje oružje na osnovu isprave o oružju, a promijeni lični
+                                    podatak i ne podnese zahtjev za izdavanje isprave o oružju sa
+                                    tim podatkom, u roku od 15 dana od dana promjene (<ref
+                                        href="/oruzje#art_41">
+                                        član 41
+                                    </ref>
+                                    ).</p>
+                            </content>
+                        </point>
+                    </paragraph>
+                </article>
+                <!--Član
+                107-->
+                <article eId="art_107">
+                    <num>Član 107</num>
+                    <paragraph eId="art_107_para_1">
+                        <intro eId="art_107_para_1_intro">
+                            <p>Novčanom kaznom od 30 do 500 eura kazniće se za prekršaj fizičko lice
+                                ako:</p>
+                        </intro>
+                        <point eId="art_107_para_1_point_1">
+                            <num>1)</num>
+                            <content eId="art_107_para_1_point_1_content">
+                                <p>u roku od osam dana od dana nabavke oružja ne podnese zahtjev za
+                                    izdavanje oružnog lista za držanje oružja, odnosno oružnog lista
+                                    za držanje i nošenje oružja (<ref href="/oruzje#art_23_para_1">Član
+                                    23 stav 1</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_2">
+                            <num>2)</num>
+                            <content eId="art_107_para_1_point_2_content">
+                                <p>oružje kategorije B koje posjeduje na osnovu važeće isprave o
+                                    oružju nosi ili prenosi bez te isprave o oružju (<ref
+                                        href="/oruzje#art_28">Član 28</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_3">
+                            <num>3)</num>
+                            <content eId="art_107_para_1_point_3_content">
+                                <p>u roku od osam dana od dana prodaje oružja na osnovu odobrenja za
+                                    nabavku oružja ne obavijesti Ministarstvo o prodaji oružja, radi
+                                    odjave (<ref href="/oruzje#art_29_para_4">Član 29 stav 4</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_4">
+                            <num>4)</num>
+                            <content eId="art_107_para_1_point_4_content">
+                                <p>u roku od osam dana od dana trajnog onesposobljavanja oružja ne
+                                    obavijesti Ministarstvo radi odjave tog oružja, uz prilaganje
+                                    potvrde iz <ref
+                                        href="/oruzje#art_88_para_3">Član 88 stav 34</ref> ovog
+                                    zakona (<ref
+                                        href="/oruzje#art_31_para_4">Član 31 stav 4</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_5">
+                            <num>5)</num>
+                            <content eId="art_107_para_1_point_5_content">
+                                <p>sa oružjem i municijom ne postupa sa posebnom pažnjom (<ref
+                                        href="/oruzje#art_32">Član 32</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_6">
+                            <num>6)</num>
+                            <content eId="art_107_para_1_point_6_content">
+                                <p>unosi oružje u određene prostore ili prostorije na kojima je
+                                    javno istaknuta zabrana unošenja oružja (<ref
+                                        href="/oruzje#art_33_para_2">Član 33 stav 2</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_7">
+                            <num>7)</num>
+                            <content eId="art_107_para_1_point_7_content">
+                                <p>oružje nosi i koristi kada je pod uticajem alkohola, droga ili
+                                    drugih psihoaktivnih supstanci, odnosno u takvom stanju da nije
+                                    u mogućnosti shvatiti značenje svog postupanja, odnosno vladati
+                                    svojom voljom (<ref href="/oruzje#art_33_para_6">Član 33 stav 6</ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_8">
+                            <num>8)</num>
+                            <content eId="art_107_para_1_point_8_content">
+                                <p>oružje kategorije B, C i D koje na javnom mjestu učini vidljivim
+                                    drugim licima, odnosno nosi na način kojim se uznemiravaju
+                                    građani (<ref href="/oruzje#art_33_para_7">Član 33 stav 7</ref>
+                                    );</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_9">
+                            <num>9)</num>
+                            <content eId="art_107_para_1_point_9_content">
+                                <p>oružje i municiju ne čuva na bezbjedan način, zaključano i
+                                    odvojeno u metalnom ormaru, sefu ili sličnom spremištu, tako da
+                                    nijesu dostupni licu koje nije ovlašćeno da ih posjeduje,
+                                    posebno maloljetnom licu (<ref href="/oruzje#art_34_para_1">Član
+                                    34 stav 1</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_10">
+                            <num>10)</num>
+                            <content eId="art_107_para_1_point_10_content">
+                                <p>ne održava oružje u ispravnom stanju ili sa njime nepravilno
+                                    rukuje (<ref href="/oruzje#art_36_para_1">Član 36 stav 1</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_11">
+                            <num>11)</num>
+                            <content eId="art_107_para_1_point_11_content">
+                                <p>da oružje na upotrebu maloljetnom licu, osim u slučaju iz <ref
+                                        href="/oruzje#art_36_para_4">Član 36
+                                        stav 4</ref> ovog zakona (<ref href="/oruzje#art_36_para_5">Član
+                                    36
+                                        stav 5</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_12">
+                            <num>12)</num>
+                            <content eId="art_107_para_1_point_12_content">
+                                <p>kratko i dugo lovačko i sportsko oružje za koje posjeduje ispravu
+                                    o oružju i municiju za to oružje, prenosi sa jednog mjesta na
+                                    drugo, koje nije prazno i koje je spremno za upotrebu,
+                                    neobezbijeđeno u odgovarajućim kutijama, kovčezima ili navlakama
+                                    odvojeno od municije (<ref href="/oruzje#art_36_para_6">Član 36
+                                    stav 6</ref>, u vezi sa <ref href="/oruzje#art_28_para_3">Član
+                                        28
+                                        stav 3</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_13">
+                            <num>13)</num>
+                            <content eId="art_107_para_1_point_13_content">
+                                <p>lice iz člana <ref
+                                        href="/oruzje#art_37_para_2">Član 37 stav 2</ref> ovog
+                                    zakona, koristi oružje iz <ref
+                                        href="/oruzje#art_37_para_1">Član 37 stav 1</ref> ovog
+                                    zakona, a ne posjeduje izdatu potvrdu za držanje, nošenje i
+                                    prenošenje tog oružja i municije (<ref
+                                        href="/oruzje#art_37_para_2">Član 37 stav 2</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_14">
+                            <num>14)</num>
+                            <content eId="art_107_para_1_point_14_content">
+                                <p>posudi oružje, koje nije sportsko, lovačko i staro, licu koje
+                                    nema ispravu o oružju za tu vrstu oružja(<ref
+                                        href="/oruzje#art_38_para_1">Član 38 stav 1</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_15">
+                            <num>15)</num>
+                            <content eId="art_107_para_1_point_15_content">
+                                <p> odmah ne prijavi policiji gubitak ili krađu oružja i municije (<ref
+                                        href="/oruzje#art_39_para_1">Član 39 stav 1</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_16">
+                            <num>16)</num>
+                            <content eId="art_107_para_1_point_16_content">
+                                <p> ne prijavi graničnoj policiji oružje i municiju koje namjerava
+                                    da prenese preko državne granice(<ref
+                                        href="/oruzje#art_55">Član 55</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_17">
+                            <num>17)</num>
+                            <content eId="art_107_para_1_point_17_content">
+                                <p> oružje i municiju koje proda strancu, ne dostavi do državne
+                                    granice i ne preda ga strancu u prisustvu službenika granične
+                                    policije (<ref
+                                        href="/oruzje#art_61_para_2">Član 61 stav 2</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_107_para_1_point_18">
+                            <num>18)</num>
+                            <content eId="art_107_para_1_point_18_content">
+                                <p>) ako lice iz člana <ref
+                                        href="/oruzje#art_78_para_3">Član 78 stav 3</ref> ovog
+                                    zakona, posjeduje više od 5 kg barutnog punjenja, odnosno 3000
+                                    komada kapisli ili ako ih ne čuva u skladu sa odredbama člana 34
+                                    ovog zakona(<ref
+                                        href="/oruzje#art_78_para_7">Član 78 stav 7</ref>);</p>
+                            </content>
+                        </point>
+                    </paragraph>
+                    <paragraph eId="art_107_para_2">
+                        <content eId="art_107_para_2_content">
+                            <p> Za prekršaje iz <ref
+                                    href="/oruzje#art_107_para_1_point_7">stava 1 ovoga člana, tačke
+                                7</ref> tačke 7 i <ref
+                                    href="/oruzje#art_107_para_1_point_11">stava 1 ovoga člana,
+                                    tačke 11</ref>, izriče se i zaštitna mjera oduzimanja oružja i
+                                municije. </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!--Član
+                108-->
+                <article eId="art_108">
+                    <num>Član 108</num>
+                    <paragraph eId="art_108_para_1">
+                        <intro eId="art_108_para_1_intro">
+                            <p>Novčanom kaznom u iznosu od 50 eura kazniće se za prekršaj fizičko
+                                lice ako:</p>
+                        </intro>
+                        <point eId="art_108_para_1_point_1">
+                            <num>1)</num>
+                            <content eId="art_108_para_1_point_1_content">
+                                <p>ne vrati odobrenje za nabavku oružja koje nije iskorišćeno u roku
+                                    od osam dana od isteka roka važenja odobrenja (<ref
+                                        href="/oruzje#art_22_para_3">član 22 stav 3</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_108_para_1_point_2">
+                            <num>2)</num>
+                            <content eId="art_108_para_1_point_2_content">
+                                <p>u roku od 30 dana od dana isteka roka važenja isprave o oružju,
+                                    ne podnese zahtjev za izdavanje nove isprave o oružju (<ref
+                                        href="/oruzje#art_24_para_1">član 24 stav 1</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_108_para_1_point_3">
+                            <num>3)</num>
+                            <content eId="art_108_para_1_point_3_content">
+                                <p>nabavljeno oružje kategorije C, ne prijavi Ministarstvu u roku od
+                                    osam dana od dana nabavke tog oružja (<ref
+                                        href="/oruzje#art_27_para_2">član 27 stav 2</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_108_para_1_point_4">
+                            <num>4)</num>
+                            <content eId="art_108_para_1_point_4_content">
+                                <p>posjeduje oružje na osnovu isprave o oružju, a promijeni lični
+                                    podatak i ne podnese zahtjev za izdavanje isprave o oružju sa
+                                    tim podatkom, u roku od 15 dana od dana promjene (<ref
+                                        href="/oruzje#art_41">član 41</ref>);</p>
+                            </content>
+                        </point>
+                        <point eId="art_108_para_1_point_5">
+                            <num>5)</num>
+                            <content eId="art_108_para_1_point_5_content">
+                                <p>po saznanju o postojanju oružja, nakon smrti vlasnika oružja, ne
+                                    obavijesti Ministarstvo radi predaje oružja i municije (<ref
+                                        href="/oruzje#art_42_para_1">član 42 stav 1</ref>);</p>
+                            </content>
+                        </point>
+                    </paragraph>
+                </article>
+            </chapter>
+            <chapter eId="chp_11">
+                <num>XI.</num>
+                <heading> PRELAZNE I ZAVRŠNE ODREDBE
+                </heading>
+                <!-- Član 109 -->
+                <article
+                    eId="art_109">
+                    <num>Član 109</num>
+                    <paragraph eId="art_109_para_1">
+                        <content eId="art_109_para_1_content">
+                            <p>
+                                Fizičko lice koje nedozvoljeno posjeduje oružje kategorije A dužno
+                                je da posjedovanje tog oružja
+                                prijavi policiji u mjestu gdje se oružje nalazi, radi predaje ili
+                                onesposobljavanja.
+                            </p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_109_para_2">
+                        <content eId="art_109_para_2_content">
+                            <p> Službenik policije će preuzeti oružje i municiju iz <ref
+                                    href="/oruzje#art_109_para_1">stava 1 ovog člana</ref>, na
+                                mjestu na kojem se oružje i municija nalaze. </p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_109_para_3">
+                        <content eId="art_109_para_3_content">
+                            <p> O preuzetom oružju i municiji iz <ref
+                                    href="/oruzje#art_109_para_2">stava 2 ovog člana</ref>,,
+                                fizičkom licu će se izdati potvrda </p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_109_para_4">
+                        <content eId="art_109_para_4_content">
+                            <p> Ako lice želi da onesposobi oružje iz <ref
+                                    href="/oruzje#art_109_para_1">stava 1 ovog člana</ref>,, dužno
+                                je da obavijesti policiju o posjedovanju tog oružja i da ga
+                                onesposobi, u roku od osam dana od dana obavještenja policije. O
+                                onesposobljavanju oružja policiji to lice podnosi potvrdu iz člana
+                                88 stav 3 ovog zakona, u roku od osam dana od dana izdavanja
+                                potvrde. </p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_109_para_5">
+                        <content eId="art_109_para_5_content">
+                            <p> Troškove onesposobljavanja oružja snosi lice iz <ref
+                                    href="/oruzje#art_109_para_4">stava 4 ovog člana</ref>, ovog
+                                člana. </p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_109_para_6">
+                        <content eId="art_109_para_6_content">
+                            <p> Ako lice postupi u skladu sa <ref
+                                    href="/oruzje#art_109_para_1">stavom 1 ovog člana</ref>, ovog
+                                člana, protiv njega neće se pokrenuti krivični postupak. </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 110 -->
+                <article
+                    eId="art_110">
+                    <num>Član 110</num>
+                    <paragraph eId="art_110_para_1">
+                        <content eId="art_110_para_1_content">
+                            <p> Fizičko lice koje posjeduje oružje kategorije A na osnovu isprave o
+                                oružju izdate u skladu sa Zakonom o oružju ("Službeni list RCG",
+                                broj 49/04 i "Službeni list CG", br. 49/08 i 20/11) dužno je da, u
+                                roku od jedne godine od dana stupanja na snagu ovog zakona, to
+                                oružje preda u korist države bez naknade ili postupi u skladu sa <ref
+                                    href="/oruzje#art_109_para_4">Članom 109 st. 4</ref> i <ref
+                                    href="/oruzje#art_109_para_5">Članom 109 st. 5</ref> ovog
+                                zakona. </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 111 -->
+                <article
+                    eId="art_111">
+                    <num>Član 111</num>
+                    <paragraph eId="art_111_para_1">
+                        <content eId="art_111_para_1_content">
+                            <p> Ako fizičko lice posjeduje oružje kategorije B bez isprave o oružju
+                                izdate do dana stupanja na snagu
+                                ovog zakona, može radi dobijanja oružnog lista za držanje oružja,
+                                odnosno oružnog lista za držanje i
+                                nošenje oružja da prijavi Ministarstvu posjedovanje tog oružja i da
+                                podnese zahtjev za izdavanje
+                                oružnog lista u kojem će dati tačne podatke o tom oružju, najkasnije
+                                u roku od dvije godine od dana
+                                stupanja na snagu ovog zakona.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_111_para_2">
+                        <content eId="art_111_para_2_content">
+                            <p> Ako fizičko lice ne postupi u skladu sa <ref
+                                    href="/oruzje#art_111_para_1">stavom 1 ovog člana</ref>, dužno
+                                je da posjedovanje oružja kategorije B prijavi policiji u mjestu
+                                gdje se oružje nalazi, radi predaje ili onesposobljavanja, u skladu
+                                sa <ref
+                                    href="/oruzje#art_109">članom 109 ovog zakona</ref>.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_111_para_3">
+                        <content eId="art_111_para_3_content">
+                            <p> Ako lice postupi u skladu sa <ref
+                                    href="/oruzje#art_111_para_1">stavom 1 ovog člana</ref> i <ref
+                                    href="/oruzje#art_111_para_2">stavom 2 ovog člana</ref>, neće se
+                                pokrenuti krivični postupak. </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 112 -->
+                <article
+                    eId="art_112">
+                    <num>Član 112</num>
+                    <paragraph eId="art_112_para_1">
+                        <content eId="art_112_para_1_content">
+                            <p>Ministarstvo može licu koje prijavi posjedovanje oružja iz<ref
+                                    href="/oruzje#art_111_para_1">člana 111 stav 1 ovog zakona</ref>,
+                                izdati ispravu o oružju iz <ref
+                                    href="/oruzje#art_23_para_3">člana 23 stav 3 ovog zakona</ref>,
+                                bez utvrđivanja porijekla oružja, ukoliko lice ispunjava opšte i
+                                posebne uslove iz <ref
+                                    href="/oruzje#art_13">člana 13 ovog zakona</ref>.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_112_para_2">
+                        <content eId="art_112_para_2_content">
+                            <p> Ako lice ne ispunjava uslove iz <ref
+                                    href="/oruzje#art_111_para_1">stava 1 ovog člana</ref>, oružje
+                                će se oduzeti i sa tim oružjem će se postupiti u skladu sa <ref
+                                    href="/oruzje#art_51">članom 51 ovog zakona</ref> i <ref
+                                    href="/oruzje#art_52">članom 52 ovog zakona</ref>.</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 113 -->
+                <article
+                    eId="art_113">
+                    <num>Član 113</num>
+                    <paragraph eId="art_113_para_1">
+                        <content eId="art_113_para_1_content">
+                            <p> Isprave o oružju izdate do dana stupanja na snagu ovog zakona za
+                                oružje kategorije B mogu se
+                                upotrebljavati do isteka roka njihovog važenja.</p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_113_para_2">
+                        <content eId="art_113_para_2_content">
+                            <p> Izuzetno od <ref
+                                    href="/oruzje#art_113_para_1">stava 1 ovog člana</ref>, isprave
+                                o oružju, kao i druge isprave izdate sa trajnim rokom važenja,
+                                prestaju da važe u roku od jedne godine od dana stupanja na snagu
+                                ovog zakona</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 114 -->
+                <article
+                    eId="art_114">
+                    <num>Član 114</num>
+                    <paragraph eId="art_114_para_1">
+                        <content eId="art_114_para_1_content">
+                            <p> Fizičko lice kome je izdat oružni list za držanje trofejnog oružja u
+                                skladu sa Zakonom o oružju
+                                ("Službeni list RCG", broj 49/04 i "Službeni list CG", br. 49/08 i
+                                20/11), dužno je da, u roku od dvije
+                                godine od dana stupanja na snagu ovog zakona, podnese zahtjev za
+                                izdavanje oružnog lista za držanje
+                                oružja ili oružnog lista za držanje i nošenje oružja ili da
+                                onesposobi oružje i zadrži ga, proda ili preda u
+                                korist države bez naknade.</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 115 -->
+                <article
+                    eId="art_115">
+                    <num>Član 115</num>
+                    <paragraph eId="art_115_para_1">
+                        <content eId="art_115_para_1_content">
+                            <p> Fizičko lice koje posjeduje oružje kategorije C u skladu sa Zakonom
+                                o oružju ("Službeni list RCG",
+                                broj 49/04 i "Službeni list CG", br. 49/08 i 20/11), dužno je da to
+                                oružje prijavi Ministarstvu, u roku od
+                                jedne godine od dana stupanja na snagu ovog zakona.</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 116 -->
+                <article
+                    eId="art_116">
+                    <num>Član 116</num>
+                    <paragraph eId="art_116_para_1">
+                        <content eId="art_116_para_1_content">
+                            <p>Fizičko i pravno lice koje posjeduje oružje kategorije B i C na
+                                osnovu izdatih isprava o oružju do dana stupanja na snagu ovog
+                                zakona, može to oružje da preda u korist države bez naknade, u
+                                skladu sa <ref
+                                    href="/oruzje#art_109_para_1"> članom 109 st. 1</ref> , <ref
+                                    href="/oruzje#art_109_para_3"> članom 109 st. 3</ref> i <ref
+                                    href="/oruzje#art_109_para_5"> članom 109 st. 5</ref> ovog
+                                zakona. </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 117 -->
+                <article
+                    eId="art_117">
+                    <num>Član 117</num>
+                    <paragraph eId="art_117_para_1">
+                        <content eId="art_117_para_1_content">
+                            <p> Postupci započeti prije stupanja na snagu ovog zakona okončaće se po
+                                odredbama ovog zakona.
+                            </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 118 -->
+                <article
+                    eId="art_118">
+                    <num>Član 118</num>
+                    <paragraph eId="art_118_para_1">
+                        <content eId="art_118_para_1_content">
+                            <p> Privredna društva i preduzetnici koji obavljaju djelatnost
+                                proizvodnje, prometa i posredovanja u
+                                prometu oružja i municije, popravljanja i prepravljanja oružja,
+                                dužni su da svoje poslovanje i djelatnost
+                                usklade sa ovim zakonom i propisima donijetim za sprovođenje ovog
+                                zakona, u roku od jedne godine
+                                od dana stupanja na snagu ovog zakona.
+                            </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 119 -->
+                <article
+                    eId="art_119">
+                    <num>Član 119</num>
+                    <paragraph eId="art_119_para_1">
+                        <content eId="art_119_para_1_content">
+                            <p> Pravno lice ili preduzetnik koji obavljaju djelatnost pružanja
+                                usluga sportsko-rekreativnog gađanja na
+                                civilnom strelištu i osposobljavanja građana za pravilnu upotrebu
+                                vatrenog oružja, dužni su da svoje
+                                poslovanje i djelatnost usklade sa ovim zakonom i propisima
+                                donijetim za sprovođenje ovog zakona, u
+                                roku od dvije godine od dana stupanja na snagu ovog zakona.
+                            </p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 120 -->
+                <article
+                    eId="art_120">
+                    <num>Član 120</num>
+                    <paragraph eId="art_120_para_1">
+                        <content eId="art_120_para_1_content">
+                            <p> Propisi za sprovođenje ovog zakona donijeće se u roku od šest
+                                mjeseci od dana stupanja na snagu
+                                ovog zakona.
+                            </p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_120_para_2">
+                        <content eId="art_120_para_2_content">
+                            <p> Do donošenja propisa iz <ref
+                                    href="/oruzje#art_120_para_1"> stava 1 ovog člana</ref>,
+                                primjenjivaće se propisi doneseni u skladu sa Zakonom o oružju
+                                ("Službeni list RCG", broj 49/04 i "Službeni list CG", br. 49/08 i
+                                20/11), ukoliko nijesu u suprotnosti sa ovim zakonom. </p>
+                        </content>
+                    </paragraph>
+                </article>
+
+                <!-- Član 121 -->
+                <article
+                    eId="art_121">
+                    <num>Član 121</num>
+                    <paragraph eId="art_121_para_1">
+                        <content eId="art_121_para_1_content">
+                            <p> Odredbe <ref
+                                    href="/oruzje#art_10_para_1_point_6">člana 10 stav 1 tačka 6</ref>
+                                i čl. <ref
+                                    href="/oruzje#art_63">63</ref>, <ref
+                                    href="/oruzje#art_64">64</ref> i <ref
+                                    href="/oruzje#art_65">65</ref> ovog zakona, primjenjivaće se od
+                                dana pristupanja Crne Gore Evropskoj uniji. </p>
+                        </content>
+                    </paragraph>
+                </article>
+
+                <!-- Član 122 -->
+                <article
+                    eId="art_122">
+                    <num>Član 122</num>
+                    <paragraph eId="art_122_para_1">
+                        <content eId="art_122_para_1_content">
+                            <p> Danom stupanja na snagu ovog zakona prestaje da važi Zakon o oružju
+                                ("Službeni list RCG", broj
+                                49/04 i "Službeni list CG", br. 49/08 i 20/11) i član 9 Zakona o
+                                izmjenama i dopunama zakona kojima
+                                su popisane novčane kazne za prekršaje ("Službeni list CG", broj
+                                40/11).</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <!-- Član 123 -->
+                <article
+                    eId="art_123">
+                    <num>Član 123</num>
+                    <paragraph eId="art_123_para_1">
+                        <content eId="art_123_para_1_content">
+                            <p>Ovaj zakon stupa na snagu osmog dana od dana objavljivanja u
+                                "Službenom listu Crne Gore".
+                            </p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_123_para_2">
+                        <content eId="art_123_para_2_content">
+                            <p> U ovaj zakon prenesene su Direktiva 2008/51/EZ, od 21. maja 2008. i
+                                Direktiva 91/477/EEZ, od
+                                18. juna 1991. godine.
+                            </p>
+                        </content>
+                    </paragraph>
+                    <paragraph eId="art_123_para_3">
+                        <content eId="art_123_para_3_content">
+                            <p> Broj 24-6/14-1/22
+                                EPA 699 XXV
+                                Podgorica, 26. februara 2015. godine
+                            </p>
+                        </content>
+                    </paragraph>
+                </article>
             </chapter>
             <chapter eId="chp_8">
                 <num>VIII.</num>

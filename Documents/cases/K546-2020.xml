@@ -25,7 +25,6 @@
 				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
             </references>
-    </identification>
     </meta>
     </judgment>
     <judgmentBody>
@@ -81,8 +80,8 @@ prebivalištem u Podgorici - Ul. XX c. b. xe, državljanin Crne Gore, razumije c
 jezik, penzioner, oženjen, otac dvoje djece, pismen, završio Fakultet političkih nauka i Fakultet istorije
 umjetnosti, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.
     </background>
+    <p>Kriv je</p>
      <decision>
-        <p>Kriv je</p>
         <p>Što je: </p>
         <p>
         Dana 16. juna 2020. godine, u Podgorici, u Ulici XX c. b. xe, u porodičnom stanu, svjestan svog djela čije je
@@ -166,8 +165,8 @@ umjetnosti, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postup
         pravosnažnosti presude, pod prijetnjom izvršenja.
         </p>
     </decision>
-    <arguments>
     <p>O b r a z l o ž e nj e</p>
+    <arguments>
         <p>
         Okrivljenom
         <party id="ik" refersTo="#ik" as ="#defendant">
@@ -177,9 +176,7 @@ umjetnosti, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postup
         <organization id="odt" refersTo="#odt">
          Osnovnog državnog tužilaštva u Podgorici
         </organization>
-        <ref href="/cg/verdict/k/2020-07-07/972">
         Kt. br. 972/20 od 07.07.2020. godine
-        </ref>
         stavljeno na teret krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz
         <ref href="/krivicni#art_403_para_2">  
             čl.403 st. 2
@@ -461,13 +458,13 @@ umjetnosti, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postup
     <organization id="os" refersTo="#os">
                 OSNOVNI SUD U PODGORICI
         </organization>
-        <p>Dana, <date value="2020-10-16">16.10.2020.godine</date></p>
+        <date value="2020-10-16">Dana, 16.10.2020.godine</date>
         <p>ZAPISNIČARKA S U D I J A</p>
-        <party id="ekraja" refersTo="#ekraja" as="#clerk">
+        <p><party id="ekraja" refersTo="#ekraja" as="#clerk">
             Edina Kraja
         </party><party id="rcetkovic" refersTo="#rcetkovic" as="#judge">
             ,s.r. Rade Ćetković,s.r.
-        </party>
+        </party></p>
         <p>PRAVNA POUKA: Protiv ove presude dozvoljena je</p>
         <p>žalba u roku od 8 dana od dana</p>
         <p>prijema prepisa iste,</p>

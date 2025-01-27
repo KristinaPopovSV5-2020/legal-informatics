@@ -65,10 +65,7 @@
                 u
                 Cetinju
             </organization>
-            <ref
-                href="/cg/verdict/k/2013-03-11/36">
-                Kt.br. 36/13 od 11.03.2013. godine
-            </ref> , nakon glavnog
+                Kt.br. 36/13 od 11.03.2013. godine , nakon glavnog
             i javnog pretresa održanog dana 26. 04. 2013. godine u prisustvu zastupnika optužbe <party
                 id="djm" refersTo="#djm" as="#defense">
                 Đ. M.
@@ -85,8 +82,8 @@
             </party> od oca A. i majke M. rođene R. rođen ....
             godine u P. gdje i prebiva, državljanin Crne Gore, neoženjen, zaposlen, srednjeg imovnog
             stanja, sa završenom srednjom školom, neosuđivan, </background>
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv je</p>
             <p>Što
                 je:</p>Dana 27. februara 2013. godine, oko 20,40 časova, na magistralnom putu
             Cetinje - Budva, u mjestu zv Zagrablje, opština Cetinje, u polici ispod upravljača
@@ -138,8 +135,7 @@
                 </ref>,
             izriče </p>
 
-                <p>USLOVNU
-                OSUDU</p>
+                <p>USLOVNU OSUDU</p>
         <p>Kojom mu prethodno utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca
                 i istovremeno određuje da se
                 ista neće izvršiti, ako okrivljeni u roku od 1 (jedne) godine po pravosnažnosti
@@ -158,13 +154,12 @@
             komada municije za vatreno oružje kalibra 7,65 mm</p>
 
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <p>Optužnim predlogom <organization id="odt" refersTo="#odt">
                     ODT-a Cetinje
-                </organization> <ref
-                    href="/cg/verdict/k/2013-03-11/36">
+                </organization>
                     Kt. br. 36/13 od 11. 03. 2013. godine
-                </ref>
                 , stavljeno je na teret okrivljenom <party id="at" refersTo="#at" as="#defendant">
                     A. T.
                 </party> izvršenje krivičnog djela
@@ -328,13 +323,16 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U Cetinju
         </organization>
-        <p>Dana, 29.04.2013. godine</p>
+        <date value="2013-04-29">Dana, 29.04.2013. godine</date>
+        <p>ZAPISNIČARKA S U D I J A</p>
         <p>
-            S U D I J A</p>
         <party
-            id="amartinovic" refersTo="#amartinovic" as="#judge">
+            id="amartinovic" refersTo="#amartinovic" as="#clerk">
             Aleksandra Martinović
-        </party>
+        </party><party
+                id="mcupic" refersTo="#mcupic" as="#judge">
+                Marija Ćupić
+            </party></p>
         <p>PRAVNA POUKA:</p>
         <p> Protiv ove presude može se izjaviti žalba u roku od 8 dana od dana prijema <organization
                 id="vs" refersTo="#vs">
@@ -343,7 +341,7 @@
         <p>
             <party
                 id="mcupic" refersTo="#mcupic" as="#clerk">
-                Marija Čupićf
+                Marija Čupić
             </party>
         </p>
     </conclusions>

@@ -5,7 +5,7 @@
             <identification source="#court">
                 <FRBRWork>
                     <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
-                    <FRBRdate date="2018-03-23">2020-07-01</FRBRdate>
+                    <FRBRdate date="2020-07-01">2020-07-01</FRBRdate>
                     <FRBRtitle>K 291/2020</FRBRtitle>
                     <FRBRcountry>CG</FRBRcountry>
                 </FRBRWork>
@@ -64,10 +64,7 @@
                 u
                 Podgorici
             </organization>
-            <ref
-                href="/cg/verdict/k/2020-06-24/365">
-                Kt.br. 365/20 od 24.06.2020. godine
-            </ref> ,
+                Kt.br. 365/20 od 24.06.2020. godine,
             nakonpravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice, dana 01.07.2020.
             godine, donio je </introduction>
         <p>
@@ -81,8 +78,8 @@
             crnogorski , po zanimanju poljoprivrednik , oženjen , otac četvoro djece , srednjeg
             imovnog stanja , neosuđivan , lišen slobode dana 13.03.2020. godine od 09,00 časova do
             13,40 časova . </background>
+        <p>Kriv je</p>
         <decision>
-            <p>Kriv je</p>
             <p>Što
                 je:</p>Dana 13.03.2020. godine , u selu S . , opština Tuzi , svjestan svog djela
             čije je izvršenje htio i znajući da je isto zabranjeno , postupajući suprotno <ref
@@ -133,8 +130,7 @@
                 </ref>,
             izriče</p> 
         
-        <p>USLOVNU
-                OSUDU</p>
+        <p>USLOVNU OSUDU</p>
         <p>Kojom
                 Mu utvrđuje kaznu zatvora u trajanju od 6 (šest) mjeseci i istovremeno
                 određuje da se ista neće izvršiti ukoliko okrivljeni u roku od 2 (dvije)
@@ -160,13 +156,12 @@
             plati ovom sudu troškove krivičnog postupka u iznosu od 30,00 eura, u roku od 15 dana po
             pravosnažnosti presude, pod prijetnjom izvršenja.</p>
         </decision>
+        <p>O b r a z l o ž e nj e</p>
         <arguments>
             <p>Optužnim predlogom <organization id="odt" refersTo="#odt">
                     ODT-a Podgorica
-                </organization> <ref
-                    href="/cg/verdict/k/2020-06-24/365">
-                    Kt.br. 365/20 od 24.06.2020. godine
-                </ref> ,
+                </organization>
+                    Kt.br. 365/20 od 24.06.2020. godine,
                 okrivljenom <party id="rc" refersTo="#rc" as="#defendant">
                     R. C.
                 </party> Je stavljeno na teret da je
@@ -182,10 +177,7 @@
                     href="/postupak#art_300_para_3">
                     čl. 300 st. 3 ZKP-a.
                 </ref> sududostavilo
-                sporazum o priznanju krivice <ref
-                    href="/cg/verdict/k/2020-06-24/365">
-                    Kt.br. 365/20 od 24.06.2020. godine
-                </ref>,
+                sporazum o priznanju krivice Kt.br. 365/20 od 24.06.2020. godine,
                 zapisnik o pregovaranju i zapisniko priznanju okrivljenog <party id="rc"
                     refersTo="#rc"
                     as="#defendant">
@@ -281,13 +273,13 @@
         <organization id="os" refersTo="#os">
             OSNOVNI SUD U PODGORICI
         </organization>
-        <p>Dana, 01.07.2020. godine</p>
+        <date value="2020-07-01">Dana, 01.07.2020. godine</date>
         <p>
         S U D I J A</p>
-        <party
+        <p><party
             id="lmstamatovic" refersTo="#lmstamatovic" as="#judge">
             Larisa Mijušković-Stamatović, s.r
-        </party>
+        </party></p>
         <p>PRAVNA POUKA:</p>
         <p>Protiv
         ove presude dozvoljena je žalba, ako presuda nije u skladu sa zaključenim sporazumom, u roku
@@ -307,5 +299,8 @@
         <organization id="odt" refersTo="#odt">
             ODT-u Podgorica
         </organization> -okrivljenom -braniocu okrivljenog
-        -a/a Postupljeno dana: _____ 2020. godine Namještenik suda ________________ </conclusions>
+        -a/a
+        <p>Postupljeno dana: _____ 2020. godine</p>
+        <p>Namještenik suda ________________</p>
+    </conclusions>
 </akomaNtoso>
