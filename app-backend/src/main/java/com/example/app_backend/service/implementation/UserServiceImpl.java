@@ -26,7 +26,6 @@ public class UserServiceImpl implements UserDetailsService {
     @Autowired
     private RoleRepository roleRepository;
 
-
     BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(6, new SecureRandom());
 
     public User findOne(ObjectId id) {
