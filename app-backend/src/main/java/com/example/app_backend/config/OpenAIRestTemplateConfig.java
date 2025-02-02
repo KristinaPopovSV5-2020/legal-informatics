@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 @Configuration
 public class OpenAIRestTemplateConfig {
 
-    @Value("#{environment.OPENAI_API_KEY}")
+    @Value("${OPENAI_API_KEY}")
     private String openaiApiKey;
 
     @Bean

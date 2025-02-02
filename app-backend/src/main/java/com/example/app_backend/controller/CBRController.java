@@ -1,4 +1,6 @@
 package com.example.app_backend.controller;
+import com.example.app_backend.service.interfaces.IGPTService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +18,12 @@ import java.nio.file.Files;
 @RequestMapping(value = "/api/cbr/")
 public class CBRController {
 
+    private final IGPTService gptService;
+
+    @Autowired
+    public CBRController(IGPTService gptService){
+        this.gptService = gptService;
+    }
 
     @GetMapping("cases/xml/{id}")
     @PreAuthorize("isAuthenticated()")
@@ -26,7 +34,8 @@ public class CBRController {
                     .body("Resource not found: " + id + ".xml");
         }
         byte[] fileContent = Files.readAllBytes(resource.getFile().toPath());
-
+        String content = new String(fileContent);
+        String gptResponse = gptService.chat("Summarize this legal document:\n" + content);
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_XML)
                 .body(fileContent);

@@ -1,27 +1,54 @@
 package com.example.app_backend.model.chat;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class ChatResponse {
 
     private List<Choice> choices;
 
-    @Getter
-    @Setter
-    @NoArgsConstructor
-    @AllArgsConstructor
+    public List<Choice> getChoices() {
+        return choices;
+    }
+
+    public void setChoices(List<Choice> choices) {
+        this.choices = choices;
+    }
+
+    public ChatResponse(List<Choice> choices) {
+        this.choices = choices;
+    }
+
+    public ChatResponse() {
+    }
+
     public static class Choice {
 
         private int index;
         private ChatMessage message;
+
+        public int getIndex() {
+            return index;
+        }
+
+        public void setIndex(int index) {
+            this.index = index;
+        }
+
+        public ChatMessage getMessage() {
+            return message;
+        }
+
+        public void setMessage(ChatMessage message) {
+            this.message = message;
+        }
+
+        public Choice(int index, ChatMessage message) {
+            this.index = index;
+            this.message = message;
+        }
+
+        public Choice() {
+        }
     }
 }

@@ -62,8 +62,6 @@ public class LoginController {
     )
     public ResponseEntity<String> logoutUser() {
 
-        System.out.println("logout");
-
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 
         if (!(auth instanceof AnonymousAuthenticationToken)){

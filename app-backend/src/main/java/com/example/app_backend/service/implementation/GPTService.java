@@ -14,7 +14,8 @@ import org.springframework.web.client.RestTemplate;
 public class GPTService implements IGPTService {
 
     @Qualifier("openaiRestTemplate")
-    private final RestTemplate restTemplate;
+    @Autowired
+    private RestTemplate restTemplate;
 
     @Value("${openai.model}")
     private String model;
@@ -22,21 +23,19 @@ public class GPTService implements IGPTService {
     @Value("${openai.api.url}")
     private String apiUrl;
 
-    @Autowired
-    public GPTService(RestTemplate restTemplate){
-        this.restTemplate = restTemplate;
-    }
-
     @Override
     public String chat(String prompt) {
         ChatRequest request = new ChatRequest(model, prompt);
-
-        ChatResponse response = restTemplate.postForObject(apiUrl, request, ChatResponse.class);
-
-        if (response == null || response.getChoices() == null || response.getChoices().isEmpty()) {
-            throw new NotFoundException("No response for given prompt. Try a different approach.");
+        try {
+            ChatResponse response = restTemplate.postForObject(apiUrl, request, ChatResponse.class);
+            if (response == null || response.getChoices() == null || response.getChoices().isEmpty()) {
+                throw new NotFoundException("No response for given prompt. Try a different approach.");
+            }
+            return response.getChoices().get(0).getMessage().getContent();
+        }catch (Exception exc){
+            System.out.println(exc.getMessage());
         }
 
-        return response.getChoices().get(0).getMessage().getContent();
+        return "";
     }
 }
