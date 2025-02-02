@@ -13,12 +13,12 @@ export class CasePageComponent implements OnInit {
   caseId: string | null = null;
   public xmlDocument: Document = new Document();
   public xmlHtml: SafeHtml | undefined;
-  public attributes: string = '';
+  public caseAttributes: string = '';
 
   constructor(private route: ActivatedRoute,
     private cbrService: CbrService,
-    private sanitizer: DomSanitizer,
-  ) {}
+    private sanitizer: DomSanitizer
+  ) { }
 
   ngOnInit(): void {
     this.caseId = this.route.snapshot.paramMap.get('id');
@@ -29,14 +29,14 @@ export class CasePageComponent implements OnInit {
     }
   }
   fetchCaseAttributes(caseId: string) {
-    this.cbrService.getCaseAttributes(caseId).subscribe(data => { 
-      this.attributes = data;
+    this.cbrService.getCaseAttributes(caseId).subscribe(data => {
+      this.caseAttributes = data;
     });
   }
 
   fetchCase(caseId: string) {
     console.log(`Fetching details for case: ${caseId}`);
-    this.cbrService.getCaseAkomaNtoso(caseId).subscribe(data => { 
+    this.cbrService.getCaseAkomaNtoso(caseId).subscribe(data => {
       this.xmlDocument = new DOMParser().parseFromString(
         data,
         'text/xml'
