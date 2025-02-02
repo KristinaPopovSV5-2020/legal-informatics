@@ -28,12 +28,6 @@
   /* Razmak između unutrašnjih elemenata */
 }
 
-.attributes-section>* {
-  max-height: 100%;
-  overflow: hidden;
-}
-
-
 .attribute-name {
   font-weight: bold !important;
 }
