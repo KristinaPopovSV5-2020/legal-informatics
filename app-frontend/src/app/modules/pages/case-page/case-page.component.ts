@@ -13,6 +13,7 @@ export class CasePageComponent implements OnInit {
   caseId: string | null = null;
   public xmlDocument: Document = new Document();
   public xmlHtml: SafeHtml | undefined;
+  public attributes: string = '';
 
   constructor(private route: ActivatedRoute,
     private cbrService: CbrService,
@@ -24,13 +25,18 @@ export class CasePageComponent implements OnInit {
     console.log('Selected case:', this.caseId);
     if (this.caseId) {
       this.fetchCase(this.caseId);
+      this.fetchCaseAttributes(this.caseId);
     }
+  }
+  fetchCaseAttributes(caseId: string) {
+    this.cbrService.getCaseAttributes(caseId).subscribe(data => { 
+      this.attributes = data;
+    });
   }
 
   fetchCase(caseId: string) {
     console.log(`Fetching details for case: ${caseId}`);
     this.cbrService.getCaseAkomaNtoso(caseId).subscribe(data => { 
-      console.log(data);
       this.xmlDocument = new DOMParser().parseFromString(
         data,
         'text/xml'
@@ -38,7 +44,6 @@ export class CasePageComponent implements OnInit {
       this.xmlHtml = this.sanitizer.bypassSecurityTrustHtml(
         new XMLSerializer().serializeToString(this.xmlDocument)
       );
-
     });
   }
 }

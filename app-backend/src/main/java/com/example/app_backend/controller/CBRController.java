@@ -34,11 +34,47 @@ public class CBRController {
                     .body("Resource not found: " + id + ".xml");
         }
         byte[] fileContent = Files.readAllBytes(resource.getFile().toPath());
-        String content = new String(fileContent);
-        String gptResponse = gptService.chat("Summarize this legal document:\n" + content);
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_XML)
                 .body(fileContent);
+    }
+
+    @GetMapping("cases/xml/attributes/{id}")
+    @PreAuthorize("isAuthenticated()")
+    public ResponseEntity<?> getCaseAttributes(@PathVariable String id) throws IOException {
+        Resource resource = new ClassPathResource("akoma-ntoso/" + id + ".html");
+        if (!resource.exists()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Resource not found: " + id + ".xml");
+        }
+        byte[] fileContent = Files.readAllBytes(resource.getFile().toPath());
+        String content = new String(fileContent);
+
+        String attributes = "broj predmeta, " +
+                "sudija, " +
+                "optuzeni, " +
+                "krivicno delo, " +
+                "sud, " +
+                "datum, " +
+                "osudjivan ranije (da/ne), " +
+                "za isto krivicno delo, " +
+                "poseduje neovlasceno oruzje (da/ne), " +
+                "mesto, " +
+                "oruzje, " +
+                "broj municija, " +
+                "imovinsko stanje, " +
+                "priznao krivicu, " +
+                "kaje se, " +
+                "tip oruzja, " +
+                "povreda nanesena oruzjem, " +
+                "novcana kazna," +
+                "mera bezbednosti," +
+                "prekrseni clanovi," +
+                "kazna";
+        String gptResponse = gptService.chat("From the xml file extract the following attributes, with just p tags, no ```, ('"+ attributes + "'), without any aditional text or quotation marks, in format: <span class='attribute-name'>attrbute_name:</span> <span class='attribute-value'>value</span>:\n" + content);
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(gptResponse);
     }
 
 

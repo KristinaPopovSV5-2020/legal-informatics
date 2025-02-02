@@ -32,4 +32,11 @@ export class CbrService {
       responseType: 'text' as 'json',
     });
   }
+
+  getCaseAttributes(id: String) {
+    const url = this.apiUrl + 'cases/xml/attributes/' + id;
+    return this.http.get<any>(url, {
+      responseType: 'text' as 'json',
+    });
+  }
 }
