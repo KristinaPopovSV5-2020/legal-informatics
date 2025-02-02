@@ -15,31 +15,31 @@ export class ToolbarComponent implements OnInit {
   color!: string;
   role!: string | null;
   constructor(private authService: AuthService,
-    private router: Router) {}
+    private router: Router) { }
 
-    ngOnInit(): void {
-      this.authService.userState$.subscribe((result) => {
-        this.role = result;
-      });
-    }
+  ngOnInit(): void {
+    this.authService.userState$.subscribe((result) => {
+      this.role = result;
+    });
+  }
 
   navigateHome() {
     this.router.navigate(['/home']);
   }
 
-  logout(){
+  logout() {
     this.authService.logout().subscribe({
-            next: (result) => {
-              localStorage.removeItem('user');
-              this.authService.setUser();
-              this.router.navigate(['login']);
-            },
-            error: (error) => {
-              if (error instanceof HttpErrorResponse) {
-                console.log(error)
-              }
-            },
-          });
+      next: (result) => {
+        localStorage.removeItem('user');
+        this.authService.setUser();
+        this.router.navigate(['login']);
+      },
+      error: (error) => {
+        if (error instanceof HttpErrorResponse) {
+          console.log(error)
+        }
+      },
+    });
   }
 
 }
