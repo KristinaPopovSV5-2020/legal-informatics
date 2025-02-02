@@ -26,6 +26,7 @@ public class CBRController {
                     .body("Resource not found: " + id + ".xml");
         }
         byte[] fileContent = Files.readAllBytes(resource.getFile().toPath());
+
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_XML)
                 .body(fileContent);
