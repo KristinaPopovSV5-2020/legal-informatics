@@ -71,7 +71,7 @@ public class CBRController {
                 "mera bezbednosti," +
                 "prekrseni clanovi," +
                 "kazna";
-        String gptResponse = gptService.chat("From the xml file extract the following attributes, with just p tags, no ```, ('"+ attributes + "'), without any aditional text or quotation marks, in format: <span class='attribute-name' style='font-weight:bold;'>attrbute_name:</span> <span class='attribute-value'>value</span>:\n" + content);
+        String gptResponse = gptService.chat("From the xml file extract the following attributes, with just p tags, no ```, ('"+ attributes + "'), without any aditional text or quotation marks, in format: <span class=\"attribute-name\">attrbute_name:</span> <span class=\"attribute-value\">value</span>:\n" + content);
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(gptResponse);
