@@ -30,7 +30,7 @@ export class CasePageComponent implements OnInit {
   }
   fetchCaseAttributes(caseId: string) {
     this.cbrService.getCaseAttributes(caseId).subscribe(data => {
-      this.caseAttributes = data;
+      this.caseAttributes = this.sanitizer.bypassSecurityTrustHtml(data) as string;
     });
   }
 
