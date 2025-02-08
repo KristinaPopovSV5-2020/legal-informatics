@@ -4,8 +4,8 @@
      <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
      <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
      <!ENTITY defeasible "http://lpis.csd.auth.gr/systems/dr-device/defeasible.rdfs#">
-     <!ENTITY export "http://startrek.csd.auth.gr/dr-device/export/export.rdf#"> 
-     <!ENTITY proof-export "http://startrek.csd.auth.gr/dr-device/proof/proof.ruleml#"> 
+     <!ENTITY export "http://startrek.csd.auth.gr/dr-device/export/export.rdf#">
+     <!ENTITY proof-export "http://startrek.csd.auth.gr/dr-device/proof/proof.ruleml#">
 ]>
 
 <rdf:RDF
@@ -15,131 +15,111 @@
      xmlns:export='&export;'
 >
 
-<rdfs:Class rdf:about='&export;is_speeding_on_town_road_lv3_with_accident'>
-     <rdfs:label rdf:resource='is_speeding_on_town_road_lv3_with_accident'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
+     <rdfs:Class rdf:about='&export;to_pay_min'>
+          <rdfs:label rdf:resource='to_pay_min' />
+          <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject' />
+     </rdfs:Class>
 
-<rdfs:Class rdf:about='&export;is_speeding_on_town_road_lv1'>
-     <rdfs:label rdf:resource='is_speeding_on_town_road_lv1'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
+     <rdfs:Class rdf:about='&export;to_pay_max'>
+          <rdfs:label rdf:resource='to_pay_max' />
+          <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject' />
+     </rdfs:Class>
 
-<rdfs:Class rdf:about='&export;is_speeding_on_town_road_lv2'>
-     <rdfs:label rdf:resource='is_speeding_on_town_road_lv2'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
+     <rdfs:Class rdf:about='&export;recommend_fine_reduction'>
+          <rdfs:label rdf:resource='recommend_fine_reduction' />
+          <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject' />
+     </rdfs:Class>
 
-<rdfs:Class rdf:about='&export;to_pay_min'>
-     <rdfs:label rdf:resource='to_pay_min'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
+     <rdfs:Class rdf:about='&export;to_pay_less'>
+          <rdfs:label rdf:resource='to_pay_less' />
+          <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject' />
+     </rdfs:Class>
 
-<rdfs:Class rdf:about='&export;to_pay_max'>
-     <rdfs:label rdf:resource='to_pay_max'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
+     <rdfs:Class rdf:about='&export;recommend_increased_penalty'>
+          <rdfs:label rdf:resource='recommend_increased_penalty' />
+          <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject' />
+     </rdfs:Class>
 
-<rdfs:Class rdf:about='&export;max_imprisonment'>
-     <rdfs:label rdf:resource='max_imprisonment'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
+     <rdfs:Class rdf:about='&export;is_high_category_weapon_in_public'>
+          <rdfs:label rdf:resource='is_high_category_weapon_in_public' />
+          <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject' />
+     </rdfs:Class>
 
-<rdfs:Class rdf:about='&export;is_speeding_on_town_road_lv3'>
-     <rdfs:label rdf:resource='is_speeding_on_town_road_lv3'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
-
-<rdfs:Class rdf:about='&export;to_pay'>
-     <rdfs:label rdf:resource='to_pay'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
-
-<rdfs:Class rdf:about='&export;recommend_fine_reduction'>
-     <rdfs:label rdf:resource='recommend_fine_reduction'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
-
-<rdfs:Class rdf:about='&export;to_pay_little'>
-     <rdfs:label rdf:resource='to_pay_little'/>
-     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
-</rdfs:Class>
+     <rdfs:Class rdf:about='&export;to_increase_penalty'>
+          <rdfs:label rdf:resource='to_increase_penalty' />
+          <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject' />
+     </rdfs:Class>
 
 
-<rdf:Property rdf:about='&export;defendant'>
-     <rdfs:domain rdf:resource='&export;is_speeding_on_town_road_lv3_with_accident'/>
-</rdf:Property>
+     <rdf:Property rdf:about='&export;value'>
+          <rdfs:domain rdf:resource='&export;to_pay_min' />
+     </rdf:Property>
 
-<rdf:Property rdf:about='&export;defendant'>
-     <rdfs:domain rdf:resource='&export;is_speeding_on_town_road_lv1'/>
-</rdf:Property>
+     <rdf:Property rdf:about='&export;value'>
+          <rdfs:domain rdf:resource='&export;to_pay_max' />
+     </rdf:Property>
 
-<rdf:Property rdf:about='&export;defendant'>
-     <rdfs:domain rdf:resource='&export;is_speeding_on_town_road_lv2'/>
-</rdf:Property>
+     <rdf:Property rdf:about='&export;defendant'>
+          <rdfs:domain rdf:resource='&export;recommend_fine_reduction' />
+     </rdf:Property>
 
-<rdf:Property rdf:about='&export;value'>
-     <rdfs:domain rdf:resource='&export;to_pay_min'/>
-</rdf:Property>
+     <rdf:Property rdf:about='&export;value'>
+          <rdfs:domain rdf:resource='&export;to_pay_less' />
+     </rdf:Property>
 
-<rdf:Property rdf:about='&export;value'>
-     <rdfs:domain rdf:resource='&export;to_pay_max'/>
-</rdf:Property>
+     <rdf:Property rdf:about='&export;defendant'>
+          <rdfs:domain rdf:resource='&export;recommend_increased_penalty' />
+     </rdf:Property>
 
-<rdf:Property rdf:about='&export;value'>
-     <rdfs:domain rdf:resource='&export;max_imprisonment'/>
-</rdf:Property>
+     <rdf:Property rdf:about='&export;defendant'>
+          <rdfs:domain rdf:resource='&export;is_high_category_weapon_in_public' />
+     </rdf:Property>
 
-<rdf:Property rdf:about='&export;defendant'>
-     <rdfs:domain rdf:resource='&export;is_speeding_on_town_road_lv3'/>
-</rdf:Property>
+     <rdf:Property rdf:about='&export;value'>
+          <rdfs:domain rdf:resource='&export;to_increase_penalty' />
+     </rdf:Property>
 
-<rdf:Property rdf:about='&export;value'>
-     <rdfs:domain rdf:resource='&export;to_pay'/>
-</rdf:Property>
+     <export:to_pay_min rdf:about='&export;to_pay_min1'>
+          <export:value>30</export:value>
+          <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+          <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
+     </export:to_pay_min>
 
-<rdf:Property rdf:about='&export;defendant'>
-     <rdfs:domain rdf:resource='&export;recommend_fine_reduction'/>
-</rdf:Property>
+     <export:to_pay_max rdf:about='&export;to_pay_max1'>
+          <export:value>500</export:value>
+          <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+          <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
+     </export:to_pay_max>
 
-<rdf:Property rdf:about='&export;value'>
-     <rdfs:domain rdf:resource='&export;to_pay_little'/>
-</rdf:Property>
+     <export:recommend_fine_reduction rdf:about='&export;recommend_fine_reduction1'>
+          <export:defendant>John</export:defendant>
+          <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+          <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
+     </export:recommend_fine_reduction>
 
-<export:is_speeding_on_town_road_lv3_with_accident rdf:about='&export;is_speeding_on_town_road_lv3_with_accident1'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
-</export:is_speeding_on_town_road_lv3_with_accident>
+     <export:to_pay_less rdf:about='&export;to_pay_less1'>
+          <export:value>1</export:value>
+          <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+          <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
+     </export:to_pay_less>
 
-<export:to_pay_min rdf:about='&export;to_pay_min1'>
-     <export:value>40000</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
-</export:to_pay_min>
+     <export:recommend_increased_penalty rdf:about='&export;recommend_increased_penalty1'>
+          <export:defendant>John</export:defendant>
+          <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+          <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof6</defeasible:proof>
+     </export:recommend_increased_penalty>
 
-<export:to_pay_max rdf:about='&export;to_pay_max1'>
-     <export:value>60000</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
-</export:to_pay_max>
+     <export:is_high_category_weapon_in_public
+          rdf:about='&export;is_high_category_weapon_in_public1'>
+          <export:defendant>John</export:defendant>
+          <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+          <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
+     </export:is_high_category_weapon_in_public>
 
-<export:max_imprisonment rdf:about='&export;max_imprisonment1'>
-     <export:value>60</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
-</export:max_imprisonment>
-
-<export:recommend_fine_reduction rdf:about='&export;recommend_fine_reduction1'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
-</export:recommend_fine_reduction>
-
-<export:to_pay_little rdf:about='&export;to_pay_little1'>
-     <export:value>600000</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof6</defeasible:proof>
-</export:to_pay_little>
+     <export:to_increase_penalty rdf:about='&export;to_increase_penalty1'>
+          <export:value>1</export:value>
+          <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+          <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof7</defeasible:proof>
+     </export:to_increase_penalty>
 
 </rdf:RDF>

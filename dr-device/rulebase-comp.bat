@@ -2,4 +2,4 @@
 (import-rdf-files facts.rdf)
 (load-compiled-dr-device rulebase.clp)
 (go-dr-device)
-(dr-device_export_rdf rulebase.ruleml export.rdf proof.ruleml is_speeding_on_town_road_lv3_with_accident is_speeding_on_town_road_lv1 is_speeding_on_town_road_lv2 to_pay_min to_pay_max max_imprisonment is_speeding_on_town_road_lv3 to_pay recommend_fine_reduction to_pay_little)
+(dr-device_export_rdf rulebase.ruleml export.rdf proof.ruleml to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty is_high_category_weapon_in_public to_increase_penalty)
