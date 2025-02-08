@@ -10,5 +10,6 @@
         <lc:allowed_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</lc:allowed_speed>
         <lc:driving_on>town_road</lc:driving_on>
         <lc:caused_accident>yes</lc:caused_accident>
+        <lc:low_income>yes</lc:low_income>
     </lc:case>
 </rdf:RDF>

@@ -6,7 +6,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          proof="proof.ruleml"
          rdf_export="export.rdf"
-         rdf_export_classes="is_speeding_on_town_road_lv3_with_accident is_speeding_on_town_road_lv1 is_speeding_on_town_road_lv2 to_pay_min to_pay_max max_imprisonment is_speeding_on_town_road_lv3 to_pay"
+         rdf_export_classes="is_speeding_on_town_road_lv3_with_accident&#xA;        is_speeding_on_town_road_lv1 is_speeding_on_town_road_lv2 to_pay_min to_pay_max&#xA;        max_imprisonment is_speeding_on_town_road_lv3 to_pay recommend_fine_reduction to_pay_little"
          rdf_import="&#34;facts.rdf&#34;">
    <Assert>
       <Implies ruletype="defeasiblerule">
@@ -516,6 +516,37 @@
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
+            <Ind uri="rule9">rule9</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:low_income"/>
+                  <Data xsi:type="xs:string">yes</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>recommend_fine_reduction</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
             <Ind uri="pen1">pen1</Ind>
          </oid>
          <body>
@@ -753,6 +784,33 @@
                <slot>
                   <Ind uri="value"/>
                   <Data xsi:type="xs:integer">60000</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen10">pen10</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>recommend_fine_reduction</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_little</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">600000</Data>
                </slot>
             </Atom>
          </head>

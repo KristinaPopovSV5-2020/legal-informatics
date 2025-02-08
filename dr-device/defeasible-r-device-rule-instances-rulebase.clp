@@ -110,6 +110,20 @@
    (defeasibly-rule rule8-defeasibly)
    (defeated-rule nil))
 
+([rule9] of defeasible-rule
+   (rule-name rule9)
+   (original-rule "rule9 ( lc:case ( lc:defendant ?Defendant ) ( lc:low_income \"yes\" ) ) => ( recommend_fine_reduction ( defendant ?Defendant ) )")
+   (condition-classes)
+   (conclusion-class recommend_fine_reduction)
+   (negated no)
+   (superior)
+   (deductive-rule rule9-deductive)
+   (overruled-rule rule9-overruled)
+   (system no)
+   (support-rule rule9-support)
+   (defeasibly-rule rule9-defeasibly)
+   (defeated-rule nil))
+
 ([pen1] of defeasible-rule
    (rule-name pen1)
    (original-rule "pen1 ( is_speeding_on_town_road_lv1 ( defendant ?Defendant ) ) => ( to_pay ( value 10000 ) )")
@@ -234,5 +248,19 @@
    (system no)
    (support-rule pen9-support)
    (defeasibly-rule pen9-defeasibly)
+   (defeated-rule nil))
+
+([pen10] of defeasible-rule
+   (rule-name pen10)
+   (original-rule "pen10 ( recommend_fine_reduction ( defendant ?Defendant ) ) => ( to_pay_little ( value 600000 ) )")
+   (condition-classes)
+   (conclusion-class to_pay_little)
+   (negated no)
+   (superior)
+   (deductive-rule pen10-deductive)
+   (overruled-rule pen10-overruled)
+   (system no)
+   (support-rule pen10-support)
+   (defeasibly-rule pen10-defeasibly)
    (defeated-rule nil))
 

@@ -55,6 +55,16 @@
      <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
 </rdfs:Class>
 
+<rdfs:Class rdf:about='&export;recommend_fine_reduction'>
+     <rdfs:label rdf:resource='recommend_fine_reduction'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;to_pay_little'>
+     <rdfs:label rdf:resource='to_pay_little'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
 
 <rdf:Property rdf:about='&export;defendant'>
      <rdfs:domain rdf:resource='&export;is_speeding_on_town_road_lv3_with_accident'/>
@@ -88,6 +98,14 @@
      <rdfs:domain rdf:resource='&export;to_pay'/>
 </rdf:Property>
 
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;recommend_fine_reduction'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;value'>
+     <rdfs:domain rdf:resource='&export;to_pay_little'/>
+</rdf:Property>
+
 <export:is_speeding_on_town_road_lv3_with_accident rdf:about='&export;is_speeding_on_town_road_lv3_with_accident1'>
      <export:defendant>John</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
@@ -111,5 +129,17 @@
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
 </export:max_imprisonment>
+
+<export:recommend_fine_reduction rdf:about='&export;recommend_fine_reduction1'>
+     <export:defendant>John</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
+</export:recommend_fine_reduction>
+
+<export:to_pay_little rdf:about='&export;to_pay_little1'>
+     <export:value>600000</export:value>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof6</defeasible:proof>
+</export:to_pay_little>
 
 </rdf:RDF>
