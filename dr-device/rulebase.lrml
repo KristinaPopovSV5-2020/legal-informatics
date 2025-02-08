@@ -5,6 +5,69 @@
 	xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd"
 	xmlns:ruleml="http://ruleml.org/spec">
 	<lrml:Statements>
+
+		<lrml:PrescriptiveStatement key="ps1">
+			<ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:unauthorized_possession_of_a_weapon" />
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>jail_3_months</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps7">
+			<ruleml:Rule key=":rule7" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:unauthorized_possession_of_a_weapon" />
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>confiscation</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps8">
+			<ruleml:Rule key=":rule8" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:unauthorized_possession_of_a_weapon" />
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:weapon_type" />
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">B</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+			
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>money</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
 		<lrml:PrescriptiveStatement key="ps9">
 			<ruleml:Rule key=":rule9" closure="universal" strength="defeasible">
 				<ruleml:if>
@@ -78,6 +141,32 @@
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 
+		<lrml:PenaltyStatement key="pen1">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":30_imprisonment"/>
+							<ruleml:Var>Days</ruleml:Var>
+							<ruleml:Ind>30</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen7">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":confiscate_weapon"/>
+							<ruleml:Var>confiscation</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
 		<lrml:PenaltyStatement key="pen10">
 			<lrml:SuborderList>
 				<lrml:Obligation>
@@ -128,7 +217,43 @@
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
 
+		<lrml:PenaltyStatement key="pen14">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+					<ruleml:Atom>
+						<ruleml:Rel iri=":to_pay_max2" />
+						<ruleml:Var>Money</ruleml:Var>
+						<ruleml:Ind>500</ruleml:Ind>
+					</ruleml:Atom>
 
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen15">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+					<ruleml:Atom>
+						<ruleml:Rel iri=":to_pay_min2" />
+						<ruleml:Var>Money</ruleml:Var>
+						<ruleml:Ind>30</ruleml:Ind>
+					</ruleml:Atom>
+
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen1" />
+				<lrml:toPrescriptiveStatement keyref="#ps1" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen7" />
+				<lrml:toPrescriptiveStatement keyref="#ps7" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen10" />
@@ -151,6 +276,18 @@
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen13" />
 				<lrml:toPrescriptiveStatement keyref="#ps11" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen14" />
+				<lrml:toPrescriptiveStatement keyref="#ps8" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen15" />
+				<lrml:toPrescriptiveStatement keyref="#ps8" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
