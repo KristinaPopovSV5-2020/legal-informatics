@@ -17,9 +17,10 @@
         <RuleML>
             <xsl:attribute name="proof">proof.ruleml</xsl:attribute>
             <xsl:attribute name="rdf_export">export.rdf</xsl:attribute>
-            <xsl:attribute name="rdf_export_classes">jail_3_months confiscation confiscate_weapon to_pay_min to_pay_max
-        recommend_fine_reduction to_pay_less recommend_increased_penalty
-        is_high_category_weapon_in_public to_increase_penalty 30_imprisonment money to_pay_max2 to_pay_min2</xsl:attribute>
+            <xsl:attribute name="rdf_export_classes">jail_3_months confiscation confiscate_weapon
+        to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty
+        is_high_category_weapon_in_public to_increase_penalty 30_imprisonment money to_pay_max2
+        to_pay_min2 harm_done_with_weapon jail_3_year fine to_pay_max3 to_pay_min3</xsl:attribute>
             <xsl:attribute name="rdf_import">&quot;facts.rdf&quot;</xsl:attribute>
             <xsl:apply-templates select="lrml:Statements" />
         </RuleML>

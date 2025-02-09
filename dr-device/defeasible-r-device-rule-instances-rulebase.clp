@@ -12,6 +12,34 @@
    (defeasibly-rule rule1-defeasibly)
    (defeated-rule nil))
 
+([rule111] of defeasible-rule
+   (rule-name rule111)
+   (original-rule "rule111 ( lc:case ( lc:defendant ?Defendant ) ( lc:weapon_type \"B\" ) ) => ( fine ( defendant ?Defendant ) )")
+   (condition-classes)
+   (conclusion-class fine)
+   (negated no)
+   (superior)
+   (deductive-rule rule111-deductive)
+   (overruled-rule rule111-overruled)
+   (system no)
+   (support-rule rule111-support)
+   (defeasibly-rule rule111-defeasibly)
+   (defeated-rule nil))
+
+([rule2] of defeasible-rule
+   (rule-name rule2)
+   (original-rule "rule2 ( lc:case ( lc:defendant ?Defendant ) ( lc:harm_done \"yes\" ) ) => ( harm_done_with_weapon ( defendant ?Defendant ) )")
+   (condition-classes)
+   (conclusion-class harm_done_with_weapon)
+   (negated no)
+   (superior)
+   (deductive-rule rule2-deductive)
+   (overruled-rule rule2-overruled)
+   (system no)
+   (support-rule rule2-support)
+   (defeasibly-rule rule2-defeasibly)
+   (defeated-rule nil))
+
 ([rule7] of defeasible-rule
    (rule-name rule7)
    (original-rule "rule7 ( lc:case ( lc:defendant ?Defendant ) ( lc:unauthorized_possession_of_a_weapon \"yes\" ) ) => ( confiscation ( defendant ?Defendant ) )")
@@ -98,7 +126,7 @@
 
 ([pen7] of defeasible-rule
    (rule-name pen7)
-   (original-rule "pen7 ( confiscation ( defendant ?Defendant ) ) => ( confiscate_weapon ( value 1 ) )")
+   (original-rule "pen7 ( confiscation ( defendant ?Defendant ) ) => ( confiscate_weapon ( value true ) )")
    (condition-classes)
    (conclusion-class confiscate_weapon)
    (negated no)
@@ -112,7 +140,7 @@
 
 ([pen10] of defeasible-rule
    (rule-name pen10)
-   (original-rule "pen10 ( recommend_fine_reduction ( defendant ?Defendant ) ) => ( to_pay_less ( value 1 ) )")
+   (original-rule "pen10 ( recommend_fine_reduction ( defendant ?Defendant ) ) => ( to_pay_less ( value true ) )")
    (condition-classes)
    (conclusion-class to_pay_less)
    (negated no)
@@ -126,7 +154,7 @@
 
 ([pen11] of defeasible-rule
    (rule-name pen11)
-   (original-rule "pen11 ( recommend_increased_penalty ( defendant ?Defendant ) ) => ( to_increase_penalty ( value 1 ) )")
+   (original-rule "pen11 ( recommend_increased_penalty ( defendant ?Defendant ) ) => ( to_increase_penalty ( value true ) )")
    (condition-classes)
    (conclusion-class to_increase_penalty)
    (negated no)
@@ -192,5 +220,47 @@
    (system no)
    (support-rule pen15-support)
    (defeasibly-rule pen15-defeasibly)
+   (defeated-rule nil))
+
+([pen16] of defeasible-rule
+   (rule-name pen16)
+   (original-rule "pen16 ( harm_done_with_weapon ( defendant ?Defendant ) ) => ( jail_3_year ( value 3 ) )")
+   (condition-classes)
+   (conclusion-class jail_3_year)
+   (negated no)
+   (superior)
+   (deductive-rule pen16-deductive)
+   (overruled-rule pen16-overruled)
+   (system no)
+   (support-rule pen16-support)
+   (defeasibly-rule pen16-defeasibly)
+   (defeated-rule nil))
+
+([pen17] of defeasible-rule
+   (rule-name pen17)
+   (original-rule "pen17 ( fine ( defendant ?Defendant ) ) => ( to_pay_max3 ( value 500 ) )")
+   (condition-classes)
+   (conclusion-class to_pay_max3)
+   (negated no)
+   (superior)
+   (deductive-rule pen17-deductive)
+   (overruled-rule pen17-overruled)
+   (system no)
+   (support-rule pen17-support)
+   (defeasibly-rule pen17-defeasibly)
+   (defeated-rule nil))
+
+([pen18] of defeasible-rule
+   (rule-name pen18)
+   (original-rule "pen18 ( fine ( defendant ?Defendant ) ) => ( to_pay_min3 ( value 30 ) )")
+   (condition-classes)
+   (conclusion-class to_pay_min3)
+   (negated no)
+   (superior)
+   (deductive-rule pen18-deductive)
+   (overruled-rule pen18-overruled)
+   (system no)
+   (support-rule pen18-support)
+   (defeasibly-rule pen18-defeasibly)
    (defeated-rule nil))
 
