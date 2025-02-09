@@ -1,7 +1,8 @@
 (import-rdf "facts.rdf")
-		(export-rdf export.rdf  jail_3_months confiscation confiscate_weapon to_pay_min to_pay_max
-        recommend_fine_reduction to_pay_less recommend_increased_penalty
-        is_high_category_weapon_in_public to_increase_penalty 30_imprisonment money to_pay_max2 to_pay_min2)
+		(export-rdf export.rdf  jail_3_months confiscation confiscate_weapon
+        to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty
+        is_high_category_weapon_in_public to_increase_penalty 30_imprisonment money to_pay_max2
+        to_pay_min2 harm_done_with_weapon jail_3_year fine to_pay_max3 to_pay_min3)
 		(export-proof proof.ruleml)
 		
 (defeasiblerule rule1
@@ -16,6 +17,40 @@
   => 
 	 
 	(jail_3_months 
+		(
+		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule rule111
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:weapon_type "B")
+	) 
+  => 
+	 
+	(fine 
+		(
+		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule rule2
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:harm_done "yes")
+	) 
+  => 
+	 
+	(harm_done_with_weapon 
 		(
 		 defendant ?Defendant)
 	) 
@@ -137,7 +172,7 @@
 	 
 	(confiscate_weapon 
 		(
-		 value 1)
+		 value true)
 	) 
 ) 
 	
@@ -151,7 +186,7 @@
 	 
 	(to_pay_less 
 		(
-		 value 1)
+		 value true)
 	) 
 ) 
 	
@@ -165,7 +200,7 @@
 	 
 	(to_increase_penalty 
 		(
-		 value 1)
+		 value true)
 	) 
 ) 
 	
@@ -220,6 +255,48 @@
   => 
 	 
 	(to_pay_min2 
+		(
+		 value 30)
+	) 
+) 
+	
+(defeasiblerule pen16
+		 
+	(harm_done_with_weapon 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(jail_3_year 
+		(
+		 value 3)
+	) 
+) 
+	
+(defeasiblerule pen17
+		 
+	(fine 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_max3 
+		(
+		 value 500)
+	) 
+) 
+	
+(defeasiblerule pen18
+		 
+	(fine 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_min3 
 		(
 		 value 30)
 	) 

@@ -11,5 +11,6 @@
         <lc:weapon_type>B</lc:weapon_type>
         <lc:method_of_weapon_discovery>public</lc:method_of_weapon_discovery>
         <lc:unauthorized_possession_of_a_weapon>yes</lc:unauthorized_possession_of_a_weapon>
+        <lc:harm_done>yes</lc:harm_done>
     </lc:case>
 </rdf:RDF>

@@ -6,3 +6,4 @@
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#weapon_type> "B" .
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#method_of_weapon_discovery> "public" .
 <http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#unauthorized_possession_of_a_weapon> "yes" .
+<http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01> <http://informatika.ftn.uns.ac.rs/legal-case.rdf#harm_done> "yes" .

@@ -7,7 +7,7 @@
 5. kaje se
 6. oruzja (kategorija, broj oruzja i naziv): List<Oruzje>
 7. broj municija
-8. Način otkrivanja - kuća, auto, javno
+8. Način otkrivanja - kuća, auto, javno, safe
 9. Da li je povreda nanesena oruzjem
 
 ## TO DO: proveriti da li sadrzi ove atribute, ako ne zameniti presudu
