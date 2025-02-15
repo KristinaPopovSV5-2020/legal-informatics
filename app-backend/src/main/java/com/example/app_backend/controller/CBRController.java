@@ -1,4 +1,6 @@
 package com.example.app_backend.controller;
+import com.example.app_backend.model.cases.CaseDetails;
+import com.example.app_backend.service.interfaces.ICaseService;
 import com.example.app_backend.service.interfaces.IGPTService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,11 +20,11 @@ import java.nio.file.Files;
 @RequestMapping(value = "/api/cbr/")
 public class CBRController {
 
-    private final IGPTService gptService;
+    private final ICaseService caseService;
 
     @Autowired
-    public CBRController(IGPTService gptService){
-        this.gptService = gptService;
+    public CBRController(ICaseService caseService){
+        this.caseService = caseService;
     }
 
     @GetMapping("cases/xml/{id}")
@@ -42,39 +44,12 @@ public class CBRController {
     @GetMapping("cases/xml/attributes/{id}")
     @PreAuthorize("isAuthenticated()")
     public ResponseEntity<?> getCaseAttributes(@PathVariable String id) throws IOException {
-        Resource resource = new ClassPathResource("akoma-ntoso/" + id + ".html");
-        if (!resource.exists()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Resource not found: " + id + ".xml");
-        }
-        byte[] fileContent = Files.readAllBytes(resource.getFile().toPath());
-        String content = new String(fileContent);
 
-        String attributes = "broj predmeta, " +
-                "sudija, " +
-                "optuzeni, " +
-                "krivicno delo, " +
-                "sud, " +
-                "datum, " +
-                "osudjivan ranije (da/ne), " +
-                "za isto krivicno delo, " +
-                "poseduje neovlasceno oruzje (da/ne), " +
-                "mesto, " +
-                "oruzje, " +
-                "broj municija, " +
-                "imovinsko stanje, " +
-                "priznao krivicu, " +
-                "kaje se, " +
-                "tip oruzja, " +
-                "povreda nanesena oruzjem, " +
-                "novcana kazna," +
-                "mera bezbednosti," +
-                "prekrseni clanovi," +
-                "kazna";
-        String gptResponse = gptService.chat("From the xml file extract the following attributes, with just p tags, no ```, ('"+ attributes + "'), without any aditional text or quotation marks, in format: <span class=\"attribute-name\" style=\"font-weight:bold;\">attrbute_name:</span> <span class=\"attribute-value\">value</span>:\n" + content);
+        CaseDetails caseDetails = this.caseService.getCaseDetails(id);
+
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_JSON)
-                .body(gptResponse);
+                .body(caseDetails);
     }
 
 
