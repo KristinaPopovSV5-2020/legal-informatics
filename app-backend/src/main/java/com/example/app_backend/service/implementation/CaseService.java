@@ -44,11 +44,11 @@ public class CaseService implements ICaseService {
 
             // Attributes list to extract
             String[] attributes = {
-                    "broj predmeta", "sudija", "optuzeni", "krivicno delo", "sud", "datum",
+                    "broj predmeta", "sudija", "optuzeni/okrivljeni", "krivicno delo", "sud", "datum",
                     "osudjivan ranije (yes/no)", "za isto krivicno delo", "poseduje neovlasceno oruzje (yes/no)",
-                    "mesto", "oruzje", "broj municija", "imovinsko stanje", "priznao krivicu (yes/no)", "kaje se (yes/no)",
-                    "tip oruzja", "povreda nanesena oruzjem", "novcana kazna", "mera bezbednosti",
-                    "prekrseni clanovi", "kazna"
+                    "mesto", "oružje", "broj municije", "imovinsko stanje", "priznao krivicu (yes/no)", "kaje se (yes/no)",
+                    "tip oružja", "povreda nanesena oruzjem", "novčana kazna", "mera bezbednosti",
+                    "prekrseni clanovi (nabroj sve čl koji su prekršeni)", "kazna"
             };
 
             Map<String, String> extractedValues = new HashMap<>();

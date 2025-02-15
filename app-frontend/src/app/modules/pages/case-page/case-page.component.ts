@@ -23,10 +23,20 @@ export class CasePageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.caseId = this.route.snapshot.paramMap.get('id');
-    console.log('Selected case:', this.caseId);
+    this.fetchCaseAndAttributes();
+
+    this.route.paramMap.subscribe(params => {
+      this.caseId = params.get('id');
+      if (this.caseId) {
+        this.fetchCaseAndAttributes();
+      }
+    });
+  }
+
+  fetchCaseAndAttributes() {
     if (this.caseId) {
       this.fetchCase(this.caseId);
+      this.caseAttributes = null;
       this.startLoadingDots();
       this.fetchCaseAttributes(this.caseId);
     }
