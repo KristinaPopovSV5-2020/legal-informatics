@@ -13,6 +13,7 @@ import java.nio.file.Files;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class CaseService implements ICaseService {
@@ -58,6 +59,11 @@ public class CaseService implements ICaseService {
 
                 String extractedValue = gptService.chat(prompt);
                 extractedValues.put(attribute, extractedValue);
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
 
             // Create and populate CaseDetails object

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CbrService } from '../cbr.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { CaseAttributes } from '../../../dto/CaseAttributes';
 
 @Component({
   selector: 'app-case-page',
@@ -13,8 +14,9 @@ export class CasePageComponent implements OnInit {
   caseId: string | null = null;
   public xmlDocument: Document = new Document();
   public xmlHtml: SafeHtml | undefined;
-  public caseAttributes: string = '';
-
+  public caseAttributes: CaseAttributes = null;
+  loadingText: string = "Učitavanje detalja";
+  private dotCount: number = 0;
   constructor(private route: ActivatedRoute,
     private cbrService: CbrService,
     private sanitizer: DomSanitizer
@@ -25,12 +27,14 @@ export class CasePageComponent implements OnInit {
     console.log('Selected case:', this.caseId);
     if (this.caseId) {
       this.fetchCase(this.caseId);
+      this.startLoadingDots();
       this.fetchCaseAttributes(this.caseId);
     }
   }
+
   fetchCaseAttributes(caseId: string) {
     this.cbrService.getCaseAttributes(caseId).subscribe(data => {
-      this.caseAttributes = this.sanitizer.bypassSecurityTrustHtml(data) as string;
+      this.caseAttributes = data;
     });
   }
 
@@ -45,5 +49,14 @@ export class CasePageComponent implements OnInit {
         new XMLSerializer().serializeToString(this.xmlDocument)
       );
     });
+  }
+
+  startLoadingDots() {
+    setInterval(() => {
+      if (!this.caseAttributes) {
+        this.dotCount = (this.dotCount + 1) % 4;
+        this.loadingText = "Učitavanje detalja" + '.'.repeat(this.dotCount);
+      }
+    }, 200);
   }
 }

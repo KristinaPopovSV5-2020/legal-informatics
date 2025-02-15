@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { CaseAttributes } from '../../dto/CaseAttributes';
 
 @Injectable({
   providedIn: 'root'
@@ -33,10 +34,8 @@ export class CbrService {
     });
   }
 
-  getCaseAttributes(id: String) {
+  getCaseAttributes(id: String): Observable<CaseAttributes> {
     const url = this.apiUrl + 'cases/xml/attributes/' + id;
-    return this.http.get<any>(url, {
-      responseType: 'text' as 'json',
-    });
+    return this.http.get<CaseAttributes>(url);
   }
 }
