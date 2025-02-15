@@ -60,7 +60,7 @@ public class CaseService implements ICaseService {
                 String extractedValue = gptService.chat(prompt);
                 extractedValues.put(attribute, extractedValue);
                 try {
-                    TimeUnit.SECONDS.sleep(1);
+                    TimeUnit.SECONDS.sleep(5);
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
