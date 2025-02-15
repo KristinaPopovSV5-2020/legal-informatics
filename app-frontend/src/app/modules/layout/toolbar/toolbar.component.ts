@@ -29,14 +29,16 @@ export class ToolbarComponent implements OnInit {
 
   logout() {
     this.authService.logout().subscribe({
-      next: (result) => {
+      next: () => {
         localStorage.removeItem('user');
         this.authService.setUser();
         this.router.navigate(['login']);
       },
       error: (error) => {
         if (error instanceof HttpErrorResponse) {
-          console.log(error)
+          localStorage.removeItem('user');
+          this.authService.setUser();
+          this.router.navigate(['login']);
         }
       },
     });
