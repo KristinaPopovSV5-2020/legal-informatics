@@ -45,16 +45,16 @@ public class CaseService implements ICaseService {
             // Attributes list to extract
             String[] attributes = {
                     "broj predmeta", "sudija", "optuzeni/okrivljeni", "krivicno delo", "sud", "datum",
-                    "osudjivan ranije (yes/no)", "za isto krivicno delo", "poseduje neovlasceno oruzje (yes/no)",
-                    "mesto", "oružje", "broj municije", "imovinsko stanje", "priznao krivicu (yes/no)", "kaje se (yes/no)",
+                    "osudjivan ranije (da/ne)", "za isto krivicno delo", "poseduje neovlasceno oruzje (da/ne)",
+                    "mesto", "oružje", "broj municije", "imovinsko stanje", "priznao krivicu (da/ne)", "kaje se (da/ne)",
                     "tip oružja", "povreda nanesena oruzjem", "novčana kazna", "mera bezbednosti",
                     "prekrseni clanovi (nabroj sve čl koji su prekršeni)", "kazna"
             };
 
             Map<String, String> extractedValues = new HashMap<>();
             for (String attribute : attributes) {
-                String prompt = "Extract only the value for attribute '" + attribute +
-                        "' from the provided XML content. No formatting, just return the value, if no value found, return: Nije pronadjeno. :\n" + content;
+                String prompt = "From the xml file extract the following attribute '" + attribute +
+                        "'  without any additional text or quotation marks. If you are not 100% sure you can find it, still give some answer. Here is the file :\n" + content;
 
                 String extractedValue = gptService.chat(prompt);
                 extractedValues.put(attribute, extractedValue);
@@ -75,7 +75,7 @@ public class CaseService implements ICaseService {
         caseDetails.setCaseId(caseId);
         caseDetails.setCaseNumber(extractedValues.get("broj predmeta"));
         caseDetails.setJudge(extractedValues.get("sudija"));
-        caseDetails.setDefendant(extractedValues.get("optuzeni"));
+        caseDetails.setDefendant(extractedValues.get("optuzeni/okrivljeni"));
         caseDetails.setCriminalOffense(extractedValues.get("krivicno delo"));
         caseDetails.setCourt(extractedValues.get("sud"));
         caseDetails.setDate(extractedValues.get("datum"));
@@ -83,16 +83,16 @@ public class CaseService implements ICaseService {
         caseDetails.setForSameOffense(extractedValues.get("za isto krivicno delo"));
         caseDetails.setIllegallyPossessesWeapon(extractedValues.get("poseduje neovlasceno oruzje (da/ne)"));
         caseDetails.setLocation(extractedValues.get("mesto"));
-        caseDetails.setWeapon(extractedValues.get("oruzje"));
-        caseDetails.setAmmunitionCount(extractedValues.get("broj municija"));
+        caseDetails.setWeapon(extractedValues.get("oružje"));
+        caseDetails.setAmmunitionCount(extractedValues.get("broj municije"));
         caseDetails.setFinancialStatus(extractedValues.get("imovinsko stanje"));
-        caseDetails.setAdmittedGuilt(extractedValues.get("priznao krivicu"));
-        caseDetails.setRemorseful(extractedValues.get("kaje se"));
-        caseDetails.setWeaponType(extractedValues.get("tip oruzja"));
+        caseDetails.setAdmittedGuilt(extractedValues.get("priznao krivicu (da/ne)"));
+        caseDetails.setRemorseful(extractedValues.get("kaje se (da/ne)"));
+        caseDetails.setWeaponType(extractedValues.get("tip oružja"));
         caseDetails.setInjuryCausedByWeapon(extractedValues.get("povreda nanesena oruzjem"));
-        caseDetails.setFineAmount(extractedValues.get("novcana kazna"));
+        caseDetails.setFineAmount(extractedValues.get("novčana kazna"));
         caseDetails.setSecurityMeasure(extractedValues.get("mera bezbednosti"));
-        caseDetails.setViolatedArticles(extractedValues.get("prekrseni clanovi"));
+        caseDetails.setViolatedArticles(extractedValues.get("prekrseni clanovi (nabroj sve čl koji su prekršeni)"));
         caseDetails.setSentence(extractedValues.get("kazna"));
         return caseDetails;
     }
