@@ -13,7 +13,6 @@ import java.nio.file.Files;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.TimeUnit;
 
 @Service
 public class CaseService implements ICaseService {
@@ -55,15 +54,10 @@ public class CaseService implements ICaseService {
             Map<String, String> extractedValues = new HashMap<>();
             for (String attribute : attributes) {
                 String prompt = "Extract only the value for attribute '" + attribute +
-                        "' from the provided XML content. No formatting, just return the value:\n" + content;
+                        "' from the provided XML content. No formatting, just return the value, if no value found, return: Nije pronadjeno. :\n" + content;
 
                 String extractedValue = gptService.chat(prompt);
                 extractedValues.put(attribute, extractedValue);
-                try {
-                    TimeUnit.SECONDS.sleep(5);
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                }
             }
 
             // Create and populate CaseDetails object
