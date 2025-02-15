@@ -26,9 +26,10 @@
       <p><strong>Prekršeni članovi:</strong> {{ caseAttributes.violatedArticles }}</p>
       <p><strong>Kazna:</strong> {{ caseAttributes.sentence }}</p>
     </div>
+    <div *ngIf="!caseAttributes" class="case-details">
+      <div class="loading-text">{{ loadingText }}</div>
+    </div>
   </div>
 
-  <div *ngIf="!caseAttributes" class="case-details">
-    <div class="loading-text">{{ loadingText }}</div>
-  </div>
+
 </div>
