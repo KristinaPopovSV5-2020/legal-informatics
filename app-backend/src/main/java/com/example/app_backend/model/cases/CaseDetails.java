@@ -1,15 +1,11 @@
 package com.example.app_backend.model.cases;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 
-@Setter
-@Getter
 @Document(collection = "caseDetails")
 public class CaseDetails implements Serializable {
 
@@ -91,5 +87,189 @@ public class CaseDetails implements Serializable {
     }
 
     public CaseDetails() {
+    }
+
+    public ObjectId getId() {
+        return id;
+    }
+
+    public void setId(ObjectId id) {
+        this.id = id;
+    }
+
+    public String getCaseId() {
+        return caseId;
+    }
+
+    public void setCaseId(String caseId) {
+        this.caseId = caseId;
+    }
+
+    public String getCaseNumber() {
+        return caseNumber;
+    }
+
+    public void setCaseNumber(String caseNumber) {
+        this.caseNumber = caseNumber;
+    }
+
+    public String getJudge() {
+        return judge;
+    }
+
+    public void setJudge(String judge) {
+        this.judge = judge;
+    }
+
+    public String getDefendant() {
+        return defendant;
+    }
+
+    public void setDefendant(String defendant) {
+        this.defendant = defendant;
+    }
+
+    public String getCriminalOffense() {
+        return criminalOffense;
+    }
+
+    public void setCriminalOffense(String criminalOffense) {
+        this.criminalOffense = criminalOffense;
+    }
+
+    public String getCourt() {
+        return court;
+    }
+
+    public void setCourt(String court) {
+        this.court = court;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getPreviouslyConvicted() {
+        return previouslyConvicted;
+    }
+
+    public void setPreviouslyConvicted(String previouslyConvicted) {
+        this.previouslyConvicted = previouslyConvicted;
+    }
+
+    public String getForSameOffense() {
+        return forSameOffense;
+    }
+
+    public void setForSameOffense(String forSameOffense) {
+        this.forSameOffense = forSameOffense;
+    }
+
+    public String getIllegallyPossessesWeapon() {
+        return illegallyPossessesWeapon;
+    }
+
+    public void setIllegallyPossessesWeapon(String illegallyPossessesWeapon) {
+        this.illegallyPossessesWeapon = illegallyPossessesWeapon;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
+    public String getAmmunitionCount() {
+        return ammunitionCount;
+    }
+
+    public void setAmmunitionCount(String ammunitionCount) {
+        this.ammunitionCount = ammunitionCount;
+    }
+
+    public String getFinancialStatus() {
+        return financialStatus;
+    }
+
+    public void setFinancialStatus(String financialStatus) {
+        this.financialStatus = financialStatus;
+    }
+
+    public String getAdmittedGuilt() {
+        return admittedGuilt;
+    }
+
+    public void setAdmittedGuilt(String admittedGuilt) {
+        this.admittedGuilt = admittedGuilt;
+    }
+
+    public String getRemorseful() {
+        return remorseful;
+    }
+
+    public void setRemorseful(String remorseful) {
+        this.remorseful = remorseful;
+    }
+
+    public String getWeaponType() {
+        return weaponType;
+    }
+
+    public void setWeaponType(String weaponType) {
+        this.weaponType = weaponType;
+    }
+
+    public String getInjuryCausedByWeapon() {
+        return injuryCausedByWeapon;
+    }
+
+    public void setInjuryCausedByWeapon(String injuryCausedByWeapon) {
+        this.injuryCausedByWeapon = injuryCausedByWeapon;
+    }
+
+    public String getFineAmount() {
+        return fineAmount;
+    }
+
+    public void setFineAmount(String fineAmount) {
+        this.fineAmount = fineAmount;
+    }
+
+    public String getSecurityMeasure() {
+        return securityMeasure;
+    }
+
+    public void setSecurityMeasure(String securityMeasure) {
+        this.securityMeasure = securityMeasure;
+    }
+
+    public String getViolatedArticles() {
+        return violatedArticles;
+    }
+
+    public void setViolatedArticles(String violatedArticles) {
+        this.violatedArticles = violatedArticles;
+    }
+
+    public String getSentence() {
+        return sentence;
+    }
+
+    public void setSentence(String sentence) {
+        this.sentence = sentence;
     }
 }
