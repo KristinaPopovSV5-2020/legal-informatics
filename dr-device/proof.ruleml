@@ -90,73 +90,6 @@
 <Ind uri='&proof-export;proof4'>proof4</Ind>
 </oid>
 <Literal>
-<RDF_resource uri='&export;to_pay_min1'/>
-</Literal>
-<Defeasible_Proof>
-<supportive_rule>
-<rule_ref rule='&rulebase;pen13'/>
-</supportive_rule>
-<defeasible_body_grounds>
-<Defeasibly_Proved>
-<oid>
-<Ind uri='&proof-export;proof5'>proof5</Ind>
-</oid>
-<Literal>
-<RDF_resource uri='is_high_category_weapon_in_publicJohn'/>
-</Literal>
-<Defeasible_Proof>
-<supportive_rule>
-<rule_ref rule='&rulebase;rule11'/>
-</supportive_rule>
-<defeasible_body_grounds>
-<Definitely_Proved>
-<Literal>
-<RDF_resource uri='&lc;case01'/>
-</Literal>
-<Definite_Proof>
-<strict_clause>
-<Fact>
-<RDF_resource uri='&lc;case01'/>
-</Fact>
-</strict_clause>
-</Definite_Proof>
-</Definitely_Proved>
-</defeasible_body_grounds>
-<not_strongly_attacked/>
-<defeasible_attackers_blocked>
-</defeasible_attackers_blocked>
-</Defeasible_Proof>
-</Defeasibly_Proved>
-</defeasible_body_grounds>
-<not_strongly_attacked/>
-<defeasible_attackers_blocked>
-</defeasible_attackers_blocked>
-</Defeasible_Proof>
-</Defeasibly_Proved>
-<Defeasibly_Proved>
-<oid>
-<Ind uri='&proof-export;proof6'>proof6</Ind>
-</oid>
-<Literal>
-<RDF_resource uri='&export;to_pay_max1'/>
-</Literal>
-<Defeasible_Proof>
-<supportive_rule>
-<rule_ref rule='&rulebase;pen12'/>
-</supportive_rule>
-<defeasible_body_grounds>
-<proof_ref proof='&proof-export;proof5'/>
-</defeasible_body_grounds>
-<not_strongly_attacked/>
-<defeasible_attackers_blocked>
-</defeasible_attackers_blocked>
-</Defeasible_Proof>
-</Defeasibly_Proved>
-<Defeasibly_Proved>
-<oid>
-<Ind uri='&proof-export;proof7'>proof7</Ind>
-</oid>
-<Literal>
 <RDF_resource uri='&export;recommend_fine_reduction1'/>
 </Literal>
 <Defeasible_Proof>
@@ -184,7 +117,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof8'>proof8</Ind>
+<Ind uri='&proof-export;proof5'>proof5</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;to_pay_less1'/>
@@ -194,7 +127,7 @@
 <rule_ref rule='&rulebase;pen10'/>
 </supportive_rule>
 <defeasible_body_grounds>
-<proof_ref proof='&proof-export;proof7'/>
+<proof_ref proof='&proof-export;proof4'/>
 </defeasible_body_grounds>
 <not_strongly_attacked/>
 <defeasible_attackers_blocked>
@@ -203,7 +136,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof9'>proof9</Ind>
+<Ind uri='&proof-export;proof6'>proof6</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;recommend_increased_penalty1'/>
@@ -233,7 +166,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof10'>proof10</Ind>
+<Ind uri='&proof-export;proof7'>proof7</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;to_increase_penalty1'/>
@@ -243,7 +176,7 @@
 <rule_ref rule='&rulebase;pen11'/>
 </supportive_rule>
 <defeasible_body_grounds>
-<proof_ref proof='&proof-export;proof9'/>
+<proof_ref proof='&proof-export;proof6'/>
 </defeasible_body_grounds>
 <not_strongly_attacked/>
 <defeasible_attackers_blocked>
@@ -252,7 +185,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof11'>proof11</Ind>
+<Ind uri='&proof-export;proof8'>proof8</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;30_imprisonment1'/>
@@ -271,7 +204,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof12'>proof12</Ind>
+<Ind uri='&proof-export;proof9'>proof9</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;money1'/>
@@ -313,7 +246,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof13'>proof13</Ind>
+<Ind uri='&proof-export;proof10'>proof10</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;to_pay_max21'/>
@@ -323,7 +256,7 @@
 <rule_ref rule='&rulebase;pen14'/>
 </supportive_rule>
 <defeasible_body_grounds>
-<proof_ref proof='&proof-export;proof12'/>
+<proof_ref proof='&proof-export;proof9'/>
 </defeasible_body_grounds>
 <not_strongly_attacked/>
 <defeasible_attackers_blocked>
@@ -332,7 +265,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof14'>proof14</Ind>
+<Ind uri='&proof-export;proof11'>proof11</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;to_pay_min21'/>
@@ -342,7 +275,7 @@
 <rule_ref rule='&rulebase;pen15'/>
 </supportive_rule>
 <defeasible_body_grounds>
-<proof_ref proof='&proof-export;proof12'/>
+<proof_ref proof='&proof-export;proof9'/>
 </defeasible_body_grounds>
 <not_strongly_attacked/>
 <defeasible_attackers_blocked>
@@ -351,7 +284,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof15'>proof15</Ind>
+<Ind uri='&proof-export;proof12'>proof12</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;harm_done_with_weapon1'/>
@@ -381,7 +314,7 @@
 </Defeasibly_Proved>
 <Defeasibly_Proved>
 <oid>
-<Ind uri='&proof-export;proof16'>proof16</Ind>
+<Ind uri='&proof-export;proof13'>proof13</Ind>
 </oid>
 <Literal>
 <RDF_resource uri='&export;jail_3_year1'/>
@@ -391,75 +324,7 @@
 <rule_ref rule='&rulebase;pen16'/>
 </supportive_rule>
 <defeasible_body_grounds>
-<proof_ref proof='&proof-export;proof15'/>
-</defeasible_body_grounds>
-<not_strongly_attacked/>
-<defeasible_attackers_blocked>
-</defeasible_attackers_blocked>
-</Defeasible_Proof>
-</Defeasibly_Proved>
-<Defeasibly_Proved>
-<oid>
-<Ind uri='&proof-export;proof17'>proof17</Ind>
-</oid>
-<Literal>
-<RDF_resource uri='&export;fine1'/>
-</Literal>
-<Defeasible_Proof>
-<supportive_rule>
-<rule_ref rule='&rulebase;rule111'/>
-</supportive_rule>
-<defeasible_body_grounds>
-<Definitely_Proved>
-<Literal>
-<RDF_resource uri='&lc;case01'/>
-</Literal>
-<Definite_Proof>
-<strict_clause>
-<Fact>
-<RDF_resource uri='&lc;case01'/>
-</Fact>
-</strict_clause>
-</Definite_Proof>
-</Definitely_Proved>
-</defeasible_body_grounds>
-<not_strongly_attacked/>
-<defeasible_attackers_blocked>
-</defeasible_attackers_blocked>
-</Defeasible_Proof>
-</Defeasibly_Proved>
-<Defeasibly_Proved>
-<oid>
-<Ind uri='&proof-export;proof18'>proof18</Ind>
-</oid>
-<Literal>
-<RDF_resource uri='&export;to_pay_max31'/>
-</Literal>
-<Defeasible_Proof>
-<supportive_rule>
-<rule_ref rule='&rulebase;pen17'/>
-</supportive_rule>
-<defeasible_body_grounds>
-<proof_ref proof='&proof-export;proof17'/>
-</defeasible_body_grounds>
-<not_strongly_attacked/>
-<defeasible_attackers_blocked>
-</defeasible_attackers_blocked>
-</Defeasible_Proof>
-</Defeasibly_Proved>
-<Defeasibly_Proved>
-<oid>
-<Ind uri='&proof-export;proof19'>proof19</Ind>
-</oid>
-<Literal>
-<RDF_resource uri='&export;to_pay_min31'/>
-</Literal>
-<Defeasible_Proof>
-<supportive_rule>
-<rule_ref rule='&rulebase;pen18'/>
-</supportive_rule>
-<defeasible_body_grounds>
-<proof_ref proof='&proof-export;proof17'/>
+<proof_ref proof='&proof-export;proof12'/>
 </defeasible_body_grounds>
 <not_strongly_attacked/>
 <defeasible_attackers_blocked>

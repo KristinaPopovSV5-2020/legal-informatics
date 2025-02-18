@@ -28,9 +28,9 @@
 			<ruleml:Rule key=":rule111" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:Atom>
-						<ruleml:Rel iri="lc:weapon_type" />
+						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">B</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">safe</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>

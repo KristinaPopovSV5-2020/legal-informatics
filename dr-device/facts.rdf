@@ -9,7 +9,7 @@
         <lc:low_income>yes</lc:low_income>
         <lc:previously_convicted>yes</lc:previously_convicted>
         <lc:weapon_type>B</lc:weapon_type>
-        <lc:method_of_weapon_discovery>public</lc:method_of_weapon_discovery>
+        <lc:method_of_weapon_discovery>safe</lc:method_of_weapon_discovery>
         <lc:unauthorized_possession_of_a_weapon>yes</lc:unauthorized_possession_of_a_weapon>
         <lc:harm_done>yes</lc:harm_done>
     </lc:case>

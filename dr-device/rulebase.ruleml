@@ -45,19 +45,21 @@
             <Ind uri="rule111">rule111</Ind>
          </oid>
          <body>
-            <Atom>
-               <op>
-                  <Rel uri="lc:case"/>
-               </op>
-               <slot>
-                  <Ind uri="lc:defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-               <slot>
-                  <Ind uri="lc:weapon_type"/>
-                  <Data xsi:type="xs:string">B</Data>
-               </slot>
-            </Atom>
+            <Or>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:method_of_weapon_discovery"/>
+                     <Data xsi:type="xs:string">safe</Data>
+                  </slot>
+               </Atom>
+            </Or>
          </body>
          <head>
             <Atom>

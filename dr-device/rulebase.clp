@@ -23,14 +23,7 @@
 ) 
 	
 (defeasiblerule rule111
-		 
-	(lc:case 
-		(
-		 lc:defendant ?Defendant)
-	
-		(
-		 lc:weapon_type "B")
-	) 
+		
   => 
 	 
 	(fine 
