@@ -14,7 +14,7 @@
 
 ([rule111] of defeasible-rule
    (rule-name rule111)
-   (original-rule "rule111 ( lc:case ( lc:defendant ?Defendant ) ( lc:weapon_type \"B\" ) ) => ( fine ( defendant ?Defendant ) )")
+   (original-rule "rule111 => ( fine ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class fine)
    (negated no)
