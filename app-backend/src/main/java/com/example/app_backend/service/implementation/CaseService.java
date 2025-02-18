@@ -9,8 +9,10 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -19,11 +21,31 @@ public class CaseService implements ICaseService {
 
     private final IGPTService gptService;
     private final CaseDetailsRepository caseDetailsRepository;
+    private static final String BASE_PATH = "akoma-ntoso/";
 
     @Autowired
     public CaseService(IGPTService gptService, CaseDetailsRepository caseDetailsRepository) {
         this.gptService = gptService;
         this.caseDetailsRepository = caseDetailsRepository;
+    }
+
+    @Override
+    public Resource getLawResource(String name) throws IOException {
+        Resource resource = new ClassPathResource(BASE_PATH + name + "_zakon.html");
+        if (!resource.exists()) {
+            throw new IOException("Resource not found: " + name + ".xml");
+        }
+        return resource;
+    }
+
+
+    @Override
+    public Resource getCaseResource(String id) throws IOException {
+        Resource resource = new ClassPathResource(BASE_PATH + id + ".html");
+        if (!resource.exists()) {
+            throw new IOException("Resource not found: " + id + ".xml");
+        }
+        return resource;
     }
 
     @Override
@@ -68,6 +90,11 @@ public class CaseService implements ICaseService {
         } catch (Exception e) {
             throw new RuntimeException("Error extracting case details: " + e.getMessage(), e);
         }
+    }
+
+    @Override
+    public List<String> getAllCaseNames() {
+        return null;
     }
 
     private static CaseDetails createCaseDetails(String caseId, Map<String, String> extractedValues) {
