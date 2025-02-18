@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.core.io.Resource;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.List;
 
 @Controller
 @RequestMapping(value = "/api/cbr/")
@@ -23,6 +24,19 @@ public class CBRController {
     @Autowired
     public CBRController(ICaseService caseService){
         this.caseService = caseService;
+    }
+
+
+    @GetMapping("cases/names")
+    @PreAuthorize("isAuthenticated()")
+    public ResponseEntity<List<String>> getAllCaseNames(){
+        try {
+            List<String> caseNames = caseService.getAllCaseNames();
+            return ResponseEntity.ok(caseNames);
+        } catch (IOException e) {
+            return ResponseEntity.internalServerError().build();
+        }
+
     }
 
     @GetMapping("cases/xml/{id}")

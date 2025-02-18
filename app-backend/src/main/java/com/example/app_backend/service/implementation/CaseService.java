@@ -9,12 +9,11 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class CaseService implements ICaseService {
@@ -93,8 +92,17 @@ public class CaseService implements ICaseService {
     }
 
     @Override
-    public List<String> getAllCaseNames() {
-        return null;
+    public List<String> getAllCaseNames() throws IOException {
+        File directory = new ClassPathResource(BASE_PATH).getFile();
+
+        if (!directory.exists() || !directory.isDirectory()) {
+            throw new IOException("Directory not found: " + BASE_PATH);
+        }
+
+        return Arrays.stream(Objects.requireNonNull(directory.list()))
+                .filter(name -> name.startsWith("K") && name.endsWith(".html"))
+                .map(name -> name.replace(".html", ""))
+                .collect(Collectors.toList());
     }
 
     private static CaseDetails createCaseDetails(String caseId, Map<String, String> extractedValues) {

@@ -27,7 +27,6 @@ export class CbrService {
   }
 
   getLawAkomaNtoso(name: String) {
-    console.log(name);
     const url = this.apiUrl + 'laws/xml/' + name;
     return this.http.get<any>(url, {
       responseType: 'text' as 'json',
@@ -37,5 +36,10 @@ export class CbrService {
   getCaseAttributes(id: String): Observable<CaseAttributes> {
     const url = this.apiUrl + 'cases/xml/attributes/' + id;
     return this.http.get<CaseAttributes>(url);
+  }
+
+  getAllCaseNames(): Observable<String[]>{
+    const url = this.apiUrl + 'cases/names';
+    return this.http.get<String[]>(url);
   }
 }

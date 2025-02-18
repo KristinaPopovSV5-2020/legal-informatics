@@ -30,14 +30,14 @@
               Zakoni
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <mat-nav-list>
-            <mat-list-item>
-              <a routerLink="krivicni">~ Krivični zakon</a>
-            </mat-list-item>
-            <mat-list-item>
-              <a routerLink="oruzje">~ Zakon o oružju</a>
-            </mat-list-item>
-          </mat-nav-list>
+            <mat-nav-list>
+              <mat-list-item>
+                <a routerLink="krivicni">~ Krivični zakon</a>
+              </mat-list-item>
+              <mat-list-item>
+                <a routerLink="oruzje">~ Zakon o oružju</a>
+              </mat-list-item>
+            </mat-nav-list>
         </mat-expansion-panel>
         <hr>
         <mat-expansion-panel [class.mat-elevation-z0]="true">
@@ -46,10 +46,13 @@
               Presude
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <mat-nav-list>
-            <a [routerLink]="['/case', 'K758-2020']">K 758/2020 </a>
-            <a [routerLink]="['/case', 'K16-2020']">K 16/2020 </a>
-          </mat-nav-list>
+          <mat-nav-list class="names-mat-nav-list">
+            <mat-list-item *ngFor="let caseName of caseNames" class="names-mat-list-item">
+              <a [routerLink]="['/case', caseName]">
+                · {{ caseName }}
+              </a>
+            </mat-list-item>
+          </mat-nav-list>          
         </mat-expansion-panel>
         <hr>
         <mat-list-item>

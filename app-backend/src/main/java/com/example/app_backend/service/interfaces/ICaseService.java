@@ -9,7 +9,7 @@ import java.util.List;
 public interface ICaseService {
     public CaseDetails getCaseDetails(String caseId);
 
-    List<String> getAllCaseNames();
+    List<String> getAllCaseNames() throws IOException;
 
     Resource getCaseResource(String id) throws IOException;
 

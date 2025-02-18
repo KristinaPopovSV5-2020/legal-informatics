@@ -2,11 +2,11 @@ a{
     font-size: 20px;
     color: #259d79;
     font-weight: bold;
-    padding-left: 7px;
+    padding-left: 17px;
 }
 
-a:hover{
-    color: rgba(193, 149, 105, 0.781);
-    text-decoration: none;
+a:hover {
+    background-color: #104b39;
+    box-shadow: none;
     outline: none;
-}
+  }
