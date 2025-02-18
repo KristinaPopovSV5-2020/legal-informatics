@@ -43,22 +43,16 @@ mat-panel-title {
 }
 
 mat-list-item {
-  padding: 0px 15px;
+  padding: 0px 5px;
   margin: 0px;
   color: #259d79;
-}
-
-a {
-  font-size: 18px;
-  color: white;
-  padding-left: 7px;
-  text-decoration: none;
 }
 
 a:hover {
   background-color: #125a44;
   box-shadow: none;
   outline: none;
+  text-decoration: none;
 }
 
 .content {
@@ -84,5 +78,28 @@ a:hover {
 }
 
 .logout-container span {
-  font-size: 19px;
+  font-size: 15px;
+  display: inline-flex;
 }
+
+.names-mat-nav-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px 5px; 
+}
+
+.names-mat-list-item {
+  display: block;
+}
+
+a {
+  display: block;
+  font-size: 16px;
+  color: white;
+  padding-left: 2px;
+  text-decoration: none;
+  box-shadow: none;
+  outline: none;
+}
+
+

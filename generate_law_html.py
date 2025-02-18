@@ -42,7 +42,7 @@ def process_body_to_html():
                 chapter_id = sub_elem.attrib.get("eId", "")
                 html_content += f"""
         <div class="chapter" id="{chapter_id}">"""
-                # Obradi chapter
+              
                 num = sub_elem.find("./akn:num", namespaces)
                 heading = sub_elem.find("./akn:heading", namespaces)
                 if num is not None and heading is not None:
@@ -63,7 +63,7 @@ def process_body_to_html():
                 article_id = sub_elem.attrib.get("eId", "")
                 html_content += f"""
                 <div class="article" id="{article_id}">"""
-                # Obradi član
+                
                 num = sub_elem.find("./akn:num", namespaces)
                 if num is not None:
                     html_content += f"""
@@ -74,7 +74,7 @@ def process_body_to_html():
                     <p id="{paragraph_id}">"""
                 intro = sub_elem.find("./akn:intro", namespaces)
                 if intro is None:
-                    # Obradi paragraf
+                
                     num = sub_elem.find("./akn:num", namespaces)
                     content = sub_elem.find("./akn:content/akn:p", namespaces)
                     if num is not None:
@@ -88,7 +88,7 @@ def process_body_to_html():
                         if intro_content is not None and intro_content.text:
                             html_content += process_paragraph_content(intro_content)
                             html_content += "</p>"
-                    # Obradi point-ove
+                 
                     for point in sub_elem.findall("./akn:point", namespaces):
                         point_id = point.attrib.get("eId", "")
                         html_content += f'<div class="point" id="{point_id}">'
@@ -101,13 +101,10 @@ def process_body_to_html():
                         html_content += "</div>"
 
 
-
-            # Rekurzivno obradi decu
             for child in sub_elem:
                 print(child)
                 process_element(child)
 
-            # Zatvori div za chapter, section, ili article
             if sub_elem.tag.lower().endswith(("chapter", "section", "article")):
                 html_content += "</div>"
 
@@ -122,20 +119,14 @@ def process_body_to_html():
 
 
 def process_paragraph_content(content):
-    """
-    Pomocna funkcija koja obrađuje sadržaj unutar <p> tagova, uključujući <ref> tagove.
-    """
     result = content.text.strip()
     for child in content:
-        # Obrada referenci (ako postoji <ref>)
         if child.tag.title()[-3:] == "Ref":
             href = child.attrib.get("href", "#")
             ref_text = child.text.strip() if child.text else "Link"
             result += f'<a href="{href}"> {ref_text} </a>'
-        # Obrada preostalog teksta unutar <p>
         elif child.text:
             result += child.text.strip()
-        # Obrada teksta nakon child elementa (<ref> ili bilo koji drugi)
         if child.tail:
             result += child.tail.strip()
     return result
@@ -150,4 +141,4 @@ if __name__ == '__main__':
     with open("oruzje_zakon.html", "w", encoding="utf-8") as file:
         file.write(html_content)
 
-    print("HTML generisanje je završeno!")
+    print("HTML generation is complete.")
