@@ -1,6 +1,9 @@
 package com.example.app_backend.controller;
+
 import com.example.app_backend.model.cases.CaseDetails;
 import com.example.app_backend.service.interfaces.ICaseService;
+import com.example.app_backend.service.interfaces.IRuleService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -9,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.core.io.Resource;
 import java.io.IOException;
@@ -20,16 +24,23 @@ import java.util.List;
 public class CBRController {
 
     private final ICaseService caseService;
+    private final IRuleService ruleService;
 
     @Autowired
-    public CBRController(ICaseService caseService){
+    public CBRController(ICaseService caseService, IRuleService ruleService) {
         this.caseService = caseService;
+        this.ruleService = ruleService;
     }
 
+    @GetMapping("rules/fire")
+    public ResponseEntity<String> fireRules() {
+        String caseNames = ruleService.fireRules();
+        return ResponseEntity.ok(caseNames);
+    }
 
     @GetMapping("cases/names")
     @PreAuthorize("isAuthenticated()")
-    public ResponseEntity<List<String>> getAllCaseNames(){
+    public ResponseEntity<List<String>> getAllCaseNames() {
         try {
             List<String> caseNames = caseService.getAllCaseNames();
             return ResponseEntity.ok(caseNames);
@@ -65,7 +76,6 @@ public class CBRController {
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(caseDetails);
     }
-
 
     @GetMapping("laws/xml/{name}")
     @PreAuthorize("isAuthenticated()")
