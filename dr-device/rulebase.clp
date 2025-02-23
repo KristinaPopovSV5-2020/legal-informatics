@@ -2,7 +2,8 @@
 		(export-rdf export.rdf  jail_3_months confiscation confiscate_weapon
         to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty
         is_high_category_weapon_in_public to_increase_penalty 30_imprisonment money to_pay_max2
-        to_pay_min2 harm_done_with_weapon jail_3_year fine to_pay_max3 to_pay_min3)
+        to_pay_min2 harm_done_with_weapon jail_3_year reduce_penalty reduce_penalty1
+        found_outside_safe to_pay_min_3 to_pay_max_3 jail_max_year jail_min_year)
 		(export-proof proof.ruleml)
 		
 (defeasiblerule rule1
@@ -23,10 +24,24 @@
 ) 
 	
 (defeasiblerule rule111
-		
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:admitted_guilt "yes")
+	)  
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:regrets_it "yes")
+	) 
   => 
 	 
-	(fine 
+	(reduce_penalty1 
 		(
 		 defendant ?Defendant)
 	) 
@@ -80,7 +95,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:weapon_type "B")
+		 lc:has_weapon_type_B "yes")
 	) 
   => 
 	 
@@ -119,6 +134,91 @@
   => 
 	 
 	(recommend_increased_penalty 
+		(
+		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule rule55
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:method_of_weapon_discovery "house")
+	) 
+  => 
+	 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule rule56
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:method_of_weapon_discovery "car")
+	) 
+  => 
+	 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule rule57
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:method_of_weapon_discovery "public")
+	) 
+  => 
+	 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule rule58
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:method_of_weapon_discovery "other")
+	) 
+  => 
+	 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule rule403
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:has_weapon_type_A "yes")
+	) 
+  => 
+	 
+	(destructive_weapon 
 		(
 		 defendant ?Defendant)
 	) 
@@ -269,29 +369,155 @@
 	
 (defeasiblerule pen17
 		 
-	(fine 
+	(reduce_penalty1 
 		(
 		 defendant ?Defendant)
 	) 
   => 
 	 
-	(to_pay_max3 
+	(reduce_penalty 
 		(
-		 value 500)
+		 value true)
 	) 
 ) 
 	
 (defeasiblerule pen18
 		 
-	(fine 
+	(found_outside_safe 
 		(
 		 defendant ?Defendant)
 	) 
   => 
 	 
-	(to_pay_min3 
+	(to_pay_max_3 
+		(
+		 value 500)
+	) 
+) 
+	
+(defeasiblerule pen19
+		 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_min_3 
 		(
 		 value 30)
+	) 
+) 
+	
+(defeasiblerule pen18
+		 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_max_3 
+		(
+		 value 500)
+	) 
+) 
+	
+(defeasiblerule pen19
+		 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_min_3 
+		(
+		 value 30)
+	) 
+) 
+	
+(defeasiblerule pen18
+		 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_max_3 
+		(
+		 value 500)
+	) 
+) 
+	
+(defeasiblerule pen19
+		 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_min_3 
+		(
+		 value 30)
+	) 
+) 
+	
+(defeasiblerule pen18
+		 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_max_3 
+		(
+		 value 500)
+	) 
+) 
+	
+(defeasiblerule pen19
+		 
+	(found_outside_safe 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_min_3 
+		(
+		 value 30)
+	) 
+) 
+	
+(defeasiblerule pen20
+		 
+	(destructive_weapon 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(jail_min_year 
+		(
+		 value 1)
+	) 
+) 
+	
+(defeasiblerule pen21
+		 
+	(destructive_weapon 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(jail_max_year 
+		(
+		 value 8)
 	) 
 ) 
 	

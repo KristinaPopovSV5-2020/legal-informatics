@@ -24,18 +24,25 @@
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 
-		<lrml:PrescriptiveStatement key="cl_34_st_1">
+		<lrml:PrescriptiveStatement key="kriv_cl_42_st_2_2">
 			<ruleml:Rule key=":rule111" closure="universal" strength="defeasible">
 				<ruleml:if>
-					<ruleml:Atom>
-						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
-						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">safe</ruleml:Data>
-					</ruleml:Atom>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:admitted_guilt" />
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:regrets_it" />
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
 				</ruleml:if>
 				<ruleml:then>
 					<ruleml:Atom>
-						<ruleml:Rel>fine</ruleml:Rel>
+						<ruleml:Rel>reduce_penalty1</ruleml:Rel>
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:then>
@@ -88,9 +95,9 @@
 							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:weapon_type" />
+							<ruleml:Rel iri="lc:has_weapon_type_B" />
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">B</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -140,25 +147,115 @@
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 
+		<lrml:PrescriptiveStatement key="kriv_cl_34_st_1">
+			<ruleml:Rule key=":rule55" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">house</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>found_outside_safe</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="kriv_cl_34_st_1_2">
+			<ruleml:Rule key=":rule56" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">car</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>found_outside_safe</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="kriv_cl_34_st_1_3">
+			<ruleml:Rule key=":rule57" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">public</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>found_outside_safe</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="kriv_cl_34_st_1_4">
+			<ruleml:Rule key=":rule58" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>found_outside_safe</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="kriv_cl_403_st_3">
+			<ruleml:Rule key=":rule403" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:has_weapon_type_A" />
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>destructive_weapon</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
 		<lrml:PrescriptiveStatement key="cl_33_st_7">
 			<ruleml:Rule key=":rule11" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Or>
 							<ruleml:Atom>
-								<ruleml:Rel iri="lc:weapon_type" />
+								<ruleml:Rel iri="lc:has_weapon_type_B" />
 								<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-								<ruleml:Data xsi:type="xs:string">B</ruleml:Data>
+								<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel iri="lc:weapon_type" />
+								<ruleml:Rel iri="lc:has_weapon_type_C" />
 								<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-								<ruleml:Data xsi:type="xs:string">C</ruleml:Data>
+								<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
 							</ruleml:Atom>
 							<ruleml:Atom>
-								<ruleml:Rel iri="lc:weapon_type" />
+								<ruleml:Rel iri="lc:has_weapon_type_D" />
 								<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-								<ruleml:Data xsi:type="xs:string">D</ruleml:Data>
+								<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
 							</ruleml:Atom>
 						</ruleml:Or>
 						<ruleml:Atom>
@@ -295,7 +392,20 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 					<ruleml:Atom>
-						<ruleml:Rel iri=":to_pay_max3" />
+						<ruleml:Rel iri=":reduce_penalty" />
+						<ruleml:Var>Suggestion</ruleml:Var>
+						<ruleml:Ind>true</ruleml:Ind>
+					</ruleml:Atom>
+
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen18">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+					<ruleml:Atom>
+						<ruleml:Rel iri=":to_pay_max_3" />
 						<ruleml:Var>Money</ruleml:Var>
 						<ruleml:Ind>500</ruleml:Ind>
 					</ruleml:Atom>
@@ -303,11 +413,12 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen18">
+
+		<lrml:PenaltyStatement key="pen19">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 					<ruleml:Atom>
-						<ruleml:Rel iri=":to_pay_min3" />
+						<ruleml:Rel iri=":to_pay_min_3" />
 						<ruleml:Var>Money</ruleml:Var>
 						<ruleml:Ind>30</ruleml:Ind>
 					</ruleml:Atom>
@@ -315,6 +426,33 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen20">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+					<ruleml:Atom>
+						<ruleml:Rel iri=":jail_min_year" />
+						<ruleml:Var>Years</ruleml:Var>
+						<ruleml:Ind>1</ruleml:Ind>
+					</ruleml:Atom>
+
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="pen21">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+					<ruleml:Atom>
+						<ruleml:Rel iri=":jail_max_year" />
+						<ruleml:Var>Years</ruleml:Var>
+						<ruleml:Ind>8</ruleml:Ind>
+					</ruleml:Atom>
+
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
 
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
@@ -374,13 +512,71 @@
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen17" />
-				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_42_st_2_2" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen18" />
-				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen19" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen18" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_2" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen19" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_2" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen18" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_3" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen19" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_3" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen18" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_4" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen19" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_4" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen20" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_403_st_3" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen21" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_403_st_3" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
