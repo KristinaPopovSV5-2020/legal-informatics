@@ -1,0 +1,69 @@
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+</head>
+
+<div class="container">
+  <div class="sidebar">
+    <div class="logo-container">
+      <mat-icon>balance</mat-icon>
+    </div>
+
+    <ng-container *ngIf="role === null">
+      <mat-nav-list class="menu">
+        <mat-list-item>
+          <app-link text="Uloguj se" source="login"></app-link>
+        </mat-list-item>
+        <hr>
+        <mat-list-item>
+          <app-link text="Registracija" source="signup"></app-link>
+        </mat-list-item>
+        <hr>
+      </mat-nav-list>
+
+    </ng-container>
+
+    <ng-container *ngIf="role === 'User'">
+      <mat-nav-list class="menu">
+        <mat-expansion-panel [class.mat-elevation-z0]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Zakoni
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-nav-list>
+              <mat-list-item>
+                <a routerLink="krivicni">~ Krivični zakon</a>
+              </mat-list-item>
+              <mat-list-item>
+                <a routerLink="oruzje">~ Zakon o oružju</a>
+              </mat-list-item>
+            </mat-nav-list>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel [class.mat-elevation-z0]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Presude
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-nav-list class="names-mat-nav-list">
+            <mat-list-item *ngFor="let caseName of caseNames" class="names-mat-list-item">
+              <a [routerLink]="['/case', caseName]">
+                · {{ caseName }}
+              </a>
+            </mat-list-item>
+          </mat-nav-list>          
+        </mat-expansion-panel>
+        <hr>
+        <mat-list-item>
+          <app-link source="new-case" text="Nov slučaj"></app-link>
+        </mat-list-item>
+        <hr>
+      </mat-nav-list>
+      <div class="logout-container" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Odjavi se</span>
+      </div>
+    </ng-container>
+  </div>
+</div>

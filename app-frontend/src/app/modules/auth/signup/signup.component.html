@@ -1,0 +1,52 @@
+<div class="form-container">
+    <p class="title">Registracija</p>
+    <form class="form" [formGroup]="signupForm">
+      <mat-error *ngIf="hasError">Molim Vas popunite sva polja!</mat-error>
+      <mat-error *ngIf="hasErrorUser">Korisničko ime već psotoji!</mat-error>
+      <mat-form-field appearance="outline">
+        <mat-label>Ime</mat-label>
+        <input style=" text-indent: 10px;" formControlName="name" type="text" matInput>
+        <mat-error *ngIf="signupForm.get('name')?.hasError('name')">
+            Ime je obavezno!
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Prezime</mat-label>
+        <input style=" text-indent: 10px;" formControlName="surname" type="text" matInput>
+        <mat-error *ngIf="signupForm.get('surname')?.hasError('required')">
+            Prezime je obavezno!
+        </mat-error>
+    </mat-form-field>
+      <mat-form-field appearance="outline">
+          <mat-label>Korisničko ime</mat-label>
+          <input style=" text-indent: 10px;" formControlName="username" type="text" matInput>
+          <mat-error *ngIf="signupForm.get('username')?.hasError('required')">
+            Korisničko ime je obavezno!
+          </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+          <mat-label>Lozinka</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" >
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" style="background-color: transparent;">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <mat-error *ngIf="signupForm.get('password')?.hasError('required')">
+            Lozinka je obavezna!
+          </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+          <mat-label>Potvrdi lozinku</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="confirmpsw" >
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" style="background-color: transparent;">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <mat-error *ngIf="signupForm.get('confirmpsw')?.hasError('required')">
+              Potvrda lozinke je obavezna!
+          </mat-error>
+          <mat-error *ngIf="signupForm.get('confirmpsw')?.hasError('passDontMatch')">
+              Lozinke se ne poklapaju!
+          </mat-error>
+      </mat-form-field>
+      <app-button [buttonStyle]="'margin-top: 10px;'" [buttonText]="'Registruj se'" (click)="signup($event)"></app-button>
+  </form>
+</div>

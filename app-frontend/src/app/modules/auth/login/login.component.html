@@ -1,0 +1,21 @@
+<div class="form-container">
+    <p class="title">Uloguj se na svoj nalog</p>
+    <form [formGroup]="loginForm">
+        <div class="logo-container">
+            <mat-icon>account_circle</mat-icon>
+          </div>
+        <mat-error *ngIf="hasError">Pogrešno korisničko ime ili lozinka.</mat-error>
+        <mat-form-field appearance="outline">
+            <mat-label>Korisničko ime</mat-label>
+            <input formControlName="username" name="username"  id="emailLogin" placeholder="Unesi korisničko ime" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Lozinka</mat-label>
+            <input formControlName="password" name="password" matInput [type]="hide ? 'password' : 'text'" placeholder="Unesi lozinku">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" style="background-color: white;">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <app-button [buttonStyle]="'margin-top: 10px;'" [buttonText]="'Uloguj se'" (click)="login($event)"></app-button>
+    </form>
+</div>

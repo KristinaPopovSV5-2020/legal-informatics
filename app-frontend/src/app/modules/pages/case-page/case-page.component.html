@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="case-layout">
+    <div class="case-section" [innerHtml]="xmlHtml"></div>
+
+    <div *ngIf="caseAttributes" class="case-details">
+      <h2>Detalji slučaja</h2>
+      <p><strong>Broj predmeta:</strong> {{ caseAttributes.caseNumber }}</p>
+      <p><strong>Sudija:</strong> {{ caseAttributes.judge }}</p>
+      <p><strong>Optuzeni:</strong> {{ caseAttributes.defendant }}</p>
+      <p><strong>Krivično delo:</strong> {{ caseAttributes.criminalOffense }}</p>
+      <p><strong>Sud:</strong> {{ caseAttributes.court }}</p>
+      <p><strong>Datum:</strong> {{ caseAttributes.date }}</p>
+      <p><strong>Osuđivan ranije:</strong> {{ caseAttributes.previouslyConvicted }}</p>
+      <p><strong>Za isto krivično delo:</strong> {{ caseAttributes.forSameOffense }}</p>
+      <p><strong>Poseduje neovlašćeno oružje:</strong> {{ caseAttributes.illegallyPossessesWeapon }}</p>
+      <p><strong>Mesto:</strong> {{ caseAttributes.location }}</p>
+      <p><strong>Oružje:</strong> {{ caseAttributes.weapon }}</p>
+      <p><strong>Tip oružja:</strong> {{ caseAttributes.weaponType }}</p>
+      <p><strong>Broj municije:</strong> {{ caseAttributes.ammunitionCount }}</p>
+      <p><strong>Imovinsko stanje:</strong> {{ caseAttributes.financialStatus }}</p>
+      <p><strong>Priznao krivicu:</strong> {{ caseAttributes.admittedGuilt }}</p>
+      <p><strong>Kaje se:</strong> {{ caseAttributes.remorseful }}</p>
+      <p><strong>Povreda nanesena oružjem:</strong> {{ caseAttributes.injuryCausedByWeapon }}</p>
+      <p><strong>Novčana kazna:</strong> {{ caseAttributes.fineAmount }}</p>
+      <p><strong>Mera bezbednosti:</strong> {{ caseAttributes.securityMeasure }}</p>
+      <p><strong>Prekršeni članovi:</strong> {{ caseAttributes.violatedArticles }}</p>
+      <p><strong>Kazna:</strong> {{ caseAttributes.sentence }}</p>
+    </div>
+    <div *ngIf="!caseAttributes" class="case-details">
+      <div class="loading-text">{{ loadingText }}</div>
+    </div>
+  </div>
+
+
+</div>

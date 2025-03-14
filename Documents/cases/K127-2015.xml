@@ -1,0 +1,314 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>Osnovni sud u Podgorici</FRBRauthor>
+                    <FRBRdate date="2015-04-16">2015-04-16</FRBRdate>
+                    <FRBRtitle>K 127/2015</FRBRtitle>
+                    <FRBRcountry>CG</FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Podgorica"
+                    showAs="Osnovni sud u Podgorici" />
+                <TLCOrganization eId="vs" href="/ontology/organization/VisiSud.Podgorica"
+                    showAs="Visi sud u Podgorici" />
+                <TLCOrganization eId="odt"
+                    href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica"
+                    showAs="Osnovno državno tužilaštvo Podgorica" />
+
+                <TLCPerson eId="zjovovic" href="/ontology/person/zjovovic"
+                    showAs="Željka Jovović" />
+                <TLCPerson eId="drajkovic" href="/ontology/person/drajkovic"
+                    showAs="Danijela Rajković" />
+                <TLCPerson eId="sp" href="/ontology/person/nr" showAs="S. P." />
+                <TLCPerson eId="vd" href="/ontology/person/vd" showAs="V. D." />
+                <TLCPerson eId="ii" href="/ontology/person/ii" showAs="I. I." />
+                <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCPlace eId="podgorica" href="/ontology/place/podgorica" />
+            </references>
+
+        </meta>
+
+    </judgment>
+    <judgmentBody>
+        <p>U IME CRNE GORE</p>
+        <introduction>
+            <organization id="os" refersTo="#os">
+                OSNOVNI SUD U PODGORICI
+            </organization> , sudija <party
+                id="zjovovic" refersTo="#zjovovic" as="#judge">
+                Željka Jovović
+            </party> , uz učešće namještenika suda <party
+                id="drajkovic" refersTo="#drajkovic" as="#clerk">
+                Rajković Danijele
+            </party> kao zapisničara ,u krivičnom
+            predmetu protiv okrivljenog <party id="sp" refersTo="#sp" as="#defendant">
+                S. P.
+            </party> iz Podgorice, zbog krivičnog djela
+            nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                href="/krivicni#art_403_para_1">
+                čl. 403 st. 1 Krivičnog zakonika Crne Gore
+            </ref>,i
+            okrivljenog <party id="vd" refersTo="#vd" as="#defendant">
+                V. D.
+            </party> iz Podogrice, zbog krivičnog djela
+            nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                href="/krivicni#art_403_para_2">
+                čl. 403 st. 2 Krivičnog zakonika Crne Gore
+            </ref> nakon
+            pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice, dana 16. 04. 2015.
+            godine donio je</introduction>
+        <p>
+            P R E S U D U
+        </p>
+        <background> Okrivljeni: 1. <party id="sp" refersTo="#sp" as="#defendant">
+                S. P.
+            </party>,JMBG xxxxxxxxxxxxx, od oca V. i majke B.,
+            rođene R., rođen xx. xx. 19xx. godine u Podgorici, sa prebivalištem u Lj. bb,
+            državljanin Crne Gore, razumije crnogorski jezik koji je i njegov jezik, mašinski
+            tehničar, oženjen, otac dvoje djece, završio srednju školu, srednjeg imovnog stanja,
+            neosuđivan. 2. <party id="vd" refersTo="#vd" as="#defendant">
+                V. D.
+            </party> , JMBG xxxxxxxxxxxxx, od oca S. i majke
+            S., rođene P., rođen xx. xx. 19xx. godine u Podgorici, sa prebivalištem u Lj. bb,
+            državljanin Crne Gore, razumije crnogorski jezik koji je i njegov jezik, nezaposlen,
+            oženjen, otac jednog djeteta, završio srednju školu, srednjeg imovnog stanja,
+            neosuđivan. </background>
+        <p>Krivi su</p>
+        <decision>
+            <p>Što su:</p>
+
+            <p> Tokom 2014. godine, u Podgorici, u selu Lj., svjesni svog djela čije su izvršenje
+                htjeli i svjesni da je njihovo djelo zabranjeno, neovlašćeno držali vatreno oružje,
+                odnosno oružje čije je držanje građanima zabranjeno, na način što je okrivljeni <party
+                    id="sp" refersTo="#sp" as="#defendant">
+                    S. P.
+                </party>, u porodičnoj kući, suprotno <ref
+                    href="/oruzje#art_10a_para_2">
+                    čl. 10a st. 2 Zakona o
+                    oružju
+                </ref>
+                , bez odgovarajućih isprava o oružju, držao poluautomatkso kratkocijevno vatreno
+                oružje - pištolj marke "CZ" model 99, kalibra 9 mm PARA, fabričkog broja 36302 i
+                pištolj marke "Bernardeli", model 60, kalibra 7,65 mm, fabričkog broja 81199, i
+                lovačko poluautomatsko dugocijevno vatreno oružje - lovačku pušku marke "Bajkal",
+                model IJ 27E-IC, fabričkog broja K03931, a okrivljeni <party id="vd" refersTo="#vd"
+                    as="#defendant">
+                    V. D.
+                </party>, suprotno <ref
+                    href="/oruzje#art_10a_para_2">
+                    čl. 10a st. 2 Zakona o
+                    oružju
+                </ref>,
+                u porodičnoj kući, držao oružje čije je držanje zabranjeno - automatsku pušku marke
+                "CZ", model 70 B1, kalibra 7,62 x 39 mm, fabričkog broja 158867,</p>
+            <p> - čime je okrivljeni <party
+                    id="sp" refersTo="#sp" as="#defendant">
+                    S. P.
+                </party> izvršio krivično djelo
+                nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore
+                </ref>,
+                a okrivljeni <party id="vd" refersTo="#vd"
+                    as="#defendant">
+                    V. D.
+                </party> krivično djelo nedozvoljeno
+                držanje oružja i eksplozivnih materija iz <ref href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore
+                </ref>
+                .</p>
+            <p>
+            </p>
+
+            <p> Pa sud okrivljene <party
+                    id="sp" refersTo="#sp" as="#defendant">
+                    S. P.
+                </party> i <party id="vd"
+                    refersTo="#vd"
+                    as="#defendant">
+                    V. D.
+                </party> primjenom citiranih zakonskih
+                propisa, te <ref
+                    href="/krivicni#art_2">
+                    čl. 2
+                </ref>, <ref
+                    href="/krivicni#art_3">
+                    čl. 3
+                </ref>, <ref
+                    href="/krivicni#art_4_para_2">
+                    4 st. 2
+                </ref>, <ref
+                    href="/krivicni#art_5">
+                    čl. 5
+                </ref>, <ref
+                    href="/krivicni#art_13_para_1">
+                    13 st. 1
+                </ref>, <ref
+                    href="/krivicni#art_14">
+                    čl. 14
+                </ref>, <ref
+                    href="/krivicni#art_15">
+                    čl. 15
+                </ref>, <ref
+                    href="/krivicni#art_41">
+                    čl. 41
+                </ref> i <ref
+                    href="/krivicni#art_42">
+                    čl. 42
+                </ref> Krivičnog zakonika i članova <ref
+                    href="/postupak#art_226">
+                    čl. 226
+                </ref>, <ref
+                    href="/postupak#art_226">
+                    čl. 229
+                </ref>, i <ref
+                    href="/postupak#art_374">
+                    čl. 374 Zakonika o krivičnom postupku
+                </ref>
+            </p>
+
+            <p>O S U Đ U J E</p>
+            <p>Na kaznu rad u javnom interesu i to:</p>
+            <p> Okrivljenog <party
+                    id="sp" refersTo="#sp" as="#defendant">
+                    S. P.
+                </party> u trajanju od 120
+                (stodvadeset) časova, a koji se ima izvršiti za vrijeme od 4 (četiri) mjeseca, s tim
+                što kazna ne može biti duža od 60 (šezdeset) časova u toku jednog mjeseca. </p>
+
+            <p> Okrivljenog <party id="vd"
+                    refersTo="#vd"
+                    as="#defendant">
+                    V. D.
+                </party> u trajanju od 180
+                (stoosamdeset) časova, a koji se ima izvršiti za vrijeme od 5 (pet) mjeseci, s tim
+                što kazna ne može biti duža od 60 (šezdeset) časova u toku jednog mjeseca. </p>
+            <p>
+                Ukoliko okrivljeni ne vrše rad u javnom interesu, ova kazna će se zamijeniti kaznom
+                zatvora, tako što će se
+                svakih započetih 60 (šezdeset) časova rada u javnom interesu zamijeniti kaznom
+                zatvora u trajanju od 1
+                (jednog) mjeseca
+            </p>
+            <p>
+                Obavezuju se okrivljeni da na ime troškova krivičnog postupka plate iznos od po
+                50,00€, u roku od 15 dana po
+                pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+            </p>
+        </decision>
+        <p>O b r a z l o ž e nj e</p>
+        <arguments>
+            <p>
+                <organization
+                    id="odt" refersTo="#odt">
+                    Osnovno državno tužilaštvo u Podgorici
+                </organization>
+                je optužnim predlogom
+                    Kt. br. 47/15 od 13. 02. 2015. godine
+                stavilo na teret okrivljenom <party
+                    id="sp" refersTo="#sp" as="#defendant">
+                    S. P.
+                </party>, iz Podogrice, izvršenje
+                krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore
+                </ref>
+                i okrivljenom <party id="vd"
+                    refersTo="#vd"
+                    as="#defendant">
+                    V. D.
+                </party> iz Podogrice, izvršenje
+                krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija iz <ref
+                    href="/krivicni#art_403_para_2">
+                    čl. 403 st. 2 Krivičnog zakonika Crne Gore
+                </ref>
+                . </p>
+
+            <p>
+                Nakon podnošenja optužnog predloga sudu, zamjenik ODT-a, okrivljeni i njihov
+                branilac su zaključili
+                sporazum o priznanju krivice dana 14. 04. 2015. godine.</p>
+            <p>
+                Utvrđujući da li postoji dovoljno dokaza o krivici okrivljenih za predmetno krivično
+                djelo, na ročištu za
+                razmatranje sporazuma, sud je ocijenio sadržinu dokaza koje je prikupio tužilac a
+                koji se nalaze u spisima
+                predmeta.</p>
+            <p> Iz sadržine prikupljenih dokaza, sud je zaključio da je državni tužilac pružio
+                dovoljno dokaza o krivici okrivljenih, te da je okrivljeni <party
+                    id="sp" refersTo="#sp" as="#defendant">
+                    S. P.
+                </party> u vrijeme i na način opisan u
+                izreci ove presude učinio krivično djelo nedozvoljeno držanje oružja i eksplozivnih
+                materija iz <ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore
+                </ref>,
+                a okrivljeni <party id="vd"
+                    refersTo="#vd"
+                    as="#defendant">
+                    V. D.
+                </party>, nedozvoljeno držanje oružja i
+                eksplozivnih materija iz<ref
+                    href="/krivicni#art_403_para_1">
+                    čl. 403 st. 1 Krivičnog zakonika Crne Gore
+                </ref>,
+                za koja ih je ovaj sud oglasio krivim, a nakon što je u svemu prihvatio sporazum o
+                priznanju krivice. </p>
+            <p>
+                Odlučujući o kazni iz sporazuma o priznanju krivice, zaključenog između stranaka,
+                ovaj sud je našao da je
+                predlog stranaka u vezi sa kaznom prihvatljiv, jer je isti u skladu sa interesima
+                pravičnosti a kazna odgovara
+                svrsi izricanja krivičnih sankcija.
+            </p>
+            <p> Okrivljeni su obavezani da plati troškove krivičnog postupka-paušal, saglasno
+                odredbi <ref
+                    href="/postupak#art_229">
+                    člana 229 Zakonika o
+                    krivičnom postupku
+                </ref>
+            </p>
+            <p> Sa iznijetih razloga, na osnovu <ref
+                    href="/postupak#art_203_para_1">
+                    čl. 303 st. 1 Zakonika o krivičnom postupku
+                </ref>,
+                odlučeno je kao u izreci ove presude. </p>
+        </arguments>
+    </judgmentBody>
+    <conclusions>
+        <organization id="os" refersTo="#os">
+            OSNOVNI SUD U PODGORICI
+        </organization>
+        <date value="2015-04-16">Dana 16. 04. 2015. godine</date>
+        <p>S U D I J A</p>
+        <p><party
+            id="zjovovic" refersTo="#zjovovic" as="#judge">
+            Željka Jovović, s.r
+        </party></p>
+        <p>
+            <party
+                id="drajkovic" refersTo="#drajkovic" as="#clerk">
+                ZTO: JDanijela Rajković
+            </party>
+        </p>
+        <p>Dn-a: Po
+        primjerak presude dostaviti:</p>
+        <organization id="odt" refersTo="#odt">
+            ODT-u Podgorica
+        </organization> -okrivljenim i braniocu adv. <party
+            id="ii" refersTo="#ii" as="#defense">
+            I. I.
+        </party> - a/a
+        <p>Postupljeno dana: _____</p>
+        <p>Namještenik suda ________________</p>
+    </conclusions>
+</akomaNtoso>
