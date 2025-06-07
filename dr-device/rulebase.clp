@@ -1,7 +1,7 @@
 (import-rdf "facts.rdf")
 		(export-rdf export.rdf  jail_3_months confiscation confiscate_weapon
         to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty
-        is_high_category_weapon_in_public to_increase_penalty 30_imprisonment money to_pay_max2
+        is_high_category_weapon_in_public to_increase_penalty imprisonment_3 money to_pay_max2
         to_pay_min2 harm_done_with_weapon jail_3_year reduce_penalty reduce_penalty1
         found_outside_safe to_pay_min_3 to_pay_max_3 jail_max_year jail_min_year)
 		(export-proof proof.ruleml)
@@ -249,9 +249,9 @@
 	) 
   => 
 	 
-	(30_imprisonment 
+	(imprisonment_3 
 		(
-		 value 30)
+		 value 3)
 	) 
 ) 
 	

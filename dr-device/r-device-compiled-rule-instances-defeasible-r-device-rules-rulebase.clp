@@ -455,38 +455,38 @@
 
 ([pen1-defeasibly-dot] of derived-attribute-rule
    (pos-name pen1-defeasibly-dot-gen535)
-   (depends-on declare 30_imprisonment jail_3_months 30_imprisonment)
-   (implies 30_imprisonment)
+   (depends-on declare imprisonment_3 jail_3_months imprisonment_3)
+   (implies imprisonment_3)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [pen1] ) ) ) ?gen139 <- ( 30_imprisonment ( value 30 ) ( positive 1 ) ( positive-derivator pen1 $? ) ) ( test ( eq ( class ?gen139 ) 30_imprisonment ) ) ( not ( and ?gen146 <- ( jail_3_months ( defendant ?Defendant ) ( positive ?gen145 & : ( >= ?gen145 1 ) ) ) ?gen139 <- ( 30_imprisonment ( negative ~ 2 ) ( positive-overruled $?gen141 & : ( not ( member$ pen1 $?gen141 ) ) ) ) ) ) => ?gen139 <- ( 30_imprisonment ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [pen1] ) ) ) ?gen139 <- ( imprisonment_3 ( value 3 ) ( positive 1 ) ( positive-derivator pen1 $? ) ) ( test ( eq ( class ?gen139 ) imprisonment_3 ) ) ( not ( and ?gen146 <- ( jail_3_months ( defendant ?Defendant ) ( positive ?gen145 & : ( >= ?gen145 1 ) ) ) ?gen139 <- ( imprisonment_3 ( negative ~ 2 ) ( positive-overruled $?gen141 & : ( not ( member$ pen1 $?gen141 ) ) ) ) ) ) => ?gen139 <- ( imprisonment_3 ( positive 0 ) )"))
 
 ([pen1-defeasibly] of derived-attribute-rule
    (pos-name pen1-defeasibly-gen537)
-   (depends-on declare jail_3_months 30_imprisonment)
-   (implies 30_imprisonment)
+   (depends-on declare jail_3_months imprisonment_3)
+   (implies imprisonment_3)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [pen1] ) ) ) ?gen146 <- ( jail_3_months ( defendant ?Defendant ) ( positive ?gen145 & : ( >= ?gen145 1 ) ) ) ?gen139 <- ( 30_imprisonment ( value 30 ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen141 & : ( not ( member$ pen1 $?gen141 ) ) ) ) ( test ( eq ( class ?gen139 ) 30_imprisonment ) ) => ?gen139 <- ( 30_imprisonment ( positive 1 ) ( positive-derivator pen1 ?gen146 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [pen1] ) ) ) ?gen146 <- ( jail_3_months ( defendant ?Defendant ) ( positive ?gen145 & : ( >= ?gen145 1 ) ) ) ?gen139 <- ( imprisonment_3 ( value 3 ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen141 & : ( not ( member$ pen1 $?gen141 ) ) ) ) ( test ( eq ( class ?gen139 ) imprisonment_3 ) ) => ?gen139 <- ( imprisonment_3 ( positive 1 ) ( positive-derivator pen1 ?gen146 ) )"))
 
 ([pen1-overruled-dot] of derived-attribute-rule
    (pos-name pen1-overruled-dot-gen539)
-   (depends-on declare 30_imprisonment jail_3_months 30_imprisonment)
-   (implies 30_imprisonment)
+   (depends-on declare imprisonment_3 jail_3_months imprisonment_3)
+   (implies imprisonment_3)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [pen1] ) ) ) ?gen139 <- ( 30_imprisonment ( value 30 ) ( negative-support $?gen142 ) ( negative-overruled $?gen143 & : ( subseq-pos ( create$ pen1-overruled $?gen142 $$$ $?gen143 ) ) ) ) ( test ( eq ( class ?gen139 ) 30_imprisonment ) ) ( not ( and ?gen146 <- ( jail_3_months ( defendant ?Defendant ) ( positive ?gen145 & : ( >= ?gen145 1 ) ) ) ?gen139 <- ( 30_imprisonment ( positive-defeated $?gen141 & : ( not ( member$ pen1 $?gen141 ) ) ) ) ) ) => ( calc ( bind $?gen144 ( delete-member$ $?gen143 ( create$ pen1-overruled $?gen142 ) ) ) ) ?gen139 <- ( 30_imprisonment ( negative-overruled $?gen144 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [pen1] ) ) ) ?gen139 <- ( imprisonment_3 ( value 3 ) ( negative-support $?gen142 ) ( negative-overruled $?gen143 & : ( subseq-pos ( create$ pen1-overruled $?gen142 $$$ $?gen143 ) ) ) ) ( test ( eq ( class ?gen139 ) imprisonment_3 ) ) ( not ( and ?gen146 <- ( jail_3_months ( defendant ?Defendant ) ( positive ?gen145 & : ( >= ?gen145 1 ) ) ) ?gen139 <- ( imprisonment_3 ( positive-defeated $?gen141 & : ( not ( member$ pen1 $?gen141 ) ) ) ) ) ) => ( calc ( bind $?gen144 ( delete-member$ $?gen143 ( create$ pen1-overruled $?gen142 ) ) ) ) ?gen139 <- ( imprisonment_3 ( negative-overruled $?gen144 ) )"))
 
 ([pen1-overruled] of derived-attribute-rule
    (pos-name pen1-overruled-gen541)
-   (depends-on declare jail_3_months 30_imprisonment)
-   (implies 30_imprisonment)
+   (depends-on declare jail_3_months imprisonment_3)
+   (implies imprisonment_3)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [pen1] ) ) ) ?gen146 <- ( jail_3_months ( defendant ?Defendant ) ( positive ?gen145 & : ( >= ?gen145 1 ) ) ) ?gen139 <- ( 30_imprisonment ( value 30 ) ( negative-support $?gen142 ) ( negative-overruled $?gen143 & : ( not ( subseq-pos ( create$ pen1-overruled $?gen142 $$$ $?gen143 ) ) ) ) ( positive-defeated $?gen141 & : ( not ( member$ pen1 $?gen141 ) ) ) ) ( test ( eq ( class ?gen139 ) 30_imprisonment ) ) => ( calc ( bind $?gen144 ( create$ pen1-overruled $?gen142 $?gen143 ) ) ) ?gen139 <- ( 30_imprisonment ( negative-overruled $?gen144 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [pen1] ) ) ) ?gen146 <- ( jail_3_months ( defendant ?Defendant ) ( positive ?gen145 & : ( >= ?gen145 1 ) ) ) ?gen139 <- ( imprisonment_3 ( value 3 ) ( negative-support $?gen142 ) ( negative-overruled $?gen143 & : ( not ( subseq-pos ( create$ pen1-overruled $?gen142 $$$ $?gen143 ) ) ) ) ( positive-defeated $?gen141 & : ( not ( member$ pen1 $?gen141 ) ) ) ) ( test ( eq ( class ?gen139 ) imprisonment_3 ) ) => ( calc ( bind $?gen144 ( create$ pen1-overruled $?gen142 $?gen143 ) ) ) ?gen139 <- ( imprisonment_3 ( negative-overruled $?gen144 ) )"))
 
 ([pen1-support] of derived-attribute-rule
    (pos-name pen1-support-gen543)
-   (depends-on declare jail_3_months 30_imprisonment)
-   (implies 30_imprisonment)
+   (depends-on declare jail_3_months imprisonment_3)
+   (implies imprisonment_3)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [pen1] ) ) ) ?gen138 <- ( jail_3_months ( defendant ?Defendant ) ) ?gen139 <- ( 30_imprisonment ( value 30 ) ( positive-support $?gen141 & : ( not ( subseq-pos ( create$ pen1 ?gen138 $$$ $?gen141 ) ) ) ) ) ( test ( eq ( class ?gen139 ) 30_imprisonment ) ) => ( calc ( bind $?gen144 ( create$ pen1 ?gen138 $?gen141 ) ) ) ?gen139 <- ( 30_imprisonment ( positive-support $?gen144 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [pen1] ) ) ) ?gen138 <- ( jail_3_months ( defendant ?Defendant ) ) ?gen139 <- ( imprisonment_3 ( value 3 ) ( positive-support $?gen141 & : ( not ( subseq-pos ( create$ pen1 ?gen138 $$$ $?gen141 ) ) ) ) ) ( test ( eq ( class ?gen139 ) imprisonment_3 ) ) => ( calc ( bind $?gen144 ( create$ pen1 ?gen138 $?gen141 ) ) ) ?gen139 <- ( imprisonment_3 ( positive-support $?gen144 ) )"))
 
 ([rule11-defeasibly-dot] of derived-attribute-rule
    (pos-name rule11-defeasibly-dot-gen545)
@@ -1049,11 +1049,11 @@
 
 ([pen1-deductive] of ntm-deductive-rule
    (pos-name pen1-deductive-gen331)
-   (depends-on jail_3_months 30_imprisonment)
-   (implies 30_imprisonment)
-   (deductive-rule "?gen138 <- ( jail_3_months ( defendant ?Defendant ) ) ( not ( 30_imprisonment ( value 30 ) ) ) => ( 30_imprisonment ( value 30 ) )")
-   (production-rule "( defrule pen1-deductive-gen331 ( declare ( salience ( calc-salience 30_imprisonment ) ) ) ( run-deductive-rules ) ( object ( name ?gen138 ) ( is-a jail_3_months ) ( defendant ?Defendant ) ) ( not ( object ( is-a 30_imprisonment ) ( value 30 ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat 30_imprisonment 30 ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat 30_imprisonment 30 ) ) ) ( make-instance ?oid of 30_imprisonment ( value 30 ) ) )")
-   (derived-class 30_imprisonment))
+   (depends-on jail_3_months imprisonment_3)
+   (implies imprisonment_3)
+   (deductive-rule "?gen138 <- ( jail_3_months ( defendant ?Defendant ) ) ( not ( imprisonment_3 ( value 3 ) ) ) => ( imprisonment_3 ( value 3 ) )")
+   (production-rule "( defrule pen1-deductive-gen331 ( declare ( salience ( calc-salience imprisonment_3 ) ) ) ( run-deductive-rules ) ( object ( name ?gen138 ) ( is-a jail_3_months ) ( defendant ?Defendant ) ) ( not ( object ( is-a imprisonment_3 ) ( value 3 ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat imprisonment_3 3 ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat imprisonment_3 3 ) ) ) ( make-instance ?oid of imprisonment_3 ( value 3 ) ) )")
+   (derived-class imprisonment_3))
 
 ([rule11-deductive] of ntm-deductive-rule
    (pos-name rule11-deductive-gen330)

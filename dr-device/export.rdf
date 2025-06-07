@@ -65,8 +65,8 @@
      <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
 </rdfs:Class>
 
-<rdfs:Class rdf:about='&export;30_imprisonment'>
-     <rdfs:label rdf:resource='30_imprisonment'/>
+<rdfs:Class rdf:about='&export;imprisonment_3'>
+     <rdfs:label rdf:resource='imprisonment_3'/>
      <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
 </rdfs:Class>
 
@@ -172,7 +172,7 @@
 </rdf:Property>
 
 <rdf:Property rdf:about='&export;value'>
-     <rdfs:domain rdf:resource='&export;30_imprisonment'/>
+     <rdfs:domain rdf:resource='&export;imprisonment_3'/>
 </rdf:Property>
 
 <rdf:Property rdf:about='&export;defendant'>
@@ -223,142 +223,40 @@
      <rdfs:domain rdf:resource='&export;jail_min_year'/>
 </rdf:Property>
 
-<export:jail_3_months rdf:about='&export;jail_3_months1'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
-</export:jail_3_months>
-
-<export:confiscation rdf:about='&export;confiscation1'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
-</export:confiscation>
-
-<export:confiscate_weapon rdf:about='&export;confiscate_weapon1'>
-     <export:value>true</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
-</export:confiscate_weapon>
-
 <export:to_pay_min rdf:about='&export;to_pay_min1'>
      <export:value>30</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
 </export:to_pay_min>
 
 <export:to_pay_max rdf:about='&export;to_pay_max1'>
      <export:value>500</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof6</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
 </export:to_pay_max>
 
-<export:recommend_fine_reduction rdf:about='&export;recommend_fine_reduction1'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof7</defeasible:proof>
-</export:recommend_fine_reduction>
-
-<export:to_pay_less rdf:about='&export;to_pay_less1'>
-     <export:value>true</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof8</defeasible:proof>
-</export:to_pay_less>
-
-<export:recommend_increased_penalty rdf:about='&export;recommend_increased_penalty1'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof9</defeasible:proof>
-</export:recommend_increased_penalty>
-
 <export:is_high_category_weapon_in_public rdf:about='&export;is_high_category_weapon_in_public1'>
-     <export:defendant>John</export:defendant>
+     <export:defendant>John Doe</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
 </export:is_high_category_weapon_in_public>
 
-<export:to_increase_penalty rdf:about='&export;to_increase_penalty1'>
-     <export:value>true</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof10</defeasible:proof>
-</export:to_increase_penalty>
-
-<export:30_imprisonment rdf:about='&export;30_imprisonment1'>
-     <export:value>30</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof11</defeasible:proof>
-</export:30_imprisonment>
-
-<export:money rdf:about='&export;money1'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof12</defeasible:proof>
-</export:money>
-
-<export:to_pay_max2 rdf:about='&export;to_pay_max21'>
-     <export:value>500</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof13</defeasible:proof>
-</export:to_pay_max2>
-
-<export:to_pay_min2 rdf:about='&export;to_pay_min21'>
-     <export:value>30</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof14</defeasible:proof>
-</export:to_pay_min2>
-
-<export:harm_done_with_weapon rdf:about='&export;harm_done_with_weapon1'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof15</defeasible:proof>
-</export:harm_done_with_weapon>
-
-<export:jail_3_year rdf:about='&export;jail_3_year1'>
-     <export:value>3</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof16</defeasible:proof>
-</export:jail_3_year>
-
-<export:reduce_penalty rdf:about='&export;reduce_penalty1'>
-     <export:value>true</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof17</defeasible:proof>
-</export:reduce_penalty>
-
-<export:reduce_penalty1 rdf:about='&export;reduce_penalty11'>
-     <export:defendant>John</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof18</defeasible:proof>
-</export:reduce_penalty1>
-
 <export:found_outside_safe rdf:about='&export;found_outside_safe1'>
-     <export:defendant>John</export:defendant>
+     <export:defendant>John Doe</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof19</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
 </export:found_outside_safe>
 
 <export:to_pay_min_3 rdf:about='&export;to_pay_min_31'>
      <export:value>30</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof20</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
 </export:to_pay_min_3>
 
 <export:to_pay_max_3 rdf:about='&export;to_pay_max_31'>
      <export:value>500</export:value>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof21</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof6</defeasible:proof>
 </export:to_pay_max_3>
-
-<export:jail_max_year rdf:about='&export;jail_max_year1'>
-     <export:value>8</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof22</defeasible:proof>
-</export:jail_max_year>
-
-<export:jail_min_year rdf:about='&export;jail_min_year1'>
-     <export:value>1</export:value>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof24</defeasible:proof>
-</export:jail_min_year>
 
 </rdf:RDF>

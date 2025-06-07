@@ -8,7 +8,7 @@
 ( defclass found_outside_safe ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
 ( defclass destructive_weapon ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
 ( defclass is_high_category_weapon_in_public ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
-( defclass 30_imprisonment ( is-a DERIVED-CLASS ) ( slot value ( type INTEGER ) ) )
+( defclass imprisonment_3 ( is-a DERIVED-CLASS ) ( slot value ( type INTEGER ) ) )
 ( defclass confiscate_weapon ( is-a DERIVED-CLASS ) ( slot value ( type SYMBOL ) ) )
 ( defclass to_pay_less ( is-a DERIVED-CLASS ) ( slot value ( type SYMBOL ) ) )
 ( defclass to_increase_penalty ( is-a DERIVED-CLASS ) ( slot value ( type SYMBOL ) ) )

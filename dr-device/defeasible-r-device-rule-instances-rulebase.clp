@@ -182,9 +182,9 @@
 
 ([pen1] of defeasible-rule
    (rule-name pen1)
-   (original-rule "pen1 ( jail_3_months ( defendant ?Defendant ) ) => ( 30_imprisonment ( value 30 ) )")
+   (original-rule "pen1 ( jail_3_months ( defendant ?Defendant ) ) => ( imprisonment_3 ( value 3 ) )")
    (condition-classes)
-   (conclusion-class 30_imprisonment)
+   (conclusion-class imprisonment_3)
    (negated no)
    (superior)
    (deductive-rule pen1-deductive)

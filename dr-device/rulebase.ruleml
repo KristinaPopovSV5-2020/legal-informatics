@@ -6,7 +6,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          proof="proof.ruleml"
          rdf_export="export.rdf"
-         rdf_export_classes="jail_3_months confiscation confiscate_weapon&#xA;        to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty&#xA;        is_high_category_weapon_in_public to_increase_penalty 30_imprisonment money to_pay_max2&#xA;        to_pay_min2 harm_done_with_weapon jail_3_year reduce_penalty reduce_penalty1&#xA;        found_outside_safe to_pay_min_3 to_pay_max_3 jail_max_year jail_min_year"
+         rdf_export_classes="jail_3_months confiscation confiscate_weapon&#xA;        to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty&#xA;        is_high_category_weapon_in_public to_increase_penalty imprisonment_3 money to_pay_max2&#xA;        to_pay_min2 harm_done_with_weapon jail_3_year reduce_penalty reduce_penalty1&#xA;        found_outside_safe to_pay_min_3 to_pay_max_3 jail_max_year jail_min_year"
          rdf_import="&#34;facts.rdf&#34;">
    <Assert>
       <Implies ruletype="defeasiblerule">
@@ -503,11 +503,11 @@
          <head>
             <Atom>
                <op>
-                  <Rel>30_imprisonment</Rel>
+                  <Rel>imprisonment_3</Rel>
                </op>
                <slot>
                   <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">30</Data>
+                  <Data xsi:type="xs:integer">3</Data>
                </slot>
             </Atom>
          </head>

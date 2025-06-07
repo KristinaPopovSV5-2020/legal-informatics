@@ -1,24 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
-    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
-        <lc:name>case 01</lc:name>
-        <lc:defendant>John</lc:defendant>
-        <lc:low_income>yes</lc:low_income>
-        <lc:previously_convicted>yes</lc:previously_convicted>
-        <lc:weapon_type>B</lc:weapon_type>
-        <lc:method_of_weapon_discovery>public</lc:method_of_weapon_discovery>
-        <lc:unauthorized_possession_of_a_weapon>yes</lc:unauthorized_possession_of_a_weapon>
-        <lc:harm_done>yes</lc:harm_done>
-        <lc:regrets_it>yes</lc:regrets_it>
-        <lc:admitted_guilt>yes</lc:admitted_guilt>
-        <lc:has_weapon_type_A>yes</lc:has_weapon_type_A>
-        <lc:has_weapon_type_B>yes</lc:has_weapon_type_B>
-        <lc:has_weapon_type_C>yes</lc:has_weapon_type_C>
-        <lc:has_weapon_type_D>yes</lc:has_weapon_type_D>
-
-
-    </lc:case>
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#Case123">
+    <lc:unauthorized_possession_of_a_weapon>no</lc:unauthorized_possession_of_a_weapon>
+    <lc:has_weapon_type_A>no</lc:has_weapon_type_A>
+    <lc:name>Case123</lc:name>
+    <lc:has_weapon_type_D>no</lc:has_weapon_type_D>
+    <lc:has_weapon_type_B>no</lc:has_weapon_type_B>
+    <lc:low_income>no</lc:low_income>
+    <lc:method_of_weapon_discovery>public</lc:method_of_weapon_discovery>
+    <lc:defendant>John Doe</lc:defendant>
+    <lc:previously_convicted>no</lc:previously_convicted>
+    <lc:admitted_guilt>no</lc:admitted_guilt>
+    <lc:harm_done>no</lc:harm_done>
+    <lc:regrets_it>no</lc:regrets_it>
+    <lc:has_weapon_type_C>no</lc:has_weapon_type_C>
+  </lc:case>
 </rdf:RDF>

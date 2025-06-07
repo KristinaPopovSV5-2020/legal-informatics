@@ -147,7 +147,7 @@
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 
-		<lrml:PrescriptiveStatement key="kriv_cl_34_st_1">
+		<lrml:PrescriptiveStatement key="cl_34_st_1">
 			<ruleml:Rule key=":rule55" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:Atom>
@@ -165,7 +165,7 @@
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 
-		<lrml:PrescriptiveStatement key="kriv_cl_34_st_1_2">
+		<lrml:PrescriptiveStatement key="cl_34_st_1_2">
 			<ruleml:Rule key=":rule56" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:Atom>
@@ -183,7 +183,7 @@
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 
-		<lrml:PrescriptiveStatement key="kriv_cl_34_st_1_3">
+		<lrml:PrescriptiveStatement key="cl_34_st_1_3">
 			<ruleml:Rule key=":rule57" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:Atom>
@@ -201,7 +201,7 @@
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 
-		<lrml:PrescriptiveStatement key="kriv_cl_34_st_1_4">
+		<lrml:PrescriptiveStatement key="cl_34_st_1_4">
 			<ruleml:Rule key=":rule58" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:Atom>
@@ -278,9 +278,9 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 					<ruleml:Atom>
-						<ruleml:Rel iri=":30_imprisonment" />
-						<ruleml:Var>Days</ruleml:Var>
-						<ruleml:Ind>30</ruleml:Ind>
+						<ruleml:Rel iri=":imprisonment_3" />
+						<ruleml:Var>Months</ruleml:Var>
+						<ruleml:Ind>3</ruleml:Ind>
 					</ruleml:Atom>
 
 				</lrml:Obligation>
@@ -518,52 +518,52 @@
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen18" />
-				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1" />
+				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen19" />
-				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1" />
+				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen18" />
-				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_2" />
+				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1_2" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen19" />
-				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_2" />
+				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1_2" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen18" />
-				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_3" />
+				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1_3" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen19" />
-				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_3" />
+				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1_3" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen18" />
-				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_4" />
+				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1_4" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen19" />
-				<lrml:toPrescriptiveStatement keyref="#kriv_cl_34_st_1_4" />
+				<lrml:toPrescriptiveStatement keyref="#cl_34_st_1_4" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
