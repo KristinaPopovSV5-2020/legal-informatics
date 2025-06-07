@@ -5,10 +5,14 @@
 3. imovinsko stanje - lose/dobro
 4. priznao krivicu
 5. kaje se
-6. oruzja (kategorija, broj oruzja i naziv): List<Oruzje>
+6. broj oruzja
 7. broj municija
-8. Način otkrivanja - kuća, auto, ispalio metke
+8. Način otkrivanja - house, car, public, safe, other
 9. Da li je povreda nanesena oruzjem
+10. oruzje kategorije a - boolean
+11. oruzje kategorije b - boolean
+12. oruzje kategorije c - boolean
+13. oruzje kategorije d - boolean
 
 ## TO DO: proveriti da li sadrzi ove atribute, ako ne zameniti presudu
 
