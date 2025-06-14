@@ -75,7 +75,7 @@ public class CaseService implements ICaseService {
             Map<String, String> extractedValues = new HashMap<>();
             for (String attribute : attributes) {
                 String prompt = "From the xml file extract the following attribute '" + attribute +
-                        "'  without any additional text or quotation marks. If you are not 100% sure you can find it, still give some answer. Here is the file :\n" + content;
+                        "'  without any additional text or quotation marks. If you are not 100% sure you can find it, still give the answer you think is correct, but don't give me some generic message like not found. Here is the file :\n" + content;
 
                 String extractedValue = gptService.chat(prompt);
                 extractedValues.put(attribute, extractedValue);
