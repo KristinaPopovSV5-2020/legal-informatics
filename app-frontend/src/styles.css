@@ -1,5 +1,11 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
