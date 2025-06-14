@@ -67,6 +67,6 @@ export class CasePageComponent implements OnInit {
         this.dotCount = (this.dotCount + 1) % 4;
         this.loadingText = "Učitavanje detalja" + '.'.repeat(this.dotCount);
       }
-    }, 200);
+    }, 400);
   }
 }
