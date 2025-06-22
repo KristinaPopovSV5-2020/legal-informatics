@@ -17,17 +17,15 @@ public class MongoDbConnector implements Connector {
 
     @Override
     public Collection<CBRCase> retrieveAllCases() {
-        List<CaseDetails> details = caseDetailsRepository.findAll();
+        return caseDetailsRepository.findAll().stream()
+                .map(this::toCBRCase)
+                .toList();
+    }
 
-        List<CBRCase> cases = new ArrayList<CBRCase>();
-
-        for (CaseDetails caseDetails : details) {
-            CBRCase cbrCase = new CBRCase();
-            cbrCase.setDescription(caseDetails);
-            cases.add(cbrCase);
-        }
-
-        return cases;
+    private CBRCase toCBRCase(CaseDetails caseDetails) {
+        CBRCase cbrCase = new CBRCase();
+        cbrCase.setDescription(caseDetails);
+        return cbrCase;
     }
 
     @Override
