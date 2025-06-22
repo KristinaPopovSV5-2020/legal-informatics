@@ -1,20 +1,16 @@
 package com.example.app_backend.controller;
 
-import com.example.app_backend.dto.cases.CaseDTO;
-import com.example.app_backend.dto.rule.RuleRequestDTO;
-import com.example.app_backend.dto.user.LoginDTO;
+import com.example.app_backend.dto.rule.CasesDTO;
 import com.example.app_backend.model.cases.CaseDetails;
 import com.example.app_backend.repository.CaseDetailsRepository;
 import com.example.app_backend.service.interfaces.ICaseService;
 import com.example.app_backend.service.interfaces.IRuleService;
-import com.example.app_backend.similarity.BaseCbrApplication;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -42,13 +38,14 @@ public class CBRController {
     }
 
     @PostMapping("recommend-cases")
-    public ResponseEntity<?> recommendCases(@RequestBody CaseDTO caseDTO) {
-        //BaseCbrApplication recommender = new BaseCbrApplication(caseDetailsRepository);
+    public ResponseEntity<?> recommendCases(@RequestBody CasesDTO request) {
+        // BaseCbrApplication recommender = new
+        // BaseCbrApplication(caseDetailsRepository);
         return ResponseEntity.ok("");
     }
 
     @PostMapping("rules/fire")
-    public ResponseEntity<String> fireRules(@RequestBody RuleRequestDTO ruleRequestDTO) {
+    public ResponseEntity<String> fireRules(@RequestBody CasesDTO ruleRequestDTO) {
         String caseNames = ruleService.fireRules(ruleRequestDTO);
         return ResponseEntity.ok(caseNames);
     }
