@@ -1,10 +1,13 @@
 package com.example.app_backend.controller;
 
+import com.example.app_backend.dto.cases.CaseDTO;
 import com.example.app_backend.dto.rule.RuleRequestDTO;
 import com.example.app_backend.dto.user.LoginDTO;
 import com.example.app_backend.model.cases.CaseDetails;
+import com.example.app_backend.repository.CaseDetailsRepository;
 import com.example.app_backend.service.interfaces.ICaseService;
 import com.example.app_backend.service.interfaces.IRuleService;
+import com.example.app_backend.similarity.BaseCbrApplication;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,11 +31,20 @@ public class CBRController {
 
     private final ICaseService caseService;
     private final IRuleService ruleService;
+    private final CaseDetailsRepository caseDetailsRepository;
 
     @Autowired
-    public CBRController(ICaseService caseService, IRuleService ruleService) {
+    public CBRController(ICaseService caseService, IRuleService ruleService,
+            CaseDetailsRepository caseDetailsRepository) {
         this.caseService = caseService;
         this.ruleService = ruleService;
+        this.caseDetailsRepository = caseDetailsRepository;
+    }
+
+    @PostMapping("recommend-cases")
+    public ResponseEntity<?> recommendCases(@RequestBody CaseDTO caseDTO) {
+        //BaseCbrApplication recommender = new BaseCbrApplication(caseDetailsRepository);
+        return ResponseEntity.ok("");
     }
 
     @PostMapping("rules/fire")
