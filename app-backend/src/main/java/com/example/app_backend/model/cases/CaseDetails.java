@@ -2,12 +2,16 @@ package com.example.app_backend.model.cases;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
+import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
+
 import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 
 @Document(collection = "caseDetails")
-public class CaseDetails implements Serializable {
+public class CaseDetails implements Serializable, CaseComponent {
 
     @Id
     private ObjectId id;
@@ -35,7 +39,12 @@ public class CaseDetails implements Serializable {
     private String violatedArticles;
     private String sentence;
 
-    public CaseDetails(ObjectId id, String caseId, String caseNumber, String judge, String defendant, String criminalOffense, String court, String date, String previouslyConvicted, String forSameOffense, String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount, String financialStatus, String admittedGuilt, String remorseful, String weaponType, String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles, String sentence) {
+    public CaseDetails(ObjectId id, String caseId, String caseNumber, String judge, String defendant,
+            String criminalOffense, String court, String date, String previouslyConvicted, String forSameOffense,
+            String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount,
+            String financialStatus, String admittedGuilt, String remorseful, String weaponType,
+            String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles,
+            String sentence) {
         this.id = id;
         this.caseId = caseId;
         this.caseNumber = caseNumber;
@@ -61,7 +70,12 @@ public class CaseDetails implements Serializable {
         this.sentence = sentence;
     }
 
-    public CaseDetails(String caseId, String caseNumber, String judge, String defendant, String criminalOffense, String court, String date, String previouslyConvicted, String forSameOffense, String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount, String financialStatus, String admittedGuilt, String remorseful, String weaponType, String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles, String sentence) {
+    public CaseDetails(String caseId, String caseNumber, String judge, String defendant, String criminalOffense,
+            String court, String date, String previouslyConvicted, String forSameOffense,
+            String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount,
+            String financialStatus, String admittedGuilt, String remorseful, String weaponType,
+            String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles,
+            String sentence) {
         this.caseId = caseId;
         this.caseNumber = caseNumber;
         this.judge = judge;
@@ -271,5 +285,10 @@ public class CaseDetails implements Serializable {
 
     public void setSentence(String sentence) {
         this.sentence = sentence;
+    }
+
+    @Override
+    public Attribute getIdAttribute() {
+        return new Attribute("id", this.getClass());
     }
 }
