@@ -1,10 +1,15 @@
 package com.example.app_backend.controller;
 
 import com.example.app_backend.dto.rule.CasesDTO;
+import com.example.app_backend.dto.rule.RecommendationsDTO;
 import com.example.app_backend.model.cases.CaseDetails;
 import com.example.app_backend.repository.CaseDetailsRepository;
 import com.example.app_backend.service.interfaces.ICaseService;
 import com.example.app_backend.service.interfaces.IRuleService;
+import com.example.app_backend.similarity.BaseCbrApplication;
+
+import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRQuery;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -39,9 +44,24 @@ public class CBRController {
 
     @PostMapping("recommend-cases")
     public ResponseEntity<?> recommendCases(@RequestBody CasesDTO request) {
-        // BaseCbrApplication recommender = new
-        // BaseCbrApplication(caseDetailsRepository);
-        return ResponseEntity.ok("");
+        BaseCbrApplication recommender = new BaseCbrApplication(caseDetailsRepository);
+        RecommendationsDTO recommendations = new RecommendationsDTO();
+        try {
+            recommender.configure();
+            recommender.preCycle();
+
+            CBRQuery query = new CBRQuery();
+            CaseDetails caseDescription = new CaseDetails();
+            query.setDescription(caseDescription);
+
+            recommendations.cases = recommender.getCycle(query);
+            recommender.postCycle();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return ResponseEntity.ok(recommendations);
     }
 
     @PostMapping("rules/fire")
