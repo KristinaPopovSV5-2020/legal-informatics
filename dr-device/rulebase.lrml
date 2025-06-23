@@ -12,7 +12,7 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:unauthorized_possession_of_a_weapon" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
@@ -31,12 +31,12 @@
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:admitted_guilt" />
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:regrets_it" />
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -55,7 +55,7 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:harm_done" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
@@ -73,7 +73,7 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:unauthorized_possession_of_a_weapon" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
@@ -92,12 +92,12 @@
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:unauthorized_possession_of_a_weapon" />
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:has_weapon_type_B" />
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -117,12 +117,30 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:low_income" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
 					<ruleml:Atom>
 						<ruleml:Rel>recommend_fine_reduction</ruleml:Rel>
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="kriv_cl_42_st_2_3">
+			<ruleml:Rule key=":rule771" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:Atom>
+						<ruleml:Rel iri="lc:high_income" />
+						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+						<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
+					</ruleml:Atom>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>recommend_fine_increase</ruleml:Rel>
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:then>
@@ -135,7 +153,7 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:previously_convicted" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
@@ -171,7 +189,7 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">car</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">auto</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
@@ -189,7 +207,7 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">public</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">javno</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
@@ -207,7 +225,7 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:method_of_weapon_discovery" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">other</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">drugo</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
@@ -225,7 +243,7 @@
 					<ruleml:Atom>
 						<ruleml:Rel iri="lc:has_weapon_type_A" />
 						<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-						<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 					</ruleml:Atom>
 				</ruleml:if>
 				<ruleml:then>
@@ -245,23 +263,23 @@
 							<ruleml:Atom>
 								<ruleml:Rel iri="lc:has_weapon_type_B" />
 								<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-								<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+								<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 							</ruleml:Atom>
 							<ruleml:Atom>
 								<ruleml:Rel iri="lc:has_weapon_type_C" />
 								<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-								<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+								<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 							</ruleml:Atom>
 							<ruleml:Atom>
 								<ruleml:Rel iri="lc:has_weapon_type_D" />
 								<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-								<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+								<ruleml:Data xsi:type="xs:string">da</ruleml:Data>
 							</ruleml:Atom>
 						</ruleml:Or>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:method_of_weapon_discovery" />
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">public</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">javno</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -453,6 +471,19 @@
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
 
+		<lrml:PenaltyStatement key="pen22">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+					<ruleml:Atom>
+						<ruleml:Rel iri=":to_pay_more" />
+						<ruleml:Var>Suggestion</ruleml:Var>
+						<ruleml:Ind>true</ruleml:Ind>
+					</ruleml:Atom>
+
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
 
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
@@ -577,6 +608,12 @@
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#pen21" />
 				<lrml:toPrescriptiveStatement keyref="#kriv_cl_403_st_3" />
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen22" />
+				<lrml:toPrescriptiveStatement keyref="#kriv_cl_42_st_2_3" />
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 

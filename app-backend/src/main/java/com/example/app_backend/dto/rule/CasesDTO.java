@@ -14,6 +14,7 @@ public class CasesDTO {
     public String hasWeaponTypeB;
     public String hasWeaponTypeC;
     public String hasWeaponTypeD;
+    public String highIncome;
 
     public String getName() {
         return name;
@@ -117,6 +118,14 @@ public class CasesDTO {
 
     public void setHasWeaponTypeD(String hasWeaponTypeD) {
         this.hasWeaponTypeD = hasWeaponTypeD;
+    }
+
+    public String getHighIncome() {
+        return highIncome;
+    }
+
+    public void setHighIncome(String highIncome) {
+        this.highIncome = highIncome;
     }
 
 }

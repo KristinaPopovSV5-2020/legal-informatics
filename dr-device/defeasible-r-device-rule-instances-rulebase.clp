@@ -1,6 +1,6 @@
 ([rule1] of defeasible-rule
    (rule-name rule1)
-   (original-rule "rule1 ( lc:case ( lc:defendant ?Defendant ) ( lc:unauthorized_possession_of_a_weapon \"yes\" ) ) => ( jail_3_months ( defendant ?Defendant ) )")
+   (original-rule "rule1 ( lc:case ( lc:defendant ?Defendant ) ( lc:unauthorized_possession_of_a_weapon \"da\" ) ) => ( jail_3_months ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class jail_3_months)
    (negated no)
@@ -14,7 +14,7 @@
 
 ([rule111] of defeasible-rule
    (rule-name rule111)
-   (original-rule "rule111 ( lc:case ( lc:defendant ?Defendant ) ( lc:admitted_guilt \"yes\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:regrets_it \"yes\" ) ) => ( reduce_penalty1 ( defendant ?Defendant ) )")
+   (original-rule "rule111 ( lc:case ( lc:defendant ?Defendant ) ( lc:admitted_guilt \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:regrets_it \"da\" ) ) => ( reduce_penalty1 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class reduce_penalty1)
    (negated no)
@@ -28,7 +28,7 @@
 
 ([rule2] of defeasible-rule
    (rule-name rule2)
-   (original-rule "rule2 ( lc:case ( lc:defendant ?Defendant ) ( lc:harm_done \"yes\" ) ) => ( harm_done_with_weapon ( defendant ?Defendant ) )")
+   (original-rule "rule2 ( lc:case ( lc:defendant ?Defendant ) ( lc:harm_done \"da\" ) ) => ( harm_done_with_weapon ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class harm_done_with_weapon)
    (negated no)
@@ -42,7 +42,7 @@
 
 ([rule7] of defeasible-rule
    (rule-name rule7)
-   (original-rule "rule7 ( lc:case ( lc:defendant ?Defendant ) ( lc:unauthorized_possession_of_a_weapon \"yes\" ) ) => ( confiscation ( defendant ?Defendant ) )")
+   (original-rule "rule7 ( lc:case ( lc:defendant ?Defendant ) ( lc:unauthorized_possession_of_a_weapon \"da\" ) ) => ( confiscation ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class confiscation)
    (negated no)
@@ -56,7 +56,7 @@
 
 ([rule8] of defeasible-rule
    (rule-name rule8)
-   (original-rule "rule8 ( lc:case ( lc:defendant ?Defendant ) ( lc:unauthorized_possession_of_a_weapon \"yes\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:has_weapon_type_B \"yes\" ) ) => ( money ( defendant ?Defendant ) )")
+   (original-rule "rule8 ( lc:case ( lc:defendant ?Defendant ) ( lc:unauthorized_possession_of_a_weapon \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:has_weapon_type_B \"da\" ) ) => ( money ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class money)
    (negated no)
@@ -70,7 +70,7 @@
 
 ([rule9] of defeasible-rule
    (rule-name rule9)
-   (original-rule "rule9 ( lc:case ( lc:defendant ?Defendant ) ( lc:low_income \"yes\" ) ) => ( recommend_fine_reduction ( defendant ?Defendant ) )")
+   (original-rule "rule9 ( lc:case ( lc:defendant ?Defendant ) ( lc:low_income \"da\" ) ) => ( recommend_fine_reduction ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class recommend_fine_reduction)
    (negated no)
@@ -82,9 +82,23 @@
    (defeasibly-rule rule9-defeasibly)
    (defeated-rule nil))
 
+([rule771] of defeasible-rule
+   (rule-name rule771)
+   (original-rule "rule771 ( lc:case ( lc:defendant ?Defendant ) ( lc:high_income \"da\" ) ) => ( recommend_fine_increase ( defendant ?Defendant ) )")
+   (condition-classes)
+   (conclusion-class recommend_fine_increase)
+   (negated no)
+   (superior)
+   (deductive-rule rule771-deductive)
+   (overruled-rule rule771-overruled)
+   (system no)
+   (support-rule rule771-support)
+   (defeasibly-rule rule771-defeasibly)
+   (defeated-rule nil))
+
 ([rule10] of defeasible-rule
    (rule-name rule10)
-   (original-rule "rule10 ( lc:case ( lc:defendant ?Defendant ) ( lc:previously_convicted \"yes\" ) ) => ( recommend_increased_penalty ( defendant ?Defendant ) )")
+   (original-rule "rule10 ( lc:case ( lc:defendant ?Defendant ) ( lc:previously_convicted \"da\" ) ) => ( recommend_increased_penalty ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class recommend_increased_penalty)
    (negated no)
@@ -112,7 +126,7 @@
 
 ([rule56] of defeasible-rule
    (rule-name rule56)
-   (original-rule "rule56 ( lc:case ( lc:defendant ?Defendant ) ( lc:method_of_weapon_discovery \"car\" ) ) => ( found_outside_safe ( defendant ?Defendant ) )")
+   (original-rule "rule56 ( lc:case ( lc:defendant ?Defendant ) ( lc:method_of_weapon_discovery \"auto\" ) ) => ( found_outside_safe ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class found_outside_safe)
    (negated no)
@@ -126,7 +140,7 @@
 
 ([rule57] of defeasible-rule
    (rule-name rule57)
-   (original-rule "rule57 ( lc:case ( lc:defendant ?Defendant ) ( lc:method_of_weapon_discovery \"public\" ) ) => ( found_outside_safe ( defendant ?Defendant ) )")
+   (original-rule "rule57 ( lc:case ( lc:defendant ?Defendant ) ( lc:method_of_weapon_discovery \"javno\" ) ) => ( found_outside_safe ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class found_outside_safe)
    (negated no)
@@ -140,7 +154,7 @@
 
 ([rule58] of defeasible-rule
    (rule-name rule58)
-   (original-rule "rule58 ( lc:case ( lc:defendant ?Defendant ) ( lc:method_of_weapon_discovery \"other\" ) ) => ( found_outside_safe ( defendant ?Defendant ) )")
+   (original-rule "rule58 ( lc:case ( lc:defendant ?Defendant ) ( lc:method_of_weapon_discovery \"drugo\" ) ) => ( found_outside_safe ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class found_outside_safe)
    (negated no)
@@ -154,7 +168,7 @@
 
 ([rule403] of defeasible-rule
    (rule-name rule403)
-   (original-rule "rule403 ( lc:case ( lc:defendant ?Defendant ) ( lc:has_weapon_type_A \"yes\" ) ) => ( destructive_weapon ( defendant ?Defendant ) )")
+   (original-rule "rule403 ( lc:case ( lc:defendant ?Defendant ) ( lc:has_weapon_type_A \"da\" ) ) => ( destructive_weapon ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class destructive_weapon)
    (negated no)
@@ -168,7 +182,7 @@
 
 ([rule11] of defeasible-rule
    (rule-name rule11)
-   (original-rule "rule11 ( lc:case ( lc:defendant ?Defendant ) ( lc:method_of_weapon_discovery \"public\" ) ) => ( is_high_category_weapon_in_public ( defendant ?Defendant ) )")
+   (original-rule "rule11 ( lc:case ( lc:defendant ?Defendant ) ( lc:method_of_weapon_discovery \"javno\" ) ) => ( is_high_category_weapon_in_public ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class is_high_category_weapon_in_public)
    (negated no)
@@ -374,5 +388,19 @@
    (system no)
    (support-rule pen21-support)
    (defeasibly-rule pen21-defeasibly)
+   (defeated-rule nil))
+
+([pen22] of defeasible-rule
+   (rule-name pen22)
+   (original-rule "pen22 ( recommend_fine_increase ( defendant ?Defendant ) ) => ( to_pay_more ( value true ) )")
+   (condition-classes)
+   (conclusion-class to_pay_more)
+   (negated no)
+   (superior)
+   (deductive-rule pen22-deductive)
+   (overruled-rule pen22-overruled)
+   (system no)
+   (support-rule pen22-support)
+   (defeasibly-rule pen22-defeasibly)
    (defeated-rule nil))
 
