@@ -46,21 +46,28 @@ public class RuleService implements IRuleService {
         model.setNsPrefix("lc", ns);
         model.createResource(ns + dto.name)
                 .addProperty(RDF.type, model.createResource(ns + "case"))
-                .addProperty(model.createProperty(ns + "name"), dto.name)
-                .addProperty(model.createProperty(ns + "defendant"), dto.defendant)
-                .addProperty(model.createProperty(ns + "low_income"), dto.lowIncome)
-                .addProperty(model.createProperty(ns + "previously_convicted"), dto.previouslyConvicted)
-                .addProperty(model.createProperty(ns + "method_of_weapon_discovery"), dto.methodOfWeaponDiscovery)
+                .addProperty(model.createProperty(ns + "name"), dto.name != null ? dto.name : "")
+                .addProperty(model.createProperty(ns + "defendant"), dto.defendant != null ? dto.defendant : "")
+                .addProperty(model.createProperty(ns + "low_income"), dto.lowIncome != null ? dto.lowIncome : "")
+                .addProperty(model.createProperty(ns + "previously_convicted"),
+                        dto.previouslyConvicted != null ? dto.previouslyConvicted : "")
+                .addProperty(model.createProperty(ns + "method_of_weapon_discovery"),
+                        dto.methodOfWeaponDiscovery != null ? dto.methodOfWeaponDiscovery : "")
                 .addProperty(model.createProperty(ns + "unauthorized_possession_of_a_weapon"),
-                        dto.unauthorizedPossessionOfAWeapon)
-                .addProperty(model.createProperty(ns + "harm_done"), dto.harmDone)
-                .addProperty(model.createProperty(ns + "regrets_it"), dto.regretsIt)
-                .addProperty(model.createProperty(ns + "admitted_guilt"), dto.admittedGuilt)
-                .addProperty(model.createProperty(ns + "has_weapon_type_A"), dto.hasWeaponTypeA)
-                .addProperty(model.createProperty(ns + "has_weapon_type_B"), dto.hasWeaponTypeB)
-                .addProperty(model.createProperty(ns + "has_weapon_type_C"), dto.hasWeaponTypeC)
-                .addProperty(model.createProperty(ns + "has_weapon_type_D"), dto.hasWeaponTypeD)
-                .addProperty(model.createProperty(ns + "high_income"), dto.highIncome);
+                        dto.unauthorizedPossessionOfAWeapon != null ? dto.unauthorizedPossessionOfAWeapon : "")
+                .addProperty(model.createProperty(ns + "harm_done"), dto.harmDone != null ? dto.harmDone : "")
+                .addProperty(model.createProperty(ns + "regrets_it"), dto.regretsIt != null ? dto.regretsIt : "")
+                .addProperty(model.createProperty(ns + "admitted_guilt"),
+                        dto.admittedGuilt != null ? dto.admittedGuilt : "")
+                .addProperty(model.createProperty(ns + "has_weapon_type_A"),
+                        dto.hasWeaponTypeA != null ? dto.hasWeaponTypeA : "")
+                .addProperty(model.createProperty(ns + "has_weapon_type_B"),
+                        dto.hasWeaponTypeB != null ? dto.hasWeaponTypeB : "")
+                .addProperty(model.createProperty(ns + "has_weapon_type_C"),
+                        dto.hasWeaponTypeC != null ? dto.hasWeaponTypeC : "")
+                .addProperty(model.createProperty(ns + "has_weapon_type_D"),
+                        dto.hasWeaponTypeD != null ? dto.hasWeaponTypeD : "")
+                .addProperty(model.createProperty(ns + "high_income"), dto.highIncome != null ? dto.highIncome : "");
         try (FileOutputStream out = new FileOutputStream(BASE_PATH + "facts.rdf")) {
             model.write(out, "RDF/XML-ABBREV"); // ili "RDF/XML" za punu verziju
             System.out.println("facts.rdf successfully written.");
