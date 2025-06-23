@@ -1,9 +1,10 @@
 (import-rdf "facts.rdf")
 		(export-rdf export.rdf  jail_3_months confiscation confiscate_weapon
-        to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty
-        is_high_category_weapon_in_public to_increase_penalty imprisonment_3 money to_pay_max2
-        to_pay_min2 harm_done_with_weapon jail_3_year reduce_penalty reduce_penalty1
-        found_outside_safe to_pay_min_3 to_pay_max_3 jail_max_year jail_min_year)
+        to_pay_min to_pay_max recommend_fine_reduction to_pay_less to_pay_more
+        recommend_increased_penalty recommend_fine_increase is_high_category_weapon_in_public
+        to_increase_penalty imprisonment_3 money to_pay_max2 to_pay_min2 harm_done_with_weapon
+        jail_3_year reduce_penalty reduce_penalty1 found_outside_safe to_pay_min_3 to_pay_max_3
+        jail_max_year jail_min_year)
 		(export-proof proof.ruleml)
 		
 (defeasiblerule rule1
@@ -13,7 +14,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:unauthorized_possession_of_a_weapon "yes")
+		 lc:unauthorized_possession_of_a_weapon "da")
 	) 
   => 
 	 
@@ -30,14 +31,14 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:admitted_guilt "yes")
+		 lc:admitted_guilt "da")
 	)  
 	(lc:case 
 		(
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:regrets_it "yes")
+		 lc:regrets_it "da")
 	) 
   => 
 	 
@@ -54,7 +55,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:harm_done "yes")
+		 lc:harm_done "da")
 	) 
   => 
 	 
@@ -71,7 +72,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:unauthorized_possession_of_a_weapon "yes")
+		 lc:unauthorized_possession_of_a_weapon "da")
 	) 
   => 
 	 
@@ -88,14 +89,14 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:unauthorized_possession_of_a_weapon "yes")
+		 lc:unauthorized_possession_of_a_weapon "da")
 	)  
 	(lc:case 
 		(
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:has_weapon_type_B "yes")
+		 lc:has_weapon_type_B "da")
 	) 
   => 
 	 
@@ -112,11 +113,28 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:low_income "yes")
+		 lc:low_income "da")
 	) 
   => 
 	 
 	(recommend_fine_reduction 
+		(
+		 defendant ?Defendant)
+	) 
+) 
+	
+(defeasiblerule rule771
+		 
+	(lc:case 
+		(
+		 lc:defendant ?Defendant)
+	
+		(
+		 lc:high_income "da")
+	) 
+  => 
+	 
+	(recommend_fine_increase 
 		(
 		 defendant ?Defendant)
 	) 
@@ -129,7 +147,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:previously_convicted "yes")
+		 lc:previously_convicted "da")
 	) 
   => 
 	 
@@ -163,7 +181,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:method_of_weapon_discovery "car")
+		 lc:method_of_weapon_discovery "auto")
 	) 
   => 
 	 
@@ -180,7 +198,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:method_of_weapon_discovery "public")
+		 lc:method_of_weapon_discovery "javno")
 	) 
   => 
 	 
@@ -197,7 +215,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:method_of_weapon_discovery "other")
+		 lc:method_of_weapon_discovery "drugo")
 	) 
   => 
 	 
@@ -214,7 +232,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:has_weapon_type_A "yes")
+		 lc:has_weapon_type_A "da")
 	) 
   => 
 	 
@@ -231,7 +249,7 @@
 		 lc:defendant ?Defendant)
 	
 		(
-		 lc:method_of_weapon_discovery "public")
+		 lc:method_of_weapon_discovery "javno")
 	) 
   => 
 	 
@@ -518,6 +536,20 @@
 	(jail_max_year 
 		(
 		 value 8)
+	) 
+) 
+	
+(defeasiblerule pen22
+		 
+	(recommend_fine_increase 
+		(
+		 defendant ?Defendant)
+	) 
+  => 
+	 
+	(to_pay_more 
+		(
+		 value true)
 	) 
 ) 
 	

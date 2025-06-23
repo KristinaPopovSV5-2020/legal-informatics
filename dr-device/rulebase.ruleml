@@ -6,7 +6,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          proof="proof.ruleml"
          rdf_export="export.rdf"
-         rdf_export_classes="jail_3_months confiscation confiscate_weapon&#xA;        to_pay_min to_pay_max recommend_fine_reduction to_pay_less recommend_increased_penalty&#xA;        is_high_category_weapon_in_public to_increase_penalty imprisonment_3 money to_pay_max2&#xA;        to_pay_min2 harm_done_with_weapon jail_3_year reduce_penalty reduce_penalty1&#xA;        found_outside_safe to_pay_min_3 to_pay_max_3 jail_max_year jail_min_year"
+         rdf_export_classes="jail_3_months confiscation confiscate_weapon&#xA;        to_pay_min to_pay_max recommend_fine_reduction to_pay_less to_pay_more&#xA;        recommend_increased_penalty recommend_fine_increase is_high_category_weapon_in_public&#xA;        to_increase_penalty imprisonment_3 money to_pay_max2 to_pay_min2 harm_done_with_weapon&#xA;        jail_3_year reduce_penalty reduce_penalty1 found_outside_safe to_pay_min_3 to_pay_max_3&#xA;        jail_max_year jail_min_year"
          rdf_import="&#34;facts.rdf&#34;">
    <Assert>
       <Implies ruletype="defeasiblerule">
@@ -24,7 +24,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:unauthorized_possession_of_a_weapon"/>
-                  <Data xsi:type="xs:string">yes</Data>
+                  <Data xsi:type="xs:string">da</Data>
                </slot>
             </Atom>
          </body>
@@ -56,7 +56,7 @@
                   </slot>
                   <slot>
                      <Ind uri="lc:admitted_guilt"/>
-                     <Data xsi:type="xs:string">yes</Data>
+                     <Data xsi:type="xs:string">da</Data>
                   </slot>
                </Atom>
                <Atom>
@@ -69,7 +69,7 @@
                   </slot>
                   <slot>
                      <Ind uri="lc:regrets_it"/>
-                     <Data xsi:type="xs:string">yes</Data>
+                     <Data xsi:type="xs:string">da</Data>
                   </slot>
                </Atom>
             </And>
@@ -101,7 +101,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:harm_done"/>
-                  <Data xsi:type="xs:string">yes</Data>
+                  <Data xsi:type="xs:string">da</Data>
                </slot>
             </Atom>
          </body>
@@ -132,7 +132,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:unauthorized_possession_of_a_weapon"/>
-                  <Data xsi:type="xs:string">yes</Data>
+                  <Data xsi:type="xs:string">da</Data>
                </slot>
             </Atom>
          </body>
@@ -164,7 +164,7 @@
                   </slot>
                   <slot>
                      <Ind uri="lc:unauthorized_possession_of_a_weapon"/>
-                     <Data xsi:type="xs:string">yes</Data>
+                     <Data xsi:type="xs:string">da</Data>
                   </slot>
                </Atom>
                <Atom>
@@ -177,7 +177,7 @@
                   </slot>
                   <slot>
                      <Ind uri="lc:has_weapon_type_B"/>
-                     <Data xsi:type="xs:string">yes</Data>
+                     <Data xsi:type="xs:string">da</Data>
                   </slot>
                </Atom>
             </And>
@@ -209,7 +209,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:low_income"/>
-                  <Data xsi:type="xs:string">yes</Data>
+                  <Data xsi:type="xs:string">da</Data>
                </slot>
             </Atom>
          </body>
@@ -217,6 +217,37 @@
             <Atom>
                <op>
                   <Rel>recommend_fine_reduction</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule771">rule771</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:high_income"/>
+                  <Data xsi:type="xs:string">da</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>recommend_fine_increase</Rel>
                </op>
                <slot>
                   <Ind uri="defendant"/>
@@ -240,7 +271,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:previously_convicted"/>
-                  <Data xsi:type="xs:string">yes</Data>
+                  <Data xsi:type="xs:string">da</Data>
                </slot>
             </Atom>
          </body>
@@ -302,7 +333,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:method_of_weapon_discovery"/>
-                  <Data xsi:type="xs:string">car</Data>
+                  <Data xsi:type="xs:string">auto</Data>
                </slot>
             </Atom>
          </body>
@@ -333,7 +364,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:method_of_weapon_discovery"/>
-                  <Data xsi:type="xs:string">public</Data>
+                  <Data xsi:type="xs:string">javno</Data>
                </slot>
             </Atom>
          </body>
@@ -364,7 +395,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:method_of_weapon_discovery"/>
-                  <Data xsi:type="xs:string">other</Data>
+                  <Data xsi:type="xs:string">drugo</Data>
                </slot>
             </Atom>
          </body>
@@ -395,7 +426,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:has_weapon_type_A"/>
-                  <Data xsi:type="xs:string">yes</Data>
+                  <Data xsi:type="xs:string">da</Data>
                </slot>
             </Atom>
          </body>
@@ -428,7 +459,7 @@
                      </slot>
                      <slot>
                         <Ind uri="lc:has_weapon_type_B"/>
-                        <Data xsi:type="xs:string">yes</Data>
+                        <Data xsi:type="xs:string">da</Data>
                      </slot>
                   </Atom>
                   <Atom>
@@ -441,7 +472,7 @@
                      </slot>
                      <slot>
                         <Ind uri="lc:has_weapon_type_C"/>
-                        <Data xsi:type="xs:string">yes</Data>
+                        <Data xsi:type="xs:string">da</Data>
                      </slot>
                   </Atom>
                   <Atom>
@@ -454,7 +485,7 @@
                      </slot>
                      <slot>
                         <Ind uri="lc:has_weapon_type_D"/>
-                        <Data xsi:type="xs:string">yes</Data>
+                        <Data xsi:type="xs:string">da</Data>
                      </slot>
                   </Atom>
                </Or>
@@ -468,7 +499,7 @@
                   </slot>
                   <slot>
                      <Ind uri="lc:method_of_weapon_discovery"/>
-                     <Data xsi:type="xs:string">public</Data>
+                     <Data xsi:type="xs:string">javno</Data>
                   </slot>
                </Atom>
             </And>
@@ -1021,6 +1052,33 @@
                <slot>
                   <Ind uri="value"/>
                   <Data xsi:type="xs:integer">8</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen22">pen22</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>recommend_fine_increase</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_more</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">true</Data>
                </slot>
             </Atom>
          </head>

@@ -4,6 +4,7 @@
 ( defclass confiscation ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
 ( defclass money ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
 ( defclass recommend_fine_reduction ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
+( defclass recommend_fine_increase ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
 ( defclass recommend_increased_penalty ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
 ( defclass found_outside_safe ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
 ( defclass destructive_weapon ( is-a DERIVED-CLASS ) ( slot defendant ( type ?VARIABLE ) ) )
@@ -22,3 +23,4 @@
 ( defclass to_pay_min_3 ( is-a DERIVED-CLASS ) ( slot value ( type INTEGER ) ) )
 ( defclass jail_min_year ( is-a DERIVED-CLASS ) ( slot value ( type INTEGER ) ) )
 ( defclass jail_max_year ( is-a DERIVED-CLASS ) ( slot value ( type INTEGER ) ) )
+( defclass to_pay_more ( is-a DERIVED-CLASS ) ( slot value ( type SYMBOL ) ) )

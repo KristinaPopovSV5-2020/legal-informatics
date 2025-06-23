@@ -59,7 +59,8 @@ public class RuleService implements IRuleService {
                 .addProperty(model.createProperty(ns + "has_weapon_type_A"), dto.hasWeaponTypeA)
                 .addProperty(model.createProperty(ns + "has_weapon_type_B"), dto.hasWeaponTypeB)
                 .addProperty(model.createProperty(ns + "has_weapon_type_C"), dto.hasWeaponTypeC)
-                .addProperty(model.createProperty(ns + "has_weapon_type_D"), dto.hasWeaponTypeD);
+                .addProperty(model.createProperty(ns + "has_weapon_type_D"), dto.hasWeaponTypeD)
+                .addProperty(model.createProperty(ns + "high_income"), dto.highIncome);
         try (FileOutputStream out = new FileOutputStream(BASE_PATH + "facts.rdf")) {
             model.write(out, "RDF/XML-ABBREV"); // ili "RDF/XML" za punu verziju
             System.out.println("facts.rdf successfully written.");
@@ -113,6 +114,8 @@ public class RuleService implements IRuleService {
                 "Okrivljeni se kaznjava zatvorom od minimalno: " + value + " godine.";
             case "to_pay_less1" ->
                 "Okrivljenom se preporucuje manja novcana kazna.";
+            case "to_pay_more1" ->
+                "Okrivljenom se preporucuje veca novcana kazna.";
             case "reduce_penalty1" ->
                 "Okrivljenom se preporucuje manja kazna.";
             case "to_increase_penalty1" ->
