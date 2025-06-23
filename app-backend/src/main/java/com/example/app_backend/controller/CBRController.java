@@ -1,17 +1,21 @@
 package com.example.app_backend.controller;
 
-import com.example.app_backend.dto.rule.RuleRequestDTO;
-import com.example.app_backend.dto.user.LoginDTO;
+import com.example.app_backend.dto.rule.CasesDTO;
+import com.example.app_backend.dto.rule.RecommendationsDTO;
 import com.example.app_backend.model.cases.CaseDetails;
+import com.example.app_backend.repository.CaseDetailsRepository;
 import com.example.app_backend.service.interfaces.ICaseService;
 import com.example.app_backend.service.interfaces.IRuleService;
+import com.example.app_backend.similarity.BaseCbrApplication;
+
+import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRQuery;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,15 +32,40 @@ public class CBRController {
 
     private final ICaseService caseService;
     private final IRuleService ruleService;
+    private final CaseDetailsRepository caseDetailsRepository;
 
     @Autowired
-    public CBRController(ICaseService caseService, IRuleService ruleService) {
+    public CBRController(ICaseService caseService, IRuleService ruleService,
+            CaseDetailsRepository caseDetailsRepository) {
         this.caseService = caseService;
         this.ruleService = ruleService;
+        this.caseDetailsRepository = caseDetailsRepository;
+    }
+
+    @PostMapping("recommend-cases")
+    public ResponseEntity<?> recommendCases(@RequestBody CasesDTO request) {
+        BaseCbrApplication recommender = new BaseCbrApplication(caseDetailsRepository);
+        RecommendationsDTO recommendations = new RecommendationsDTO();
+        try {
+            recommender.configure();
+            recommender.preCycle();
+
+            CBRQuery query = new CBRQuery();
+            CaseDetails caseDescription = new CaseDetails();
+            query.setDescription(caseDescription);
+
+            recommendations.cases = recommender.getCycle(query);
+            recommender.postCycle();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return ResponseEntity.ok(recommendations);
     }
 
     @PostMapping("rules/fire")
-    public ResponseEntity<String> fireRules(@RequestBody RuleRequestDTO ruleRequestDTO) {
+    public ResponseEntity<String> fireRules(@RequestBody CasesDTO ruleRequestDTO) {
         String caseNames = ruleService.fireRules(ruleRequestDTO);
         return ResponseEntity.ok(caseNames);
     }

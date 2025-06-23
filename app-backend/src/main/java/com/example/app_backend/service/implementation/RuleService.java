@@ -11,7 +11,7 @@ import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.RDFS;
 
-import com.example.app_backend.dto.rule.RuleRequestDTO;
+import com.example.app_backend.dto.rule.CasesDTO;
 import com.example.app_backend.service.interfaces.IRuleService;
 
 @Service
@@ -20,7 +20,7 @@ public class RuleService implements IRuleService {
     private static final String BASE_PATH = "C:\\Users\\Bogdan\\Desktop\\Pravna\\legal-informatics\\dr-device\\";
 
     @Override
-    public String fireRules(RuleRequestDTO ruleRequestDTO) {
+    public String fireRules(CasesDTO ruleRequestDTO) {
         String cleanScript = BASE_PATH + "clean.bat";
         String buildScript = BASE_PATH + "start.bat";
 
@@ -37,7 +37,7 @@ public class RuleService implements IRuleService {
         }
     }
 
-    private void GetFacts(RuleRequestDTO dto) {
+    private void GetFacts(CasesDTO dto) {
         String ns = "http://informatika.ftn.uns.ac.rs/legal-case.rdf#";
         Model model = ModelFactory.createDefaultModel();
         model.setNsPrefix("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
