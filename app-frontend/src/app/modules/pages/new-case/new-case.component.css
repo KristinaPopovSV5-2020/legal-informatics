@@ -1,0 +1,122 @@
+.main-layout {
+  display: flex;
+  gap: 4;
+}
+
+.left-column {
+  flex: 0 0 60%;
+}
+
+.right-column {
+  flex: 0 0 40%;
+  border-left: 1px solid #ddd;
+  padding-left: 16px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content {
+  flex: 0 0 80%;
+  overflow: auto;
+}
+
+.bottom-content {
+  flex: 0 0 20%;
+  border-top: 1px solid #a5a2a2;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
+.bottom-content p {
+  margin: 1px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.section {
+  margin-top: 16px;
+}
+
+.radio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.radio-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.article-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  align-items: center;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-0 {
+  flex: 0;
+}
+
+.law-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.law-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding-left: 2px;
+  border-radius: 4px;
+}
+
+h3 {
+  margin: 2px;
+}

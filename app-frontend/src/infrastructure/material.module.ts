@@ -63,7 +63,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatStepperModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatDatepickerModule
   ],
   exports:[
     CommonModule,
@@ -96,7 +97,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatStepperModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatDatepickerModule
   ]
 
 })

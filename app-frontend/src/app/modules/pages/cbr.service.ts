@@ -5,19 +5,18 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { CaseAttributes } from '../../dto/CaseAttributes';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CbrService {
   private apiUrl = `${environment.apiHost}api/cbr/`;
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   private value$ = new BehaviorSubject<any>({});
   selectedValue$ = this.value$.asObservable();
 
   private headers = new HttpHeaders({
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
   });
-
 
   getCaseAkomaNtoso(id: String) {
     const url = this.apiUrl + 'cases/xml/' + id;
@@ -38,8 +37,33 @@ export class CbrService {
     return this.http.get<CaseAttributes>(url);
   }
 
-  getAllCaseNames(): Observable<String[]>{
+  getAllCaseNames(): Observable<String[]> {
     const url = this.apiUrl + 'cases/names';
     return this.http.get<String[]>(url);
   }
+
+  reasonByRules(data: CaseDTO): Observable<string> {
+    return this.http.post<string>(
+      environment.apiHost + 'api/cbr/rules/fire',
+      data,
+      { headers: this.headers, responseType: 'text' as 'json' }
+    );
+  }
+}
+
+export interface CaseDTO {
+  name: string;
+  defendant: string;
+  lowIncome: string;
+  previouslyConvicted: string;
+  methodOfWeaponDiscovery: string;
+  unauthorizedPossessionOfAWeapon: string;
+  harmDone: string;
+  regretsIt: string;
+  admittedGuilt: string;
+  hasWeaponTypeA: string;
+  hasWeaponTypeB: string;
+  hasWeaponTypeC: string;
+  hasWeaponTypeD: string;
+  highIncome: string;
 }

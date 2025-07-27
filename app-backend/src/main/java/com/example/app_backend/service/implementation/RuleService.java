@@ -17,7 +17,7 @@ import com.example.app_backend.service.interfaces.IRuleService;
 @Service
 public class RuleService implements IRuleService {
 
-    private static final String BASE_PATH = "C:\\Users\\Bogdan\\Desktop\\Pravna\\legal-informatics\\dr-device\\";
+    private static final String BASE_PATH = "D:\\projekti\\legal-informatics\\dr-device\\";
 
     @Override
     public String fireRules(CasesDTO ruleRequestDTO) {

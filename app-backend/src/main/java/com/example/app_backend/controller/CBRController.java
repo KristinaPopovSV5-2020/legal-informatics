@@ -65,6 +65,7 @@ public class CBRController {
     }
 
     @PostMapping("rules/fire")
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<String> fireRules(@RequestBody CasesDTO ruleRequestDTO) {
         String caseNames = ruleService.fireRules(ruleRequestDTO);
         return ResponseEntity.ok(caseNames);
