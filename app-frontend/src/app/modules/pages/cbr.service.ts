@@ -49,6 +49,14 @@ export class CbrService {
       { headers: this.headers, responseType: 'text' as 'json' }
     );
   }
+
+  addNewCase(caseData: CaseDetails): Observable<CaseDetails> {
+    return this.http.post<CaseDetails>(
+      environment.apiHost + 'api/cbr/new-case',
+      caseData,
+      { headers: this.headers }
+    );
+  }
 }
 
 export interface CaseDTO {
@@ -66,4 +74,28 @@ export interface CaseDTO {
   hasWeaponTypeC: string;
   hasWeaponTypeD: string;
   highIncome: string;
+}
+
+export interface CaseDetails {
+  caseNumber: string;
+  judge: string;
+  defendant: string;
+  criminalOffense: string;
+  court: string;
+  date: string;
+  previouslyConvicted: string;
+  forSameOffense: string;
+  illegallyPossessesWeapon: string;
+  location: string;
+  weapon: string;
+  ammunitionCount: string;
+  financialStatus: string;
+  admittedGuilt: string;
+  remorseful: string;
+  weaponType: string;
+  injuryCausedByWeapon: string;
+  fineAmount: string;
+  securityMeasure: string;
+  violatedArticles: string;
+  sentence: string;
 }

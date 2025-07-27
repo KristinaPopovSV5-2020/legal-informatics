@@ -23,7 +23,7 @@
 <Ind uri='&proof-export;proof2'>proof2</Ind>
 </oid>
 <Literal>
-<RDF_resource uri='is_high_category_weapon_in_publicJohn Doe'/>
+<RDF_resource uri='is_high_category_weapon_in_publicshtseh'/>
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
@@ -32,12 +32,12 @@
 <defeasible_body_grounds>
 <Definitely_Proved>
 <Literal>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Literal>
 <Definite_Proof>
 <strict_clause>
 <Fact>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Fact>
 </strict_clause>
 </Definite_Proof>
@@ -90,7 +90,7 @@
 <Ind uri='&proof-export;proof5'>proof5</Ind>
 </oid>
 <Literal>
-<RDF_resource uri='recommend_fine_increaseJohn Doe'/>
+<RDF_resource uri='recommend_fine_increaseshtseh'/>
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
@@ -99,12 +99,12 @@
 <defeasible_body_grounds>
 <Definitely_Proved>
 <Literal>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Literal>
 <Definite_Proof>
 <strict_clause>
 <Fact>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Fact>
 </strict_clause>
 </Definite_Proof>
@@ -135,12 +135,12 @@
 <defeasible_body_grounds>
 <Definitely_Proved>
 <Literal>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Literal>
 <Definite_Proof>
 <strict_clause>
 <Fact>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Fact>
 </strict_clause>
 </Definite_Proof>
@@ -187,7 +187,7 @@
 <Ind uri='&proof-export;proof9'>proof9</Ind>
 </oid>
 <Literal>
-<RDF_resource uri='reduce_penalty1John Doe'/>
+<RDF_resource uri='reduce_penalty1shtseh'/>
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
@@ -196,24 +196,24 @@
 <defeasible_body_grounds>
 <Definitely_Proved>
 <Literal>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Literal>
 <Definite_Proof>
 <strict_clause>
 <Fact>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Fact>
 </strict_clause>
 </Definite_Proof>
 </Definitely_Proved>
 <Definitely_Proved>
 <Literal>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Literal>
 <Definite_Proof>
 <strict_clause>
 <Fact>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Fact>
 </strict_clause>
 </Definite_Proof>
@@ -244,12 +244,12 @@
 <defeasible_body_grounds>
 <Definitely_Proved>
 <Literal>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Literal>
 <Definite_Proof>
 <strict_clause>
 <Fact>
-<RDF_resource uri='&lc;Case123'/>
+<RDF_resource uri='&lc;656'/>
 </Fact>
 </strict_clause>
 </Definite_Proof>

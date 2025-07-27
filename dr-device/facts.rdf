@@ -3,20 +3,20 @@
     xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#Case123">
-    <lc:has_weapon_type_B>da</lc:has_weapon_type_B>
-    <lc:has_weapon_type_A>no</lc:has_weapon_type_A>
-    <lc:name>Case123</lc:name>
-    <lc:admitted_guilt>da</lc:admitted_guilt>
-    <lc:has_weapon_type_D>no</lc:has_weapon_type_D>
+  <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#656">
     <lc:method_of_weapon_discovery>javno</lc:method_of_weapon_discovery>
-    <lc:high_income>da</lc:high_income>
-    <lc:unauthorized_possession_of_a_weapon>ne</lc:unauthorized_possession_of_a_weapon>
-    <lc:harm_done>da</lc:harm_done>
-    <lc:regrets_it>da</lc:regrets_it>
-    <lc:defendant>John Doe</lc:defendant>
-    <lc:low_income>ne</lc:low_income>
-    <lc:has_weapon_type_C>no</lc:has_weapon_type_C>
+    <lc:has_weapon_type_D>ne</lc:has_weapon_type_D>
     <lc:previously_convicted>ne</lc:previously_convicted>
+    <lc:has_weapon_type_B>da</lc:has_weapon_type_B>
+    <lc:name>656</lc:name>
+    <lc:admitted_guilt>da</lc:admitted_guilt>
+    <lc:high_income>da</lc:high_income>
+    <lc:harm_done>da</lc:harm_done>
+    <lc:has_weapon_type_A>ne</lc:has_weapon_type_A>
+    <lc:unauthorized_possession_of_a_weapon>ne</lc:unauthorized_possession_of_a_weapon>
+    <lc:defendant>shtseh</lc:defendant>
+    <lc:low_income>ne</lc:low_income>
+    <lc:regrets_it>da</lc:regrets_it>
+    <lc:has_weapon_type_C>ne</lc:has_weapon_type_C>
   </lc:case>
 </rdf:RDF>

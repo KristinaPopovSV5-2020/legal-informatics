@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CbrService } from '../cbr.service';
+import { CaseDetails, CbrService } from '../cbr.service';
 
 @Component({
   selector: 'app-new-case',
@@ -104,7 +104,76 @@ export class NewCaseComponent {
     }
   }
 
-  addNewCase() {}
+  addNewCase() {
+    if (this.caseForm.valid && this.newCaseForm.valid) {
+      const formValues = { ...this.caseForm.value, ...this.newCaseForm.value };
+
+      const weaponType = [
+        formValues.hasWeaponTypeA === 'da' ? 'A' : '',
+        formValues.hasWeaponTypeB === 'da' ? 'B' : '',
+        formValues.hasWeaponTypeC === 'da' ? 'C' : '',
+        formValues.hasWeaponTypeD === 'da' ? 'D' : '',
+      ]
+        .filter(Boolean)
+        .join(', ');
+
+      const caseData: CaseDetails = {
+        caseNumber: formValues.name,
+        judge: formValues.prosecutor,
+        defendant: formValues.defendant,
+        criminalOffense: formValues.criminalOffense,
+        court: formValues.court,
+        date: formValues.date,
+        previouslyConvicted: formValues.previouslyConvicted,
+        forSameOffense:
+          'neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.', // Check this
+        illegallyPossessesWeapon: formValues.unauthorizedPossessionOfAWeapon,
+        location: formValues.methodOfWeaponDiscovery,
+        weapon:
+          this.newCaseForm.value.weapoons?.map((w) => w.weapon).join(', ') ||
+          '',
+        ammunitionCount:
+          this.newCaseForm.value.weapoons
+            ?.map((w) => w.ammunitionCount)
+            .join(', ') || '',
+        financialStatus:
+          formValues.lowIncome === 'da'
+            ? 'loše'
+            : formValues.lowIncome === 'ne'
+            ? 'dobro'
+            : 'srednje',
+        admittedGuilt: formValues.admittedGuilt,
+        remorseful: formValues.regretsIt,
+        weaponType,
+        injuryCausedByWeapon: formValues.harmDone,
+        fineAmount: formValues.fineAmount,
+        securityMeasure: formValues.securityMeasure,
+        violatedArticles: formValues.lawArticles
+          ?.map((a) => {
+            let parts = [`${a.law}`];
+            if (a.articleNumber) parts.push(`član ${a.articleNumber}`);
+            if (a.paragraph) parts.push(`stav ${a.paragraph}`);
+            if (a.item) parts.push(`tačka ${a.item}`);
+            return parts.join(', ');
+          })
+          .join(' | '),
+        sentence: formValues.sentence,
+      };
+      console.log(caseData);
+
+      this.isLoading = true;
+      this.cbrService.addNewCase(caseData).subscribe({
+        next: (res) => {
+          console.log('Case saved:', res);
+          this.isLoading = false;
+        },
+        error: (err) => {
+          console.error('Error saving case:', err);
+          this.isLoading = false;
+        },
+      });
+    }
+  }
 
   get lawArticles(): FormArray {
     return this.newCaseForm?.get('lawArticles') as FormArray;

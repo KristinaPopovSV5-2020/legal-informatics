@@ -302,7 +302,7 @@
                </slot>
                <slot>
                   <Ind uri="lc:method_of_weapon_discovery"/>
-                  <Data xsi:type="xs:string">kuca</Data>
+                  <Data xsi:type="xs:string">house</Data>
                </slot>
             </Atom>
          </body>
