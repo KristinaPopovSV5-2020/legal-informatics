@@ -106,6 +106,7 @@ export interface CaseDetails {
   securityMeasure: string;
   violatedArticles: string;
   sentence: string;
+  methodOfWeaponDiscovery?: string;
   similarity?: string;
 }
 

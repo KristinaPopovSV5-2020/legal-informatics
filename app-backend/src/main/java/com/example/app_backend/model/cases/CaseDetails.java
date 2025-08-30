@@ -38,13 +38,14 @@ public class CaseDetails implements Serializable, CaseComponent {
     private String securityMeasure;
     private String violatedArticles;
     private String sentence;
+    private String methodOfWeaponDiscovery;
 
     public CaseDetails(ObjectId id, String caseId, String caseNumber, String judge, String defendant,
             String criminalOffense, String court, String date, String previouslyConvicted, String forSameOffense,
             String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount,
             String financialStatus, String admittedGuilt, String remorseful, String weaponType,
             String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles,
-            String sentence) {
+            String sentence, String methodOfWeaponDiscovery) {
         this.id = id;
         this.caseId = caseId;
         this.caseNumber = caseNumber;
@@ -68,6 +69,7 @@ public class CaseDetails implements Serializable, CaseComponent {
         this.securityMeasure = securityMeasure;
         this.violatedArticles = violatedArticles;
         this.sentence = sentence;
+        this.methodOfWeaponDiscovery = methodOfWeaponDiscovery;
     }
 
     public CaseDetails(String caseId, String caseNumber, String judge, String defendant, String criminalOffense,
@@ -75,7 +77,7 @@ public class CaseDetails implements Serializable, CaseComponent {
             String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount,
             String financialStatus, String admittedGuilt, String remorseful, String weaponType,
             String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles,
-            String sentence) {
+            String sentence, String methodOfWeaponDiscovery) {
         this.caseId = caseId;
         this.caseNumber = caseNumber;
         this.judge = judge;
@@ -98,6 +100,7 @@ public class CaseDetails implements Serializable, CaseComponent {
         this.securityMeasure = securityMeasure;
         this.violatedArticles = violatedArticles;
         this.sentence = sentence;
+        this.methodOfWeaponDiscovery = methodOfWeaponDiscovery;
     }
 
     public CaseDetails() {
@@ -287,6 +290,14 @@ public class CaseDetails implements Serializable, CaseComponent {
         this.sentence = sentence;
     }
 
+    public String getMethodOfWeaponDiscovery() {
+        return methodOfWeaponDiscovery;
+    }
+
+    public void setMethodOfWeaponDiscovery(String methodOfWeaponDiscovery) {
+        this.methodOfWeaponDiscovery = methodOfWeaponDiscovery;
+    }
+
     @Override
     public Attribute getIdAttribute() {
         return new Attribute("id", this.getClass());
@@ -318,6 +329,8 @@ public class CaseDetails implements Serializable, CaseComponent {
                 + "\"securityMeasure\": \"" + securityMeasure.replace("\"", "") + "\", "
                 + "\"violatedArticles\": \"" + violatedArticles.replace("\"", "") + "\", "
                 + "\"sentence\": \"" + sentence.replace("\"", "") + "\""
+                + "\"methodOfWeaponDiscovery\": \"" + methodOfWeaponDiscovery.replace("\"", "") + "\""
                 + "}";
     }
+
 }

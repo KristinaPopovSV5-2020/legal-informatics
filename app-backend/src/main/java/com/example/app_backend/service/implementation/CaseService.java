@@ -69,7 +69,7 @@ public class CaseService implements ICaseService {
                     "mesto", "oružje", "broj municije", "imovinsko stanje", "priznao krivicu (da/ne)",
                     "kaje se (da/ne)",
                     "tip oružja", "povreda nanesena oruzjem (da/ne)", "novčana kazna", "mera bezbednosti",
-                    "prekrseni clanovi (nabroj sve čl koji su prekršeni)", "kazna"
+                    "prekrseni clanovi (nabroj sve čl koji su prekršeni)", "kazna", "način pronalaska oruzja (Javno, Kuća, Auto, Bezbedno, Drugo)"
             };
 
             Map<String, String> extractedValues = new HashMap<>();
@@ -130,6 +130,7 @@ public class CaseService implements ICaseService {
         caseDetails.setSecurityMeasure(extractedValues.get("mera bezbednosti"));
         caseDetails.setViolatedArticles(extractedValues.get("prekrseni clanovi (nabroj sve čl koji su prekršeni)"));
         caseDetails.setSentence(extractedValues.get("kazna"));
+        caseDetails.setMethodOfWeaponDiscovery(extractedValues.get("način pronalaska oruzja (Javno, Kuća, Auto, Bezbedno, Drugo)"));
         return caseDetails;
     }
 }
