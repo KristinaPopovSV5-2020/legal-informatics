@@ -288,7 +288,6 @@
             <strong>{{ caseItem.court }}</strong>
           </p>
           <h3 class="case-number">{{ caseItem.caseNumber }}</h3>
-          <p><strong>Neovlašćeno poseduje oružje:</strong> {{ caseItem.illegallyPossessesWeapon | titlecase }}</p>
           <p><strong>Prekršeni propisi:</strong> {{ caseItem.violatedArticles }}</p>
           <p><strong>Novčana kazna:</strong> {{ caseItem.fineAmount }}</p>
           <p><strong>Kazna zatvora:</strong> {{ caseItem.sentence }}</p>
@@ -296,6 +295,7 @@
           <p><strong>Pokazuje kajanje:</strong> {{ caseItem.remorseful | titlecase }}</p>
           <p><strong>Priznao krivicu:</strong> {{ caseItem.admittedGuilt | titlecase }}</p>
           <p><strong>Poseduje oružje:</strong> {{ caseItem.weaponType | titlecase }}</p>
+          <p><strong>Neovlašćeno poseduje oružje:</strong> {{ caseItem.illegallyPossessesWeapon | titlecase }}</p>
           <p class="similarity"><strong>Sličnost: ~{{ caseItem.similarity }} %</strong></p>
         </div>
       </div>
