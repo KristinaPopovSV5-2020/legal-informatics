@@ -192,15 +192,9 @@ export class NewCaseComponent {
         this.similarCases = cases.map(c => {
           // each string looks like `"{\"id\": ...}" -> 0.0`
           const jsonPart = c.split("->")[0].trim();
-          console.log(jsonPart);
           return JSON.parse(jsonPart);
         });
 
-        console.log(this.similarCases);
-        for (let c of this.similarCases) {
-          console.log(c);
-          console.log(c.caseNumber);
-        }
         this.isLoadingSimilarity = false;
       },
       error: (err) => {

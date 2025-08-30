@@ -11,7 +11,7 @@
   flex: 0 0 40%;
   border-left: 1px solid #ddd;
   padding-left: 16px;
-  min-height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -19,6 +19,7 @@
 .top-content {
   flex: 0 0 80%;
   overflow: auto;
+  max-height: 700px;
 }
 
 .bottom-content {
@@ -119,4 +120,47 @@
 
 h3 {
   margin: 2px;
+}
+
+.cases-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.case-card {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 2px solid rgb(158, 154, 154);
+  padding: 20px;
+  width: 90%;
+  margin: 10px auto;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.case-card:hover {
+  transform: translateY(-4px);
+}
+
+.case-number {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.bold {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #104b39;
+}
+
+.case-card p {
+  margin: 4px 0;
+  color: #555;
+  line-height: 1.4;
+}
+
+.right-column h2{
+  text-align: center;
 }

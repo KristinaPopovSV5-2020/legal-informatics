@@ -48,10 +48,7 @@
           <mat-form-field appearance="outline" class="full-width">
             <mat-label>Datum</mat-label>
             <input matInput [matDatepicker]="picker" formControlName="date" />
-            <mat-datepicker-toggle
-              matSuffix
-              [for]="picker"
-            ></mat-datepicker-toggle>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
             <mat-error *ngIf="caseForm.get('date')?.hasError('required')">
               Obavezno polje!
@@ -75,9 +72,7 @@
             <mat-option value="da">Da</mat-option>
             <mat-option value="ne">Ne</mat-option>
           </mat-select>
-          <mat-error
-            *ngIf="caseForm.get('previouslyConvicted')?.hasError('required')"
-          >
+          <mat-error *ngIf="caseForm.get('previouslyConvicted')?.hasError('required')">
             Obavezno polje!
           </mat-error>
         </mat-form-field>
@@ -91,11 +86,9 @@
             <mat-option value="bezbedno">Bezbedno</mat-option>
             <mat-option value="drugo">Drugo</mat-option>
           </mat-select>
-          <mat-error
-            *ngIf="
+          <mat-error *ngIf="
               caseForm.get('methodOfWeaponDiscovery')?.hasError('required')
-            "
-          >
+            ">
             Obavezno polje!
           </mat-error>
         </mat-form-field>
@@ -177,9 +170,7 @@
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Krivično delo</mat-label>
           <input matInput formControlName="criminalOffense" />
-          <mat-error
-            *ngIf="newCaseForm.get('criminalOffense')?.hasError('required')"
-          >
+          <mat-error *ngIf="newCaseForm.get('criminalOffense')?.hasError('required')">
             Obavezno polje!
           </mat-error>
         </mat-form-field>
@@ -209,35 +200,19 @@
               <input matInput formControlName="item" />
             </mat-form-field>
 
-            <app-button
-              class="flex-0"
-              [buttonText]="'+'"
-              (click)="addLawArticle()"
-            >
+            <app-button class="flex-0" [buttonText]="'+'" (click)="addLawArticle()">
             </app-button>
           </div>
         </div>
         <div *ngIf="lawArticles?.length > 0" class="law-list">
-          <div
-            class="law-entry"
-            *ngFor="let group of lawArticles.controls; let i = index"
-            [formGroup]="lawArticleForm"
-          >
+          <div class="law-entry" *ngFor="let group of lawArticles.controls; let i = index" [formGroup]="lawArticleForm">
             <span>
               {{ group.value.law | titlecase }}, član
               {{ group.value.articleNumber }}
-              <span *ngIf="group.value.paragraph"
-                >, stav {{ group.value.paragraph }}</span
-              >
-              <span *ngIf="group.value.item"
-                >, tačka {{ group.value.item }}</span
-              >
+              <span *ngIf="group.value.paragraph">, stav {{ group.value.paragraph }}</span>
+              <span *ngIf="group.value.item">, tačka {{ group.value.item }}</span>
             </span>
-            <button
-              mat-icon-button
-              (click)="removeLawArticle(i)"
-              aria-label="Ukloni"
-            >
+            <button mat-icon-button (click)="removeLawArticle(i)" aria-label="Ukloni">
               <mat-icon>close</mat-icon>
             </button>
           </div>
@@ -255,29 +230,18 @@
               <mat-label>Broj municija</mat-label>
               <input matInput formControlName="ammunitionCount" />
             </mat-form-field>
-            <app-button
-              class="flex-0"
-              [buttonText]="'+'"
-              (click)="addWeaponArticle()"
-            >
+            <app-button class="flex-0" [buttonText]="'+'" (click)="addWeaponArticle()">
             </app-button>
           </div>
         </div>
         <div *ngIf="weaponArticles?.length > 0" class="law-list">
-          <div
-            class="law-entry"
-            *ngFor="let group of weaponArticles.controls; let i = index"
-            [formGroup]="weaponArticleForm"
-          >
+          <div class="law-entry" *ngFor="let group of weaponArticles.controls; let i = index"
+            [formGroup]="weaponArticleForm">
             <span>
               {{ group.value.weapon | titlecase }}, broj municija
               {{ group.value.ammunitionCount }}
             </span>
-            <button
-              mat-icon-button
-              (click)="removeWeaponArticle(i)"
-              aria-label="Ukloni"
-            >
+            <button mat-icon-button (click)="removeWeaponArticle(i)" aria-label="Ukloni">
               <mat-icon>close</mat-icon>
             </button>
           </div>
@@ -288,9 +252,7 @@
             <mat-form-field appearance="outline">
               <mat-label>Novčana kazna</mat-label>
               <input matInput formControlName="fineAmount" />
-              <mat-error
-                *ngIf="newCaseForm.get('fineAmount')?.hasError('required')"
-              >
+              <mat-error *ngIf="newCaseForm.get('fineAmount')?.hasError('required')">
                 Obavezno polje!
               </mat-error>
             </mat-form-field>
@@ -299,9 +261,7 @@
             <mat-form-field appearance="outline">
               <mat-label>Kazna zatvora</mat-label>
               <input matInput formControlName="sentence" />
-              <mat-error
-                *ngIf="newCaseForm.get('sentence')?.hasError('required')"
-              >
+              <mat-error *ngIf="newCaseForm.get('sentence')?.hasError('required')">
                 Obavezno polje!
               </mat-error>
             </mat-form-field>
@@ -310,12 +270,8 @@
         <h3>Mera bezbednosti</h3>
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Mera bezbednosti</mat-label>
-          <textarea
-            matInput
-            formControlName="securityMeasure"
-            rows="3"
-            placeholder="Unesite meru bezbednosti..."
-          ></textarea>
+          <textarea matInput formControlName="securityMeasure" rows="3"
+            placeholder="Unesite meru bezbednosti..."></textarea>
         </mat-form-field>
 
         <app-button [buttonText]="'Dodaj slučaj'" (click)="addNewCase()">
@@ -324,15 +280,35 @@
     </div>
   </div>
   <div class="right-column">
-    <div class="top-content"></div>
+    <h2>Slični slučajevi</h2>
+    <div class="top-content">
+      <div class="cases-container">
+        <div *ngFor="let caseItem of similarCases" class="case-card">
+          <!-- First row: case number -->
+          <h3 class="case-number">{{ caseItem.caseNumber }}</h3>
 
+          <!-- Second row: defendant and court -->
+          <p class="bold">
+            <strong>Okrivljeni:</strong> {{ caseItem.defendant }}
+          </p>
+          <p class="bold">
+            <strong>Sud:</strong> {{ caseItem.court }}
+          </p>
+
+          <!-- Other details -->
+          <p><strong>Datum:</strong> {{ caseItem.date | date }}</p>
+          <p><strong>Tužilac:</strong> {{ caseItem.court }}</p>
+          <p><strong>Neovlašćeno poseduje oružje:</strong> {{ caseItem.illegallyPossessesWeapon | titlecase }}</p>
+          <p><strong>Da li je naneta šteta:</strong> {{ caseItem.injuryCausedByWeapon | titlecase }}</p>
+          <p><strong>Pokazuje kajanje:</strong> {{ caseItem.remorseful | titlecase }}</p>
+          <p><strong>Priznao krivicu:</strong> {{ caseItem.admittedGuilt | titlecase }}</p>
+          <p><strong>Poseduje oružje kategorije D:</strong> {{ caseItem.weaponType | titlecase }}</p>
+        </div>
+      </div>
+
+    </div>
     <div class="bottom-content">
-      <mat-progress-spinner
-        *ngIf="isLoading"
-        mode="indeterminate"
-        color="primary"
-        diameter="40"
-      >
+      <mat-progress-spinner *ngIf="isLoading" mode="indeterminate" color="primary" diameter="40">
       </mat-progress-spinner>
 
       <div *ngIf="!isLoading && sentences.length > 0">
@@ -341,4 +317,3 @@
       </div>
     </div>
   </div>
-</div>
