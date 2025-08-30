@@ -26,4 +26,5 @@ export interface CaseAttributes {
   violatedArticles: string;
   sentence: string;
   similarity: number | null;
+  methodOfWeaponDiscovery: string | null;
 }
