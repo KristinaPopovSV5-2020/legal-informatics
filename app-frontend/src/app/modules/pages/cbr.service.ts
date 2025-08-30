@@ -65,6 +65,14 @@ export class CbrService {
       { headers: this.headers }
     );
   }
+
+  updateCaseDetails(caseData: CaseAttributes): Observable<CaseAttributes> {
+    return this.http.put<CaseAttributes>(
+      environment.apiHost + 'api/cbr/case-details',
+      caseData,
+      { headers: this.headers }
+    );
+  }
 }
 
 export interface CaseDTO {

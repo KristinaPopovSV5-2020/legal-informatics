@@ -19,6 +19,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.core.io.Resource;
@@ -123,5 +124,12 @@ public class CBRController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body("Resource not found: " + name + ".xml");
         }
+    }
+
+    @PutMapping("case-details")
+    @PreAuthorize("isAuthenticated()")
+    public ResponseEntity<CaseDetails> updateCaseDetails(@RequestBody CaseDetails caseDetails) {
+        CaseDetails updatedCaseDetails = caseService.updateCaseDetails(caseDetails);
+        return ResponseEntity.ok(updatedCaseDetails);
     }
 }

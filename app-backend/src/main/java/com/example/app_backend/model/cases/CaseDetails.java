@@ -383,4 +383,29 @@ public class CaseDetails implements Serializable, CaseComponent {
                 + "}";
     }
 
+    public void updateCaseDetails(CaseDetails caseDetails) {
+        this.caseNumber = caseDetails.caseNumber;
+        this.judge = caseDetails.judge;
+        this.defendant = caseDetails.defendant;
+        this.criminalOffense = caseDetails.criminalOffense;
+        this.court = caseDetails.court;
+        this.date = caseDetails.date;
+        this.previouslyConvicted = caseDetails.previouslyConvicted;
+        this.forSameOffense = caseDetails.forSameOffense;
+        this.illegallyPossessesWeapon = caseDetails.illegallyPossessesWeapon;
+        this.location = caseDetails.location;
+        this.weapon = caseDetails.weapon;
+        this.ammunitionCount = caseDetails.ammunitionCount;
+        this.financialStatus = caseDetails.financialStatus;
+        this.admittedGuilt = caseDetails.admittedGuilt;
+        this.remorseful = caseDetails.remorseful;
+        this.weaponType = caseDetails.weaponType;
+        this.injuryCausedByWeapon = caseDetails.injuryCausedByWeapon;
+        this.fineAmount = caseDetails.fineAmount;
+        this.securityMeasure = caseDetails.securityMeasure;
+        this.violatedArticles = caseDetails.violatedArticles;
+        this.sentence = caseDetails.sentence;
+        this.methodOfWeaponDiscovery = caseDetails.methodOfWeaponDiscovery;
+    }
+
 }

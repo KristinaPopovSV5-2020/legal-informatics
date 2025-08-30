@@ -4,33 +4,122 @@
 
     <div *ngIf="caseAttributes" class="case-details">
       <h2>Detalji slučaja</h2>
-      <p><strong>Broj predmeta:</strong> {{ caseAttributes.caseNumber }}</p>
-      <p><strong>Sudija:</strong> {{ caseAttributes.judge }}</p>
-      <p><strong>Optuzeni:</strong> {{ caseAttributes.defendant }}</p>
-      <p><strong>Krivično delo:</strong> {{ caseAttributes.criminalOffense }}</p>
-      <p><strong>Sud:</strong> {{ caseAttributes.court }}</p>
-      <p><strong>Datum:</strong> {{ caseAttributes.date }}</p>
-      <p><strong>Osuđivan ranije:</strong> {{ caseAttributes.previouslyConvicted }}</p>
-      <p><strong>Za isto krivično delo:</strong> {{ caseAttributes.forSameOffense }}</p>
-      <p><strong>Poseduje neovlašćeno oružje:</strong> {{ caseAttributes.illegallyPossessesWeapon }}</p>
-      <p><strong>Mesto:</strong> {{ caseAttributes.location }}</p>
-      <p><strong>Oružje:</strong> {{ caseAttributes.weapon }}</p>
-      <p><strong>Tip oružja:</strong> {{ caseAttributes.weaponType }}</p>
-      <p><strong>Broj municije:</strong> {{ caseAttributes.ammunitionCount }}</p>
-      <p><strong>Imovinsko stanje:</strong> {{ caseAttributes.financialStatus }}</p>
-      <p><strong>Priznao krivicu:</strong> {{ caseAttributes.admittedGuilt }}</p>
-      <p><strong>Kaje se:</strong> {{ caseAttributes.remorseful }}</p>
-      <p><strong>Povreda nanesena oružjem:</strong> {{ caseAttributes.injuryCausedByWeapon }}</p>
-      <p><strong>Način pronalaska oružja:</strong> {{ caseAttributes.methodOfWeaponDiscovery }}</p>
-      <p><strong>Novčana kazna:</strong> {{ caseAttributes.fineAmount }}</p>
-      <p><strong>Mera bezbednosti:</strong> {{ caseAttributes.securityMeasure }}</p>
-      <p><strong>Prekršeni članovi:</strong> {{ caseAttributes.violatedArticles }}</p>
-      <p><strong>Kazna:</strong> {{ caseAttributes.sentence }}</p>
+
+      <div class="form-group">
+        <label><strong>Broj predmeta:</strong></label>
+        <input [(ngModel)]="caseAttributes.caseNumber" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Sudija:</strong></label>
+        <input [(ngModel)]="caseAttributes.judge" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Optuženi:</strong></label>
+        <input [(ngModel)]="caseAttributes.defendant" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Krivično delo:</strong></label>
+        <input [(ngModel)]="caseAttributes.criminalOffense" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Sud:</strong></label>
+        <input [(ngModel)]="caseAttributes.court" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Datum:</strong></label>
+        <input type="date" [(ngModel)]="caseAttributes.date" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Osuđivan ranije:</strong></label>
+        <input [(ngModel)]="caseAttributes.previouslyConvicted" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Za isto krivično delo:</strong></label>
+        <input [(ngModel)]="caseAttributes.forSameOffense" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Poseduje neovlašćeno oružje:</strong></label>
+        <input [(ngModel)]="caseAttributes.illegallyPossessesWeapon" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Mesto:</strong></label>
+        <input [(ngModel)]="caseAttributes.location" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Oružje:</strong></label>
+        <input [(ngModel)]="caseAttributes.weapon" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Tip oružja:</strong></label>
+        <input [(ngModel)]="caseAttributes.weaponType" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Broj municije:</strong></label>
+        <input [(ngModel)]="caseAttributes.ammunitionCount" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Imovinsko stanje:</strong></label>
+        <input [(ngModel)]="caseAttributes.financialStatus" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Priznao krivicu:</strong></label>
+        <input [(ngModel)]="caseAttributes.admittedGuilt" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Kaje se:</strong></label>
+        <input [(ngModel)]="caseAttributes.remorseful" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Povreda nanesena oružjem:</strong></label>
+        <input [(ngModel)]="caseAttributes.injuryCausedByWeapon" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Način otkrivanja oružja:</strong></label>
+        <input [(ngModel)]="caseAttributes.methodOfWeaponDiscovery" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Novčana kazna:</strong></label>
+        <input [(ngModel)]="caseAttributes.fineAmount" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Mera bezbednosti:</strong></label>
+        <input [(ngModel)]="caseAttributes.securityMeasure" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Prekršeni članovi:</strong></label>
+        <input [(ngModel)]="caseAttributes.violatedArticles" />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Kazna:</strong></label>
+        <input [(ngModel)]="caseAttributes.sentence" />
+      </div>
+
+      <app-button [buttonText]="'Sačuvaj'" (onClick)="saveCase()"></app-button>
     </div>
+
     <div *ngIf="!caseAttributes" class="case-details">
       <div class="loading-text">{{ loadingText }}</div>
     </div>
   </div>
-
-
 </div>
