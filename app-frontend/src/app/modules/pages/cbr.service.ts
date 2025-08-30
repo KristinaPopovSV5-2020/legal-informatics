@@ -106,6 +106,7 @@ export interface CaseDetails {
   securityMeasure: string;
   violatedArticles: string;
   sentence: string;
+  similarity?: string;
 }
 
 export interface RecommendationsDTO {

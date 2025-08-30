@@ -284,25 +284,19 @@
     <div class="top-content">
       <div class="cases-container">
         <div *ngFor="let caseItem of similarCases" class="case-card">
-          <!-- First row: case number -->
+          <p class="bold">
+            <strong>{{ caseItem.court }}</strong>
+          </p>
           <h3 class="case-number">{{ caseItem.caseNumber }}</h3>
-
-          <!-- Second row: defendant and court -->
-          <p class="bold">
-            <strong>Okrivljeni:</strong> {{ caseItem.defendant }}
-          </p>
-          <p class="bold">
-            <strong>Sud:</strong> {{ caseItem.court }}
-          </p>
-
-          <!-- Other details -->
-          <p><strong>Datum:</strong> {{ caseItem.date | date }}</p>
-          <p><strong>Tužilac:</strong> {{ caseItem.court }}</p>
           <p><strong>Neovlašćeno poseduje oružje:</strong> {{ caseItem.illegallyPossessesWeapon | titlecase }}</p>
+          <p><strong>Prekršeni propisi:</strong> {{ caseItem.violatedArticles }}</p>
+          <p><strong>Novčana kazna:</strong> {{ caseItem.fineAmount }}</p>
+          <p><strong>Kazna zatvora:</strong> {{ caseItem.sentence }}</p>
           <p><strong>Da li je naneta šteta:</strong> {{ caseItem.injuryCausedByWeapon | titlecase }}</p>
           <p><strong>Pokazuje kajanje:</strong> {{ caseItem.remorseful | titlecase }}</p>
           <p><strong>Priznao krivicu:</strong> {{ caseItem.admittedGuilt | titlecase }}</p>
-          <p><strong>Poseduje oružje kategorije D:</strong> {{ caseItem.weaponType | titlecase }}</p>
+          <p><strong>Poseduje oružje:</strong> {{ caseItem.weaponType | titlecase }}</p>
+          <p class="similarity"><strong>Sličnost: ~{{ caseItem.similarity }} %</strong></p>
         </div>
       </div>
 

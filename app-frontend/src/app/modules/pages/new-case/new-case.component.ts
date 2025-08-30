@@ -190,9 +190,13 @@ export class NewCaseComponent {
     this.cbrService.fetchSimilarityCases(caseDTO).subscribe({
       next: (cases: string[]) => {
         this.similarCases = cases.map(c => {
-          // each string looks like `"{\"id\": ...}" -> 0.0`
-          const jsonPart = c.split("->")[0].trim();
-          return JSON.parse(jsonPart);
+          const parts = c.split("->");
+          const jsonPart = parts[0].trim();
+          const caseSim = parts[1].trim();
+
+          const item = JSON.parse(jsonPart);
+          item.similarity = caseSim;
+          return item;
         });
 
         this.isLoadingSimilarity = false;

@@ -19,7 +19,7 @@
 .top-content {
   flex: 0 0 80%;
   overflow: auto;
-  max-height: 700px;
+  max-height: 1500px;
 }
 
 .bottom-content {
@@ -161,6 +161,10 @@ h3 {
   line-height: 1.4;
 }
 
-.right-column h2{
+.right-column h2 {
   text-align: center;
+}
+
+.similarity {
+  text-align: right;
 }
