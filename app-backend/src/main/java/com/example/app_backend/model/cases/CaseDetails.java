@@ -3,6 +3,8 @@ package com.example.app_backend.model.cases;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.example.app_backend.dto.rule.CasesDTO;
+
 import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
 
@@ -70,6 +72,54 @@ public class CaseDetails implements Serializable, CaseComponent {
         this.violatedArticles = violatedArticles;
         this.sentence = sentence;
         this.methodOfWeaponDiscovery = methodOfWeaponDiscovery;
+    }
+
+    public CaseDetails(CasesDTO dto) {
+        this.caseId = dto.getName();
+        this.defendant = dto.getDefendant();
+        this.previouslyConvicted = dto.getPreviouslyConvicted();
+        this.methodOfWeaponDiscovery = dto.getMethodOfWeaponDiscovery();
+
+        this.illegallyPossessesWeapon = dto.getUnauthorizedPossessionOfAWeapon();
+
+        this.injuryCausedByWeapon = dto.getHarmDone();
+
+        this.remorseful = dto.getRegretsIt();
+
+        this.admittedGuilt = dto.getAdmittedGuilt();
+
+        StringBuilder weaponTypes = new StringBuilder();
+        if ("da".equalsIgnoreCase(dto.getHasWeaponTypeA()))
+            weaponTypes.append("TypeA ");
+        if ("da".equalsIgnoreCase(dto.getHasWeaponTypeB()))
+            weaponTypes.append("TypeB ");
+        if ("da".equalsIgnoreCase(dto.getHasWeaponTypeC()))
+            weaponTypes.append("TypeC ");
+        if ("da".equalsIgnoreCase(dto.getHasWeaponTypeD()))
+            weaponTypes.append("TypeD ");
+        this.weaponType = weaponTypes.toString().trim();
+
+        if ("da".equalsIgnoreCase(dto.getLowIncome())) {
+            this.financialStatus = "lose";
+        } else if ("da".equalsIgnoreCase(dto.getHighIncome())) {
+            this.financialStatus = "dobro";
+        } else {
+            this.financialStatus = "srednje";
+        }
+
+        this.caseNumber = null;
+        this.judge = null;
+        this.criminalOffense = null;
+        this.court = null;
+        this.date = null;
+        this.forSameOffense = null;
+        this.location = null;
+        this.weapon = null;
+        this.ammunitionCount = null;
+        this.fineAmount = null;
+        this.securityMeasure = null;
+        this.violatedArticles = null;
+        this.sentence = null;
     }
 
     public CaseDetails(String caseId, String caseNumber, String judge, String defendant, String criminalOffense,

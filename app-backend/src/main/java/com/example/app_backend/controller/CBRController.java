@@ -50,7 +50,7 @@ public class CBRController {
             recommender.preCycle();
 
             CBRQuery query = new CBRQuery();
-            CaseDetails caseDescription = new CaseDetails();
+            CaseDetails caseDescription = new CaseDetails(request);
             query.setDescription(caseDescription);
 
             List<String> similarCases = recommender.getCycle(query);
