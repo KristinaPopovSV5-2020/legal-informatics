@@ -298,9 +298,9 @@
           <p><strong>Pokazuje kajanje:</strong> {{ caseItem.remorseful | titlecase }}</p>
           <p><strong>Priznao krivicu:</strong> {{ caseItem.admittedGuilt | titlecase }}</p>
           <p><strong>Poseduje oružje:</strong> {{ caseItem.weaponType | titlecase }}</p>
-          <p><strong>Mesto otkrivanja oružja:</strong> {{ caseItem.methodOfWeaponDiscovery | titlecase }}</p>
+          <p><strong>Način otkrivanja oružja:</strong> {{ caseItem.methodOfWeaponDiscovery | titlecase }}</p>
           <p><strong>Neovlašćeno poseduje oružje:</strong> {{ caseItem.illegallyPossessesWeapon | titlecase }}</p>
-          <p class="similarity"><strong>Sličnost: ~{{ caseItem.similarity }} %</strong></p>
+          <p class="similarity"><strong>Sličnost: ~{{ caseItem.similarity | number:'1.0-2' }} %</strong></p>
         </div>
       </div>
 
