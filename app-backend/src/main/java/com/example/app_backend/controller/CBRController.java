@@ -45,7 +45,6 @@ public class CBRController {
     @PostMapping("recommend-cases")
     public ResponseEntity<?> recommendCases(@RequestBody CasesDTO request) {
         BaseCbrApplication recommender = new BaseCbrApplication(caseDetailsRepository);
-        RecommendationsDTO recommendations = new RecommendationsDTO();
         try {
             recommender.configure();
             recommender.preCycle();
@@ -54,14 +53,14 @@ public class CBRController {
             CaseDetails caseDescription = new CaseDetails();
             query.setDescription(caseDescription);
 
-            recommendations.cases = recommender.getCycle(query);
+            List<String> similarCases = recommender.getCycle(query);
             recommender.postCycle();
+            return ResponseEntity.ok(similarCases);
 
         } catch (Exception e) {
             e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error fetching recommendations");
         }
-
-        return ResponseEntity.ok(recommendations);
     }
 
     @PostMapping("rules/fire")

@@ -19,7 +19,7 @@ export class NewCaseComponent {
   isLoading: boolean = false;
   isLoadingSimilarity: boolean = false;
   sentences: string[] = [];
-  similarCases: RecommendationsDTO[] = [];
+  similarCases: CaseDetails[] = [];
 
   constructor(private fb: FormBuilder, private cbrService: CbrService) {
     this.caseForm = this.fb.group({
@@ -188,15 +188,24 @@ export class NewCaseComponent {
 
   fetchSimilarCases(caseDTO: CaseDTO) {
     this.cbrService.fetchSimilarityCases(caseDTO).subscribe({
-      next: (cases: RecommendationsDTO[]) => {
-        this.similarCases = cases;
+      next: (cases: string[]) => {
+        this.similarCases = cases.map(c => {
+          // each string looks like `"{\"id\": ...}" -> 0.0`
+          const jsonPart = c.split("->")[0].trim();
+          console.log(jsonPart);
+          return JSON.parse(jsonPart);
+        });
+
+        console.log(this.similarCases);
+        for (let c of this.similarCases) {
+          console.log(c);
+          console.log(c.caseNumber);
+        }
         this.isLoadingSimilarity = false;
       },
       error: (err) => {
         console.error('Greška pri dobavljanju sličnih slučajeva:', err);
         this.isLoadingSimilarity = false;
-        //REMOVE IT AFTER
-        //this.similarCases = SIMILAR_CASES;
       },
     });
   }
