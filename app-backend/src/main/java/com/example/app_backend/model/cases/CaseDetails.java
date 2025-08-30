@@ -291,4 +291,33 @@ public class CaseDetails implements Serializable, CaseComponent {
     public Attribute getIdAttribute() {
         return new Attribute("id", this.getClass());
     }
+
+    @Override
+    public String toString() {
+        return "{"
+                + "\"id\": \"" + id + "\", "
+                + "\"caseId\": \"" + caseId + "\", "
+                + "\"caseNumber\": \"" + caseNumber + "\", "
+                + "\"judge\": \"" + judge + "\", "
+                + "\"defendant\": \"" + defendant + "\", "
+                + "\"criminalOffense\": \"" + criminalOffense + "\", "
+                + "\"court\": \"" + court + "\", "
+                + "\"date\": \"" + date + "\", "
+                + "\"previouslyConvicted\": " + previouslyConvicted + ", "
+                + "\"forSameOffense\": " + forSameOffense + ", "
+                + "\"illegallyPossessesWeapon\": " + illegallyPossessesWeapon + ", "
+                + "\"location\": \"" + location + "\", "
+                + "\"weapon\": \"" + weapon + "\", "
+                + "\"ammunitionCount\": " + ammunitionCount + ", "
+                + "\"financialStatus\": \"" + financialStatus + "\", "
+                + "\"admittedGuilt\": " + admittedGuilt + ", "
+                + "\"remorseful\": " + remorseful + ", "
+                + "\"weaponType\": \"" + weaponType + "\", "
+                + "\"injuryCausedByWeapon\": " + injuryCausedByWeapon + ", "
+                + "\"fineAmount\": " + fineAmount + ", "
+                + "\"securityMeasure\": \"" + securityMeasure + "\", "
+                + "\"violatedArticles\": \"" + violatedArticles + "\", "
+                + "\"sentence\": \"" + sentence + "\""
+                + "}";
+    }
 }
