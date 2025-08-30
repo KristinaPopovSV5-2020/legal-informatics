@@ -57,6 +57,14 @@ export class CbrService {
       { headers: this.headers }
     );
   }
+
+  fetchSimilarityCases(caseData: CaseDTO): Observable<CaseAttributes[]> {
+    return this.http.post<CaseAttributes[]>(
+      environment.apiHost + 'api/cbr/similarity',
+      caseData,
+      { headers: this.headers }
+    );
+  }
 }
 
 export interface CaseDTO {

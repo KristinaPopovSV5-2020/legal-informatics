@@ -1,0 +1,44 @@
+<mat-card class="case-card">
+  <div class="card-content">
+    <p><strong>Broj predmeta:</strong> {{ caseData.caseNumber }}</p>
+    <p><strong>Sudija:</strong> {{ caseData.judge }}</p>
+    <p><strong>Optuzeni:</strong> {{ caseData.defendant }}</p>
+    <p><strong>Krivično delo:</strong> {{ caseData.criminalOffense }}</p>
+    <p><strong>Sud:</strong> {{ caseData.court }}</p>
+    <p><strong>Datum:</strong> {{ caseData.date }}</p>
+    <p>
+      <strong>Osuđivan ranije:</strong> {{ caseData.previouslyConvicted }}
+    </p>
+    <p>
+      <strong>Za isto krivično delo:</strong>
+      {{ caseData.forSameOffense }}
+    </p>
+    <p>
+      <strong>Poseduje neovlašćeno oružje:</strong>
+      {{ caseData.illegallyPossessesWeapon }}
+    </p>
+    <p><strong>Mesto:</strong> {{ caseData.location }}</p>
+    <p><strong>Oružje:</strong> {{ caseData.weapon }}</p>
+    <p><strong>Tip oružja:</strong> {{ caseData.weaponType }}</p>
+    <p><strong>Broj municije:</strong> {{ caseData.ammunitionCount }}</p>
+    <p>
+      <strong>Imovinsko stanje:</strong> {{ caseData.financialStatus }}
+    </p>
+    <p><strong>Priznao krivicu:</strong> {{ caseData.admittedGuilt }}</p>
+    <p><strong>Kaje se:</strong> {{ caseData.remorseful }}</p>
+    <p>
+      <strong>Povreda nanesena oružjem:</strong>
+      {{ caseData.injuryCausedByWeapon }}
+    </p>
+    <p><strong>Novčana kazna:</strong> {{ caseData.fineAmount }}</p>
+    <p>
+      <strong>Mera bezbednosti:</strong> {{ caseData.securityMeasure }}
+    </p>
+    <p>
+      <strong>Prekršeni članovi:</strong> {{ caseData.violatedArticles }}
+    </p>
+    <p><strong>Kazna:</strong> {{ caseData.sentence }}</p>
+  </div>
+
+  <div class="similarity-badge">{{ caseData.similarity }}%</div>
+</mat-card>
