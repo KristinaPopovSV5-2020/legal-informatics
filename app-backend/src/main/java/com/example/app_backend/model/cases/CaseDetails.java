@@ -328,7 +328,7 @@ public class CaseDetails implements Serializable, CaseComponent {
                 + "\"fineAmount\": \"" + fineAmount.replace("\"", "") + "\", "
                 + "\"securityMeasure\": \"" + securityMeasure.replace("\"", "") + "\", "
                 + "\"violatedArticles\": \"" + violatedArticles.replace("\"", "") + "\", "
-                + "\"sentence\": \"" + sentence.replace("\"", "") + "\""
+                + "\"sentence\": \"" + sentence.replace("\"", "") + "\", "
                 + "\"methodOfWeaponDiscovery\": \"" + methodOfWeaponDiscovery.replace("\"", "") + "\""
                 + "}";
     }
