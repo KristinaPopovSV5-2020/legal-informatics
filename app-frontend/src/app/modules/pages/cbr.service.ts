@@ -9,7 +9,7 @@ import { CaseAttributes } from '../../dto/CaseAttributes';
 })
 export class CbrService {
   private apiUrl = `${environment.apiHost}api/cbr/`;
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   private value$ = new BehaviorSubject<any>({});
   selectedValue$ = this.value$.asObservable();
@@ -58,8 +58,8 @@ export class CbrService {
     );
   }
 
-  fetchSimilarityCases(caseData: CaseDTO): Observable<CaseAttributes[]> {
-    return this.http.post<CaseAttributes[]>(
+  fetchSimilarityCases(caseData: CaseDTO): Observable<RecommendationsDTO[]> {
+    return this.http.post<RecommendationsDTO[]>(
       environment.apiHost + 'api/cbr/recommend-cases',
       caseData,
       { headers: this.headers }
@@ -106,4 +106,8 @@ export interface CaseDetails {
   securityMeasure: string;
   violatedArticles: string;
   sentence: string;
+}
+
+export interface RecommendationsDTO {
+  cases: String[];
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CaseDetails, CaseDTO, CbrService } from '../cbr.service';
+import { CaseDetails, CaseDTO, CbrService, RecommendationsDTO } from '../cbr.service';
 import { CaseAttributes } from '../../../dto/CaseAttributes';
 
 @Component({
@@ -19,7 +19,7 @@ export class NewCaseComponent {
   isLoading: boolean = false;
   isLoadingSimilarity: boolean = false;
   sentences: string[] = [];
-  similarCases: CaseAttributes[] = [];
+  similarCases: RecommendationsDTO[] = [];
 
   constructor(private fb: FormBuilder, private cbrService: CbrService) {
     this.caseForm = this.fb.group({
@@ -164,8 +164,8 @@ export class NewCaseComponent {
         formValues.lowIncome === 'da'
           ? 'loše'
           : formValues.lowIncome === 'ne'
-          ? 'dobro'
-          : 'srednje',
+            ? 'dobro'
+            : 'srednje',
       admittedGuilt: formValues.admittedGuilt,
       remorseful: formValues.regretsIt,
       weaponType,
@@ -188,7 +188,7 @@ export class NewCaseComponent {
 
   fetchSimilarCases(caseDTO: CaseDTO) {
     this.cbrService.fetchSimilarityCases(caseDTO).subscribe({
-      next: (cases: CaseAttributes[]) => {
+      next: (cases: RecommendationsDTO[]) => {
         this.similarCases = cases;
         this.isLoadingSimilarity = false;
       },
@@ -196,7 +196,7 @@ export class NewCaseComponent {
         console.error('Greška pri dobavljanju sličnih slučajeva:', err);
         this.isLoadingSimilarity = false;
         //REMOVE IT AFTER
-        this.similarCases = SIMILAR_CASES;
+        //this.similarCases = SIMILAR_CASES;
       },
     });
   }
