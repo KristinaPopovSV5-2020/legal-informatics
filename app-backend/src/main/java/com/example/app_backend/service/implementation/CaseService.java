@@ -125,7 +125,7 @@ public class CaseService implements ICaseService {
         caseDetails.setAdmittedGuilt(extractedValues.get("priznao krivicu (da/ne)"));
         caseDetails.setRemorseful(extractedValues.get("kaje se (da/ne)"));
         caseDetails.setWeaponType(extractedValues.get("tip oružja"));
-        caseDetails.setInjuryCausedByWeapon(extractedValues.get("povreda nanesena oruzjem"));
+        caseDetails.setInjuryCausedByWeapon(extractedValues.get("povreda nanesena oruzjem (da/ne)"));
         caseDetails.setFineAmount(extractedValues.get("novčana kazna"));
         caseDetails.setSecurityMeasure(extractedValues.get("mera bezbednosti"));
         caseDetails.setViolatedArticles(extractedValues.get("prekrseni clanovi (nabroj sve čl koji su prekršeni)"));
