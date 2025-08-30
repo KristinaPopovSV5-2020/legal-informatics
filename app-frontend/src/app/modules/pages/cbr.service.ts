@@ -60,7 +60,7 @@ export class CbrService {
 
   fetchSimilarityCases(caseData: CaseDTO): Observable<CaseAttributes[]> {
     return this.http.post<CaseAttributes[]>(
-      environment.apiHost + 'api/cbr/similarity',
+      environment.apiHost + 'api/cbr/recommend-cases',
       caseData,
       { headers: this.headers }
     );

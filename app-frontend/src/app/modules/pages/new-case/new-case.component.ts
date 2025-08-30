@@ -79,7 +79,7 @@ export class NewCaseComponent {
           console.log(error);
         },
       });
-      this.fetchSimilarCases()
+      this.fetchSimilarCases(caseDTO);
     }
   }
 
