@@ -97,7 +97,7 @@ public class RuleService implements IRuleService {
                 "Okrivljeni je nosio ili prenosio oruzje kategorije B bez vazece isprave o oruzju.";
             case "jail_3_year1" ->
                 "Okrivljeni je naneo povredu oruzjem.";
-            case "to_pay_min31" ->
+            case "to_pay_min_31" ->
                 "Okrivljeni nije cuvao oruzje ili municiju na bezbedan nacin.";
             case "jail_min_year1" ->
                 "Okrivljeni je neovlasceno drzao vecu kolicinu oruzja ili druga sredstva velike razorne moci.";

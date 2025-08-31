@@ -118,19 +118,10 @@ public class BaseCbrApplication implements StandardCBRApplication {
         slicnostNacinOtkrivanjaOruzja.setSimilarity("drugo", "auto", 0.5);
 
         slicnostNacinOtkrivanjaOruzja.setSimilarity("bezbedno", "bezbedno", 1.0);
+
         simConfig.addMapping(new Attribute("methodOfWeaponDiscovery", CaseDetails.class),
                 slicnostNacinOtkrivanjaOruzja);
         simConfig.setWeight(new Attribute("methodOfWeaponDiscovery", CaseDetails.class), 1.0);
-
-        // WEAPON TYPE → string comparison
-        simConfig.addMapping(new Attribute("weaponType", CaseDetails.class),
-                new es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.MaxString());
-        simConfig.setWeight(new Attribute("weaponType", CaseDetails.class), 1.0);
-
-        // AMMUNITION COUNT → kao string (jer su vrednosti "Not found", "6 metaka...")
-        simConfig.addMapping(new Attribute("ammunitionCount", CaseDetails.class),
-                new es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.MaxString());
-        simConfig.setWeight(new Attribute("ammunitionCount", CaseDetails.class), 0.8); // malo manja težina
 
         // Equal - returns 1 if both individuals are equal, otherwise returns 0
         // Interval - returns the similarity of two number inside an interval: sim(x,y)
@@ -156,6 +147,7 @@ public class BaseCbrApplication implements StandardCBRApplication {
     }
 
     public List<String> getCycle(CBRQuery query) throws ExecutionException {
+
         Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(_caseBase.getCases(), query, simConfig);
         eval = SelectCases.selectTopKRR(eval, 5);
         List<String> retVal = new ArrayList<>();
