@@ -57,7 +57,7 @@ public class BaseCbrApplication implements StandardCBRApplication {
         slicnostImovnoStanje.setSimilarity("lose", "srednjeg imovnog stanja", 0.3);
 
         simConfig.addMapping(new Attribute("financialStatus", CaseDetails.class), slicnostImovnoStanje);
-        simConfig.setWeight(new Attribute("financialStatus", CaseDetails.class), 1.0);
+        simConfig.setWeight(new Attribute("financialStatus", CaseDetails.class), 0.6);
 
         // PREVIOUSLY CONVICTED
         TabularSimilarity slicnostPrethodnoOsudjivan = new TabularSimilarity(Arrays.asList("da", "ne"));
@@ -65,27 +65,28 @@ public class BaseCbrApplication implements StandardCBRApplication {
         slicnostPrethodnoOsudjivan.setSimilarity("ne", "ne", 1.0);
 
         simConfig.addMapping(new Attribute("previouslyConvicted", CaseDetails.class), slicnostPrethodnoOsudjivan);
-        simConfig.setWeight(new Attribute("previouslyConvicted", CaseDetails.class), 1.0);
+        simConfig.setWeight(new Attribute("previouslyConvicted", CaseDetails.class), 0.8);
 
         // ILLEGALLY POSSESSES WEAPON
         TabularSimilarity slicnostIlegalnoOruzje = new TabularSimilarity(Arrays.asList("da", "ne"));
         slicnostIlegalnoOruzje.setSimilarity("da", "da", 1.0); // maksimalna sličnost
         slicnostIlegalnoOruzje.setSimilarity("ne", "ne", 1.0); // maksimalna sličnost
         simConfig.addMapping(new Attribute("illegallyPossessesWeapon", CaseDetails.class), slicnostIlegalnoOruzje);
+        simConfig.setWeight(new Attribute("illegallyPossessesWeapon", CaseDetails.class), 0.9);
 
         // ADMITTED GUILT
         TabularSimilarity slicnostPriznaoKrivicu = new TabularSimilarity(Arrays.asList("da", "ne"));
         slicnostPriznaoKrivicu.setSimilarity("da", "da", 1.0);
         slicnostPriznaoKrivicu.setSimilarity("ne", "ne", 1.0);
         simConfig.addMapping(new Attribute("admittedGuilt", CaseDetails.class), slicnostPriznaoKrivicu);
-        simConfig.setWeight(new Attribute("admittedGuilt", CaseDetails.class), 1.0);
+        simConfig.setWeight(new Attribute("admittedGuilt", CaseDetails.class), 0.6);
 
         // REMORSEFUL
         TabularSimilarity slicnostKajanje = new TabularSimilarity(Arrays.asList("da", "ne"));
         slicnostKajanje.setSimilarity("da", "da", 1.0);
         slicnostKajanje.setSimilarity("ne", "ne", 1.0);
         simConfig.addMapping(new Attribute("remorseful", CaseDetails.class), slicnostKajanje);
-        simConfig.setWeight(new Attribute("remorseful", CaseDetails.class), 1.0);
+        simConfig.setWeight(new Attribute("remorseful", CaseDetails.class), 0.6);
 
         // INJURY CAUSED BY WEAPON
         TabularSimilarity slicnostNanetaSteta = new TabularSimilarity(Arrays.asList("da", "ne"));
@@ -121,7 +122,7 @@ public class BaseCbrApplication implements StandardCBRApplication {
 
         simConfig.addMapping(new Attribute("methodOfWeaponDiscovery", CaseDetails.class),
                 slicnostNacinOtkrivanjaOruzja);
-        simConfig.setWeight(new Attribute("methodOfWeaponDiscovery", CaseDetails.class), 1.0);
+        simConfig.setWeight(new Attribute("methodOfWeaponDiscovery", CaseDetails.class), 0.8);
 
         // Equal - returns 1 if both individuals are equal, otherwise returns 0
         // Interval - returns the similarity of two number inside an interval: sim(x,y)
