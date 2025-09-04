@@ -52,7 +52,7 @@ public class BaseCbrApplication implements StandardCBRApplication {
         slicnostImovnoStanje.setSimilarity("dobro", "srednjeg imovnog stanja", 0.3);
         slicnostImovnoStanje.setSimilarity("srednje", "srednjeg imovnog stanja", 1.0);
         slicnostImovnoStanje.setSimilarity("srednje", "dobrog imovnog stanja", 0.3);
-        slicnostImovnoStanje.setSimilarity("srednje", "lošeg imovnog stanja", 0.6);
+        slicnostImovnoStanje.setSimilarity("srednje", "lošeg imovnog stanja", 0.3);
         slicnostImovnoStanje.setSimilarity("lose", "lošeg imovnog stanja", 1.0);
         slicnostImovnoStanje.setSimilarity("lose", "srednjeg imovnog stanja", 0.3);
 
