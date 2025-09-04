@@ -90,13 +90,13 @@ public class CaseDetails implements Serializable, CaseComponent {
 
         StringBuilder weaponTypes = new StringBuilder();
         if ("da".equalsIgnoreCase(dto.getHasWeaponTypeA()))
-            weaponTypes.append("TypeA ");
+            weaponTypes.append("A");
         if ("da".equalsIgnoreCase(dto.getHasWeaponTypeB()))
-            weaponTypes.append("TypeB ");
+            weaponTypes.append("B");
         if ("da".equalsIgnoreCase(dto.getHasWeaponTypeC()))
-            weaponTypes.append("TypeC ");
+            weaponTypes.append("C");
         if ("da".equalsIgnoreCase(dto.getHasWeaponTypeD()))
-            weaponTypes.append("TypeD ");
+            weaponTypes.append("D");
         this.weaponType = weaponTypes.toString().trim();
 
         if ("da".equalsIgnoreCase(dto.getLowIncome())) {

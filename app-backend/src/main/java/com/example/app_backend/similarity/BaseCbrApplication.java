@@ -79,14 +79,14 @@ public class BaseCbrApplication implements StandardCBRApplication {
         slicnostPriznaoKrivicu.setSimilarity("da", "da", 1.0);
         slicnostPriznaoKrivicu.setSimilarity("ne", "ne", 1.0);
         simConfig.addMapping(new Attribute("admittedGuilt", CaseDetails.class), slicnostPriznaoKrivicu);
-        simConfig.setWeight(new Attribute("admittedGuilt", CaseDetails.class), 0.6);
+        simConfig.setWeight(new Attribute("admittedGuilt", CaseDetails.class), 0.5);
 
         // REMORSEFUL
         TabularSimilarity slicnostKajanje = new TabularSimilarity(Arrays.asList("da", "ne"));
         slicnostKajanje.setSimilarity("da", "da", 1.0);
         slicnostKajanje.setSimilarity("ne", "ne", 1.0);
         simConfig.addMapping(new Attribute("remorseful", CaseDetails.class), slicnostKajanje);
-        simConfig.setWeight(new Attribute("remorseful", CaseDetails.class), 0.6);
+        simConfig.setWeight(new Attribute("remorseful", CaseDetails.class), 0.5);
 
         // INJURY CAUSED BY WEAPON
         TabularSimilarity slicnostNanetaSteta = new TabularSimilarity(Arrays.asList("da", "ne"));
@@ -123,6 +123,95 @@ public class BaseCbrApplication implements StandardCBRApplication {
         simConfig.addMapping(new Attribute("methodOfWeaponDiscovery", CaseDetails.class),
                 slicnostNacinOtkrivanjaOruzja);
         simConfig.setWeight(new Attribute("methodOfWeaponDiscovery", CaseDetails.class), 0.8);
+
+        // WEAPON TYPE
+        TabularSimilarity slicnostTipOruzja = new TabularSimilarity(
+                Arrays.asList("A", "B", "C", "D", "AB", "AC", "AD", "BC", "BD", "CD", "ABC", "ACD", "BCD", "ABCD"));
+        slicnostTipOruzja.setSimilarity("A", "A", 1.0);
+        slicnostTipOruzja.setSimilarity("B", "B", 1.0);
+        slicnostTipOruzja.setSimilarity("C", "C", 1.0);
+        slicnostTipOruzja.setSimilarity("D", "D", 1.0);
+        slicnostTipOruzja.setSimilarity("AB", "AB", 1.0);
+        slicnostTipOruzja.setSimilarity("AC", "AC", 1.0);
+        slicnostTipOruzja.setSimilarity("AD", "AD", 1.0);
+        slicnostTipOruzja.setSimilarity("BC", "BC", 1.0);
+        slicnostTipOruzja.setSimilarity("BD", "BD", 1.0);
+        slicnostTipOruzja.setSimilarity("CD", "CD", 1.0);
+        slicnostTipOruzja.setSimilarity("ABC", "ABC", 1.0);
+        slicnostTipOruzja.setSimilarity("ACD", "ACD", 1.0);
+        slicnostTipOruzja.setSimilarity("BCD", "BCD", 1.0);
+        slicnostTipOruzja.setSimilarity("ABCD", "ABCD", 1.0);
+        slicnostTipOruzja.setSimilarity("A", "AB", 0.5);
+        slicnostTipOruzja.setSimilarity("A", "AC", 0.5);
+        slicnostTipOruzja.setSimilarity("A", "AD", 0.5);
+        slicnostTipOruzja.setSimilarity("A", "ABC", 0.33);
+        slicnostTipOruzja.setSimilarity("A", "ACD", 0.33);
+        slicnostTipOruzja.setSimilarity("A", "ABCD", 0.25);
+        slicnostTipOruzja.setSimilarity("B", "AB", 0.5);
+        slicnostTipOruzja.setSimilarity("B", "BC", 0.5);
+        slicnostTipOruzja.setSimilarity("B", "BD", 0.5);
+        slicnostTipOruzja.setSimilarity("B", "ABC", 0.33);
+        slicnostTipOruzja.setSimilarity("B", "BCD", 0.33);
+        slicnostTipOruzja.setSimilarity("B", "ABCD", 0.25);
+        slicnostTipOruzja.setSimilarity("C", "AC", 0.5);
+        slicnostTipOruzja.setSimilarity("C", "BC", 0.5);
+        slicnostTipOruzja.setSimilarity("C", "CD", 0.5);
+        slicnostTipOruzja.setSimilarity("C", "ABC", 0.33);
+        slicnostTipOruzja.setSimilarity("C", "ACD", 0.33);
+        slicnostTipOruzja.setSimilarity("C", "BCD", 0.33);
+        slicnostTipOruzja.setSimilarity("C", "ABCD", 0.25);
+        slicnostTipOruzja.setSimilarity("D", "AD", 0.5);
+        slicnostTipOruzja.setSimilarity("D", "BD", 0.5);
+        slicnostTipOruzja.setSimilarity("D", "CD", 0.5);
+        slicnostTipOruzja.setSimilarity("D", "ACD", 0.33);
+        slicnostTipOruzja.setSimilarity("D", "BCD", 0.33);
+        slicnostTipOruzja.setSimilarity("D", "ABCD", 0.25);
+        slicnostTipOruzja.setSimilarity("AB", "AC", 0.33);
+        slicnostTipOruzja.setSimilarity("AB", "AD", 0.33);
+        slicnostTipOruzja.setSimilarity("AB", "BC", 0.33);
+        slicnostTipOruzja.setSimilarity("AB", "BD", 0.33);
+        slicnostTipOruzja.setSimilarity("AB", "ABC", 0.67);
+        slicnostTipOruzja.setSimilarity("AB", "ACD", 0.25);
+        slicnostTipOruzja.setSimilarity("AB", "BCD", 0.25);
+        slicnostTipOruzja.setSimilarity("AB", "ABCD", 0.5);
+        slicnostTipOruzja.setSimilarity("AC", "AD", 0.33);
+        slicnostTipOruzja.setSimilarity("AC", "BC", 0.33);
+        slicnostTipOruzja.setSimilarity("AC", "CD", 0.33);
+        slicnostTipOruzja.setSimilarity("AC", "ABC", 0.67);
+        slicnostTipOruzja.setSimilarity("AC", "ACD", 0.67);
+        slicnostTipOruzja.setSimilarity("AC", "BCD", 0.25);
+        slicnostTipOruzja.setSimilarity("AC", "ABCD", 0.5);
+        slicnostTipOruzja.setSimilarity("AD", "BD", 0.33);
+        slicnostTipOruzja.setSimilarity("AD", "CD", 0.33);
+        slicnostTipOruzja.setSimilarity("AD", "ABC", 0.25);
+        slicnostTipOruzja.setSimilarity("AD", "ACD", 0.67);
+        slicnostTipOruzja.setSimilarity("AD", "BCD", 0.25);
+        slicnostTipOruzja.setSimilarity("AD", "ABCD", 0.5);
+        slicnostTipOruzja.setSimilarity("BC", "BD", 0.33);
+        slicnostTipOruzja.setSimilarity("BC", "CD", 0.33);
+        slicnostTipOruzja.setSimilarity("BC", "ABC", 0.67);
+        slicnostTipOruzja.setSimilarity("BC", "ACD", 0.25);
+        slicnostTipOruzja.setSimilarity("BC", "BCD", 0.67);
+        slicnostTipOruzja.setSimilarity("BC", "ABCD", 0.5);
+        slicnostTipOruzja.setSimilarity("BD", "CD", 0.33);
+        slicnostTipOruzja.setSimilarity("BD", "ABC", 0.25);
+        slicnostTipOruzja.setSimilarity("BD", "ACD", 0.25);
+        slicnostTipOruzja.setSimilarity("BD", "BCD", 0.67);
+        slicnostTipOruzja.setSimilarity("BD", "ABCD", 0.5);
+        slicnostTipOruzja.setSimilarity("CD", "ABC", 0.25);
+        slicnostTipOruzja.setSimilarity("CD", "ACD", 0.67);
+        slicnostTipOruzja.setSimilarity("CD", "BCD", 0.67);
+        slicnostTipOruzja.setSimilarity("CD", "ABCD", 0.5);
+        slicnostTipOruzja.setSimilarity("ABC", "ACD", 0.5);
+        slicnostTipOruzja.setSimilarity("ABC", "BCD", 0.5);
+        slicnostTipOruzja.setSimilarity("ABC", "ABCD", 0.75);
+        slicnostTipOruzja.setSimilarity("ACD", "BCD", 0.5);
+        slicnostTipOruzja.setSimilarity("ACD", "ABCD", 0.75);
+        slicnostTipOruzja.setSimilarity("BCD", "ABCD", 0.75);
+
+        simConfig.addMapping(new Attribute("weaponType", CaseDetails.class),
+                slicnostTipOruzja);
+        simConfig.setWeight(new Attribute("weaponType", CaseDetails.class), 0.8);
 
         // Equal - returns 1 if both individuals are equal, otherwise returns 0
         // Interval - returns the similarity of two number inside an interval: sim(x,y)
