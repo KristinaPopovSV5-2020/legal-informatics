@@ -1,7 +1,13 @@
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CaseDetails, CaseDTO, CbrService, RecommendationsDTO } from '../cbr.service';
+import {
+  CaseDetails,
+  CaseDTO,
+  CbrService,
+  RecommendationsDTO,
+} from '../cbr.service';
 import { CaseAttributes } from '../../../dto/CaseAttributes';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-new-case',
@@ -21,7 +27,11 @@ export class NewCaseComponent {
   sentences: string[] = [];
   similarCases: CaseDetails[] = [];
 
-  constructor(private fb: FormBuilder, private cbrService: CbrService) {
+  constructor(
+    private fb: FormBuilder,
+    private cbrService: CbrService,
+    private snackBar: MatSnackBar
+  ) {
     this.caseForm = this.fb.group({
       name: ['', [Validators.required]],
       defendant: ['', [Validators.required]],
@@ -45,7 +55,7 @@ export class NewCaseComponent {
       fineAmount: [0, [Validators.required]],
       sentence: [0, [Validators.required]],
       lawArticles: this.fb.array([], [Validators.required]),
-      weapoons: this.fb.array([], [Validators.required]),
+      weapons: this.fb.array([], [Validators.required]),
       securityMeasure: [''],
     });
 
@@ -57,6 +67,7 @@ export class NewCaseComponent {
     });
     this.weaponArticleForm = this.fb.group({
       weapon: ['', Validators.required],
+      weaponType: ['/', Validators.required],
       ammunitionCount: [0, Validators.required],
     });
   }
@@ -93,10 +104,23 @@ export class NewCaseComponent {
         next: (res) => {
           console.log('Case saved:', res);
           this.isLoading = false;
+          this.snackBar.open('Slučaj je uspešno sačuvan!', 'Zatvori', {
+            duration: 3000,
+            horizontalPosition: 'center',
+            verticalPosition: 'top',
+            panelClass: ['snackbar-success'],
+          });
         },
         error: (err) => {
           console.error('Error saving case:', err);
           this.isLoading = false;
+          const errorMessage = err?.error || 'Nepoznata greška';
+          this.snackBar.open(`${errorMessage}`, 'Zatvori', {
+            duration: 5000,
+            horizontalPosition: 'center',
+            verticalPosition: 'top',
+            panelClass: ['snackbar-error'],
+          });
         },
       });
     }
@@ -133,39 +157,43 @@ export class NewCaseComponent {
   createCaseData(): CaseDetails {
     const formValues = { ...this.caseForm.value, ...this.newCaseForm.value };
 
-    const weaponType = [
-      formValues.hasWeaponTypeA === 'da' ? 'A' : '',
-      formValues.hasWeaponTypeB === 'da' ? 'B' : '',
-      formValues.hasWeaponTypeC === 'da' ? 'C' : '',
-      formValues.hasWeaponTypeD === 'da' ? 'D' : '',
-    ]
+    let weaponType = this.weaponArticles?.controls
+      .map((w) => w.value.weaponType)
       .filter(Boolean)
-      .join(', ');
+      .join('')
+      .split('')
+      .filter((v, i, a) => a.indexOf(v) === i)
+      .sort()
+      .join('');
+
+    if (!weaponType) {
+      weaponType = '/';
+    }
 
     const caseData: CaseDetails = {
       caseNumber: formValues.name,
-      judge: formValues.prosecutor,
+      judge: '',
       defendant: formValues.defendant,
       criminalOffense: formValues.criminalOffense,
       court: formValues.court,
       date: formValues.date,
       previouslyConvicted: formValues.previouslyConvicted,
       forSameOffense:
-        'neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.', // Check this
+        'neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.',
       illegallyPossessesWeapon: formValues.unauthorizedPossessionOfAWeapon,
       location: formValues.methodOfWeaponDiscovery,
       weapon:
-        this.newCaseForm.value.weapoons?.map((w) => w.weapon).join(', ') || '',
+        this.newCaseForm.value.weapons?.map((w) => w.weapon).join(', ') || '',
       ammunitionCount:
-        this.newCaseForm.value.weapoons
+        this.newCaseForm.value.weapons
           ?.map((w) => w.ammunitionCount)
           .join(', ') || '',
       financialStatus:
         formValues.lowIncome === 'da'
           ? 'loše'
           : formValues.lowIncome === 'ne'
-            ? 'dobro'
-            : 'srednje',
+          ? 'dobro'
+          : 'srednje',
       admittedGuilt: formValues.admittedGuilt,
       remorseful: formValues.regretsIt,
       weaponType,
@@ -189,8 +217,8 @@ export class NewCaseComponent {
   fetchSimilarCases(caseDTO: CaseDTO) {
     this.cbrService.fetchSimilarityCases(caseDTO).subscribe({
       next: (cases: string[]) => {
-        this.similarCases = cases.map(c => {
-          const parts = c.split("->");
+        this.similarCases = cases.map((c) => {
+          const parts = c.split('->');
           const jsonPart = parts[0].trim();
           const caseSim = parts[1].trim();
 
@@ -213,7 +241,7 @@ export class NewCaseComponent {
   }
 
   get weaponArticles(): FormArray {
-    return this.newCaseForm?.get('weapoons') as FormArray;
+    return this.newCaseForm?.get('weapons') as FormArray;
   }
 
   createLawArticle(): FormGroup {

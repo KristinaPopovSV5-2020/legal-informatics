@@ -16,4 +16,6 @@ public interface ICaseService {
     Resource getLawResource(String name) throws IOException;
 
     CaseDetails updateCaseDetails(CaseDetails caseDetails);
+
+    CaseDetails createCaseDetails(CaseDetails caseDetails);
 }

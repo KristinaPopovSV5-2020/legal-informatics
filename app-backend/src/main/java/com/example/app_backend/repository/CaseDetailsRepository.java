@@ -11,4 +11,6 @@ import java.util.Optional;
 public interface CaseDetailsRepository extends MongoRepository<CaseDetails, ObjectId> {
 
     Optional<CaseDetails> findByCaseId(String caseId);
+
+    Optional<CaseDetails> findByCaseNumber(String caseNumber);
 }

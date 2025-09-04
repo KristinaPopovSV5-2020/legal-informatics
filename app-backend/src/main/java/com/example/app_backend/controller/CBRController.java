@@ -132,4 +132,11 @@ public class CBRController {
         CaseDetails updatedCaseDetails = caseService.updateCaseDetails(caseDetails);
         return ResponseEntity.ok(updatedCaseDetails);
     }
+
+    @PostMapping("new-case")
+    @PreAuthorize("isAuthenticated()")
+    public ResponseEntity<CaseDetails> createCaseDetails(@RequestBody CaseDetails caseDetails) {
+        CaseDetails updatedCaseDetails = caseService.createCaseDetails(caseDetails);
+        return ResponseEntity.ok(updatedCaseDetails);
+    }
 }

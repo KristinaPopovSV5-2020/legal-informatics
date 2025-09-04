@@ -2,12 +2,15 @@ package com.example.app_backend.service.implementation;
 
 import com.example.app_backend.exception.NotFoundException;
 import com.example.app_backend.model.cases.CaseDetails;
+import com.example.app_backend.model.user.User;
 import com.example.app_backend.repository.CaseDetailsRepository;
 import com.example.app_backend.service.interfaces.ICaseService;
 import com.example.app_backend.service.interfaces.IGPTService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -140,11 +143,24 @@ public class CaseService implements ICaseService {
     @Override
     public CaseDetails updateCaseDetails(CaseDetails caseDetails) {
         Optional<CaseDetails> existingCase = caseDetailsRepository.findByCaseId(caseDetails.getCaseId());
-        if (!existingCase.isPresent()) {
+        if (existingCase.isEmpty()) {
             throw new NotFoundException("Case with ID " + caseDetails.getCaseId() + " not found.");
         }
 
         existingCase.get().updateCaseDetails(caseDetails);
         return caseDetailsRepository.save(existingCase.get());
+    }
+
+    @Override
+    public CaseDetails createCaseDetails(CaseDetails caseDetails) {
+        Optional<CaseDetails> existingCase = caseDetailsRepository.findByCaseNumber(caseDetails.getCaseNumber());
+        if (existingCase.isPresent()) {
+            throw new NotFoundException("Slučaj sa " + caseDetails.getCaseNumber() + " već postoji.");
+        }
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        User user = (User) authentication.getPrincipal();
+        caseDetails.setJudge(user.getName() + " " + user.getSurname());
+
+        return caseDetailsRepository.save(caseDetails);
     }
 }

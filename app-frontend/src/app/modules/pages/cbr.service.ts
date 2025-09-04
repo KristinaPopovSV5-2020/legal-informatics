@@ -9,7 +9,7 @@ import { CaseAttributes } from '../../dto/CaseAttributes';
 })
 export class CbrService {
   private apiUrl = `${environment.apiHost}api/cbr/`;
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   private value$ = new BehaviorSubject<any>({});
   selectedValue$ = this.value$.asObservable();
