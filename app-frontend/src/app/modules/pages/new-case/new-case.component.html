@@ -59,11 +59,11 @@
           </mat-form-field>
         </div>
 
-        <div class="grid-item">
+         <div class="grid-item">
           <mat-form-field appearance="outline" class="full-width">
-            <mat-label>Tužilac</mat-label>
-            <input matInput formControlName="prosecutor" />
-            <mat-error *ngIf="caseForm.get('prosecutor')?.hasError('required')">
+            <mat-label>Lokacija</mat-label>
+            <input matInput formControlName="location" />
+            <mat-error *ngIf="caseForm.get('location')?.hasError('required')">
               Obavezno polje!
             </mat-error>
           </mat-form-field>

@@ -39,7 +39,6 @@ export class NewCaseComponent {
       court: ['', [Validators.required]],
       previouslyConvicted: ['ne', [Validators.required]],
       date: ['', [Validators.required]],
-      prosecutor: ['', [Validators.required]],
       unauthorizedPossessionOfAWeapon: ['ne', [Validators.required]],
       harmDone: ['ne', [Validators.required]],
       regretsIt: ['ne', [Validators.required]],
@@ -49,6 +48,7 @@ export class NewCaseComponent {
       hasWeaponTypeC: ['ne', [Validators.required]],
       hasWeaponTypeD: ['ne', [Validators.required]],
       methodOfWeaponDiscovery: ['javno', [Validators.required]],
+      location: ['', [Validators.required]],
     });
     this.newCaseForm = this.fb.group({
       criminalOffense: ['', [Validators.required]],
@@ -181,7 +181,7 @@ export class NewCaseComponent {
       forSameOffense:
         'neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo.',
       illegallyPossessesWeapon: formValues.unauthorizedPossessionOfAWeapon,
-      location: formValues.methodOfWeaponDiscovery,
+      methodOfWeaponDiscovery: formValues.methodOfWeaponDiscovery,
       weapon:
         this.newCaseForm.value.weapons?.map((w) => w.weapon).join(', ') || '',
       ammunitionCount:
@@ -210,6 +210,7 @@ export class NewCaseComponent {
         })
         .join(' | '),
       sentence: formValues.sentence,
+      location: formValues.location,
     };
     return caseData;
   }

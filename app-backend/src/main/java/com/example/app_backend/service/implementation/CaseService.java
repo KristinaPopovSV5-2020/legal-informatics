@@ -160,6 +160,7 @@ public class CaseService implements ICaseService {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         User user = (User) authentication.getPrincipal();
         caseDetails.setJudge(user.getName() + " " + user.getSurname());
+        caseDetails.setCaseId(caseDetails.getCaseNumber());
 
         return caseDetailsRepository.save(caseDetails);
     }
