@@ -1,1 +1,412 @@
-<p>new-case works!</p>
+<div class="main-layout">
+  <div class="left-column">
+    <form [formGroup]="caseForm" class="form-container">
+      <div class="grid-container">
+        <div class="grid-item">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Poslovni broj</mat-label>
+            <input matInput formControlName="name" />
+            <mat-error *ngIf="caseForm.get('name')?.hasError('required')">
+              Obavezno polje!
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="grid-item">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Okrivljeni</mat-label>
+            <input matInput formControlName="defendant" />
+            <mat-error *ngIf="caseForm.get('defendant')?.hasError('required')">
+              Obavezno polje!
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="grid-item">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Sud</mat-label>
+            <input matInput formControlName="court" />
+            <mat-error *ngIf="caseForm.get('court')?.hasError('required')">
+              Obavezno polje!
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <mat-form-field appearance="outline" class="grid-item">
+          <mat-label>Imovinsko stanje</mat-label>
+          <mat-select formControlName="lowIncome">
+            <mat-option value="da">Loše</mat-option>
+            <mat-option value="ne">Dobro</mat-option>
+            <mat-option value="null">Srednje</mat-option>
+          </mat-select>
+          <mat-error *ngIf="caseForm.get('lowIncome')?.hasError('required')">
+            Obavezno polje!
+          </mat-error>
+        </mat-form-field>
+
+        <div class="grid-item">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Datum</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date" />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="caseForm.get('date')?.hasError('required')">
+              Obavezno polje!
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+         <div class="grid-item">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Lokacija</mat-label>
+            <input matInput formControlName="location" />
+            <mat-error *ngIf="caseForm.get('location')?.hasError('required')">
+              Obavezno polje!
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <mat-form-field appearance="outline" class="grid-item">
+          <mat-label>Prethodno osuđivan</mat-label>
+          <mat-select formControlName="previouslyConvicted">
+            <mat-option value="da">Da</mat-option>
+            <mat-option value="ne">Ne</mat-option>
+          </mat-select>
+          <mat-error
+            *ngIf="caseForm.get('previouslyConvicted')?.hasError('required')"
+          >
+            Obavezno polje!
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="grid-item">
+          <mat-label>Način otkrivanja oružja</mat-label>
+          <mat-select formControlName="methodOfWeaponDiscovery">
+            <mat-option value="javno">Javno</mat-option>
+            <mat-option value="kuca">Kuća</mat-option>
+            <mat-option value="auto">Auto</mat-option>
+            <mat-option value="bezbedno">Bezbedno</mat-option>
+            <mat-option value="drugo">Drugo</mat-option>
+          </mat-select>
+          <mat-error
+            *ngIf="
+              caseForm.get('methodOfWeaponDiscovery')?.hasError('required')
+            "
+          >
+            Obavezno polje!
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="radio-grid">
+        <div class="radio-item">
+          <label><strong>Neovlašćeno poseduje oružje</strong></label>
+          <mat-radio-group formControlName="unauthorizedPossessionOfAWeapon">
+            <mat-radio-button value="da" color="primary">Da</mat-radio-button>
+            <mat-radio-button value="ne" color="primary">Ne</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="radio-item">
+          <label><strong>Da li je naneta šteta</strong></label>
+          <mat-radio-group formControlName="harmDone">
+            <mat-radio-button value="da" color="primary">Da</mat-radio-button>
+            <mat-radio-button value="ne" color="primary">Ne</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="radio-item">
+          <label><strong>Pokazuje kajanje</strong></label>
+          <mat-radio-group formControlName="regretsIt">
+            <mat-radio-button value="da" color="primary">Da</mat-radio-button>
+            <mat-radio-button value="ne" color="primary">Ne</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="radio-item">
+          <label><strong>Priznao krivicu</strong></label>
+          <mat-radio-group formControlName="admittedGuilt">
+            <mat-radio-button value="da" color="primary">Da</mat-radio-button>
+            <mat-radio-button value="ne" color="primary">Ne</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="radio-item">
+          <label><strong>Poseduje oružje kategorije A</strong></label>
+          <mat-radio-group formControlName="hasWeaponTypeA">
+            <mat-radio-button value="da" color="primary">Da</mat-radio-button>
+            <mat-radio-button value="ne" color="primary">Ne</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="radio-item">
+          <label><strong>Poseduje oružje kategorije B</strong></label>
+          <mat-radio-group formControlName="hasWeaponTypeB">
+            <mat-radio-button value="da" color="primary">Da</mat-radio-button>
+            <mat-radio-button value="ne" color="primary">Ne</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="radio-item">
+          <label><strong>Poseduje oružje kategorije C</strong></label>
+          <mat-radio-group formControlName="hasWeaponTypeC">
+            <mat-radio-button value="da" color="primary">Da</mat-radio-button>
+            <mat-radio-button value="ne" color="primary">Ne</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="radio-item">
+          <label><strong>Poseduje oružje kategorije D</strong></label>
+          <mat-radio-group formControlName="hasWeaponTypeD">
+            <mat-radio-button value="da" color="primary">Da</mat-radio-button>
+            <mat-radio-button value="ne" color="primary">Ne</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+
+      <app-button [buttonText]="'Pronađi slične presude'" (click)="findCases()">
+      </app-button>
+    </form>
+
+    <div *ngIf="decision">
+      <form [formGroup]="newCaseForm" class="form-container">
+        <h1></h1>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Krivično delo</mat-label>
+          <input matInput formControlName="criminalOffense" />
+          <mat-error
+            *ngIf="newCaseForm.get('criminalOffense')?.hasError('required')"
+          >
+            Obavezno polje!
+          </mat-error>
+        </mat-form-field>
+        <h3>Prekršeni propisi</h3>
+        <div class="article-row">
+          <div [formGroup]="lawArticleForm" class="article-row">
+            <mat-form-field appearance="outline" class="flex-2">
+              <mat-label>Zakon</mat-label>
+              <mat-select formControlName="law">
+                <mat-option value="krivicni zakon">Krivični zakon</mat-option>
+                <mat-option value="zakon o oruzju">Zakon o oružju</mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="flex-1">
+              <mat-label>Član</mat-label>
+              <input matInput formControlName="articleNumber" />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="flex-1">
+              <mat-label>Stav</mat-label>
+              <input matInput formControlName="paragraph" />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="flex-1">
+              <mat-label>Tačka</mat-label>
+              <input matInput formControlName="item" />
+            </mat-form-field>
+
+            <app-button
+              class="flex-0"
+              [buttonText]="'+'"
+              (click)="addLawArticle()"
+            >
+            </app-button>
+          </div>
+        </div>
+        <div *ngIf="lawArticles?.length > 0" class="law-list">
+          <div
+            class="law-entry"
+            *ngFor="let group of lawArticles.controls; let i = index"
+            [formGroup]="lawArticleForm"
+          >
+            <span>
+              {{ group.value.law | titlecase }}, član
+              {{ group.value.articleNumber }}
+              <span *ngIf="group.value.paragraph"
+                >, stav {{ group.value.paragraph }}</span
+              >
+              <span *ngIf="group.value.item"
+                >, tačka {{ group.value.item }}</span
+              >
+            </span>
+            <button
+              mat-icon-button
+              (click)="removeLawArticle(i)"
+              aria-label="Ukloni"
+            >
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+        </div>
+
+        <h3>Tip oružja</h3>
+        <div class="article-row">
+          <div [formGroup]="weaponArticleForm" class="article-row">
+            <mat-form-field appearance="outline" class="flex-2">
+              <mat-label>Oružje</mat-label>
+              <input matInput formControlName="weapon" />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="flex-1">
+              <mat-label>Tip</mat-label>
+              <mat-select formControlName="weaponType">
+                <mat-option value="/">/</mat-option>
+                <mat-option value="A">A</mat-option>
+                <mat-option value="B">B</mat-option>
+                <mat-option value="C">C</mat-option>
+                <mat-option value="D">D</mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="flex-1">
+              <mat-label>Broj municija</mat-label>
+              <input matInput type="number" formControlName="ammunitionCount" />
+            </mat-form-field>
+
+            <app-button
+              class="flex-0"
+              [buttonText]="'+'"
+              (click)="addWeaponArticle()"
+            >
+            </app-button>
+          </div>
+        </div>
+
+        <div *ngIf="weaponArticles?.length > 0" class="law-list">
+          <div
+            class="law-entry"
+            *ngFor="let group of weaponArticles.controls; let i = index"
+            [formGroup]="weaponArticleForm"
+          >
+            <span>
+              {{ group.value.weapon | titlecase }}, tip:
+              {{ group.value.weaponType }}, broj municija:
+              {{ group.value.ammunitionCount }}
+            </span>
+            <button
+              mat-icon-button
+              (click)="removeWeaponArticle(i)"
+              aria-label="Ukloni"
+            >
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+        </div>
+        <h3>Kazne</h3>
+        <div class="grid-container">
+          <div class="grid-item">
+            <mat-form-field appearance="outline">
+              <mat-label>Novčana kazna</mat-label>
+              <input matInput formControlName="fineAmount" />
+              <mat-error
+                *ngIf="newCaseForm.get('fineAmount')?.hasError('required')"
+              >
+                Obavezno polje!
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="grid-item">
+            <mat-form-field appearance="outline">
+              <mat-label>Kazna zatvora</mat-label>
+              <input matInput formControlName="sentence" />
+              <mat-error
+                *ngIf="newCaseForm.get('sentence')?.hasError('required')"
+              >
+                Obavezno polje!
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <h3>Mera bezbednosti</h3>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Mera bezbednosti</mat-label>
+          <textarea
+            matInput
+            formControlName="securityMeasure"
+            rows="3"
+            placeholder="Unesite meru bezbednosti..."
+          ></textarea>
+        </mat-form-field>
+
+        <app-button [buttonText]="'Dodaj slučaj'" (click)="addNewCase()">
+        </app-button>
+      </form>
+    </div>
+  </div>
+  <div class="right-column">
+    <h2>Slični slučajevi</h2>
+    <div class="top-content">
+      <div class="cases-container">
+        <div *ngFor="let caseItem of similarCases" class="case-card">
+          <p class="bold">
+            <strong>{{ caseItem.court }}</strong>
+          </p>
+          <h3 class="case-number">{{ caseItem.caseNumber }}</h3>
+          <p>
+            <strong>Prekršeni propisi:</strong> {{ caseItem.violatedArticles }}
+          </p>
+          <p><strong>Novčana kazna:</strong> {{ caseItem.fineAmount }}</p>
+          <p><strong>Kazna zatvora:</strong> {{ caseItem.sentence }}</p>
+          <p>
+            <strong>Prethodno osuđivan:</strong>
+            {{ caseItem.previouslyConvicted }}
+          </p>
+          <p>
+            <strong>Mera bezbednosti:</strong> {{ caseItem.securityMeasure }}
+          </p>
+          <p>
+            <strong>Da li je naneta šteta:</strong>
+            {{ caseItem.injuryCausedByWeapon | titlecase }}
+          </p>
+          <p>
+            <strong>Imovinsko stanje:</strong>
+            {{ caseItem.financialStatus | titlecase }}
+          </p>
+          <p>
+            <strong>Pokazuje kajanje:</strong>
+            {{ caseItem.remorseful | titlecase }}
+          </p>
+          <p>
+            <strong>Priznao krivicu:</strong>
+            {{ caseItem.admittedGuilt | titlecase }}
+          </p>
+          <p>
+            <strong>Poseduje oružje:</strong>
+            {{ caseItem.weaponType | titlecase }}
+          </p>
+          <p>
+            <strong>Način otkrivanja oružja:</strong>
+            {{ caseItem.methodOfWeaponDiscovery | titlecase }}
+          </p>
+          <p>
+            <strong>Neovlašćeno poseduje oružje:</strong>
+            {{ caseItem.illegallyPossessesWeapon | titlecase }}
+          </p>
+          <p class="similarity">
+            <strong
+              >Sličnost: ~{{ caseItem.similarity | number : "1.0-2" }} %</strong
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-content">
+      <mat-progress-spinner
+        *ngIf="isLoading"
+        mode="indeterminate"
+        color="primary"
+        diameter="40"
+      >
+      </mat-progress-spinner>
+
+      <div *ngIf="!isLoading && sentences.length > 0">
+        <h2>Predložena odluka</h2>
+        <p *ngFor="let sentence of sentences">{{ sentence }}.</p>
+      </div>
+    </div>
+  </div>
+</div>

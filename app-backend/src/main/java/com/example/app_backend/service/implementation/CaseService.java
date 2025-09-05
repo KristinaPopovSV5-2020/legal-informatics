@@ -1,12 +1,16 @@
 package com.example.app_backend.service.implementation;
 
+import com.example.app_backend.exception.NotFoundException;
 import com.example.app_backend.model.cases.CaseDetails;
+import com.example.app_backend.model.user.User;
 import com.example.app_backend.repository.CaseDetailsRepository;
 import com.example.app_backend.service.interfaces.ICaseService;
 import com.example.app_backend.service.interfaces.IGPTService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -37,7 +41,6 @@ public class CaseService implements ICaseService {
         return resource;
     }
 
-
     @Override
     public Resource getCaseResource(String id) throws IOException {
         Resource resource = new ClassPathResource(BASE_PATH + id + ".html");
@@ -67,15 +70,18 @@ public class CaseService implements ICaseService {
             String[] attributes = {
                     "broj predmeta", "sudija", "optuzeni/okrivljeni", "krivicno delo", "sud", "datum",
                     "osudjivan ranije (da/ne)", "za isto krivicno delo", "poseduje neovlasceno oruzje (da/ne)",
-                    "mesto", "oružje", "broj municije", "imovinsko stanje", "priznao krivicu (da/ne)", "kaje se (da/ne)",
-                    "tip oružja", "povreda nanesena oruzjem", "novčana kazna", "mera bezbednosti",
-                    "prekrseni clanovi (nabroj sve čl koji su prekršeni)", "kazna"
+                    "mesto", "oružje", "broj municije", "imovinsko stanje", "priznao krivicu (da/ne)",
+                    "kaje se (da/ne)",
+                    "tip oružja", "povreda nanesena oruzjem (da/ne)", "novčana kazna", "mera bezbednosti",
+                    "prekrseni clanovi (nabroj sve čl koji su prekršeni)", "kazna",
+                    "način pronalaska oruzja (javno, kuća, auto, bezbedno, drugo)"
             };
 
             Map<String, String> extractedValues = new HashMap<>();
             for (String attribute : attributes) {
                 String prompt = "From the xml file extract the following attribute '" + attribute +
-                        "'  without any additional text or quotation marks. If you are not 100% sure you can find it, still give some answer. Here is the file :\n" + content;
+                        "'  without any additional text or quotation marks. If you are not 100% sure you can find it, still give the answer you think is correct, but don't give me some generic message like not found. Here is the file :\n"
+                        + content;
 
                 String extractedValue = gptService.chat(prompt);
                 extractedValues.put(attribute, extractedValue);
@@ -124,11 +130,38 @@ public class CaseService implements ICaseService {
         caseDetails.setAdmittedGuilt(extractedValues.get("priznao krivicu (da/ne)"));
         caseDetails.setRemorseful(extractedValues.get("kaje se (da/ne)"));
         caseDetails.setWeaponType(extractedValues.get("tip oružja"));
-        caseDetails.setInjuryCausedByWeapon(extractedValues.get("povreda nanesena oruzjem"));
+        caseDetails.setInjuryCausedByWeapon(extractedValues.get("povreda nanesena oruzjem (da/ne)"));
         caseDetails.setFineAmount(extractedValues.get("novčana kazna"));
         caseDetails.setSecurityMeasure(extractedValues.get("mera bezbednosti"));
         caseDetails.setViolatedArticles(extractedValues.get("prekrseni clanovi (nabroj sve čl koji su prekršeni)"));
         caseDetails.setSentence(extractedValues.get("kazna"));
+        caseDetails.setMethodOfWeaponDiscovery(
+                extractedValues.get("način pronalaska oruzja (javno, kuća, auto, bezbedno, drugo)"));
         return caseDetails;
+    }
+
+    @Override
+    public CaseDetails updateCaseDetails(CaseDetails caseDetails) {
+        Optional<CaseDetails> existingCase = caseDetailsRepository.findByCaseId(caseDetails.getCaseId());
+        if (existingCase.isEmpty()) {
+            throw new NotFoundException("Case with ID " + caseDetails.getCaseId() + " not found.");
+        }
+
+        existingCase.get().updateCaseDetails(caseDetails);
+        return caseDetailsRepository.save(existingCase.get());
+    }
+
+    @Override
+    public CaseDetails createCaseDetails(CaseDetails caseDetails) {
+        Optional<CaseDetails> existingCase = caseDetailsRepository.findByCaseNumber(caseDetails.getCaseNumber());
+        if (existingCase.isPresent()) {
+            throw new NotFoundException("Slučaj sa " + caseDetails.getCaseNumber() + " već postoji.");
+        }
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        User user = (User) authentication.getPrincipal();
+        caseDetails.setJudge(user.getName() + " " + user.getSurname());
+        caseDetails.setCaseId(caseDetails.getCaseNumber());
+
+        return caseDetailsRepository.save(caseDetails);
     }
 }

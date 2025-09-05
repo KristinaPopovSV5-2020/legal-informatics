@@ -17,6 +17,7 @@ export class CasePageComponent implements OnInit {
   public caseAttributes: CaseAttributes = null;
   loadingText: string = "Učitavanje detalja";
   private dotCount: number = 0;
+
   constructor(private route: ActivatedRoute,
     private cbrService: CbrService,
     private sanitizer: DomSanitizer
@@ -67,6 +68,18 @@ export class CasePageComponent implements OnInit {
         this.dotCount = (this.dotCount + 1) % 4;
         this.loadingText = "Učitavanje detalja" + '.'.repeat(this.dotCount);
       }
-    }, 200);
+    }, 400);
   }
+
+  saveCase() {
+    this.cbrService.updateCaseDetails(this.caseAttributes).subscribe({
+      next: (updatedCase) => {
+        this.caseAttributes = updatedCase;
+      },
+      error: (error) => {
+        console.error('Error updating case:', error);
+      }
+    });
+  }
+
 }

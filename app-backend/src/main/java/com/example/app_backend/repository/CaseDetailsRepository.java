@@ -12,4 +12,5 @@ public interface CaseDetailsRepository extends MongoRepository<CaseDetails, Obje
 
     Optional<CaseDetails> findByCaseId(String caseId);
 
+    Optional<CaseDetails> findByCaseNumber(String caseNumber);
 }

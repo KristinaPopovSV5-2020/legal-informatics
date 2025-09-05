@@ -6,12 +6,43 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          proof="proof.ruleml"
          rdf_export="export.rdf"
-         rdf_export_classes="is_speeding_on_town_road_lv3_with_accident is_speeding_on_town_road_lv1 is_speeding_on_town_road_lv2 to_pay_min to_pay_max max_imprisonment is_speeding_on_town_road_lv3 to_pay"
+         rdf_export_classes="jail_3_months confiscation confiscate_weapon&#xA;        to_pay_min to_pay_max recommend_fine_reduction to_pay_less to_pay_more&#xA;        recommend_increased_penalty recommend_fine_increase is_high_category_weapon_in_public&#xA;        to_increase_penalty imprisonment_3 money to_pay_max2 to_pay_min2 harm_done_with_weapon&#xA;        jail_3_year reduce_penalty reduce_penalty1 found_outside_safe to_pay_min_3 to_pay_max_3&#xA;        jail_max_year jail_min_year"
          rdf_import="&#34;facts.rdf&#34;">
    <Assert>
       <Implies ruletype="defeasiblerule">
          <oid>
             <Ind uri="rule1">rule1</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:unauthorized_possession_of_a_weapon"/>
+                  <Data xsi:type="xs:string">da</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>jail_3_months</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule111">rule111</Ind>
          </oid>
          <body>
             <And>
@@ -24,8 +55,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:speed"/>
-                     <Var>Speed</Var>
+                     <Ind uri="lc:admitted_guilt"/>
+                     <Data xsi:type="xs:string">da</Data>
                   </slot>
                </Atom>
                <Atom>
@@ -37,41 +68,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:allowed_speed"/>
-                     <Data xsi:type="xs:int">50</Data>
-                  </slot>
-               </Atom>
-               <Equal>
-                  <Expr>
-                     <Fun in="yes">&gt;</Fun>
-                     <Var>Speed</Var>
-                     <Ind>70</Ind>
-                  </Expr>
-               </Equal>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:driving_on"/>
-                     <Data xsi:type="xs:string">town_road</Data>
-                  </slot>
-               </Atom>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:caused_accident"/>
-                     <Data xsi:type="xs:string">no</Data>
+                     <Ind uri="lc:regrets_it"/>
+                     <Data xsi:type="xs:string">da</Data>
                   </slot>
                </Atom>
             </And>
@@ -79,7 +77,7 @@
          <head>
             <Atom>
                <op>
-                  <Rel>is_speeding_on_town_road_lv1</Rel>
+                  <Rel>reduce_penalty1</Rel>
                </op>
                <slot>
                   <Ind uri="defendant"/>
@@ -93,153 +91,24 @@
             <Ind uri="rule2">rule2</Ind>
          </oid>
          <body>
-            <And>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:speed"/>
-                     <Var>Speed</Var>
-                  </slot>
-               </Atom>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:allowed_speed"/>
-                     <Data xsi:type="xs:int">50</Data>
-                  </slot>
-               </Atom>
-               <Equal>
-                  <Expr>
-                     <Fun in="yes">&lt;=</Fun>
-                     <Var>Speed</Var>
-                     <Ind>50</Ind>
-                  </Expr>
-               </Equal>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:driving_on"/>
-                     <Data xsi:type="xs:string">town_road</Data>
-                  </slot>
-               </Atom>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:caused_accident"/>
-                     <Data xsi:type="xs:string">no</Data>
-                  </slot>
-               </Atom>
-            </And>
-         </body>
-         <head>
-            <Neg>
-               <Atom>
-                  <op>
-                     <Rel>is_speeding_on_town_road_lv1</Rel>
-                  </op>
-                  <slot>
-                     <Ind uri="defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-               </Atom>
-            </Neg>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="rule3">rule3</Ind>
-         </oid>
-         <body>
-            <And>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:speed"/>
-                     <Var>Speed</Var>
-                  </slot>
-               </Atom>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:allowed_speed"/>
-                     <Data xsi:type="xs:int">50</Data>
-                  </slot>
-               </Atom>
-               <Equal>
-                  <Expr>
-                     <Fun in="yes">&gt;</Fun>
-                     <Var>Speed</Var>
-                     <Ind>80</Ind>
-                  </Expr>
-               </Equal>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:driving_on"/>
-                     <Data xsi:type="xs:string">town_road</Data>
-                  </slot>
-               </Atom>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:caused_accident"/>
-                     <Data xsi:type="xs:string">no</Data>
-                  </slot>
-               </Atom>
-            </And>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:harm_done"/>
+                  <Data xsi:type="xs:string">da</Data>
+               </slot>
+            </Atom>
          </body>
          <head>
             <Atom>
                <op>
-                  <Rel>is_speeding_on_town_road_lv2</Rel>
+                  <Rel>harm_done_with_weapon</Rel>
                </op>
                <slot>
                   <Ind uri="defendant"/>
@@ -247,193 +116,37 @@
                </slot>
             </Atom>
          </head>
-         <superior>
-            <Ind uri="rule2"/>
-         </superior>
-         <superior>
-            <Ind uri="rule1"/>
-         </superior>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="rule4">rule4</Ind>
-         </oid>
-         <body>
-            <And>
-               <Atom>
-                  <op>
-                     <Rel>is_speeding_on_town_road_lv2</Rel>
-                  </op>
-                  <slot>
-                     <Ind uri="defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-               </Atom>
-            </And>
-         </body>
-         <head>
-            <Neg>
-               <Atom>
-                  <op>
-                     <Rel>is_speeding_on_town_road_lv1</Rel>
-                  </op>
-                  <slot>
-                     <Ind uri="defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-               </Atom>
-            </Neg>
-         </head>
-         <superior>
-            <Ind uri="rule1"/>
-         </superior>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="rule5">rule5</Ind>
-         </oid>
-         <body>
-            <And>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:speed"/>
-                     <Var>Speed</Var>
-                  </slot>
-               </Atom>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:allowed_speed"/>
-                     <Data xsi:type="xs:int">50</Data>
-                  </slot>
-               </Atom>
-               <Equal>
-                  <Expr>
-                     <Fun in="yes">&gt;</Fun>
-                     <Var>Speed</Var>
-                     <Ind>100</Ind>
-                  </Expr>
-               </Equal>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:driving_on"/>
-                     <Data xsi:type="xs:string">town_road</Data>
-                  </slot>
-               </Atom>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:caused_accident"/>
-                     <Data xsi:type="xs:string">no</Data>
-                  </slot>
-               </Atom>
-            </And>
-         </body>
-         <head>
-            <Atom>
-               <op>
-                  <Rel>is_speeding_on_town_road_lv3</Rel>
-               </op>
-               <slot>
-                  <Ind uri="defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-            </Atom>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="rule6">rule6</Ind>
-         </oid>
-         <body>
-            <And>
-               <Atom>
-                  <op>
-                     <Rel>is_speeding_on_town_road_lv3</Rel>
-                  </op>
-                  <slot>
-                     <Ind uri="defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-               </Atom>
-            </And>
-         </body>
-         <head>
-            <Neg>
-               <Atom>
-                  <op>
-                     <Rel>is_speeding_on_town_road_lv2</Rel>
-                  </op>
-                  <slot>
-                     <Ind uri="defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-               </Atom>
-            </Neg>
-         </head>
-         <superior>
-            <Ind uri="rule3"/>
-         </superior>
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
             <Ind uri="rule7">rule7</Ind>
          </oid>
          <body>
-            <And>
-               <Atom>
-                  <op>
-                     <Rel>is_speeding_on_town_road_lv3</Rel>
-                  </op>
-                  <slot>
-                     <Ind uri="defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-               </Atom>
-            </And>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:unauthorized_possession_of_a_weapon"/>
+                  <Data xsi:type="xs:string">da</Data>
+               </slot>
+            </Atom>
          </body>
          <head>
-            <Neg>
-               <Atom>
-                  <op>
-                     <Rel>is_speeding_on_town_road_lv1</Rel>
-                  </op>
-                  <slot>
-                     <Ind uri="defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-               </Atom>
-            </Neg>
+            <Atom>
+               <op>
+                  <Rel>confiscation</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
          </head>
-         <superior>
-            <Ind uri="rule1"/>
-         </superior>
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
@@ -450,8 +163,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:speed"/>
-                     <Var>Speed</Var>
+                     <Ind uri="lc:unauthorized_possession_of_a_weapon"/>
+                     <Data xsi:type="xs:string">da</Data>
                   </slot>
                </Atom>
                <Atom>
@@ -463,41 +176,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:allowed_speed"/>
-                     <Data xsi:type="xs:int">50</Data>
-                  </slot>
-               </Atom>
-               <Equal>
-                  <Expr>
-                     <Fun in="yes">&gt;</Fun>
-                     <Var>Speed</Var>
-                     <Ind>100</Ind>
-                  </Expr>
-               </Equal>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:driving_on"/>
-                     <Data xsi:type="xs:string">town_road</Data>
-                  </slot>
-               </Atom>
-               <Atom>
-                  <op>
-                     <Rel uri="lc:case"/>
-                  </op>
-                  <slot>
-                     <Ind uri="lc:defendant"/>
-                     <Var>Defendant</Var>
-                  </slot>
-                  <slot>
-                     <Ind uri="lc:caused_accident"/>
-                     <Data xsi:type="xs:string">yes</Data>
+                     <Ind uri="lc:has_weapon_type_B"/>
+                     <Data xsi:type="xs:string">da</Data>
                   </slot>
                </Atom>
             </And>
@@ -505,7 +185,329 @@
          <head>
             <Atom>
                <op>
-                  <Rel>is_speeding_on_town_road_lv3_with_accident</Rel>
+                  <Rel>money</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule9">rule9</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:low_income"/>
+                  <Data xsi:type="xs:string">da</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>recommend_fine_reduction</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule771">rule771</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:high_income"/>
+                  <Data xsi:type="xs:string">da</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>recommend_fine_increase</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule10">rule10</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:previously_convicted"/>
+                  <Data xsi:type="xs:string">da</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>recommend_increased_penalty</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule55">rule55</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:method_of_weapon_discovery"/>
+                  <Data xsi:type="xs:string">house</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule56">rule56</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:method_of_weapon_discovery"/>
+                  <Data xsi:type="xs:string">auto</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule57">rule57</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:method_of_weapon_discovery"/>
+                  <Data xsi:type="xs:string">javno</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule58">rule58</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:method_of_weapon_discovery"/>
+                  <Data xsi:type="xs:string">drugo</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule403">rule403</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel uri="lc:case"/>
+               </op>
+               <slot>
+                  <Ind uri="lc:defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+               <slot>
+                  <Ind uri="lc:has_weapon_type_A"/>
+                  <Data xsi:type="xs:string">da</Data>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>destructive_weapon</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule11">rule11</Ind>
+         </oid>
+         <body>
+            <And>
+               <Or>
+                  <Atom>
+                     <op>
+                        <Rel uri="lc:case"/>
+                     </op>
+                     <slot>
+                        <Ind uri="lc:defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                     <slot>
+                        <Ind uri="lc:has_weapon_type_B"/>
+                        <Data xsi:type="xs:string">da</Data>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel uri="lc:case"/>
+                     </op>
+                     <slot>
+                        <Ind uri="lc:defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                     <slot>
+                        <Ind uri="lc:has_weapon_type_C"/>
+                        <Data xsi:type="xs:string">da</Data>
+                     </slot>
+                  </Atom>
+                  <Atom>
+                     <op>
+                        <Rel uri="lc:case"/>
+                     </op>
+                     <slot>
+                        <Ind uri="lc:defendant"/>
+                        <Var>Defendant</Var>
+                     </slot>
+                     <slot>
+                        <Ind uri="lc:has_weapon_type_D"/>
+                        <Data xsi:type="xs:string">da</Data>
+                     </slot>
+                  </Atom>
+               </Or>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:method_of_weapon_discovery"/>
+                     <Data xsi:type="xs:string">javno</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>is_high_category_weapon_in_public</Rel>
                </op>
                <slot>
                   <Ind uri="defendant"/>
@@ -521,7 +523,7 @@
          <body>
             <Atom>
                <op>
-                  <Rel>is_speeding_on_town_road_lv1</Rel>
+                  <Rel>jail_3_months</Rel>
                </op>
                <slot>
                   <Ind uri="defendant"/>
@@ -532,146 +534,11 @@
          <head>
             <Atom>
                <op>
-                  <Rel>to_pay</Rel>
+                  <Rel>imprisonment_3</Rel>
                </op>
                <slot>
                   <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">10000</Data>
-               </slot>
-            </Atom>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="pen2">pen2</Ind>
-         </oid>
-         <body>
-            <Atom>
-               <op>
-                  <Rel>is_speeding_on_town_road_lv2</Rel>
-               </op>
-               <slot>
-                  <Ind uri="defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-            </Atom>
-         </body>
-         <head>
-            <Atom>
-               <op>
-                  <Rel>to_pay_min</Rel>
-               </op>
-               <slot>
-                  <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">10000</Data>
-               </slot>
-            </Atom>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="pen3">pen3</Ind>
-         </oid>
-         <body>
-            <Atom>
-               <op>
-                  <Rel>is_speeding_on_town_road_lv2</Rel>
-               </op>
-               <slot>
-                  <Ind uri="defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-            </Atom>
-         </body>
-         <head>
-            <Atom>
-               <op>
-                  <Rel>to_pay_max</Rel>
-               </op>
-               <slot>
-                  <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">20000</Data>
-               </slot>
-            </Atom>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="pen4">pen4</Ind>
-         </oid>
-         <body>
-            <Atom>
-               <op>
-                  <Rel>is_speeding_on_town_road_lv3</Rel>
-               </op>
-               <slot>
-                  <Ind uri="defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-            </Atom>
-         </body>
-         <head>
-            <Atom>
-               <op>
-                  <Rel>to_pay_min</Rel>
-               </op>
-               <slot>
-                  <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">20000</Data>
-               </slot>
-            </Atom>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="pen5">pen5</Ind>
-         </oid>
-         <body>
-            <Atom>
-               <op>
-                  <Rel>is_speeding_on_town_road_lv3</Rel>
-               </op>
-               <slot>
-                  <Ind uri="defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-            </Atom>
-         </body>
-         <head>
-            <Atom>
-               <op>
-                  <Rel>to_pay_max</Rel>
-               </op>
-               <slot>
-                  <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">40000</Data>
-               </slot>
-            </Atom>
-         </head>
-      </Implies>
-      <Implies ruletype="defeasiblerule">
-         <oid>
-            <Ind uri="pen6">pen6</Ind>
-         </oid>
-         <body>
-            <Atom>
-               <op>
-                  <Rel>is_speeding_on_town_road_lv3</Rel>
-               </op>
-               <slot>
-                  <Ind uri="defendant"/>
-                  <Var>Defendant</Var>
-               </slot>
-            </Atom>
-         </body>
-         <head>
-            <Atom>
-               <op>
-                  <Rel>max_imprisonment</Rel>
-               </op>
-               <slot>
-                  <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">30</Data>
+                  <Data xsi:type="xs:integer">3</Data>
                </slot>
             </Atom>
          </head>
@@ -683,7 +550,7 @@
          <body>
             <Atom>
                <op>
-                  <Rel>is_speeding_on_town_road_lv3_with_accident</Rel>
+                  <Rel>confiscation</Rel>
                </op>
                <slot>
                   <Ind uri="defendant"/>
@@ -694,23 +561,23 @@
          <head>
             <Atom>
                <op>
-                  <Rel>max_imprisonment</Rel>
+                  <Rel>confiscate_weapon</Rel>
                </op>
                <slot>
                   <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">60</Data>
+                  <Data xsi:type="xs:integer">true</Data>
                </slot>
             </Atom>
          </head>
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen8">pen8</Ind>
+            <Ind uri="pen10">pen10</Ind>
          </oid>
          <body>
             <Atom>
                <op>
-                  <Rel>is_speeding_on_town_road_lv3_with_accident</Rel>
+                  <Rel>recommend_fine_reduction</Rel>
                </op>
                <slot>
                   <Ind uri="defendant"/>
@@ -721,23 +588,50 @@
          <head>
             <Atom>
                <op>
-                  <Rel>to_pay_min</Rel>
+                  <Rel>to_pay_less</Rel>
                </op>
                <slot>
                   <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">40000</Data>
+                  <Data xsi:type="xs:integer">true</Data>
                </slot>
             </Atom>
          </head>
       </Implies>
       <Implies ruletype="defeasiblerule">
          <oid>
-            <Ind uri="pen9">pen9</Ind>
+            <Ind uri="pen11">pen11</Ind>
          </oid>
          <body>
             <Atom>
                <op>
-                  <Rel>is_speeding_on_town_road_lv3_with_accident</Rel>
+                  <Rel>recommend_increased_penalty</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_increase_penalty</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">true</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen12">pen12</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>is_high_category_weapon_in_public</Rel>
                </op>
                <slot>
                   <Ind uri="defendant"/>
@@ -752,7 +646,439 @@
                </op>
                <slot>
                   <Ind uri="value"/>
-                  <Data xsi:type="xs:integer">60000</Data>
+                  <Data xsi:type="xs:integer">500</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen13">pen13</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>is_high_category_weapon_in_public</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">30</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen14">pen14</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>money</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_max2</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">500</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen15">pen15</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>money</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min2</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">30</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen16">pen16</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>harm_done_with_weapon</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>jail_3_year</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">3</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen17">pen17</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>reduce_penalty1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>reduce_penalty</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">true</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen18">pen18</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_max_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">500</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen19">pen19</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">30</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen18">pen18</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_max_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">500</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen19">pen19</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">30</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen18">pen18</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_max_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">500</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen19">pen19</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">30</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen18">pen18</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_max_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">500</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen19">pen19</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>found_outside_safe</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_min_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">30</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen20">pen20</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>destructive_weapon</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>jail_min_year</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">1</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen21">pen21</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>destructive_weapon</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>jail_max_year</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">8</Data>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="pen22">pen22</Ind>
+         </oid>
+         <body>
+            <Atom>
+               <op>
+                  <Rel>recommend_fine_increase</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>to_pay_more</Rel>
+               </op>
+               <slot>
+                  <Ind uri="value"/>
+                  <Data xsi:type="xs:integer">true</Data>
                </slot>
             </Atom>
          </head>

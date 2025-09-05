@@ -2,12 +2,18 @@ package com.example.app_backend.model.cases;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.example.app_backend.dto.rule.CasesDTO;
+
+import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
+import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
+
 import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 
 @Document(collection = "caseDetails")
-public class CaseDetails implements Serializable {
+public class CaseDetails implements Serializable, CaseComponent {
 
     @Id
     private ObjectId id;
@@ -34,8 +40,14 @@ public class CaseDetails implements Serializable {
     private String securityMeasure;
     private String violatedArticles;
     private String sentence;
+    private String methodOfWeaponDiscovery;
 
-    public CaseDetails(ObjectId id, String caseId, String caseNumber, String judge, String defendant, String criminalOffense, String court, String date, String previouslyConvicted, String forSameOffense, String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount, String financialStatus, String admittedGuilt, String remorseful, String weaponType, String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles, String sentence) {
+    public CaseDetails(ObjectId id, String caseId, String caseNumber, String judge, String defendant,
+            String criminalOffense, String court, String date, String previouslyConvicted, String forSameOffense,
+            String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount,
+            String financialStatus, String admittedGuilt, String remorseful, String weaponType,
+            String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles,
+            String sentence, String methodOfWeaponDiscovery) {
         this.id = id;
         this.caseId = caseId;
         this.caseNumber = caseNumber;
@@ -59,9 +71,63 @@ public class CaseDetails implements Serializable {
         this.securityMeasure = securityMeasure;
         this.violatedArticles = violatedArticles;
         this.sentence = sentence;
+        this.methodOfWeaponDiscovery = methodOfWeaponDiscovery;
     }
 
-    public CaseDetails(String caseId, String caseNumber, String judge, String defendant, String criminalOffense, String court, String date, String previouslyConvicted, String forSameOffense, String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount, String financialStatus, String admittedGuilt, String remorseful, String weaponType, String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles, String sentence) {
+    public CaseDetails(CasesDTO dto) {
+        this.caseId = dto.getName();
+        this.defendant = dto.getDefendant();
+        this.previouslyConvicted = dto.getPreviouslyConvicted();
+        this.methodOfWeaponDiscovery = dto.getMethodOfWeaponDiscovery();
+
+        this.illegallyPossessesWeapon = dto.getUnauthorizedPossessionOfAWeapon();
+
+        this.injuryCausedByWeapon = dto.getHarmDone();
+
+        this.remorseful = dto.getRegretsIt();
+
+        this.admittedGuilt = dto.getAdmittedGuilt();
+
+        StringBuilder weaponTypes = new StringBuilder();
+        if ("da".equalsIgnoreCase(dto.getHasWeaponTypeA()))
+            weaponTypes.append("A");
+        if ("da".equalsIgnoreCase(dto.getHasWeaponTypeB()))
+            weaponTypes.append("B");
+        if ("da".equalsIgnoreCase(dto.getHasWeaponTypeC()))
+            weaponTypes.append("C");
+        if ("da".equalsIgnoreCase(dto.getHasWeaponTypeD()))
+            weaponTypes.append("D");
+        this.weaponType = weaponTypes.toString().trim();
+
+        if ("da".equalsIgnoreCase(dto.getLowIncome())) {
+            this.financialStatus = "lose";
+        } else if ("da".equalsIgnoreCase(dto.getHighIncome())) {
+            this.financialStatus = "dobro";
+        } else {
+            this.financialStatus = "srednje";
+        }
+
+        this.caseNumber = null;
+        this.judge = null;
+        this.criminalOffense = null;
+        this.court = null;
+        this.date = null;
+        this.forSameOffense = null;
+        this.location = null;
+        this.weapon = null;
+        this.ammunitionCount = null;
+        this.fineAmount = null;
+        this.securityMeasure = null;
+        this.violatedArticles = null;
+        this.sentence = null;
+    }
+
+    public CaseDetails(String caseId, String caseNumber, String judge, String defendant, String criminalOffense,
+            String court, String date, String previouslyConvicted, String forSameOffense,
+            String illegallyPossessesWeapon, String location, String weapon, String ammunitionCount,
+            String financialStatus, String admittedGuilt, String remorseful, String weaponType,
+            String injuryCausedByWeapon, String fineAmount, String securityMeasure, String violatedArticles,
+            String sentence, String methodOfWeaponDiscovery) {
         this.caseId = caseId;
         this.caseNumber = caseNumber;
         this.judge = judge;
@@ -84,6 +150,7 @@ public class CaseDetails implements Serializable {
         this.securityMeasure = securityMeasure;
         this.violatedArticles = violatedArticles;
         this.sentence = sentence;
+        this.methodOfWeaponDiscovery = methodOfWeaponDiscovery;
     }
 
     public CaseDetails() {
@@ -272,4 +339,73 @@ public class CaseDetails implements Serializable {
     public void setSentence(String sentence) {
         this.sentence = sentence;
     }
+
+    public String getMethodOfWeaponDiscovery() {
+        return methodOfWeaponDiscovery;
+    }
+
+    public void setMethodOfWeaponDiscovery(String methodOfWeaponDiscovery) {
+        this.methodOfWeaponDiscovery = methodOfWeaponDiscovery;
+    }
+
+    @Override
+    public Attribute getIdAttribute() {
+        return new Attribute("id", this.getClass());
+    }
+
+    @Override
+    public String toString() {
+        return "{"
+                + "\"id\": \"" + id + "\", "
+                + "\"caseId\": \"" + caseId + "\", "
+                + "\"caseNumber\": \"" + caseNumber + "\", "
+                + "\"judge\": \"" + judge + "\", "
+                + "\"defendant\": \"" + defendant + "\", "
+                + "\"criminalOffense\": \"" + criminalOffense.replace("\"", "") + "\", "
+                + "\"court\": \"" + court.replace("\"", "") + "\", "
+                + "\"date\": \"" + date + "\", "
+                + "\"previouslyConvicted\": \"" + previouslyConvicted.replace("\"", "") + "\", "
+                + "\"forSameOffense\": \"" + forSameOffense.replace("\"", "") + "\", "
+                + "\"illegallyPossessesWeapon\": \"" + illegallyPossessesWeapon.replace("\"", "") + "\", "
+                + "\"location\": \"" + location.replace("\"", "") + "\", "
+                + "\"weapon\": \"" + weapon.replace("\"", "") + "\", "
+                + "\"ammunitionCount\": \"" + ammunitionCount.replace("\"", "") + "\", "
+                + "\"financialStatus\": \"" + financialStatus.replace("\"", "") + "\", "
+                + "\"admittedGuilt\": \"" + admittedGuilt.replace("\"", "") + "\", "
+                + "\"remorseful\": \"" + remorseful.replace("\"", "") + "\", "
+                + "\"weaponType\": \"" + weaponType.replace("\"", "") + "\", "
+                + "\"injuryCausedByWeapon\": \"" + injuryCausedByWeapon.replace("\"", "") + "\", "
+                + "\"fineAmount\": \"" + fineAmount.replace("\"", "") + "\", "
+                + "\"securityMeasure\": \"" + securityMeasure.replace("\"", "") + "\", "
+                + "\"violatedArticles\": \"" + violatedArticles.replace("\"", "") + "\", "
+                + "\"sentence\": \"" + sentence.replace("\"", "") + "\", "
+                + "\"methodOfWeaponDiscovery\": \"" + methodOfWeaponDiscovery.replace("\"", "") + "\""
+                + "}";
+    }
+
+    public void updateCaseDetails(CaseDetails caseDetails) {
+        this.caseNumber = caseDetails.caseNumber;
+        this.judge = caseDetails.judge;
+        this.defendant = caseDetails.defendant;
+        this.criminalOffense = caseDetails.criminalOffense;
+        this.court = caseDetails.court;
+        this.date = caseDetails.date;
+        this.previouslyConvicted = caseDetails.previouslyConvicted;
+        this.forSameOffense = caseDetails.forSameOffense;
+        this.illegallyPossessesWeapon = caseDetails.illegallyPossessesWeapon;
+        this.location = caseDetails.location;
+        this.weapon = caseDetails.weapon;
+        this.ammunitionCount = caseDetails.ammunitionCount;
+        this.financialStatus = caseDetails.financialStatus;
+        this.admittedGuilt = caseDetails.admittedGuilt;
+        this.remorseful = caseDetails.remorseful;
+        this.weaponType = caseDetails.weaponType;
+        this.injuryCausedByWeapon = caseDetails.injuryCausedByWeapon;
+        this.fineAmount = caseDetails.fineAmount;
+        this.securityMeasure = caseDetails.securityMeasure;
+        this.violatedArticles = caseDetails.violatedArticles;
+        this.sentence = caseDetails.sentence;
+        this.methodOfWeaponDiscovery = caseDetails.methodOfWeaponDiscovery;
+    }
+
 }
